@@ -1,7 +1,7 @@
 function digitize(n: number): number[] {
   return n
     .toString()
-    .split("")
+    .split('')
     .reverse()
     .map(Number);
 }

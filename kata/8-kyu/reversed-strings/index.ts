@@ -1,8 +1,8 @@
 function solution(str: string): string {
   return str
-    .split("")
+    .split('')
     .reverse()
-    .join("");
+    .join('');
 }
 
 export default solution;

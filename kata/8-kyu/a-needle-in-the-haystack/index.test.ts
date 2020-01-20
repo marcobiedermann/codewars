@@ -1,32 +1,21 @@
-import findNeedle from ".";
+import findNeedle from '.';
 
-describe("findNeedle", () => {
-  it("should find `needle` in a haystack", () => {
+describe('findNeedle', () => {
+  it('should find `needle` in a haystack', () => {
+    expect(
+      findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]),
+    ).toEqual('found the needle at position 3');
     expect(
       findNeedle([
-        "3",
-        "123124234",
-        undefined,
-        "needle",
-        "world",
-        "hay",
-        2,
-        "3",
-        true,
-        false
-      ])
-    ).toEqual("found the needle at position 3");
-    expect(
-      findNeedle([
-        "283497238987234",
-        "a dog",
-        "a cat",
-        "some random junk",
-        "a piece of hay",
-        "needle",
-        "something somebody lost a while ago"
-      ])
-    ).toEqual("found the needle at position 5");
+        '283497238987234',
+        'a dog',
+        'a cat',
+        'some random junk',
+        'a piece of hay',
+        'needle',
+        'something somebody lost a while ago',
+      ]),
+    ).toEqual('found the needle at position 5');
     expect(
       findNeedle([
         1,
@@ -59,7 +48,7 @@ describe("findNeedle", () => {
         234,
         324,
         324,
-        "needle",
+        'needle',
         1,
         2,
         3,
@@ -72,8 +61,8 @@ describe("findNeedle", () => {
         32,
         3,
         45,
-        54
-      ])
-    ).toEqual("found the needle at position 30");
+        54,
+      ]),
+    ).toEqual('found the needle at position 30');
   });
 });

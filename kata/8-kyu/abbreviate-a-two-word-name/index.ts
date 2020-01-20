@@ -1,8 +1,8 @@
 function abbrevName(name: string): string {
   return name
-    .split(" ")
+    .split(' ')
     .map(word => word[0])
-    .join(".")
+    .join('.')
     .toUpperCase();
 }
 

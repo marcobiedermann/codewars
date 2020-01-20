@@ -5,8 +5,8 @@ interface Person {
 function list(names: Person[]): string {
   return names
     .map(({ name }) => name)
-    .join(", ")
-    .replace(/(.*), (.*)/, "$1 & $2");
+    .join(', ')
+    .replace(/(.*), (.*)/, '$1 & $2');
 }
 
 export default list;

@@ -1,13 +1,13 @@
-import number from ".";
+import number from '.';
 
-describe("number", () => {
-  it("return number of people sitting in bus after last bus station", () => {
+describe('number', () => {
+  it('return number of people sitting in bus after last bus station', () => {
     expect(
       number([
         [10, 0],
         [3, 5],
-        [5, 8]
-      ])
+        [5, 8],
+      ]),
     ).toEqual(5);
     expect(
       number([
@@ -16,8 +16,8 @@ describe("number", () => {
         [4, 10],
         [12, 2],
         [6, 1],
-        [7, 10]
-      ])
+        [7, 10],
+      ]),
     ).toEqual(17);
     expect(
       number([
@@ -26,8 +26,8 @@ describe("number", () => {
         [4, 8],
         [12, 2],
         [6, 1],
-        [7, 8]
-      ])
+        [7, 8],
+      ]),
     ).toEqual(21);
   });
 });

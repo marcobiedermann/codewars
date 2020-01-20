@@ -1,13 +1,13 @@
 function reverseWords(str: string): string {
   return str
-    .split(" ")
+    .split(' ')
     .map(word =>
       word
-        .split("")
+        .split('')
         .reverse()
-        .join("")
+        .join(''),
     )
-    .join(" ");
+    .join(' ');
 }
 
 export default reverseWords;

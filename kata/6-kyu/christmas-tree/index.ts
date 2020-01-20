@@ -9,16 +9,16 @@ function christmasTree(height: number): string {
 
     for (let column = 0; column < columns; column += 1) {
       if (midpoint - row <= column && midpoint + row >= column) {
-        level.push("*");
+        level.push('*');
       } else {
-        level.push(" ");
+        level.push(' ');
       }
     }
 
-    tree.push(level.join(""));
+    tree.push(level.join(''));
   }
 
-  return tree.join("\n");
+  return tree.join('\n');
 }
 
 export default christmasTree;

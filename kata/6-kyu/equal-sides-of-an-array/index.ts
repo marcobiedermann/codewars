@@ -1,8 +1,5 @@
 function sumArr(arr: number[]): number {
-  return arr.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    0
-  );
+  return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
 function findEvenIndex(arr: number[]): number {
