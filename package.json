@@ -1,0 +1,28 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcobiedermann/codewars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcobiedermann/codewars/issues"
+  },
+  "homepage": "https://github.com/marcobiedermann/codewars#readme",
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.1",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.4"
+  }
+}
