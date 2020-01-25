@@ -6,7 +6,8 @@
   "scripts": {
     "check": "tsc --noEmit",
     "format": "prettier --write '**/*.{css,html,js,jsx,json,md,ts,tsx,yml,yaml}'",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "npm test && codecov"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@types/jest": "^24.9.0",
     "@types/node": "^13.1.8",
+    "codecov": "^3.6.2",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "ts-jest": "^24.3.0",
