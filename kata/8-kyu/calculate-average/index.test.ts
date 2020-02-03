@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import find_average from '.';
 
 describe('find_average', () => {

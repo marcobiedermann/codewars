@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+
 import Person from '.';
 
 describe('Person', () => {

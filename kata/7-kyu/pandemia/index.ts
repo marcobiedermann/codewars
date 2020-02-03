@@ -1,7 +1,7 @@
 function infected(s: string): number {
   const continents = s.split('X');
   const total = continents.join('').length;
-  const infected = continents
+  const totalInfected = continents
     .filter(continent => [...continent].some(person => person === '1'))
     .join('').length;
 
@@ -9,7 +9,7 @@ function infected(s: string): number {
     return 0;
   }
 
-  return 100 * (infected / total);
+  return 100 * (totalInfected / total);
 }
 
 export default infected;

@@ -1,6 +1,6 @@
 import validatePIN from '.';
 
-describe('validatePIN', function() {
+describe('validatePIN', () => {
   it('should return False for pins with length other than 4 or 6', () => {
     expect(validatePIN('1')).toEqual(false);
     expect(validatePIN('12')).toEqual(false);

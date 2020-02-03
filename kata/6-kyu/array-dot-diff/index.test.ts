@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import array_diff from '.';
 
 describe('array_diff', () => {
