@@ -1,5 +1,5 @@
-function sumArray(array: number[]): number {
-  if (!Array.isArray(array)) {
+function sumArray(array: number[] = []): number {
+  if (!array) {
     return 0;
   }
 
