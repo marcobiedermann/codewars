@@ -8,3 +8,4 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/marcobiedermann/codewars/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcobiedermann/codewars?targetFile=package.json)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5f22e7a8dbbcae57e724/maintainability)](https://codeclimate.com/github/marcobiedermann/codewars/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/5f22e7a8dbbcae57e724/test_coverage)](https://codeclimate.com/github/marcobiedermann/codewars/test_coverage)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
