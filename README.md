@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/marcobiedermann/codewars.svg?branch=master)](https://travis-ci.com/marcobiedermann/codewars)
 [![codecov](https://codecov.io/gh/marcobiedermann/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/marcobiedermann/codewars)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![dependencies Status](https://david-dm.org/marcobiedermann/codewars/status.svg)](https://david-dm.org/marcobiedermann/codewars)
 [![devDependencies Status](https://david-dm.org/marcobiedermann/codewars/dev-status.svg)](https://david-dm.org/marcobiedermann/codewars?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/marcobiedermann/codewars/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcobiedermann/codewars?targetFile=package.json)
