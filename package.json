@@ -14,9 +14,19 @@
     "type": "git",
     "url": "git+https://github.com/marcobiedermann/codewars.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "algorithms",
+    "code",
+    "codewars",
+    "javascript",
+    "kata",
+    "problem-solving",
+    "solutions",
+    "typescript"
+  ],
+  "author": "Marco Biedermann",
+  "license": "MIT",
+  "private": true,
   "bugs": {
     "url": "https://github.com/marcobiedermann/codewars/issues"
   },
