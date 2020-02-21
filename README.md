@@ -47,7 +47,7 @@ Feel free to check [issues page](https://github.com/marcobiedermann/codewars/iss
 
 Give a ⭐️ if this project helped you!
 
-[![support us](https://img.shields.io/badge/become-a patreon%20us-orange.svg?cacheSeconds=2592000)](https://www.patreon.com/marcobiedermann)
+[![support us](https://img.shields.io/badge/become-a%20patreon%20us-orange.svg?cacheSeconds=2592000)](https://www.patreon.com/marcobiedermann)
 
 ## 📝 License
 
