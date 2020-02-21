@@ -6,6 +6,7 @@
 [![dependencies Status](https://david-dm.org/marcobiedermann/codewars/status.svg)](https://david-dm.org/marcobiedermann/codewars)
 [![devDependencies Status](https://david-dm.org/marcobiedermann/codewars/dev-status.svg)](https://david-dm.org/marcobiedermann/codewars?type=dev)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/marcobiedermann/codewars#readme)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars?ref=badge_shield)
 [![Known Vulnerabilities](https://snyk.io/test/github/marcobiedermann/codewars/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcobiedermann/codewars?targetFile=package.json)
 [![License: MIT](https://img.shields.io/github/license/marcobiedermann/codewars)](https://github.com/marcobiedermann/codewars/blob/master/LICENSE)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5f22e7a8dbbcae57e724/maintainability)](https://codeclimate.com/github/marcobiedermann/codewars/maintainability)
