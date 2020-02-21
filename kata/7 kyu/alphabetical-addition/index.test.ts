@@ -2,6 +2,8 @@ import addLetters from '.';
 
 describe('addLetters', () => {
   it('should add up letters to one letter', () => {
+    expect.assertions(7);
+
     const tests = [
       [['a', 'b', 'c'], 'f'],
       [['z'], 'z'],
@@ -13,7 +15,7 @@ describe('addLetters', () => {
     ];
 
     tests.forEach(test => {
-      expect(addLetters(...test[0])).toEqual(test[1]);
+      expect(addLetters(...test[0])).toStrictEqual(test[1]);
     });
   });
 });

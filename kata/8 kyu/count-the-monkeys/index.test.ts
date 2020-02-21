@@ -2,11 +2,13 @@ import monkeyCount from '.';
 
 describe('monkeyCount', () => {
   it('should return an array with all numbers up to that number', () => {
-    expect(monkeyCount(5)).toEqual([1, 2, 3, 4, 5]);
-    expect(monkeyCount(3)).toEqual([1, 2, 3]);
-    expect(monkeyCount(9)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-    expect(monkeyCount(10)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-    expect(monkeyCount(20)).toEqual([
+    expect.assertions(5);
+
+    expect(monkeyCount(5)).toStrictEqual([1, 2, 3, 4, 5]);
+    expect(monkeyCount(3)).toStrictEqual([1, 2, 3]);
+    expect(monkeyCount(9)).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    expect(monkeyCount(10)).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    expect(monkeyCount(20)).toStrictEqual([
       1,
       2,
       3,

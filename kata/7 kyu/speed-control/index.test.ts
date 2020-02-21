@@ -2,11 +2,13 @@ import gps from '.';
 
 describe('gps', () => {
   it('should calculate max average speed', () => {
-    expect(gps(20, [0.0, 0.23, 0.46, 0.69, 0.92, 1.15, 1.38, 1.61])).toEqual(41);
+    expect.assertions(12);
+
+    expect(gps(20, [0.0, 0.23, 0.46, 0.69, 0.92, 1.15, 1.38, 1.61])).toStrictEqual(41);
 
     expect(
       gps(12, [0.0, 0.11, 0.22, 0.33, 0.44, 0.65, 1.08, 1.26, 1.68, 1.89, 2.1, 2.31, 2.52, 3.25]),
-    ).toEqual(219);
+    ).toStrictEqual(219);
 
     expect(
       gps(20, [
@@ -28,7 +30,7 @@ describe('gps', () => {
         3.6,
         3.84,
       ]),
-    ).toEqual(80);
+    ).toStrictEqual(80);
 
     expect(
       gps(14, [
@@ -49,13 +51,17 @@ describe('gps', () => {
         2.94,
         3.15,
       ]),
-    ).toEqual(90);
+    ).toStrictEqual(90);
 
-    expect(gps(17, [0.0, 0.02, 0.36, 0.54, 0.72, 0.9, 1.08, 1.26, 1.44, 1.62, 1.8])).toEqual(72);
+    expect(gps(17, [0.0, 0.02, 0.36, 0.54, 0.72, 0.9, 1.08, 1.26, 1.44, 1.62, 1.8])).toStrictEqual(
+      72,
+    );
 
-    expect(gps(12, [0.0, 0.24, 0.48, 0.72, 0.96, 1.2, 1.44, 1.68, 1.92, 2.16, 2.4])).toEqual(72);
+    expect(gps(12, [0.0, 0.24, 0.48, 0.72, 0.96, 1.2, 1.44, 1.68, 1.92, 2.16, 2.4])).toStrictEqual(
+      72,
+    );
 
-    expect(gps(17, [0.0, 0.02, 0.44, 0.66, 0.88, 1.1, 1.32, 1.54, 1.76])).toEqual(88);
+    expect(gps(17, [0.0, 0.02, 0.44, 0.66, 0.88, 1.1, 1.32, 1.54, 1.76])).toStrictEqual(88);
 
     expect(
       gps(16, [
@@ -76,7 +82,7 @@ describe('gps', () => {
         3.22,
         3.45,
       ]),
-    ).toEqual(76);
+    ).toStrictEqual(76);
 
     expect(
       gps(17, [
@@ -101,7 +107,7 @@ describe('gps', () => {
         4.5,
         4.75,
       ]),
-    ).toEqual(82);
+    ).toStrictEqual(82);
 
     expect(
       gps(19, [
@@ -121,10 +127,10 @@ describe('gps', () => {
         3.12,
         3.36,
       ]),
-    ).toEqual(58);
+    ).toStrictEqual(58);
 
-    expect(gps(19, [])).toEqual(0);
+    expect(gps(19, [])).toStrictEqual(0);
 
-    expect(gps(19, [0.0])).toEqual(0);
+    expect(gps(19, [0.0])).toStrictEqual(0);
   });
 });

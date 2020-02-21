@@ -1,11 +1,15 @@
 import greet from '.';
 
 describe('greet', () => {
-  it('Is it a function?', () => {
-    expect(typeof greet).toEqual('function');
+  it('is it a function?', () => {
+    expect.assertions(1);
+
+    expect(typeof greet).toStrictEqual('function');
   });
 
-  it('Correct return-value?', () => {
-    expect(greet()).toEqual('hello world!');
+  it('correct return-value?', () => {
+    expect.assertions(1);
+
+    expect(greet()).toStrictEqual('hello world!');
   });
 });

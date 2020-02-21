@@ -1,10 +1,12 @@
 import SeriesSum from '.';
 
-describe('SeriesSum', () => {
+describe('seriesSum', () => {
   it('should sum series up to nth term', () => {
-    expect(SeriesSum(1)).toEqual('1.00');
-    expect(SeriesSum(2)).toEqual('1.25');
-    expect(SeriesSum(3)).toEqual('1.39');
-    expect(SeriesSum(4)).toEqual('1.49');
+    expect.assertions(4);
+
+    expect(SeriesSum(1)).toStrictEqual('1.00');
+    expect(SeriesSum(2)).toStrictEqual('1.25');
+    expect(SeriesSum(3)).toStrictEqual('1.39');
+    expect(SeriesSum(4)).toStrictEqual('1.49');
   });
 });

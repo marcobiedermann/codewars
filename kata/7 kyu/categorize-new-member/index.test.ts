@@ -2,6 +2,8 @@ import openOrSenior from '.';
 
 describe('openOrSenior', () => {
   it('should transform members in list to `Open` or `Senior`', () => {
+    expect.assertions(3);
+
     expect(
       openOrSenior([
         [45, 12],
@@ -9,7 +11,7 @@ describe('openOrSenior', () => {
         [19, -2],
         [104, 20],
       ]),
-    ).toEqual(['Open', 'Senior', 'Open', 'Senior']);
+    ).toStrictEqual(['Open', 'Senior', 'Open', 'Senior']);
     expect(
       openOrSenior([
         [3, 12],
@@ -17,7 +19,7 @@ describe('openOrSenior', () => {
         [91, -2],
         [54, 23],
       ]),
-    ).toEqual(['Open', 'Open', 'Open', 'Open']);
+    ).toStrictEqual(['Open', 'Open', 'Open', 'Open']);
     expect(
       openOrSenior([
         [59, 12],
@@ -25,6 +27,6 @@ describe('openOrSenior', () => {
         [12, -2],
         [12, 12],
       ]),
-    ).toEqual(['Senior', 'Open', 'Open', 'Open']);
+    ).toStrictEqual(['Senior', 'Open', 'Open', 'Open']);
   });
 });

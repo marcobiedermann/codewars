@@ -4,7 +4,9 @@ import find_average from '.';
 
 describe('find_average', () => {
   it('should calculate average of numbers', () => {
-    expect(find_average([1, 1, 1])).toEqual(1);
-    expect(find_average([1, 2, 3])).toEqual(2);
+    expect.assertions(2);
+
+    expect(find_average([1, 1, 1])).toStrictEqual(1);
+    expect(find_average([1, 2, 3])).toStrictEqual(2);
   });
 });

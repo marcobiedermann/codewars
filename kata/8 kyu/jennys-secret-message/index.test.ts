@@ -1,13 +1,17 @@
 import greet from '.';
 
-describe('Jennygreet', () => {
+describe('jennygreet', () => {
   it('should greet some people normally', () => {
-    expect(greet('Jim')).toEqual('Hello, Jim!');
-    expect(greet('Jane')).toEqual('Hello, Jane!');
-    expect(greet('Simon')).toEqual('Hello, Simon!');
+    expect.assertions(3);
+
+    expect(greet('Jim')).toStrictEqual('Hello, Jim!');
+    expect(greet('Jane')).toStrictEqual('Hello, Jane!');
+    expect(greet('Simon')).toStrictEqual('Hello, Simon!');
   });
 
   it('should greet Johnny a little bit more special', () => {
-    expect(greet('Johnny')).toEqual('Hello, my love!');
+    expect.assertions(1);
+
+    expect(greet('Johnny')).toStrictEqual('Hello, my love!');
   });
 });

@@ -2,11 +2,13 @@ import doubleChar from '.';
 
 describe('doubleChar', () => {
   it('should repeat each character in string', () => {
-    expect(doubleChar('abcd')).toEqual('aabbccdd');
-    expect(doubleChar('Adidas')).toEqual('AAddiiddaass');
-    expect(doubleChar('1337')).toEqual('11333377');
-    expect(doubleChar('illuminati')).toEqual('iilllluummiinnaattii');
-    expect(doubleChar('123456')).toEqual('112233445566');
-    expect(doubleChar('%^&*(')).toEqual('%%^^&&**((');
+    expect.assertions(6);
+
+    expect(doubleChar('abcd')).toStrictEqual('aabbccdd');
+    expect(doubleChar('Adidas')).toStrictEqual('AAddiiddaass');
+    expect(doubleChar('1337')).toStrictEqual('11333377');
+    expect(doubleChar('illuminati')).toStrictEqual('iilllluummiinnaattii');
+    expect(doubleChar('123456')).toStrictEqual('112233445566');
+    expect(doubleChar('%^&*(')).toStrictEqual('%%^^&&**((');
   });
 });

@@ -2,7 +2,9 @@ import smash from '.';
 
 describe('smash', () => {
   it('should smash words together', () => {
-    expect(smash(['hello'])).toEqual('hello');
-    expect(smash(['hello', 'world'])).toEqual('hello world');
+    expect.assertions(2);
+
+    expect(smash(['hello'])).toStrictEqual('hello');
+    expect(smash(['hello', 'world'])).toStrictEqual('hello world');
   });
 });

@@ -2,6 +2,8 @@ import solution from '.';
 
 describe('solution', () => {
   it('should reverse string', () => {
-    expect(solution('world')).toEqual('dlrow');
+    expect.assertions(1);
+
+    expect(solution('world')).toStrictEqual('dlrow');
   });
 });

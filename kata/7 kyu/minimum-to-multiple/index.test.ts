@@ -2,6 +2,8 @@ import minimum from '.';
 
 describe('minimum', () => {
   it('should return minimum number to add / subtract to make multiple', () => {
+    expect.assertions(12);
+
     const A = [
       [1, 1, 0],
       [9, 4, 1],
@@ -18,7 +20,7 @@ describe('minimum', () => {
     ];
 
     A.forEach(([a, x, exp]) => {
-      expect(minimum(a, x)).toEqual(exp);
+      expect(minimum(a, x)).toStrictEqual(exp);
     });
   });
 });

@@ -2,6 +2,8 @@ import makeUpperCase from '.';
 
 describe('makeUpperCase', () => {
   it('should transform string to uppercase', () => {
-    expect(makeUpperCase('hello')).toEqual('HELLO');
+    expect.assertions(1);
+
+    expect(makeUpperCase('hello')).toStrictEqual('HELLO');
   });
 });

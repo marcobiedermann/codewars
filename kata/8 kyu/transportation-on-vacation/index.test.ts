@@ -1,20 +1,27 @@
 import rentalCarCost from '.';
 
-describe('Regular Tests:', () => {
-  it('Should work for under 3 days:', () => {
-    expect(rentalCarCost(1)).toEqual(40);
-    expect(rentalCarCost(2)).toEqual(80);
+describe('regular Tests:', () => {
+  it('should work for under 3 days:', () => {
+    expect.assertions(2);
+
+    expect(rentalCarCost(1)).toStrictEqual(40);
+    expect(rentalCarCost(2)).toStrictEqual(80);
   });
-  it('Should work for under 7 days:', () => {
-    expect(rentalCarCost(3)).toEqual(100);
-    expect(rentalCarCost(4)).toEqual(140);
-    expect(rentalCarCost(5)).toEqual(180);
-    expect(rentalCarCost(6)).toEqual(220);
+
+  it('should work for under 7 days:', () => {
+    expect.assertions(4);
+
+    expect(rentalCarCost(3)).toStrictEqual(100);
+    expect(rentalCarCost(4)).toStrictEqual(140);
+    expect(rentalCarCost(5)).toStrictEqual(180);
+    expect(rentalCarCost(6)).toStrictEqual(220);
   });
-  it('Should work for 7 or more days:', () => {
-    expect(rentalCarCost(7)).toEqual(230);
-    expect(rentalCarCost(8)).toEqual(270);
-    expect(rentalCarCost(9)).toEqual(310);
-    expect(rentalCarCost(10)).toEqual(350);
+  it('should work for 7 or more days:', () => {
+    expect.assertions(4);
+
+    expect(rentalCarCost(7)).toStrictEqual(230);
+    expect(rentalCarCost(8)).toStrictEqual(270);
+    expect(rentalCarCost(9)).toStrictEqual(310);
+    expect(rentalCarCost(10)).toStrictEqual(350);
   });
 });

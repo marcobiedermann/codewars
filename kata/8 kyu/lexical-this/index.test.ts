@@ -2,8 +2,10 @@
 
 import Person from '.';
 
-describe('Person', () => {
+describe('person', () => {
   it('should fill fields', () => {
+    expect.assertions(4);
+
     const people = [
       ['bob', 'john'],
       ['bob', 'john', 'dave'],
@@ -16,7 +18,7 @@ describe('Person', () => {
 
       person.fillFriends(people[i]);
 
-      expect(person._friends).toEqual(people[i]);
+      expect(person._friends).toStrictEqual(people[i]);
     }
   });
 });
