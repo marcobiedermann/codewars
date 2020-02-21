@@ -18,7 +18,40 @@ Return the words of the initial song that Polycarpus used to make a dubsteb remi
 
 ## Examples
 
-```js
+```javascript
 songDecoder('WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB');
 // =>  WE ARE THE CHAMPIONS MY FRIEND
 ```
+
+```ruby
+song_decoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+  #  =>  WE ARE THE CHAMPIONS MY FRIEND
+```
+
+```haskell
+songDecoder "WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"
+  `shouldBe` "WE ARE THE CHAMPIONS MY FRIEND"
+```
+
+```python
+song_decoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+  # =>  WE ARE THE CHAMPIONS MY FRIEND
+```
+
+```clojure
+(song-decoder "WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+  ; => WE ARE THE CHAMPIONS MY FRIEND
+```
+
+```scala
+songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+  // =>  WE ARE THE CHAMPIONS MY FRIEND
+```
+
+---
+
+## Tags
+
+- Data Types
+- Fundamentals
+- Strings

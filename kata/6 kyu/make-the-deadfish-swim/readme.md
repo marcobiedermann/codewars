@@ -11,6 +11,59 @@ Deadfish has 4 commands, each 1 character long:
 
 Invalid characters should be ignored.
 
-```js
+```javascript
 parse("iiisdoso") => [ 8, 64 ]
 ```
+
+```csharp
+Deadfish.Parse("iiisdoso") => new int[] {8, 64};
+```
+
+```python
+parse("iiisdoso")  ==>  [8, 64]
+```
+
+```haskell
+parse "iiisdoso" -> [ 8, 64 ]
+```
+
+```c
+parse("iiisdoso") == {8, 64}
+```
+
+```go
+Parse("iiisdoso") == []int{8, 64}
+```
+
+```ruby
+parse("iiisdoso")  ==>  [8, 64]
+```
+
+```java
+Deadfish.parse("iiisdoso") =- new int[] {8, 64};
+```
+
+```groovy
+DeadFish.parse("iiisdoso")  ==>  [8, 64]
+```
+
+```scala
+Deadfish.parse("iiisdoso") => List(8, 64)
+```
+
+```typescript
+parse("iiisdoso") => [8, 64]
+```
+
+```julia
+deadfish("iiisdoso") --> [8, 64]
+```
+
+---
+
+## Tags
+
+- Algorithms
+- Logic
+- Parsing
+- Strings

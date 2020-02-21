@@ -9,3 +9,9 @@ For example:
 `findSum(5)` should return 8 (3 + 5)
 
 `findSum(10)` should return 33 (3 + 5 + 6 + 9 + 10)
+
+---
+
+## Tags
+
+- Fundamentals

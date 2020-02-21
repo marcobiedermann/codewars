@@ -8,7 +8,81 @@ Return the results as an array (or list in Python, Haskell or Elixir).
 
 Examples:
 
+```cpp
+countBy(1,10)  should return  {1,2,3,4,5,6,7,8,9,10}
+countBy(2,5)  should return {2,4,6,8,10}
 ```
+
+```javascript
+countBy(1, 10) === [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+countBy(2, 5) === [2, 4, 6, 8, 10];
+```
+
+```coffeescript
+countBy(1,10) == [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) == [2,4,6,8,10]
+```
+
+```dart
 countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
 countBy(2,5) === [2,4,6,8,10]
 ```
+
+```coffeescript
+countBy(1,10) == [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) == [2,4,6,8,10]
+```
+
+```python
+count_by(1,10) #should return [1,2,3,4,5,6,7,8,9,10]
+count_by(2,5) #should return [2,4,6,8,10]
+```
+
+```ruby
+count_by(1,10) #should return [1,2,3,4,5,6,7,8,9,10]
+count_by(2,5) #should return [2,4,6,8,10]
+```
+
+```crystal
+count_by(1,10) #should return [1,2,3,4,5,6,7,8,9,10]
+count_by(2,5) #should return [2,4,6,8,10]
+```
+
+```haskell
+countBy 1 10 `shouldBe` [1,2,3,4,5,6,7,8,9,10]
+countBy 2  5 `shouldBe` [2,4,6,8,10]
+```
+
+```elixir
+count_by(1, 10) == [1,2,3,4,5,6,7,8,9,10]
+count_by(2, 5) == [2,4,6,8,10]
+```
+
+```solidity
+countBy(1,10) // should return [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) // should return [2,4,6,8,10]
+```
+
+```php
+countBy(1,10) // should return [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) // should return [2,4,6,8,10]
+```
+
+```groovy
+Kata.countBy(1, 10) == [1,2,3,4,5,6,7,8,9,10]
+Kata.countBy(2, 5) == [2,4,6,8,10]
+```
+
+```racket
+(count-by 1 10) ; returns '(1 2 3 4 5)
+(count-by 2 5)  ; returns '(2 4 6 8 10)
+```
+
+---
+
+## Tags
+
+- Arrays
+- Data Types
+- Fundamentals
+- Numbers
