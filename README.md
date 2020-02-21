@@ -13,6 +13,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/5f22e7a8dbbcae57e724/test_coverage)](https://codeclimate.com/github/marcobiedermann/codewars/test_coverage)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![Twitter: m412c0b](https://img.shields.io/twitter/follow/m412c0b.svg?style=social)](https://twitter.com/m412c0b)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars?ref=badge_shield)
 
 ### 🏠 [Homepage](https://github.com/marcobiedermann/codewars#readme)
 
@@ -58,3 +59,6 @@ This project is [MIT](https://github.com/marcobiedermann/codewars/blob/master/LI
 ---
 
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars?ref=badge_large)
