@@ -1,19 +1,13 @@
 # Codewars Katas ![](https://www.codewars.com/users/marcobiedermann/badges/micro)
 
 [![Build Status](https://travis-ci.com/marcobiedermann/codewars.svg?branch=master)](https://travis-ci.com/marcobiedermann/codewars)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![codecov](https://codecov.io/gh/marcobiedermann/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/marcobiedermann/codewars)
 [![dependencies Status](https://david-dm.org/marcobiedermann/codewars/status.svg)](https://david-dm.org/marcobiedermann/codewars)
 [![devDependencies Status](https://david-dm.org/marcobiedermann/codewars/dev-status.svg)](https://david-dm.org/marcobiedermann/codewars?type=dev)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/marcobiedermann/codewars#readme)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars?ref=badge_shield)
 [![Known Vulnerabilities](https://snyk.io/test/github/marcobiedermann/codewars/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcobiedermann/codewars?targetFile=package.json)
-[![License: MIT](https://img.shields.io/github/license/marcobiedermann/codewars)](https://github.com/marcobiedermann/codewars/blob/master/LICENSE)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5f22e7a8dbbcae57e724/maintainability)](https://codeclimate.com/github/marcobiedermann/codewars/maintainability)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/marcobiedermann/codewars/graphs/commit-activity)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/5f22e7a8dbbcae57e724/test_coverage)](https://codeclimate.com/github/marcobiedermann/codewars/test_coverage)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
-[![Twitter: m412c0b](https://img.shields.io/twitter/follow/m412c0b.svg?style=social)](https://twitter.com/m412c0b)
 
 ### 🏠 [Homepage](https://github.com/marcobiedermann/codewars#readme)
 
