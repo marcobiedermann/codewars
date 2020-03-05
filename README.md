@@ -28,7 +28,7 @@ npm test
 👤 **Marco Biedermann**
 
 - Website: https://www.marcobiedermann.com
-- Twitter: [@m412c0b](https://twitter.com/m412c0b)
+- Twitter: [@BiedermannMarco](https://twitter.com/BiedermannMarco)
 - Github: [@marcobiedermann](https://github.com/marcobiedermann)
 - LinkedIn: [@biedermannmarco](https://linkedin.com/in/biedermannmarco)
 
