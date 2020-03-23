@@ -1,5 +1,5 @@
 {
-  "name": "codewars",
+  "name": "@marcobiedermann/codewars",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,9 @@
     "format": "prettier --write '**/*.{css,html,js,jsx,json,md,ts,tsx,yml,yaml}'",
     "test": "jest",
     "test:ci": "npm test && codecov"
+  },
+  "bin": {
+    "@marcobiedermann/codewars": "./bin/index.js"
   },
   "repository": {
     "type": "git",
