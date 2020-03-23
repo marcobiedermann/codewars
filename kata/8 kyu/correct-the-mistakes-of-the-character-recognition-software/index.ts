@@ -9,7 +9,7 @@ const mistakes: Mistakes = {
 };
 
 function correct(string: string): string {
-  return string.replace(/[015]/g, character => mistakes[character]);
+  return string.replace(/[015]/g, (character) => mistakes[character]);
 }
 
 export default correct;

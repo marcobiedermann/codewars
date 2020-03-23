@@ -7,7 +7,7 @@ function comp(array1: number[], array2: number[]): boolean {
   const sortedArray2 = array2.sort((a, b) => a - b);
 
   return sortedArray1
-    .map(element => element ** 2)
+    .map((element) => element ** 2)
     .every((element, index) => element === sortedArray2[index]);
 }
 

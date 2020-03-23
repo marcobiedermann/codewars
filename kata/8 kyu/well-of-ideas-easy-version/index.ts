@@ -1,5 +1,5 @@
 function well(x: string[]): string {
-  const goodCount = x.filter(idea => idea === 'good').length;
+  const goodCount = x.filter((idea) => idea === 'good').length;
 
   if (goodCount > 2) {
     return 'I smell a series!';

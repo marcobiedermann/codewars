@@ -1,7 +1,7 @@
 import duckDuckGoose, { Player } from '.';
 
 const exNames = ['a', 'b', 'c', 'd', 'c', 'e', 'f', 'g', 'h', 'z'];
-const players = exNames.map(n => new Player(n));
+const players = exNames.map((n) => new Player(n));
 
 describe('duckDuckGoose', () => {
   it('should find the correct goose', () => {

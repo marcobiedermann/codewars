@@ -2,7 +2,7 @@ function infected(s: string): number {
   const continents = s.split('X');
   const total = continents.join('').length;
   const totalInfected = continents
-    .filter(continent => [...continent].some(person => person === '1'))
+    .filter((continent) => [...continent].some((person) => person === '1'))
     .join('').length;
 
   if (!total) {

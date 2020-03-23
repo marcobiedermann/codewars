@@ -3,7 +3,7 @@ function nbDig(n: number, d: number): number {
     .join('')
     .split('')
     .map(Number)
-    .filter(digit => digit === d).length;
+    .filter((digit) => digit === d).length;
 }
 
 export default nbDig;

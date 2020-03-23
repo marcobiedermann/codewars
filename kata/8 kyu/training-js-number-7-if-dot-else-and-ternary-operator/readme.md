@@ -264,10 +264,10 @@ Complete function `saleHotdogs`/`SaleHotDogs`, function accept 1 parameters:`n`,
 ```
 
 You can use if..else or ternary operator to complete it.
-  
- When you have finished the work, click "Run Tests" to see if your code is working properly.
-  
- In the end, click "Submit" to submit your code pass this kata.
+
+When you have finished the work, click "Run Tests" to see if your code is working properly.
+
+In the end, click "Submit" to submit your code pass this kata.
 
 ## [Series](http://github.com/myjinxin2015/Katas-list-of-Training-JS-series):
 

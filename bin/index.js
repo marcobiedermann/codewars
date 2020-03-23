@@ -16,7 +16,7 @@ ${description}
 
 ${tags
   .sort()
-  .map(tag => `* ${tag}`)
+  .map((tag) => `* ${tag}`)
   .join('\n')}
 `;
 }
@@ -44,11 +44,11 @@ describe('foo', () => {
 function getKata(id) {
   const baseUrl = 'https://www.codewars.com/api/v1/code-challenges';
 
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     let data = '';
 
-    https.get(`${baseUrl}/${id}`, response => {
-      response.on('data', chunk => {
+    https.get(`${baseUrl}/${id}`, (response) => {
+      response.on('data', (chunk) => {
         data += chunk;
       });
 

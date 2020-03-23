@@ -17,7 +17,7 @@ function stockList(listOfArt: string[], listOfCat: string[]): string {
   }, {});
 
   return listOfCat
-    .map(category => {
+    .map((category) => {
       const quantity = stock[category] || 0;
 
       return `(${category} : ${quantity})`;

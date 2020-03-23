@@ -3,11 +3,8 @@ function horMirror(strng: string[]): string[] {
 }
 
 function vertMirror(strng: string[]): string[] {
-  return strng.map(line => {
-    return line
-      .split('')
-      .reverse()
-      .join('');
+  return strng.map((line) => {
+    return line.split('').reverse().join('');
   });
 }
 

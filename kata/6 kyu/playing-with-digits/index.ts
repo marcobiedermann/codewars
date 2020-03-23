@@ -1,8 +1,5 @@
 function digPow(n: number, p: number): number {
-  const digits = n
-    .toString()
-    .split('')
-    .map(Number);
+  const digits = n.toString().split('').map(Number);
 
   const sum = digits.reduce(
     (accumulator, currentValue, index) => accumulator + currentValue ** (index + p),

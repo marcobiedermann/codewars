@@ -14,7 +14,7 @@ describe('addLetters', () => {
       [[], 'z'],
     ];
 
-    tests.forEach(test => {
+    tests.forEach((test) => {
       expect(addLetters(...test[0])).toStrictEqual(test[1]);
     });
   });
