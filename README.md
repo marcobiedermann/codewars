@@ -1,4 +1,4 @@
-# Codewars Katas ![](https://www.codewars.com/users/marcobiedermann/badges/micro)
+# Codewars Katas [![Codewars Badge](https://www.codewars.com/users/marcobiedermann/badges/micro)](https://www.codewars.com/users/marcobiedermann)
 
 [![Build Status](https://travis-ci.com/marcobiedermann/codewars.svg?branch=master)](https://travis-ci.com/marcobiedermann/codewars)
 [![codecov](https://codecov.io/gh/marcobiedermann/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/marcobiedermann/codewars)
