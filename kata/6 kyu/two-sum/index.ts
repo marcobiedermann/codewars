@@ -1,0 +1,19 @@
+function twoSum(numbers: number[], target: number): number[] {
+  const { length } = numbers;
+  const map = new Map<number, number>();
+
+  for (let i = 0; i < length; i += 1) {
+    const current = numbers[i];
+    const diff = target - current;
+
+    if (map.has(diff)) {
+      return [map.get(diff)!, i];
+    }
+
+    map.set(current, i);
+  }
+
+  return [];
+}
+
+export default twoSum;
