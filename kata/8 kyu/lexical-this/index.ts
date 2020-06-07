@@ -3,10 +3,10 @@
 interface Person {
   _name: string;
   _friends: string[];
-  fillFriends: Function;
+  fillFriends: (f: string[]) => void;
 }
 
-const Person = () => {
+const Person = (): Person => {
   const person: Person = {
     _name: 'Leroy',
     _friends: [],
@@ -15,6 +15,7 @@ const Person = () => {
       this._friends = f;
     },
   };
+
   return person;
 };
 

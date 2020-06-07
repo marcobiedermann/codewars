@@ -1,4 +1,4 @@
-function solution(digits: string) {
+function solution(digits: string): number {
   return Math.max(
     ...[...digits]
       .slice(0, digits.length - 4)

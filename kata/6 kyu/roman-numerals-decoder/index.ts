@@ -21,9 +21,4 @@ function solution(roman: string): number {
   }, 0);
 }
 
-const output = solution('XXI');
-
-//       21
-output;
-
 export default solution;

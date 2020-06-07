@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const { promises: fs } = require('fs');
 const https = require('https');
 

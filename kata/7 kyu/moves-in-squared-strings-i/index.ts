@@ -8,7 +8,7 @@ function vertMirror(strng: string[]): string[] {
   });
 }
 
-function oper(fct: Function, s: string): string {
+function oper(fct: (strng: string[]) => string[], s: string): string {
   return fct(s.split('\n')).join('\n');
 }
 
