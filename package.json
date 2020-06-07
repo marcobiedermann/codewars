@@ -6,7 +6,7 @@
   "scripts": {
     "check": "tsc --noEmit",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "format": "prettier --write '**/*.{css,html,js,jsx,json,md,ts,tsx,yml,yaml}'",
+    "format": "prettier --write .",
     "test": "jest",
     "test:ci": "npm test && codecov"
   },
