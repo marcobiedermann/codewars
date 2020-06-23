@@ -1,4 +1,4 @@
-FROM node:13-alpine as base
+FROM node:14-alpine as base
 WORKDIR /usr/src/app
 ARG NODE_ENV
 COPY package*.json ./
