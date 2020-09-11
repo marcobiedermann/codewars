@@ -1,7 +1,7 @@
 import shark from '.';
 
 describe('shark', () => {
-  it('should', () => {
+  it('should return "Alive!" if you make it, if not, return "Shark Bait!".', () => {
     expect.assertions(3);
 
     expect(shark(12, 50, 4, 8, true)).toStrictEqual('Alive!');
