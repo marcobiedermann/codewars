@@ -2,13 +2,7 @@ language: node_js
 node_js:
   - 'node'
   - 'lts/*'
-before_script:
-  - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash"
 script:
   - npm run check
   - npm run lint
   - npm run test:ci
-  - fossa init
-  - fossa analyze
-after_success:
-  - cd <SOURCE_DIR> && fossa test

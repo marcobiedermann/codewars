@@ -4,7 +4,6 @@
 [![codecov](https://codecov.io/gh/marcobiedermann/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/marcobiedermann/codewars)
 [![dependencies Status](https://david-dm.org/marcobiedermann/codewars/status.svg)](https://david-dm.org/marcobiedermann/codewars)
 [![devDependencies Status](https://david-dm.org/marcobiedermann/codewars/dev-status.svg)](https://david-dm.org/marcobiedermann/codewars?type=dev)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcobiedermann%2Fcodewars?ref=badge_shield)
 [![Known Vulnerabilities](https://snyk.io/test/github/marcobiedermann/codewars/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcobiedermann/codewars?targetFile=package.json)
 
 ### 🏠 [Homepage](https://github.com/marcobiedermann/codewars#readme)
