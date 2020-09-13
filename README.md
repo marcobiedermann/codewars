@@ -1,7 +1,7 @@
 # Codewars Katas [![Codewars Badge](https://www.codewars.com/users/marcobiedermann/badges/micro)](https://www.codewars.com/users/marcobiedermann)
 
-[![Build Status](https://travis-ci.com/marcobiedermann/codewars.svg?branch=master)](https://travis-ci.com/marcobiedermann/codewars)
-[![codecov](https://codecov.io/gh/marcobiedermann/codewars/branch/master/graph/badge.svg)](https://codecov.io/gh/marcobiedermann/codewars)
+[![Build Status](https://travis-ci.com/marcobiedermann/codewars.svg?branch=main)](https://travis-ci.com/marcobiedermann/codewars)
+[![codecov](https://codecov.io/gh/marcobiedermann/codewars/branch/main/graph/badge.svg)](https://codecov.io/gh/marcobiedermann/codewars)
 [![dependencies Status](https://david-dm.org/marcobiedermann/codewars/status.svg)](https://david-dm.org/marcobiedermann/codewars)
 [![devDependencies Status](https://david-dm.org/marcobiedermann/codewars/dev-status.svg)](https://david-dm.org/marcobiedermann/codewars?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/marcobiedermann/codewars/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcobiedermann/codewars?targetFile=package.json)
@@ -33,7 +33,7 @@ npm test
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/marcobiedermann/codewars/issues). You can also take a look at the [contributing guide](https://github.com/marcobiedermann/codewars/blob/master/CONTRIBUTING.md).
+Feel free to check [issues page](https://github.com/marcobiedermann/codewars/issues). You can also take a look at the [contributing guide](https://github.com/marcobiedermann/codewars/blob/main/CONTRIBUTING.md).
 
 ## Show your support
 
@@ -45,7 +45,7 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2020 [Marco Biedermann](https://github.com/marcobiedermann).
 
-This project is [MIT](https://github.com/marcobiedermann/codewars/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/marcobiedermann/codewars/blob/main/LICENSE) licensed.
 
 ---
 
