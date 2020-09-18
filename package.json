@@ -35,7 +35,6 @@
   },
   "homepage": "https://github.com/marcobiedermann/codewars#readme",
   "devDependencies": {
-    "@marcobiedermann/tsconfig": "^1.0.0",
     "@types/jest": "^26.0.13",
     "@types/node": "^14.10.2",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
