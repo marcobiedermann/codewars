@@ -1,14 +1,13 @@
 {
   "name": "@marcobiedermann/codewars",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My attempt of solving Codewars Katas.",
   "scripts": {
     "check": "tsc --noEmit",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "format": "prettier --write .",
-    "test": "jest",
-    "test:ci": "npm test && codecov"
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "report-coverage": "codecov",
+    "test": "jest"
   },
   "bin": {
     "@marcobiedermann/codewars": "./bin/index.js"

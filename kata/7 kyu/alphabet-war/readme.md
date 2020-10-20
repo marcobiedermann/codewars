@@ -72,7 +72,6 @@ alphabet_war("wwwwwwz");  /* => Left side wins!  */
 </tr>
 </table>
 
-
 ---
 
 ## Tags

@@ -1,52 +1,52 @@
-# Codewars Katas [![Codewars Badge](https://www.codewars.com/users/marcobiedermann/badges/micro)](https://www.codewars.com/users/marcobiedermann)
+# Codewars [![Codewars Badge](https://www.codewars.com/users/marcobiedermann/badges/micro)](https://www.codewars.com/users/marcobiedermann)
 
-[![Build Status](https://travis-ci.com/marcobiedermann/codewars.svg?branch=main)](https://travis-ci.com/marcobiedermann/codewars)
-[![codecov](https://codecov.io/gh/marcobiedermann/codewars/branch/main/graph/badge.svg)](https://codecov.io/gh/marcobiedermann/codewars)
-[![dependencies Status](https://david-dm.org/marcobiedermann/codewars/status.svg)](https://david-dm.org/marcobiedermann/codewars)
-[![devDependencies Status](https://david-dm.org/marcobiedermann/codewars/dev-status.svg)](https://david-dm.org/marcobiedermann/codewars?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/marcobiedermann/codewars/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcobiedermann/codewars?targetFile=package.json)
+[![Build Status](https://img.shields.io/travis/com/marcobiedermann/codewars)](https://travis-ci.com/marcobiedermann/codewars)
+[![codecov](https://img.shields.io/codecov/c/gh/marcobiedermann/codewars)](https://codecov.io/gh/marcobiedermann/codewars)
+[![dependencies Status](https://img.shields.io/david/marcobiedermann/codewars)](https://david-dm.org/marcobiedermann/codewars)
+[![devDependencies Status](https://img.shields.io/david/dev/marcobiedermann/codewars)](https://david-dm.org/marcobiedermann/codewars?type=dev)
 
-### 🏠 [Homepage](https://github.com/marcobiedermann/codewars#readme)
+My attempt of solving [Codewars](https://www.codewars.com/) Katas in JavaScript.
 
-## Install
+## Table of Contents
+
+- [Setup](#setup)
+- [Usage](#usage)
+- [License](#license)
+
+## Setup
+
+Install `depDependencies`.
 
 ```sh
 npm install
 ```
 
-## Run tests
+## Usage
+
+### Format
+
+Format code using [Prettier](https://prettier.io/).
+
+```sh
+npm run format
+```
+
+### Linting
+
+Lint code using [ESLint](https://eslint.org/).
+
+```sh
+npm run lint
+```
+
+### Testing
+
+Run tests using [Jest](https://jestjs.io/) testing framework.
 
 ```sh
 npm test
 ```
 
-## Author
+## License
 
-👤 **Marco Biedermann**
-
-- Website: https://www.marcobiedermann.com
-- Twitter: [@BiedermannMarco](https://twitter.com/BiedermannMarco)
-- Github: [@marcobiedermann](https://github.com/marcobiedermann)
-- LinkedIn: [@biedermannmarco](https://linkedin.com/in/biedermannmarco)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check [issues page](https://github.com/marcobiedermann/codewars/issues). You can also take a look at the [contributing guide](https://github.com/marcobiedermann/codewars/blob/main/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-[![support us](https://img.shields.io/badge/become-a%20patreon%20us-orange.svg?cacheSeconds=2592000)](https://www.patreon.com/marcobiedermann)
-
-## 📝 License
-
-Copyright © 2020 [Marco Biedermann](https://github.com/marcobiedermann).
-
-This project is [MIT](https://github.com/marcobiedermann/codewars/blob/main/LICENSE) licensed.
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+[MIT](LICENSE) © [Marco Biedermann](https://github.com/marcobiedermann)
