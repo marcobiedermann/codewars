@@ -15,7 +15,7 @@ My attempt of solving [Codewars](https://www.codewars.com/) Katas in JavaScript.
 
 ## Setup
 
-Install `depDependencies`.
+Install dependencies.
 
 ```sh
 npm install
