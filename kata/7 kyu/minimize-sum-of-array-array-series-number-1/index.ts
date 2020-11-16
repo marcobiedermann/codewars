@@ -4,12 +4,18 @@ function subtract(a: number, b: number): number {
 
 function minSum(arr: number[]): number {
   const { length } = arr;
+  let total = 0;
 
-  return (
-    arr.sort(subtract).reduce((accumulator, currentValue, index) => {
-      return accumulator + currentValue * arr[length - index - 1];
-    }, 0) / 2
-  );
+  arr.sort(subtract);
+
+  for (let i = 0; i < length / 2; i += 1) {
+    const min = arr[i];
+    const max = arr[length - i - 1];
+
+    total += min * max;
+  }
+
+  return total;
 }
 
 export default minSum;
