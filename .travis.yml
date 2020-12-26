@@ -1,7 +1,0 @@
-language: node_js
-node_js:
-  - 'node'
-  - 'lts/*'
-script:
-  - npm run lint
-  - npm test -- --ci --colors --maxWorkers=4 && npm run report-coverage

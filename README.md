@@ -1,6 +1,6 @@
 # Codewars [![Codewars Badge](https://www.codewars.com/users/marcobiedermann/badges/micro)](https://www.codewars.com/users/marcobiedermann)
 
-[![Build Status](https://img.shields.io/travis/com/marcobiedermann/codewars)](https://travis-ci.com/marcobiedermann/codewars)
+![Build Status](https://github.com/marcobiedermann/codewars/workflows/Node.js%20CI/badge.svg)
 [![codecov](https://img.shields.io/codecov/c/gh/marcobiedermann/codewars)](https://codecov.io/gh/marcobiedermann/codewars)
 [![dependencies Status](https://img.shields.io/david/marcobiedermann/codewars)](https://david-dm.org/marcobiedermann/codewars)
 [![devDependencies Status](https://img.shields.io/david/dev/marcobiedermann/codewars)](https://david-dm.org/marcobiedermann/codewars?type=dev)
