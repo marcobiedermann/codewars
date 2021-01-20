@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 function fibonacci(n: number, cache: number[] = []): number {
   if (cache[n]) {
     return cache[n];
@@ -7,7 +9,9 @@ function fibonacci(n: number, cache: number[] = []): number {
     return 1;
   }
 
-  return fibonacci(n - 1, cache) + fibonacci(n - 2, cache);
+  cache[n] = fibonacci(n - 1, cache) + fibonacci(n - 2, cache);
+
+  return cache[n];
 }
 
 function perimeter(n: number): number {

@@ -1,9 +1,8 @@
 function flyBy(lamps: string, drone: string): string {
-  if (drone.length > lamps.length) {
-    return 'o'.repeat(lamps.length);
-  }
+  const dronePath = drone.split('=').length;
+  const lights = lamps.substring(0, dronePath).replace(/x/g, 'o');
 
-  return lamps.replace('x'.repeat(drone.length), 'o'.repeat(drone.length));
+  return lights + lamps.substring(lights.length, lamps.length);
 }
 
 export default flyBy;
