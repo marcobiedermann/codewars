@@ -10,7 +10,7 @@ const ratings: Ratings = {
   excellent: 20,
 };
 
-function calculateTip(amount: number, rating: string): number | string {
+function calculateTip(amount: number, rating: string): number | 'Rating not recognised' {
   const normalizedRating = rating.toLowerCase();
   const tip = ratings[normalizedRating];
 

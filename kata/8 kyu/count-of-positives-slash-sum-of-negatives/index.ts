@@ -1,5 +1,5 @@
-function countPositivesSumNegatives(input: number[]): number[] {
-  if (!Array.isArray(input) || !input.length) {
+function countPositivesSumNegatives(input: number[] | null): number[] {
+  if (!input || !input.length) {
     return [];
   }
 

@@ -1,11 +1,7 @@
-function minimum(a: number, x: number): number | undefined {
-  for (let i = 0; i < x; i += 1) {
-    if ((a - i) % x === 0 || (a + i) % x === 0) {
-      return i;
-    }
-  }
+function minimum(a: number, x: number): number {
+  const result = a % x;
 
-  return undefined;
+  return Math.min(x - result, result);
 }
 
 export default minimum;

@@ -101,7 +101,7 @@ const fruits = [
   'pineapple',
 ];
 
-function intToDigits(int = 0): number[] {
+function intToDigits(int: number): number[] {
   if (int < 10) {
     return [int];
   }

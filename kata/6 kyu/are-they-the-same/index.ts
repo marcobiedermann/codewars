@@ -2,7 +2,7 @@ function subtract(a: number, b: number): number {
   return a - b;
 }
 
-function comp(array1: number[], array2: number[]): boolean {
+function comp(array1: number[] | null, array2: number[] | null): boolean {
   if (!array1 || !array2) {
     return false;
   }

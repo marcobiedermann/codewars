@@ -11,7 +11,7 @@ function stockList(listOfArt: string[], listOfCat: string[]): string {
       accumulator[category] = 0;
     }
 
-    accumulator[category] += Number(quantity);
+    accumulator[category] += parseInt(quantity, 10);
 
     return accumulator;
   }, {});

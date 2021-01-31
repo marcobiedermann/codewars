@@ -2,7 +2,7 @@ import comp from '.';
 
 describe('comp', () => {
   it('should check if both array are the same with the same multiplicities', () => {
-    expect.assertions(1);
+    expect.assertions(3);
 
     expect(
       comp(
@@ -10,5 +10,7 @@ describe('comp', () => {
         [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19],
       ),
     ).toStrictEqual(true);
+    expect(comp(null, [1])).toStrictEqual(false);
+    expect(comp([1], null)).toStrictEqual(false);
   });
 });

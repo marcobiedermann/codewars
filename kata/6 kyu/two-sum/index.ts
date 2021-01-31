@@ -1,4 +1,4 @@
-function twoSum(numbers: number[], target: number): number[] {
+function twoSum(numbers: number[], target: number): number[] | undefined {
   const { length } = numbers;
   const map = new Map<number, number>();
 
@@ -13,7 +13,7 @@ function twoSum(numbers: number[], target: number): number[] {
     map.set(current, i);
   }
 
-  return [];
+  return undefined;
 }
 
 export default twoSum;
