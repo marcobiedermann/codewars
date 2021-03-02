@@ -13,6 +13,6 @@ Example:
 
 ## Tags
 
-* Data Types
-* Fundamentals
-* Strings
+- Data Types
+- Fundamentals
+- Strings
