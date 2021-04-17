@@ -6,7 +6,8 @@
     "check": "tsc --noEmit",
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "npm run test -- --ci"
   },
   "bin": {
     "@marcobiedermann/codewars": "./bin/index.js"
