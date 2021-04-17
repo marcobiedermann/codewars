@@ -4,8 +4,8 @@
   "description": "My attempt of solving Codewars Katas.",
   "scripts": {
     "check": "tsc --noEmit",
-    "format": "prettier --write .",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
     "test": "jest",
     "test:ci": "npm run test -- --ci"
   },
