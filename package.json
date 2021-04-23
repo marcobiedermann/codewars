@@ -6,6 +6,8 @@
     "check": "tsc --noEmit",
     "format": "prettier --ignore-path .gitignore --write .",
     "lint": "eslint --ignore-path .gitignore '**/*.{js,jsx,ts,tsx}'",
+    "prepare": "husky install",
+    "pretty-quick": "pretty-quick --staged",
     "test": "jest",
     "test:ci": "npm run test -- --ci"
   },
