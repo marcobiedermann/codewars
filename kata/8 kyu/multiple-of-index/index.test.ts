@@ -9,24 +9,7 @@ describe('multipleOfIndex', () => {
     expect(multipleOfIndex([11, -11])).toStrictEqual([-11]);
     expect(
       multipleOfIndex([
-        -56,
-        -85,
-        72,
-        -26,
-        -14,
-        76,
-        -27,
-        72,
-        35,
-        -21,
-        -67,
-        87,
-        0,
-        21,
-        59,
-        27,
-        -92,
-        68,
+        -56, -85, 72, -26, -14, 76, -27, 72, 35, -21, -67, 87, 0, 21, 59, 27, -92, 68,
       ]),
     ).toStrictEqual([-85, 72, 0, 68]);
     expect(multipleOfIndex([28, 38, -44, -99, -13, -54, 77, -51])).toStrictEqual([38, -44, -99]);

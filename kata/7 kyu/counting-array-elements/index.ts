@@ -1,6 +1,4 @@
-function count(
-  array: string[],
-): {
+function count(array: string[]): {
   [k: string]: number;
 } {
   const map = new Map<string, number>();

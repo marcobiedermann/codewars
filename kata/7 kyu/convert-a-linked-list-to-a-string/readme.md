@@ -234,7 +234,6 @@ type(Node), pointer :: oneTwoThree
 
 ```javascript
 '1 -> 2 -> 3 -> null';
-
 ```
 
 ```csharp
@@ -372,7 +371,6 @@ type(Node), pointer :: list
 
 ```javascript
 '0 -> 1 -> 4 -> 9 -> 16 -> null';
-
 ```
 
 ```csharp

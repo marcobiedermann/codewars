@@ -34,7 +34,7 @@ describe('encrypt/decrypt', () => {
 
     expect(encrypt('', 0)).toStrictEqual('');
     expect(decrypt('', 0)).toStrictEqual('');
-    expect(encrypt((null as unknown) as string, 0)).toBeNull();
-    expect(decrypt((null as unknown) as string, 0)).toBeNull();
+    expect(encrypt(null as unknown as string, 0)).toBeNull();
+    expect(decrypt(null as unknown as string, 0)).toBeNull();
   });
 });

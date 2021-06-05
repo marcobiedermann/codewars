@@ -9,22 +9,7 @@ describe('vowelIndices', () => {
     expect(vowelIndices('super')).toStrictEqual([2, 4]);
     expect(vowelIndices('orange')).toStrictEqual([1, 3, 6]);
     expect(vowelIndices('supercalifragilisticexpialidocious')).toStrictEqual([
-      2,
-      4,
-      7,
-      9,
-      12,
-      14,
-      16,
-      19,
-      21,
-      24,
-      25,
-      27,
-      29,
-      31,
-      32,
-      33,
+      2, 4, 7, 9, 12, 14, 16, 19, 21, 24, 25, 27, 29, 31, 32, 33,
     ]);
   });
 });
