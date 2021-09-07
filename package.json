@@ -10,8 +10,8 @@
     "lint": "npm run lint:js",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged",
-    "test": "jest --color --runInBand",
-    "test:ci": "npm run test -- --ci"
+    "test": "jest --maxWorkers=50%",
+    "test:ci": "jest --ci --coverage --runInBand"
   },
   "bin": {
     "@marcobiedermann/codewars": "./bin/index.js"
