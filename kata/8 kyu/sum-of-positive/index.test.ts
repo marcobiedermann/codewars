@@ -4,10 +4,10 @@ describe('positiveSum', () => {
   it('should sum all positive numbers', () => {
     expect.assertions(5);
 
-    expect(positiveSum([1, 2, 3, 4, 5])).toStrictEqual(15);
-    expect(positiveSum([1, -2, 3, 4, 5])).toStrictEqual(13);
-    expect(positiveSum([])).toStrictEqual(0);
-    expect(positiveSum([-1, -2, -3, -4, -5])).toStrictEqual(0);
-    expect(positiveSum([-1, 2, 3, 4, -5])).toStrictEqual(9);
+    expect(positiveSum([1, 2, 3, 4, 5])).toBe(15);
+    expect(positiveSum([1, -2, 3, 4, 5])).toBe(13);
+    expect(positiveSum([])).toBe(0);
+    expect(positiveSum([-1, -2, -3, -4, -5])).toBe(0);
+    expect(positiveSum([-1, 2, 3, 4, -5])).toBe(9);
   });
 });

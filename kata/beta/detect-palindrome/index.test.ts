@@ -4,12 +4,12 @@ describe('isPalindrome', () => {
   it('should return boolean if string is palindrome', () => {
     expect.assertions(7);
 
-    expect(isPalindrome('racecar')).toStrictEqual(true);
-    expect(isPalindrome('Civic')).toStrictEqual(true);
-    expect(isPalindrome('Toot!')).toStrictEqual(true);
-    expect(isPalindrome('never odd or even')).toStrictEqual(true);
-    expect(isPalindrome('Not a tub, but a ton')).toStrictEqual(true);
-    expect(isPalindrome('Nope')).toStrictEqual(false);
-    expect(isPalindrome('Not this one')).toStrictEqual(false);
+    expect(isPalindrome('racecar')).toBe(true);
+    expect(isPalindrome('Civic')).toBe(true);
+    expect(isPalindrome('Toot!')).toBe(true);
+    expect(isPalindrome('never odd or even')).toBe(true);
+    expect(isPalindrome('Not a tub, but a ton')).toBe(true);
+    expect(isPalindrome('Nope')).toBe(false);
+    expect(isPalindrome('Not this one')).toBe(false);
   });
 });

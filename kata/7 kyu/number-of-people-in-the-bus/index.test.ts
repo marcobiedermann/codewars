@@ -10,7 +10,7 @@ describe('number', () => {
         [3, 5],
         [5, 8],
       ]),
-    ).toStrictEqual(5);
+    ).toBe(5);
     expect(
       number([
         [3, 0],
@@ -20,7 +20,7 @@ describe('number', () => {
         [6, 1],
         [7, 10],
       ]),
-    ).toStrictEqual(17);
+    ).toBe(17);
     expect(
       number([
         [3, 0],
@@ -30,6 +30,6 @@ describe('number', () => {
         [6, 1],
         [7, 8],
       ]),
-    ).toStrictEqual(21);
+    ).toBe(21);
   });
 });

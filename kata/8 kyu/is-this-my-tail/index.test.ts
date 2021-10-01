@@ -4,8 +4,8 @@ describe('assertEquals', () => {
   it('should check if character is last in string', () => {
     expect.assertions(3);
 
-    expect(correctTail('Fox', 'x')).toStrictEqual(true);
-    expect(correctTail('Rhino', 'o')).toStrictEqual(true);
-    expect(correctTail('Meerkat', 't')).toStrictEqual(true);
+    expect(correctTail('Fox', 'x')).toBe(true);
+    expect(correctTail('Rhino', 'o')).toBe(true);
+    expect(correctTail('Meerkat', 't')).toBe(true);
   });
 });

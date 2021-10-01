@@ -4,15 +4,15 @@ describe('validateUsr', () => {
   it('should validate username', () => {
     expect.assertions(10);
 
-    expect(validateUsr('asddsa')).toStrictEqual(true);
-    expect(validateUsr('a')).toStrictEqual(false);
-    expect(validateUsr('Hass')).toStrictEqual(false);
-    expect(validateUsr('Hasd_12assssssasasasasasaasasasasas')).toStrictEqual(false);
-    expect(validateUsr('')).toStrictEqual(false);
-    expect(validateUsr('____')).toStrictEqual(true);
-    expect(validateUsr('012')).toStrictEqual(false);
-    expect(validateUsr('p1pp1')).toStrictEqual(true);
-    expect(validateUsr('asd43 34')).toStrictEqual(false);
-    expect(validateUsr('asd43_34')).toStrictEqual(true);
+    expect(validateUsr('asddsa')).toBe(true);
+    expect(validateUsr('a')).toBe(false);
+    expect(validateUsr('Hass')).toBe(false);
+    expect(validateUsr('Hasd_12assssssasasasasasaasasasasas')).toBe(false);
+    expect(validateUsr('')).toBe(false);
+    expect(validateUsr('____')).toBe(true);
+    expect(validateUsr('012')).toBe(false);
+    expect(validateUsr('p1pp1')).toBe(true);
+    expect(validateUsr('asd43 34')).toBe(false);
+    expect(validateUsr('asd43_34')).toBe(true);
   });
 });

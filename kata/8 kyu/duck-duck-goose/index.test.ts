@@ -7,15 +7,15 @@ describe('duckDuckGoose', () => {
   it('should find the correct goose', () => {
     expect.assertions(10);
 
-    expect(duckDuckGoose(players, 1)).toStrictEqual('a');
-    expect(duckDuckGoose(players, 3)).toStrictEqual('c');
-    expect(duckDuckGoose(players, 10)).toStrictEqual('z');
-    expect(duckDuckGoose(players, 20)).toStrictEqual('z');
-    expect(duckDuckGoose(players, 30)).toStrictEqual('z');
-    expect(duckDuckGoose(players, 18)).toStrictEqual('g');
-    expect(duckDuckGoose(players, 28)).toStrictEqual('g');
-    expect(duckDuckGoose(players, 12)).toStrictEqual('b');
-    expect(duckDuckGoose(players, 2)).toStrictEqual('b');
-    expect(duckDuckGoose(players, 7)).toStrictEqual('f');
+    expect(duckDuckGoose(players, 1)).toBe('a');
+    expect(duckDuckGoose(players, 3)).toBe('c');
+    expect(duckDuckGoose(players, 10)).toBe('z');
+    expect(duckDuckGoose(players, 20)).toBe('z');
+    expect(duckDuckGoose(players, 30)).toBe('z');
+    expect(duckDuckGoose(players, 18)).toBe('g');
+    expect(duckDuckGoose(players, 28)).toBe('g');
+    expect(duckDuckGoose(players, 12)).toBe('b');
+    expect(duckDuckGoose(players, 2)).toBe('b');
+    expect(duckDuckGoose(players, 7)).toBe('f');
   });
 });

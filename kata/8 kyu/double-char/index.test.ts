@@ -4,11 +4,11 @@ describe('doubleChar', () => {
   it('should repeat each character in string', () => {
     expect.assertions(6);
 
-    expect(doubleChar('abcd')).toStrictEqual('aabbccdd');
-    expect(doubleChar('Adidas')).toStrictEqual('AAddiiddaass');
-    expect(doubleChar('1337')).toStrictEqual('11333377');
-    expect(doubleChar('illuminati')).toStrictEqual('iilllluummiinnaattii');
-    expect(doubleChar('123456')).toStrictEqual('112233445566');
-    expect(doubleChar('%^&*(')).toStrictEqual('%%^^&&**((');
+    expect(doubleChar('abcd')).toBe('aabbccdd');
+    expect(doubleChar('Adidas')).toBe('AAddiiddaass');
+    expect(doubleChar('1337')).toBe('11333377');
+    expect(doubleChar('illuminati')).toBe('iilllluummiinnaattii');
+    expect(doubleChar('123456')).toBe('112233445566');
+    expect(doubleChar('%^&*(')).toBe('%%^^&&**((');
   });
 });

@@ -4,13 +4,13 @@ describe('getDrinkByProfession', () => {
   it('should return profession by drink', () => {
     expect.assertions(8);
 
-    expect(getDrinkByProfession('jabrOni')).toStrictEqual('Patron Tequila');
-    expect(getDrinkByProfession('scHOOl counselor')).toStrictEqual('Anything with Alcohol');
-    expect(getDrinkByProfession('prOgramMer')).toStrictEqual('Hipster Craft Beer');
-    expect(getDrinkByProfession('bike ganG member')).toStrictEqual('Moonshine');
-    expect(getDrinkByProfession('poLiTiCian')).toStrictEqual('Your tax dollars');
-    expect(getDrinkByProfession('rapper')).toStrictEqual('Cristal');
-    expect(getDrinkByProfession('pundit')).toStrictEqual('Beer');
-    expect(getDrinkByProfession('Pug')).toStrictEqual('Beer');
+    expect(getDrinkByProfession('jabrOni')).toBe('Patron Tequila');
+    expect(getDrinkByProfession('scHOOl counselor')).toBe('Anything with Alcohol');
+    expect(getDrinkByProfession('prOgramMer')).toBe('Hipster Craft Beer');
+    expect(getDrinkByProfession('bike ganG member')).toBe('Moonshine');
+    expect(getDrinkByProfession('poLiTiCian')).toBe('Your tax dollars');
+    expect(getDrinkByProfession('rapper')).toBe('Cristal');
+    expect(getDrinkByProfession('pundit')).toBe('Beer');
+    expect(getDrinkByProfession('Pug')).toBe('Beer');
   });
 });

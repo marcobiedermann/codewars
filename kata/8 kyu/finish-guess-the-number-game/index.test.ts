@@ -11,7 +11,7 @@ describe('guesser', () => {
     guesser.guess(10);
     guesser.guess(10);
 
-    expect(guesser.guess(10)).toStrictEqual(true);
+    expect(guesser.guess(10)).toBe(true);
   });
 
   it('wrong guess should return false', () => {
@@ -21,7 +21,7 @@ describe('guesser', () => {
 
     guesser.guess(1);
 
-    expect(guesser.guess(1)).toStrictEqual(false);
+    expect(guesser.guess(1)).toBe(false);
   });
 
   it('lives ran out should throw', () => {

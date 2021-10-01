@@ -4,8 +4,8 @@ describe('howManyLightsabersDoYouOwn', () => {
   it('should return number of lightsabers', () => {
     expect.assertions(3);
 
-    expect(howManyLightsabersDoYouOwn()).toStrictEqual(0);
-    expect(howManyLightsabersDoYouOwn('Adam')).toStrictEqual(0);
-    expect(howManyLightsabersDoYouOwn('Zach')).toStrictEqual(18);
+    expect(howManyLightsabersDoYouOwn()).toBe(0);
+    expect(howManyLightsabersDoYouOwn('Adam')).toBe(0);
+    expect(howManyLightsabersDoYouOwn('Zach')).toBe(18);
   });
 });

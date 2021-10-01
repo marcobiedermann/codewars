@@ -4,9 +4,9 @@ describe('solve', () => {
   it('should fix string case', () => {
     expect.assertions(4);
 
-    expect(solve('code')).toStrictEqual('code');
-    expect(solve('CODe')).toStrictEqual('CODE');
-    expect(solve('COde')).toStrictEqual('code');
-    expect(solve('Code')).toStrictEqual('code');
+    expect(solve('code')).toBe('code');
+    expect(solve('CODe')).toBe('CODE');
+    expect(solve('COde')).toBe('code');
+    expect(solve('Code')).toBe('code');
   });
 });

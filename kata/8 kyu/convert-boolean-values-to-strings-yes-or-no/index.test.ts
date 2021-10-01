@@ -4,7 +4,7 @@ describe('boolToWord', () => {
   it('should convert boolean to word', () => {
     expect.assertions(2);
 
-    expect(boolToWord(true)).toStrictEqual('Yes');
-    expect(boolToWord(false)).toStrictEqual('No');
+    expect(boolToWord(true)).toBe('Yes');
+    expect(boolToWord(false)).toBe('No');
   });
 });

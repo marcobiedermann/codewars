@@ -4,8 +4,8 @@ describe('capitalizeWord', () => {
   it('should capitalize word', () => {
     expect.assertions(3);
 
-    expect(capitalizeWord('word')).toStrictEqual('Word');
-    expect(capitalizeWord('i')).toStrictEqual('I');
-    expect(capitalizeWord('glasswear')).toStrictEqual('Glasswear');
+    expect(capitalizeWord('word')).toBe('Word');
+    expect(capitalizeWord('i')).toBe('I');
+    expect(capitalizeWord('glasswear')).toBe('Glasswear');
   });
 });

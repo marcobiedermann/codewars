@@ -18,7 +18,7 @@ describe('cakes', () => {
           milk: 200,
         },
       ),
-    ).toStrictEqual(2);
+    ).toBe(2);
     expect(
       cakes(
         {
@@ -34,6 +34,6 @@ describe('cakes', () => {
           milk: 2000,
         },
       ),
-    ).toStrictEqual(0);
+    ).toBe(0);
   });
 });

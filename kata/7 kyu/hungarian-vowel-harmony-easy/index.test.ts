@@ -4,14 +4,14 @@ describe('dative', () => {
   it('should return the valid form of a valid Hungarian word', () => {
     expect.assertions(9);
 
-    expect(dative('ablak')).toStrictEqual('ablaknak');
-    expect(dative('tükör')).toStrictEqual('tükörnek');
-    expect(dative('keret')).toStrictEqual('keretnek');
-    expect(dative('otthon')).toStrictEqual('otthonnak');
-    expect(dative('virág')).toStrictEqual('virágnak');
-    expect(dative('tett')).toStrictEqual('tettnek');
-    expect(dative('rokkant')).toStrictEqual('rokkantnak');
-    expect(dative('rossz')).toStrictEqual('rossznak');
-    expect(dative('gonosz')).toStrictEqual('gonosznak');
+    expect(dative('ablak')).toBe('ablaknak');
+    expect(dative('tükör')).toBe('tükörnek');
+    expect(dative('keret')).toBe('keretnek');
+    expect(dative('otthon')).toBe('otthonnak');
+    expect(dative('virág')).toBe('virágnak');
+    expect(dative('tett')).toBe('tettnek');
+    expect(dative('rokkant')).toBe('rokkantnak');
+    expect(dative('rossz')).toBe('rossznak');
+    expect(dative('gonosz')).toBe('gonosznak');
   });
 });

@@ -4,12 +4,12 @@ describe('greet', () => {
   it('is it a function?', () => {
     expect.assertions(1);
 
-    expect(typeof greet).toStrictEqual('function');
+    expect(typeof greet).toBe('function');
   });
 
   it('correct return-value?', () => {
     expect.assertions(1);
 
-    expect(greet()).toStrictEqual('hello world!');
+    expect(greet()).toBe('hello world!');
   });
 });

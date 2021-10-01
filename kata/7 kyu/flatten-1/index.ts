@@ -1,4 +1,4 @@
-function flatten(arr: any): any {
+function flatten(arr: any[]): any[] {
   return [].concat(...arr);
 }
 

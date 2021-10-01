@@ -6,7 +6,7 @@ describe('findNeedle', () => {
 
     expect(
       findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]),
-    ).toStrictEqual('found the needle at position 3');
+    ).toBe('found the needle at position 3');
     expect(
       findNeedle([
         '283497238987234',
@@ -17,7 +17,7 @@ describe('findNeedle', () => {
         'needle',
         'something somebody lost a while ago',
       ]),
-    ).toStrictEqual('found the needle at position 5');
+    ).toBe('found the needle at position 5');
     expect(
       findNeedle([
         1,
@@ -65,6 +65,6 @@ describe('findNeedle', () => {
         45,
         54,
       ]),
-    ).toStrictEqual('found the needle at position 30');
+    ).toBe('found the needle at position 30');
   });
 });

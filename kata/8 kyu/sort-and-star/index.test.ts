@@ -6,7 +6,7 @@ describe('twoSort', () => {
 
     expect(
       twoSort(['bitcoin', 'take', 'over', 'the', 'world', 'maybe', 'who', 'knows', 'perhaps']),
-    ).toStrictEqual('b***i***t***c***o***i***n');
+    ).toBe('b***i***t***c***o***i***n');
     expect(
       twoSort([
         'turns',
@@ -22,6 +22,6 @@ describe('twoSort', () => {
         'basic',
         'ones',
       ]),
-    ).toStrictEqual('a***r***e');
+    ).toBe('a***r***e');
   });
 });

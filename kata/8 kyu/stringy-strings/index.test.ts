@@ -4,13 +4,13 @@ describe('stringy', () => {
   it('should return a string', () => {
     expect.assertions(1);
 
-    expect(typeof stringy(3)).toStrictEqual('string');
+    expect(typeof stringy(3)).toBe('string');
   });
 
   it('should start with a 1', () => {
     expect.assertions(1);
 
-    expect(stringy(3)[0]).toStrictEqual('1');
+    expect(stringy(3)[0]).toBe('1');
   });
 
   it('should have the correct length', () => {

@@ -4,8 +4,8 @@ describe('greet', () => {
   it('should translate `Welcome`', () => {
     expect.assertions(3);
 
-    expect(greet('english')).toStrictEqual('Welcome');
-    expect(greet('dutch')).toStrictEqual('Welkom');
-    expect(greet('IP_ADDRESS_INVALID')).toStrictEqual('Welcome');
+    expect(greet('english')).toBe('Welcome');
+    expect(greet('dutch')).toBe('Welkom');
+    expect(greet('IP_ADDRESS_INVALID')).toBe('Welcome');
   });
 });

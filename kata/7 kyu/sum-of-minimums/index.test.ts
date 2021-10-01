@@ -10,7 +10,7 @@ describe('sumOfMinimums', () => {
         [6, 3, 5, 4, 3],
         [5, 8, 7, 4, 5],
       ]),
-    ).toStrictEqual(9);
+    ).toBe(9);
     expect(
       sumOfMinimums([
         [11, 12, 14, 54],
@@ -18,6 +18,6 @@ describe('sumOfMinimums', () => {
         [7, 9, 4, 3],
         [9, 8, 6, 7],
       ]),
-    ).toStrictEqual(76);
+    ).toBe(76);
   });
 });

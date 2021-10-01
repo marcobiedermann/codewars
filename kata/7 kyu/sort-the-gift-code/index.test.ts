@@ -4,8 +4,8 @@ describe('sortGiftCode', () => {
   it('should sort letters in string', () => {
     expect.assertions(3);
 
-    expect(sortGiftCode('abcdef')).toStrictEqual('abcdef');
-    expect(sortGiftCode('pqksuvy')).toStrictEqual('kpqsuvy');
-    expect(sortGiftCode('zyxwvutsrqponmlkjihgfedcba')).toStrictEqual('abcdefghijklmnopqrstuvwxyz');
+    expect(sortGiftCode('abcdef')).toBe('abcdef');
+    expect(sortGiftCode('pqksuvy')).toBe('kpqsuvy');
+    expect(sortGiftCode('zyxwvutsrqponmlkjihgfedcba')).toBe('abcdefghijklmnopqrstuvwxyz');
   });
 });

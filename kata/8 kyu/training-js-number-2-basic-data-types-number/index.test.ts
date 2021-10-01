@@ -4,10 +4,10 @@ describe('equal', () => {
   it('should equal to 100', () => {
     expect.assertions(5);
 
-    expect(equal1()).toStrictEqual(100);
-    expect(equal2()).toStrictEqual(100);
-    expect(equal3()).toStrictEqual(100);
-    expect(equal4()).toStrictEqual(100);
-    expect(equal5()).toStrictEqual(100);
+    expect(equal1()).toBe(100);
+    expect(equal2()).toBe(100);
+    expect(equal3()).toBe(100);
+    expect(equal4()).toBe(100);
+    expect(equal5()).toBe(100);
   });
 });

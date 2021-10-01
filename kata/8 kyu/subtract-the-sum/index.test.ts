@@ -4,7 +4,7 @@ describe('subtractSum', () => {
   it('should subtract the sum', () => {
     expect.assertions(2);
 
-    expect(SubtractSum(10)).toStrictEqual('apple');
-    expect(SubtractSum(325)).toStrictEqual('apple');
+    expect(SubtractSum(10)).toBe('apple');
+    expect(SubtractSum(325)).toBe('apple');
   });
 });

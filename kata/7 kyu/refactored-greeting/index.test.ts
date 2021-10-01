@@ -6,7 +6,7 @@ describe('person', () => {
 
     const person = new Person('Jack');
 
-    expect(person.name).toStrictEqual('Jack');
+    expect(person.name).toBe('Jack');
   });
 
   it('should greet that person', () => {
@@ -14,6 +14,6 @@ describe('person', () => {
 
     const person = new Person('Jack');
 
-    expect(person.greet('Jill')).toStrictEqual('Hello Jill, my name is Jack');
+    expect(person.greet('Jill')).toBe('Hello Jill, my name is Jack');
   });
 });

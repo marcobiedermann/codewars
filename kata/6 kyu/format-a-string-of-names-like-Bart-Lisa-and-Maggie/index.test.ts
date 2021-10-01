@@ -12,12 +12,12 @@ describe('list', () => {
         { name: 'Homer' },
         { name: 'Marge' },
       ]),
-    ).toStrictEqual('Bart, Lisa, Maggie, Homer & Marge');
-    expect(list([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }])).toStrictEqual(
+    ).toBe('Bart, Lisa, Maggie, Homer & Marge');
+    expect(list([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }])).toBe(
       'Bart, Lisa & Maggie',
     );
-    expect(list([{ name: 'Bart' }, { name: 'Lisa' }])).toStrictEqual('Bart & Lisa');
-    expect(list([{ name: 'Bart' }])).toStrictEqual('Bart');
-    expect(list([])).toStrictEqual('');
+    expect(list([{ name: 'Bart' }, { name: 'Lisa' }])).toBe('Bart & Lisa');
+    expect(list([{ name: 'Bart' }])).toBe('Bart');
+    expect(list([])).toBe('');
   });
 });

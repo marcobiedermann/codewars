@@ -4,11 +4,11 @@ describe('triangle', () => {
   it('should', () => {
     expect.assertions(6);
 
-    expect(triangle('GB')).toStrictEqual('R');
-    expect(triangle('RRR')).toStrictEqual('R');
-    expect(triangle('RGBG')).toStrictEqual('B');
-    expect(triangle('RBRGBRB')).toStrictEqual('G');
-    expect(triangle('RBRGBRBGGRRRBGBBBGG')).toStrictEqual('G');
-    expect(triangle('B')).toStrictEqual('B');
+    expect(triangle('GB')).toBe('R');
+    expect(triangle('RRR')).toBe('R');
+    expect(triangle('RGBG')).toBe('B');
+    expect(triangle('RBRGBRB')).toBe('G');
+    expect(triangle('RBRGBRBGGRRRBGBBBGG')).toBe('G');
+    expect(triangle('B')).toBe('B');
   });
 });

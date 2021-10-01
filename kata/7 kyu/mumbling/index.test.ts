@@ -4,19 +4,19 @@ describe('accum', () => {
   it('should mumble string', () => {
     expect.assertions(5);
 
-    expect(accum('ZpglnRxqenU')).toStrictEqual(
+    expect(accum('ZpglnRxqenU')).toBe(
       'Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu',
     );
-    expect(accum('NyffsGeyylB')).toStrictEqual(
+    expect(accum('NyffsGeyylB')).toBe(
       'N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb',
     );
-    expect(accum('MjtkuBovqrU')).toStrictEqual(
+    expect(accum('MjtkuBovqrU')).toBe(
       'M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu',
     );
-    expect(accum('EvidjUnokmM')).toStrictEqual(
+    expect(accum('EvidjUnokmM')).toBe(
       'E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm',
     );
-    expect(accum('HbideVbxncC')).toStrictEqual(
+    expect(accum('HbideVbxncC')).toBe(
       'H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc',
     );
   });

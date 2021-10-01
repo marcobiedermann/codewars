@@ -4,7 +4,7 @@ describe('validBraces', () => {
   it('should validate braces', () => {
     expect.assertions(2);
 
-    expect(validBraces('()')).toStrictEqual(true);
-    expect(validBraces('[(])')).toStrictEqual(false);
+    expect(validBraces('()')).toBe(true);
+    expect(validBraces('[(])')).toBe(false);
   });
 });

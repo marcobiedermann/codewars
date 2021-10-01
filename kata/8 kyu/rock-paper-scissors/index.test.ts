@@ -22,8 +22,8 @@ describe('rps', () => {
   it('draw', () => {
     expect.assertions(3);
 
-    expect(rps('rock', 'rock')).toStrictEqual('Draw!');
-    expect(rps('scissors', 'scissors')).toStrictEqual('Draw!');
-    expect(rps('paper', 'paper')).toStrictEqual('Draw!');
+    expect(rps('rock', 'rock')).toBe('Draw!');
+    expect(rps('scissors', 'scissors')).toBe('Draw!');
+    expect(rps('paper', 'paper')).toBe('Draw!');
   });
 });

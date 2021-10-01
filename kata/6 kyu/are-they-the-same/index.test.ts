@@ -9,8 +9,8 @@ describe('comp', () => {
         [121, 144, 19, 161, 19, 144, 19, 11],
         [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19],
       ),
-    ).toStrictEqual(true);
-    expect(comp(null, [1])).toStrictEqual(false);
-    expect(comp([1], null)).toStrictEqual(false);
+    ).toBe(true);
+    expect(comp(null, [1])).toBe(false);
+    expect(comp([1], null)).toBe(false);
   });
 });

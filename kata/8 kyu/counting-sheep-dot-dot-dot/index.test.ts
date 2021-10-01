@@ -31,6 +31,6 @@ describe('countSheeps', () => {
         true,
         true,
       ]),
-    ).toStrictEqual(17);
+    ).toBe(17);
   });
 });

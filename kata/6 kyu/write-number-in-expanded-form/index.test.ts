@@ -4,8 +4,8 @@ describe('expandedForm', () => {
   it('should return number in expanded form', () => {
     expect.assertions(3);
 
-    expect(expandedForm(12)).toStrictEqual('10 + 2');
-    expect(expandedForm(42)).toStrictEqual('40 + 2');
-    expect(expandedForm(70304)).toStrictEqual('70000 + 300 + 4');
+    expect(expandedForm(12)).toBe('10 + 2');
+    expect(expandedForm(42)).toBe('40 + 2');
+    expect(expandedForm(70304)).toBe('70000 + 300 + 4');
   });
 });

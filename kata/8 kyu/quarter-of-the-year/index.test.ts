@@ -4,8 +4,8 @@ describe('quarterOf', () => {
   it('should return the quarter of month', () => {
     expect.assertions(3);
 
-    expect(quarterOf(3)).toStrictEqual(1);
-    expect(quarterOf(8)).toStrictEqual(3);
-    expect(quarterOf(11)).toStrictEqual(4);
+    expect(quarterOf(3)).toBe(1);
+    expect(quarterOf(8)).toBe(3);
+    expect(quarterOf(11)).toBe(4);
   });
 });
