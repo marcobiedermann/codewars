@@ -22,9 +22,7 @@ function numPrimorial(n: number): number {
     index += 1;
   }
 
-  return primes.reduce((accumulator, currentValue) => {
-    return accumulator * currentValue;
-  }, 1);
+  return primes.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
 }
 
 export default numPrimorial;

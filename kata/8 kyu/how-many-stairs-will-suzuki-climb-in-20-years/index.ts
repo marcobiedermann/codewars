@@ -7,11 +7,7 @@ function sum(numbers: number[]): number {
 }
 
 function stairsIn20(s: number[][]): number {
-  return (
-    s.reduce((accumulatr, currentValue) => {
-      return accumulatr + sum(currentValue);
-    }, 0) * 20
-  );
+  return s.reduce((accumulatr, currentValue) => accumulatr + sum(currentValue), 0) * 20;
 }
 
 export default stairsIn20;

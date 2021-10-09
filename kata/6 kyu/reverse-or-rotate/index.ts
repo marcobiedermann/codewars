@@ -30,9 +30,10 @@ function revrot(str: string, sz: number): string {
   return chunks
     .filter((chunk) => chunk.length === sz)
     .map((chunk) => {
-      const sum = [...chunk].reduce((accumulator, currentValue) => {
-        return accumulator + parseInt(currentValue, 10) ** 3;
-      }, 0);
+      const sum = [...chunk].reduce(
+        (accumulator, currentValue) => accumulator + parseInt(currentValue, 10) ** 3,
+        0,
+      );
 
       return isEven(sum) ? reverse(chunk) : rotateLeft(chunk);
     })
