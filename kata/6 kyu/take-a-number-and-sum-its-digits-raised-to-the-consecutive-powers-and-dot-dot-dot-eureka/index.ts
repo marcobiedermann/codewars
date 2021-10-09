@@ -12,9 +12,10 @@ function sumDigPow(a: number, b: number): number[] {
   for (let i = a; i <= b; i += 1) {
     const digits = intToDigits(i);
 
-    const sum = digits.reduce((accumulator, currentValue, index) => {
-      return accumulator + currentValue ** (index + 1);
-    }, 0);
+    const sum = digits.reduce(
+      (accumulator, currentValue, index) => accumulator + currentValue ** (index + 1),
+      0,
+    );
 
     if (sum === i) {
       result.push(i);

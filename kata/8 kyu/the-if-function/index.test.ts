@@ -8,10 +8,10 @@ describe('_if', () => {
 
     _if(
       true,
-      function () {
+      () => {
         console.log('True');
       },
-      function () {
+      () => {
         console.log('false');
       },
     );

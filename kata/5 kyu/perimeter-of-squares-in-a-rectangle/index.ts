@@ -17,9 +17,10 @@ function fibonacci(n: number, cache: number[] = []): number {
 function perimeter(n: number): number {
   return (
     4 *
-    Array.from({ length: n + 1 }).reduce((accumulator: number, _currentValue, index) => {
-      return accumulator + fibonacci(index + 1);
-    }, 0)
+    Array.from({ length: n + 1 }).reduce(
+      (accumulator: number, _currentValue, index) => accumulator + fibonacci(index + 1),
+      0,
+    )
   );
 }
 
