@@ -10,7 +10,7 @@
     "lint": "npm run lint:js",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged",
-    "test": "jest --maxWorkers=50%",
+    "test": "jest --maxWorkers=50% --watch",
     "test:ci": "jest --ci --coverage --runInBand"
   },
   "bin": {
