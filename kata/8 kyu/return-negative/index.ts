@@ -1,5 +1,9 @@
 function makeNegative(num: number): number {
-  return Math.abs(num) * -1;
+  if (num <= 0) {
+    return num;
+  }
+
+  return num * -1;
 }
 
 export default makeNegative;
