@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-function filter_list(l: number[]): number[] {
+function filter_list(l: any[]): number[] {
   return l.filter(Number.isInteger);
 }
 
