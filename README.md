@@ -3,7 +3,7 @@
 [![codecov](https://img.shields.io/codecov/c/gh/marcobiedermann/codewars)](https://codecov.io/gh/marcobiedermann/codewars)
 [![dependencies Status](https://img.shields.io/david/marcobiedermann/codewars)](https://david-dm.org/marcobiedermann/codewars)
 [![devDependencies Status](https://img.shields.io/david/dev/marcobiedermann/codewars)](https://david-dm.org/marcobiedermann/codewars?type=dev)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/marcobiedermann/codewars/CI)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/marcobiedermann/codewars/CI)](https://github.com/marcobiedermann/codewars/actions/workflows/ci.yml)
 
 My attempt of solving [Codewars](https://www.codewars.com/) Katas in JavaScript.
 
