@@ -18,6 +18,4 @@ function getStrings(city: string): string {
   return result.join(',');
 }
 
-getStrings('Chicago'); // ?
-
 export default getStrings;
