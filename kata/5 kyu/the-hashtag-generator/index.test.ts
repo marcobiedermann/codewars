@@ -16,7 +16,7 @@ describe('generateHashtag', () => {
         'Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat',
       ),
     ).toBe(false);
-    expect(generateHashtag('a'.repeat(139))).toStrictEqual(`#A${'a'.repeat(138)}`);
+    expect(generateHashtag('a'.repeat(139))).toBe(`#A${'a'.repeat(138)}`);
     expect(generateHashtag('a'.repeat(140))).toBe(false);
   });
 });

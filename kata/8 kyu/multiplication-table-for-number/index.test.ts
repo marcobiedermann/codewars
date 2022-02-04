@@ -4,7 +4,7 @@ describe('multiTable', () => {
   it('should return a multiplication table for `number`', () => {
     expect.assertions(2);
 
-    expect(multiTable(5)).toStrictEqual(`1 * 5 = 5
+    expect(multiTable(5)).toBe(`1 * 5 = 5
 2 * 5 = 10
 3 * 5 = 15
 4 * 5 = 20
@@ -14,7 +14,7 @@ describe('multiTable', () => {
 8 * 5 = 40
 9 * 5 = 45
 10 * 5 = 50`);
-    expect(multiTable(1)).toStrictEqual(`1 * 1 = 1
+    expect(multiTable(1)).toBe(`1 * 1 = 1
 2 * 1 = 2
 3 * 1 = 3
 4 * 1 = 4
