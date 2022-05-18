@@ -1,7 +1,6 @@
 # Codewars [![Codewars Badge](https://www.codewars.com/users/marcobiedermann/badges/micro)](https://www.codewars.com/users/marcobiedermann)
 
 [![codecov](https://img.shields.io/codecov/c/gh/marcobiedermann/codewars)](https://codecov.io/gh/marcobiedermann/codewars)
-[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/marcobiedermann/codewars)](https://libraries.io/github/marcobiedermann/codewars)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/marcobiedermann/codewars/CI)](https://github.com/marcobiedermann/codewars/actions/workflows/ci.yml)
 
 My attempt of solving [Codewars](https://www.codewars.com/) Katas in JavaScript.
