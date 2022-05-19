@@ -2,6 +2,7 @@
   "name": "@marcobiedermann/codewars",
   "version": "1.0.0",
   "description": "My attempt of solving Codewars Katas.",
+  "type": "module",
   "scripts": {
     "build": "npm run check",
     "check": "tsc --noEmit",
@@ -14,7 +15,7 @@
     "test:ci": "jest --ci --coverage"
   },
   "bin": {
-    "@marcobiedermann/codewars": "./bin/index.js"
+    "@marcobiedermann/codewars": "./bin/index.mjs"
   },
   "repository": {
     "type": "git",
@@ -40,7 +41,7 @@
   "devDependencies": {
     "@swc/jest": "^0.2.20",
     "@types/jest": "^27.4.1",
-    "@types/node": "^17.0.30",
+    "@types/node": "^17.0.35",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "^8.14.0",
