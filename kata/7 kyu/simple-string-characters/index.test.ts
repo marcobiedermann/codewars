@@ -2,8 +2,6 @@ import solve from '.';
 
 describe('solve', () => {
   it('should count character group', () => {
-    expect.assertions(6);
-
     expect(solve('Codewars@codewars123.com')).toStrictEqual([1, 18, 3, 2]);
     expect(solve('bgA5<1d-tOwUZTS8yQ')).toStrictEqual([7, 6, 3, 2]);
     expect(solve('P*K4%>mQUDaG$h=cx2?.Czt7!Zn16p@5H')).toStrictEqual([9, 9, 6, 9]);

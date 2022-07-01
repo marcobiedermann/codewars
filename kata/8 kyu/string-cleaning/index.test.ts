@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import stringClean from '.';
 
 describe('stringClean', () => {
   it('should remove numbers from string', () => {
-    expect.assertions(11);
-
     expect(stringClean('')).toBe('');
     expect(stringClean('! !')).toBe('! !');
     expect(stringClean('123456789')).toBe('');

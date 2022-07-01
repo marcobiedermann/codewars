@@ -2,8 +2,6 @@ import calculateDamage from '.';
 
 describe('calculateDamage', () => {
   it('should calculate move damage', () => {
-    expect.assertions(7);
-
     expect(calculateDamage('fire', 'water', 100, 100)).toBe(25);
     expect(calculateDamage('grass', 'water', 100, 100)).toBe(100);
     expect(calculateDamage('electric', 'fire', 100, 100)).toBe(50);

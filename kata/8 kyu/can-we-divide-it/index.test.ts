@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import isDivideBy from '.';
 
 describe('isDivideBy', () => {
   it('should check if number is divisible by arguments', () => {
-    expect.assertions(6);
-
     expect(isDivideBy(-12, 2, -6)).toBe(true);
     expect(isDivideBy(-12, 2, -5)).toBe(false);
     expect(isDivideBy(45, 1, 6)).toBe(false);

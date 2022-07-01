@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import wordPattern from '.';
 
 describe('wordPattern', () => {
   it('should return the word pattern for a given word', () => {
-    expect.assertions(4);
-
     expect(wordPattern('hello')).toBe('0.1.2.2.3');
     expect(wordPattern('heLlo')).toBe('0.1.2.2.3');
     expect(wordPattern('helLo')).toBe('0.1.2.2.3');

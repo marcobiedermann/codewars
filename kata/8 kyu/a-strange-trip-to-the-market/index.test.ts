@@ -2,8 +2,6 @@ import isLockNessMonster from '.';
 
 describe('isLockNessMonster', () => {
   it('should', () => {
-    expect.assertions(2);
-
     expect(
       isLockNessMonster('Your girlscout cookies are ready to ship. Your total comes to tree fiddy'),
     ).toBe(true);

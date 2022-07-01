@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import saleHotdogs from '.';
 
 describe('saleHotdogs', () => {
   it('should', () => {
-    expect.assertions(6);
-
     expect(saleHotdogs(1)).toBe(100);
     expect(saleHotdogs(4)).toBe(400);
     expect(saleHotdogs(5)).toBe(475);

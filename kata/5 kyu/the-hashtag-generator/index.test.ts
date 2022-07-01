@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import generateHashtag from '.';
 
 describe('generateHashtag', () => {
   it('should generate a hashtag', () => {
-    expect.assertions(10);
-
     expect(generateHashtag('')).toBe(false);
     expect(generateHashtag(' '.repeat(200))).toBe(false);
     expect(generateHashtag('Do We have A Hashtag')).toBe('#DoWeHaveAHashtag');

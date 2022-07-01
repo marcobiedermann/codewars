@@ -2,8 +2,6 @@ import triangle from '.';
 
 describe('triangle', () => {
   it('should', () => {
-    expect.assertions(6);
-
     expect(triangle('GB')).toBe('R');
     expect(triangle('RRR')).toBe('R');
     expect(triangle('RGBG')).toBe('B');

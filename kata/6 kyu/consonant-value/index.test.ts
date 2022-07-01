@@ -2,8 +2,6 @@ import solve from '.';
 
 describe('solve', () => {
   it('should', () => {
-    expect.assertions(7);
-
     expect(solve('zodiac')).toBe(26);
     expect(solve('chruschtschov')).toBe(80);
     expect(solve('khrushchev')).toBe(38);

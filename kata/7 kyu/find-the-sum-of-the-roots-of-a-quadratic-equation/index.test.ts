@@ -2,8 +2,6 @@ import roots from '.';
 
 describe('roots', () => {
   it('should', () => {
-    expect.assertions(45);
-
     expect(roots(1, -35, -23)).toBe(35);
     expect(roots(6, 0, -24)).toBe(0);
     expect(roots(-5, 21, 0)).toBe(4.2);

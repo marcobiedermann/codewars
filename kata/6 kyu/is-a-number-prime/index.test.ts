@@ -2,8 +2,6 @@ import isPrime from '.';
 
 describe('isPrime', () => {
   it('basic tests', () => {
-    expect.assertions(6);
-
     expect(isPrime(0)).toBe(false);
     expect(isPrime(1)).toBe(false);
     expect(isPrime(2)).toBe(true);
@@ -13,8 +11,6 @@ describe('isPrime', () => {
   });
 
   it('test prime', () => {
-    expect.assertions(5);
-
     expect(isPrime(3)).toBe(true);
     expect(isPrime(5)).toBe(true);
     expect(isPrime(7)).toBe(true);
@@ -23,8 +19,6 @@ describe('isPrime', () => {
   });
 
   it('test not prime', () => {
-    expect.assertions(8);
-
     expect(isPrime(4)).toBe(false);
     expect(isPrime(6)).toBe(false);
     expect(isPrime(8)).toBe(false);

@@ -2,8 +2,6 @@ import unluckyDays from '.';
 
 describe('unluckyDays', () => {
   it('should return the number of Friday 13th in the given year', () => {
-    expect.assertions(10);
-
     expect(unluckyDays(1586)).toBe(1);
     expect(unluckyDays(1001)).toBe(3);
     expect(unluckyDays(2819)).toBe(2);

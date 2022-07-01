@@ -2,8 +2,6 @@ import pickIt from '.';
 
 describe('pickIt', () => {
   it('should return array or even and odd numbers', () => {
-    expect.assertions(6);
-
     expect(pickIt([1, 2])).toStrictEqual([[1], [2]]);
     expect(pickIt([1, 2, 3])).toStrictEqual([[1, 3], [2]]);
     expect(pickIt([3, 2, 1])).toStrictEqual([[3, 1], [2]]);

@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import flatten from '.';
 
 describe('flatten', () => {
   it('should flatten `Array` of `Array`', () => {
-    expect.assertions(5);
-
     expect(flatten([])).toStrictEqual([]);
     expect(flatten([1, 2, 3])).toStrictEqual([1, 2, 3]);
     expect(

@@ -1,11 +1,10 @@
+import { describe, expect, it, vi } from 'vitest';
 import helloWorld from '.';
 
-jest.spyOn(console, 'log').mockImplementation();
+vi.spyOn(console, 'log').mockImplementation(() => 'Hello world!');
 
 describe('helloWorld', () => {
   it('should define function `helloWorld`', () => {
-    expect.assertions(2);
-
     helloWorld();
 
     expect(helloWorld).toBeDefined();

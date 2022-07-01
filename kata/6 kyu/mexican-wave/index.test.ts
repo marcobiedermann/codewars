@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import wave from '.';
 
 describe('wave', () => {
   it('should turn string into Mexican Wave', () => {
-    expect.assertions(5);
-
     expect(wave('hello')).toStrictEqual(['Hello', 'hEllo', 'heLlo', 'helLo', 'hellO']);
     expect(wave('codewars')).toStrictEqual([
       'Codewars',

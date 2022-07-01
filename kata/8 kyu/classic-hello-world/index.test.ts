@@ -1,11 +1,10 @@
+import { expect, vi } from 'vitest';
 import Solution from '.';
 
-jest.spyOn(console, 'log').mockImplementation();
+vi.spyOn(console, 'log').mockImplementation(() => 'Hello, world');
 
 describe('solution', () => {
   it('should log `Hello World!`', () => {
-    expect.assertions(1);
-
     Solution.main();
 
     expect(console.log).toHaveBeenCalledWith('Hello World!');

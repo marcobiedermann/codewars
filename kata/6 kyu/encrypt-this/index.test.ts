@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import encryptThis from '.';
 
 describe('encryptThis', () => {
   it('should encrypt the message', () => {
-    expect.assertions(6);
-
     expect(encryptThis('A')).toBe('65');
     expect(encryptThis('A wise old owl lived in an oak')).toBe(
       '65 119esi 111dl 111lw 108dvei 105n 97n 111ka',

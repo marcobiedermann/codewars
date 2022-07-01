@@ -2,8 +2,6 @@ import twoSort from '.';
 
 describe('twoSort', () => {
   it('should sort words and return first separated by `***`', () => {
-    expect.assertions(2);
-
     expect(
       twoSort(['bitcoin', 'take', 'over', 'the', 'world', 'maybe', 'who', 'knows', 'perhaps']),
     ).toBe('b***i***t***c***o***i***n');

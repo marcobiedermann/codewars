@@ -2,8 +2,6 @@ import isSquare from '.';
 
 describe('isSquare', () => {
   it('should check if number is square', () => {
-    expect.assertions(6);
-
     expect(isSquare(-1)).toBe(false);
     expect(isSquare(0)).toBe(true);
     expect(isSquare(3)).toBe(false);

@@ -2,8 +2,6 @@ import pascalsTriangle from '.';
 
 describe('pascalsTriangle', () => {
   it('should return pascals triangle flattened into a list', () => {
-    expect.assertions(4);
-
     expect(pascalsTriangle(1)).toStrictEqual([1]);
     expect(pascalsTriangle(2)).toStrictEqual([1, 1, 1]);
     expect(pascalsTriangle(4)).toStrictEqual([1, 1, 1, 1, 2, 1, 1, 3, 3, 1]);

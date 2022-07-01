@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import reverseWords from '.';
 
 describe('reverseWords', () => {
   it('should reverse words in string', () => {
-    expect.assertions(5);
-
     expect(reverseWords('hello world!')).toBe('world! hello');
     expect(reverseWords("yoda doesn't speak like this")).toBe("this like speak doesn't yoda");
     expect(reverseWords('foobar')).toBe('foobar');

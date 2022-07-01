@@ -2,8 +2,6 @@ import litres from '.';
 
 describe('litres', () => {
   it('should return number of litres', () => {
-    expect.assertions(7);
-
     expect(litres(2)).toBe(1);
     expect(litres(1.4)).toBe(0);
     expect(litres(12.3)).toBe(6);

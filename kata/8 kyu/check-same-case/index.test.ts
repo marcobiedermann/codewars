@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import sameCase from '.';
 
 describe('sameCase', () => {
   it('should check if two given characters are the same case', () => {
-    expect.assertions(8);
-
     expect(sameCase('C', 'B')).toBe(1);
     expect(sameCase('b', 'a')).toBe(1);
     expect(sameCase('d', 'd')).toBe(1);

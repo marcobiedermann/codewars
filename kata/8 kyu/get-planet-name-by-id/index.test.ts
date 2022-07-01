@@ -2,8 +2,6 @@ import getPlanetName from '.';
 
 describe('getPlanetName', () => {
   it('should return planet name by ID', () => {
-    expect.assertions(9);
-
     expect(getPlanetName(0)).toBe('ID does not match');
     expect(getPlanetName(1)).toBe('Mercury');
     expect(getPlanetName(2)).toBe('Venus');

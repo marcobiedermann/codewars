@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import fixTheMeerkat from '.';
 
 describe('fixTheMeerkat', () => {
   it('should reverse elements in array', () => {
-    expect.assertions(5);
-
     expect(fixTheMeerkat(['tail', 'body', 'head'])).toStrictEqual(['head', 'body', 'tail']);
     expect(fixTheMeerkat(['tails', 'body', 'heads'])).toStrictEqual(['heads', 'body', 'tails']);
     expect(fixTheMeerkat(['bottom', 'middle', 'top'])).toStrictEqual(['top', 'middle', 'bottom']);

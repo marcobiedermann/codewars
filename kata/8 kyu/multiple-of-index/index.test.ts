@@ -2,8 +2,6 @@ import multipleOfIndex from '.';
 
 describe('multipleOfIndex', () => {
   it('should return array of elements which are multiple of their own index', () => {
-    expect.assertions(6);
-
     expect(multipleOfIndex([22, -6, 32, 82, 9, 25])).toStrictEqual([-6, 32, 25]);
     expect(multipleOfIndex([68, -1, 1, -7, 10, 10])).toStrictEqual([-1, 10]);
     expect(multipleOfIndex([11, -11])).toStrictEqual([-11]);

@@ -2,8 +2,6 @@ import { decrypt, encrypt } from '.';
 
 describe('encrypt/decrypt', () => {
   it('should encrypt text', () => {
-    expect.assertions(7);
-
     expect(encrypt('This is a test!', 0)).toBe('This is a test!');
     expect(encrypt('This is a test!', 1)).toBe('hsi  etTi sats!');
     expect(encrypt('This is a test!', 2)).toBe('s eT ashi tist!');
@@ -14,8 +12,6 @@ describe('encrypt/decrypt', () => {
   });
 
   it('should decrypt text', () => {
-    expect.assertions(7);
-
     expect(decrypt('This is a test!', 0)).toBe('This is a test!');
     expect(decrypt('hsi  etTi sats!', 1)).toBe('This is a test!');
     expect(decrypt('s eT ashi tist!', 2)).toBe('This is a test!');
@@ -26,8 +22,6 @@ describe('encrypt/decrypt', () => {
   });
 
   it('should test for `null` or Empty', () => {
-    expect.assertions(4);
-
     expect(encrypt('', 0)).toBe('');
     expect(decrypt('', 0)).toBe('');
     expect(encrypt(null as unknown as string, 0)).toBeNull();

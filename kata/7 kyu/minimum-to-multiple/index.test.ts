@@ -2,8 +2,6 @@ import minimum from '.';
 
 describe('minimum', () => {
   it('should return minimum number to add / subtract to make multiple', () => {
-    expect.assertions(12);
-
     expect(minimum(1, 1)).toBe(0);
     expect(minimum(9, 4)).toBe(1);
     expect(minimum(10, 6)).toBe(2);

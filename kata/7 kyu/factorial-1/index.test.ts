@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import factorial from '.';
 
 describe('factorial', () => {
   it('should calculate factorial of number', () => {
-    expect.assertions(5);
-
     expect(factorial(0)).toBe(1);
     expect(factorial(1)).toBe(1);
     expect(factorial(4)).toBe(24);

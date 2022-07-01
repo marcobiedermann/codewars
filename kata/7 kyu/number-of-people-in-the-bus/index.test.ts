@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import number from '.';
 
 describe('number', () => {
   it('return number of people sitting in bus after last bus station', () => {
-    expect.assertions(3);
-
     expect(
       number([
         [10, 0],

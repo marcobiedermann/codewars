@@ -2,8 +2,6 @@ import getDrinkByProfession from '.';
 
 describe('getDrinkByProfession', () => {
   it('should return profession by drink', () => {
-    expect.assertions(8);
-
     expect(getDrinkByProfession('jabrOni')).toBe('Patron Tequila');
     expect(getDrinkByProfession('scHOOl counselor')).toBe('Anything with Alcohol');
     expect(getDrinkByProfession('prOgramMer')).toBe('Hipster Craft Beer');

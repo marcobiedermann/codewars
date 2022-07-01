@@ -2,8 +2,6 @@ import multiTable from '.';
 
 describe('multiTable', () => {
   it('should return a multiplication table for `number`', () => {
-    expect.assertions(2);
-
     expect(multiTable(5)).toBe(`1 * 5 = 5
 2 * 5 = 10
 3 * 5 = 15

@@ -2,8 +2,6 @@ import solve from '.';
 
 describe('solve', () => {
   it('should find integer in array', () => {
-    expect.assertions(5);
-
     expect(solve([1, -1, 2, -2, 3])).toBe(3);
     expect(solve([-3, 1, 2, 3, -1, -4, -2])).toStrictEqual(-4);
     expect(solve([1, -1, 2, -2, 3, 3])).toBe(3);

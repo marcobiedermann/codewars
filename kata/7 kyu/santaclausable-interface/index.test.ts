@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import isSantaClausable from '.';
 
 describe('isSantaClausable', () => {
   it('should check if object implemented the `santa` interface', () => {
-    expect.assertions(2);
-
     const santa = {
       sayHoHoHo() {
         console.log('Ho Ho Ho!');

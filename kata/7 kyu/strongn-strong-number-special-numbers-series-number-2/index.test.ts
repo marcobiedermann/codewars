@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import strong from '.';
 
 describe('strong', () => {
   it('should check if it is a strong number', () => {
-    expect.assertions(6);
-
     expect(strong(1)).toBe('STRONG!!!!');
     expect(strong(2)).toBe('STRONG!!!!');
     expect(strong(145)).toBe('STRONG!!!!');

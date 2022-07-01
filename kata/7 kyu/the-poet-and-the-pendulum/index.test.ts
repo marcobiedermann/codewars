@@ -2,8 +2,6 @@ import pendulum from '.';
 
 describe('pendulum', () => {
   it('should check short length positives', () => {
-    expect.assertions(7);
-
     expect(pendulum([4, 10, 9])).toStrictEqual([10, 4, 9]);
     expect(pendulum([8, 7, 10, 3])).toStrictEqual([8, 3, 7, 10]);
     expect(pendulum([6, 6, 8, 5, 10])).toStrictEqual([10, 6, 5, 6, 8]);
@@ -14,8 +12,6 @@ describe('pendulum', () => {
   });
 
   it('should check medium length positives', () => {
-    expect.assertions(7);
-
     expect(pendulum([27, 27, 19, 21, 22, 28, 24])).toStrictEqual([28, 27, 22, 19, 21, 24, 27]);
     expect(pendulum([20, 19, 25, 16, 19, 30, 18, 24])).toStrictEqual([
       25, 20, 19, 16, 18, 19, 24, 30,
@@ -38,8 +34,6 @@ describe('pendulum', () => {
   });
 
   it('should check lengthy positives', () => {
-    expect.assertions(5);
-
     expect(pendulum([33, 38, 38, 36, 43, 48, 32, 40, 47, 50, 33])).toStrictEqual([
       50, 47, 40, 38, 33, 32, 33, 36, 38, 43, 48,
     ]);
@@ -58,8 +52,6 @@ describe('pendulum', () => {
   });
 
   it('should check short length negatives', () => {
-    expect.assertions(6);
-
     expect(pendulum([-9, -2, -10, -6])).toStrictEqual([-6, -10, -9, -2]);
     expect(pendulum([-3, -6, -7])).toStrictEqual([-3, -7, -6]);
     expect(pendulum([-7, -8, -2, -3, -4])).toStrictEqual([-2, -4, -8, -7, -3]);
@@ -69,8 +61,6 @@ describe('pendulum', () => {
   });
 
   it('should check medium length negatives', () => {
-    expect.assertions(4);
-
     expect(pendulum([-2, -11, -6, -11, -4, -3, -5])).toStrictEqual([-2, -4, -6, -11, -11, -5, -3]);
     expect(pendulum([-19, -9, -5, -6, -15, -16, -5, -12])).toStrictEqual([
       -5, -9, -15, -19, -16, -12, -6, -5,
@@ -84,8 +74,6 @@ describe('pendulum', () => {
   });
 
   it('should check lengthy negatives', () => {
-    expect.assertions(3);
-
     expect(pendulum([-33, -21, -6, -29, -24, -5, -50, -42, -43, -17, -17])).toStrictEqual([
       -5, -17, -21, -29, -42, -50, -43, -33, -24, -17, -6,
     ]);
@@ -98,8 +86,6 @@ describe('pendulum', () => {
   });
 
   it('should check mixture of positives and negatives', () => {
-    expect.assertions(8);
-
     expect(pendulum([-15, 8, 11])).toStrictEqual([11, -15, 8]);
     expect(pendulum([8, -1, -1, -10])).toStrictEqual([-1, -10, -1, 8]);
     expect(pendulum([-8, 15, 8, -3, -11])).toStrictEqual([15, -3, -11, -8, 8]);

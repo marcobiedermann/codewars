@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import animal from '.';
 
 describe('animal', () => {
   it('should return a string, describing the given object', () => {
-    expect.assertions(3);
-
     expect(
       animal({
         name: 'dog',

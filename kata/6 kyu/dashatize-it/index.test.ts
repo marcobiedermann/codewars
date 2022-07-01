@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import dashatize from '.';
 
 describe('dashatize', () => {
   it('should place a dash between each odd number', () => {
-    expect.assertions(8);
-
     expect(dashatize(274)).toBe('2-7-4');
     expect(dashatize(5311)).toBe('5-3-1-1');
     expect(dashatize(86320)).toBe('86-3-20');

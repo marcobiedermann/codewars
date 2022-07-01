@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import Guesser from '.';
 
 describe('guesser', () => {
   it('correct guess should return true', () => {
-    expect.assertions(1);
-
     const guesser = new Guesser(10, 2);
 
     guesser.guess(10);
@@ -15,8 +14,6 @@ describe('guesser', () => {
   });
 
   it('wrong guess should return false', () => {
-    expect.assertions(1);
-
     const guesser = new Guesser(10, 2);
 
     guesser.guess(1);
@@ -25,8 +22,6 @@ describe('guesser', () => {
   });
 
   it('lives ran out should throw', () => {
-    expect.assertions(1);
-
     const guesser = new Guesser(10, 2);
 
     guesser.guess(1);

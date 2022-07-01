@@ -4,8 +4,6 @@ import Person from '.';
 
 describe('person', () => {
   it('should fill fields', () => {
-    expect.assertions(4);
-
     const people = [
       ['bob', 'john'],
       ['bob', 'john', 'dave'],

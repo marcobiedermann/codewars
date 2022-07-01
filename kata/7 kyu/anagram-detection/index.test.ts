@@ -2,8 +2,6 @@ import isAnagram from '.';
 
 describe('isAnagram', () => {
   it('should check is string is anagram', () => {
-    expect.assertions(6);
-
     expect(isAnagram('foefet', 'toffee')).toBe(true);
     expect(isAnagram('Buckethead', 'DeathCubeK')).toBe(true);
     expect(isAnagram('Twoo', 'WooT')).toBe(true);

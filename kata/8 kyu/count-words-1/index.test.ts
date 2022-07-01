@@ -2,8 +2,6 @@ import countWords from '.';
 
 describe('countWords', () => {
   it('should work in basic form of problem', () => {
-    expect.assertions(6);
-
     expect(countWords('Hello')).toBe(1);
     expect(countWords('Hello, World!')).toBe(2);
     expect(
@@ -17,8 +15,6 @@ describe('countWords', () => {
   });
 
   it('should work with spaces around string', () => {
-    expect.assertions(5);
-
     expect(countWords(' Arthur ')).toBe(1);
     expect(countWords(' David')).toBe(1);
     expect(countWords('Nelson ')).toBe(1);
@@ -27,8 +23,6 @@ describe('countWords', () => {
   });
 
   it('should work with non-whitespace (ex. breakspace) chars', () => {
-    expect.assertions(2);
-
     expect(countWords('﻿Hello﻿World ')).toBe(2);
     expect(countWords('Hello﻿World')).toBe(2);
   });

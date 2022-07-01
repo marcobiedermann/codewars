@@ -2,8 +2,6 @@ import sumOfMinimums from '.';
 
 describe('sumOfMinimums', () => {
   it('should sum minimum of each row', () => {
-    expect.assertions(2);
-
     expect(
       sumOfMinimums([
         [7, 9, 8, 6, 2],

@@ -2,8 +2,6 @@ import SmallestIntegerFinder from '.';
 
 describe('smallestIntegerFinder', () => {
   it('should find the smallest integer', () => {
-    expect.assertions(5);
-
     const smallestIntegerFinder = new SmallestIntegerFinder();
 
     expect(smallestIntegerFinder.findSmallestInt([78, 56, 232, 12, 8])).toBe(8);

@@ -2,8 +2,6 @@ import longestConsec from '.';
 
 describe('longestConsec', () => {
   it('return the first longest string consisting of k consecutive strings taken in the array', () => {
-    expect.assertions(9);
-
     expect(longestConsec(['zone', 'abigail', 'theta', 'form', 'libe', 'zas'], 2)).toBe(
       'abigailtheta',
     );

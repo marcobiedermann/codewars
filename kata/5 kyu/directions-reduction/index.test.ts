@@ -2,8 +2,6 @@ import dirReduc from '.';
 
 describe('dirReduc', () => {
   it('should return reduced directions', () => {
-    expect.assertions(3);
-
     expect(dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST'])).toStrictEqual([
       'WEST',
     ]);

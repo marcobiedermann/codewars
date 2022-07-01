@@ -2,8 +2,6 @@ import maxTriSum from '.';
 
 describe('maxTriSum', () => {
   it('should return maximum sum of triplets', () => {
-    expect.assertions(10);
-
     expect(maxTriSum([3, 2, 6, 8, 2, 3])).toBe(17);
     expect(maxTriSum([2, 9, 13, 10, 5, 2, 9, 5])).toBe(32);
     expect(maxTriSum([2, 1, 8, 0, 6, 4, 8, 6, 2, 4])).toBe(18);

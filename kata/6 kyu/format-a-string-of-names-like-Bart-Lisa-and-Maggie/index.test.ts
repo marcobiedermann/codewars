@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import list from '.';
 
 describe('list', () => {
   it('should separate names by comma, except for the last two', () => {
-    expect.assertions(5);
-
     expect(
       list([
         { name: 'Bart' },

@@ -2,8 +2,6 @@ import getEvenNumbers from '.';
 
 describe('getEvenNumbers', () => {
   it('should filter even numbers', () => {
-    expect.assertions(5);
-
     expect(getEvenNumbers([1, 2, 3, 6, 8, 10])).toStrictEqual([2, 6, 8, 10]);
     expect(getEvenNumbers([1, 2])).toStrictEqual([2]);
     expect(getEvenNumbers([12, 14, 15])).toStrictEqual([12, 14]);

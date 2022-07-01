@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import fizzbuzz from '.';
 
 describe('fizzbuzz', () => {
   it('should return FizzBuzz until `n`', () => {
-    expect.assertions(1);
-
     expect(fizzbuzz(15)).toStrictEqual([
       1,
       2,

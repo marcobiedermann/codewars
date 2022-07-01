@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import getNames from '.';
 
 describe('getNames', () => {
   it('should return a list of names', () => {
-    expect.assertions(1);
-
     expect(
       getNames([
         { name: 'Joe', age: 20 },

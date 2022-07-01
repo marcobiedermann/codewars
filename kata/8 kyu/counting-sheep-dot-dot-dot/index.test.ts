@@ -2,8 +2,6 @@ import countSheeps from '.';
 
 describe('countSheeps', () => {
   it('should count present sheep in array', () => {
-    expect.assertions(1);
-
     expect(
       countSheeps([
         true,

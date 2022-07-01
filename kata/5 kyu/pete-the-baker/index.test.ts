@@ -2,8 +2,6 @@ import cakes from '.';
 
 describe('cakes', () => {
   it('should return number of cakes', () => {
-    expect.assertions(2);
-
     expect(
       cakes(
         {

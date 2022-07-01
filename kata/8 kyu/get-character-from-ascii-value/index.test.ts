@@ -2,8 +2,6 @@ import getChar from '.';
 
 describe('getChar', () => {
   it('should return ASCII char of value', () => {
-    expect.assertions(11);
-
     expect(getChar(55)).toBe('7');
     expect(getChar(56)).toBe('8');
     expect(getChar(57)).toBe('9');

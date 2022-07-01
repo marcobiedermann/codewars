@@ -2,8 +2,6 @@ import rowWeights from '.';
 
 describe('rowWeights', () => {
   it('should return total weight of team 1 and team 2', () => {
-    expect.assertions(10);
-
     expect(rowWeights([80])).toStrictEqual([80, 0]);
     expect(rowWeights([100, 50])).toStrictEqual([100, 50]);
     expect(rowWeights([50, 60, 70, 80])).toStrictEqual([120, 140]);

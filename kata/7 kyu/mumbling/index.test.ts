@@ -2,8 +2,6 @@ import accum from '.';
 
 describe('accum', () => {
   it('should mumble string', () => {
-    expect.assertions(5);
-
     expect(accum('ZpglnRxqenU')).toBe(
       'Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu',
     );

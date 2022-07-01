@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import humanReadable from '.';
 
 describe('humanReadable', () => {
   it('should return the time in a human-readable format', () => {
-    expect.assertions(5);
-
     expect(humanReadable(0)).toBe('00:00:00');
     expect(humanReadable(5)).toBe('00:00:05');
     expect(humanReadable(60)).toBe('00:01:00');

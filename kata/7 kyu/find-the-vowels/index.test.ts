@@ -2,8 +2,6 @@ import vowelIndices from '.';
 
 describe('vowelIndices', () => {
   it('should return list of vowel indices', () => {
-    expect.assertions(5);
-
     expect(vowelIndices('mmm')).toStrictEqual([]);
     expect(vowelIndices('apple')).toStrictEqual([1, 5]);
     expect(vowelIndices('super')).toStrictEqual([2, 4]);

@@ -2,8 +2,6 @@ import compose from '.';
 
 describe('compose', () => {
   it('should compose two functions', () => {
-    expect.assertions(2);
-
     function add1(a: number): number {
       return a + 1;
     }

@@ -2,8 +2,6 @@ import nextBigger from '.';
 
 describe('nextBigger', () => {
   it('should return next bigger number', () => {
-    expect.assertions(8);
-
     expect(nextBigger(12)).toBe(21);
     expect(nextBigger(513)).toBe(531);
     expect(nextBigger(2017)).toBe(2071);

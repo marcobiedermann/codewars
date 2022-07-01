@@ -2,8 +2,6 @@ import partsSums from '.';
 
 describe('partsSums', () => {
   it('return list of the sums of its parts', () => {
-    expect.assertions(4);
-
     expect(partsSums([])).toStrictEqual([0]);
     expect(partsSums([0, 1, 3, 6, 10])).toStrictEqual([20, 20, 19, 16, 10, 0]);
     expect(partsSums([1, 2, 3, 4, 5, 6])).toStrictEqual([21, 20, 18, 15, 11, 6, 0]);

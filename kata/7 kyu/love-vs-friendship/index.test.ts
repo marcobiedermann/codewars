@@ -2,8 +2,6 @@ import wordsToMarks from '.';
 
 describe('wordsToMarks', () => {
   it('should sum up char codes of characters in string', () => {
-    expect.assertions(5);
-
     expect(wordsToMarks('attitude')).toBe(100);
     expect(wordsToMarks('friends')).toBe(75);
     expect(wordsToMarks('family')).toBe(66);

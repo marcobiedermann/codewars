@@ -2,8 +2,6 @@ import remove from '.';
 
 describe('remove', () => {
   it('should remove n amount of exclamatin marks', () => {
-    expect.assertions(11);
-
     expect(remove('Hi!', 1)).toBe('Hi');
     expect(remove('Hi!', 100)).toBe('Hi');
     expect(remove('Hi!!!', 1)).toBe('Hi!!');

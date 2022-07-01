@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import validateUsr from '.';
 
 describe('validateUsr', () => {
   it('should validate username', () => {
-    expect.assertions(10);
-
     expect(validateUsr('asddsa')).toBe(true);
     expect(validateUsr('a')).toBe(false);
     expect(validateUsr('Hass')).toBe(false);

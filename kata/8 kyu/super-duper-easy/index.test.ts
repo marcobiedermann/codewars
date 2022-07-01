@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import problem from '.';
 
 describe('problem', () => {
   it('should return value multiplied by 50 and increased by 6', () => {
-    expect.assertions(10);
-
     expect(problem('hello')).toBe('Error');
     expect(problem(1)).toBe(56);
     expect(problem(5)).toBe(256);

@@ -2,8 +2,6 @@ import oper, { horMirror, vertMirror } from '.';
 
 describe('opstrings', () => {
   it('basic tests vertMirror', () => {
-    expect.assertions(2);
-
     expect(oper(vertMirror, 'hSgdHQ\nHnDMao\nClNNxX\niRvxxH\nbqTVvA\nwvSyRu')).toBe(
       'QHdgSh\noaMDnH\nXxNNlC\nHxxvRi\nAvVTqb\nuRySvw',
     );
@@ -13,8 +11,6 @@ describe('opstrings', () => {
   });
 
   it('basic tests horMirror', () => {
-    expect.assertions(2);
-
     expect(oper(horMirror, 'lVHt\nJVhv\nCSbg\nyeCt')).toBe('yeCt\nCSbg\nJVhv\nlVHt');
     expect(oper(horMirror, 'njMK\ndbrZ\nLPKo\ncEYz')).toBe('cEYz\nLPKo\ndbrZ\nnjMK');
   });

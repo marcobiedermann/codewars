@@ -2,8 +2,6 @@ import sumTwoSmallestNumbers from '.';
 
 describe('sumTwoSmallestNumbers', () => {
   it('should sum the two lowest positive integers', () => {
-    expect.assertions(5);
-
     expect(sumTwoSmallestNumbers([5, 8, 12, 19, 22])).toBe(13);
     expect(sumTwoSmallestNumbers([15, 28, 4, 2, 43])).toBe(6);
     expect(sumTwoSmallestNumbers([3, 87, 45, 12, 7])).toBe(10);

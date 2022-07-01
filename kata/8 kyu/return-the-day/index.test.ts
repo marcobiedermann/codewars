@@ -2,8 +2,6 @@ import whatday from '.';
 
 describe('whatday', () => {
   it('should return the weekday', () => {
-    expect.assertions(5);
-
     expect(whatday(1)).toBe('Sunday');
     expect(whatday(2)).toBe('Monday');
     expect(whatday(3)).toBe('Tuesday');

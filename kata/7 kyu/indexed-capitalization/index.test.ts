@@ -2,8 +2,6 @@ import capitalize from '.';
 
 describe('capitalize', () => {
   it('should capitalize all letters at the given indices', () => {
-    expect.assertions(6);
-
     expect(capitalize('abcdef', [1, 2, 5])).toBe('aBCdeF');
     expect(capitalize('abcdef', [1, 2, 5, 100])).toBe('aBCdeF');
     expect(capitalize('codewars', [1, 3, 5, 50])).toBe('cOdEwArs');

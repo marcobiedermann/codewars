@@ -2,8 +2,6 @@ import isPalindrome from '.';
 
 describe('isPalindrome', () => {
   it('should return boolean if string is palindrome', () => {
-    expect.assertions(7);
-
     expect(isPalindrome('racecar')).toBe(true);
     expect(isPalindrome('Civic')).toBe(true);
     expect(isPalindrome('Toot!')).toBe(true);

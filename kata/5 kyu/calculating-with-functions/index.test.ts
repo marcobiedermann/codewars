@@ -17,8 +17,6 @@ import {
 
 describe('calculations', () => {
   it('should calculate with functions', () => {
-    expect.assertions(24);
-
     expect(zero()).toBe(0);
     expect(one()).toBe(1);
     expect(two()).toBe(2);

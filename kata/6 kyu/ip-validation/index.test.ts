@@ -2,8 +2,6 @@ import isValidIP from '.';
 
 describe('isValidIP', () => {
   it('should check if IP is valid', () => {
-    expect.assertions(17);
-
     expect(isValidIP('0.0.0.0')).toBe(true);
     expect(isValidIP('12.255.56.1')).toBe(true);
     expect(isValidIP('137.255.156.100')).toBe(true);

@@ -2,8 +2,6 @@ import removeEveryOther from '.';
 
 describe('removeEveryOther', () => {
   it('should remove every other element from array', () => {
-    expect.assertions(4);
-
     expect(removeEveryOther(['Hello', 'Goodbye', 'Hello Again'])).toStrictEqual([
       'Hello',
       'Hello Again',

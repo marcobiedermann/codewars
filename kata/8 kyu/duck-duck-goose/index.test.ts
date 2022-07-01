@@ -5,8 +5,6 @@ const players = exNames.map((n) => new Player(n));
 
 describe('duckDuckGoose', () => {
   it('should find the correct goose', () => {
-    expect.assertions(10);
-
     expect(duckDuckGoose(players, 1)).toBe('a');
     expect(duckDuckGoose(players, 3)).toBe('c');
     expect(duckDuckGoose(players, 10)).toBe('z');

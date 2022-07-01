@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import divide from '.';
 
 describe('divide', () => {
   it('should check if number is evenly divisible', () => {
-    expect.assertions(10);
-
     expect(divide(4)).toBe(true);
     expect(divide(2)).toBe(false);
     expect(divide(5)).toBe(false);

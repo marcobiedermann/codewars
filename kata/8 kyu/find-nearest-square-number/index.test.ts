@@ -2,8 +2,6 @@ import nearestSq from '.';
 
 describe('nearestSq', () => {
   it('should find nearest square number', () => {
-    expect.assertions(5);
-
     expect(nearestSq(1)).toBe(1);
     expect(nearestSq(2)).toBe(1);
     expect(nearestSq(10)).toBe(9);

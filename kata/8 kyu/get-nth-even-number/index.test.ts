@@ -2,8 +2,6 @@ import nthEven from '.';
 
 describe('nthEven', () => {
   it('should return the nth even number', () => {
-    expect.assertions(5);
-
     expect(nthEven(1)).toBe(0);
     expect(nthEven(2)).toBe(2);
     expect(nthEven(3)).toBe(4);

@@ -2,8 +2,6 @@ import dative from '.';
 
 describe('dative', () => {
   it('should return the valid form of a valid Hungarian word', () => {
-    expect.assertions(9);
-
     expect(dative('ablak')).toBe('ablaknak');
     expect(dative('tükör')).toBe('tükörnek');
     expect(dative('keret')).toBe('keretnek');

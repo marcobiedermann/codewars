@@ -2,8 +2,6 @@ import minValue from '.';
 
 describe('minValue', () => {
   it('should return smallest number', () => {
-    expect.assertions(9);
-
     expect(minValue([1, 3, 1])).toBe(13);
     expect(minValue([4, 7, 5, 7])).toBe(457);
     expect(minValue([4, 8, 1, 4])).toBe(148);

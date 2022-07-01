@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import hero from '.';
 
 describe('hero', () => {
   it('should check if hero has enough bullets to survive', () => {
-    expect.assertions(6);
-
     expect(hero(10, 5)).toBe(true);
     expect(hero(7, 4)).toBe(false);
     expect(hero(4, 5)).toBe(false);

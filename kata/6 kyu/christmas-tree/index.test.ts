@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import christmasTree from '.';
 
 describe('christmasTree', () => {
   it('should return a christmas tree of the correct hight', () => {
-    expect.assertions(11);
-
     expect(JSON.stringify(christmasTree(0))).toBe('""');
     expect(JSON.stringify(christmasTree(1))).toBe('"*"');
     expect(JSON.stringify(christmasTree(2))).toBe('" * \\n***"');

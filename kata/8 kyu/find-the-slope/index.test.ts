@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import slope from '.';
 
 describe('slope', () => {
   it('should return string represenation of slope', () => {
-    expect.assertions(6);
-
     expect(slope([19, 3, 20, 3])).toBe('0');
     expect(slope([2, 7, 4, -7])).toBe('-7');
     expect(slope([10, 50, 30, 150])).toBe('5');

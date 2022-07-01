@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import stairsIn20 from '.';
 
 describe('stairsIn20', () => {
   it('should return the 20 year estimate of the stairs climed', () => {
-    expect.assertions(1);
-
     expect(
       stairsIn20([
         [

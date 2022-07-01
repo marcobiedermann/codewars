@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import meeting from '.';
 
 describe('meeting', () => {
   it('should transform names to uppercase and sort them alphabetically by last name', () => {
-    expect.assertions(3);
-
     expect(
       meeting(
         'Alexis:Wahl;John:Bell;Victoria:Schwarz;Abba:Dorny;Grace:Meta;Ann:Arno;Madison:STAN;Alex:Cornwell;Lewis:Kern;Megan:Stan;Alex:Korn',

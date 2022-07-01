@@ -2,8 +2,6 @@ import reverseNumber from '.';
 
 describe('reverseNumber', () => {
   it('should reverse its digits', () => {
-    expect.assertions(7);
-
     expect(reverseNumber(123)).toBe(321);
     expect(reverseNumber(-123)).toStrictEqual(-321);
     expect(reverseNumber(1000)).toBe(1);

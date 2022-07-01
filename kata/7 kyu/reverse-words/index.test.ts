@@ -2,8 +2,6 @@ import reverseWords from '.';
 
 describe('reverseWords', () => {
   it('should reverse each word in string', () => {
-    expect.assertions(4);
-
     expect(reverseWords('The quick brown fox jumps over the lazy dog.')).toBe(
       'ehT kciuq nworb xof spmuj revo eht yzal .god',
     );

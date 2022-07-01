@@ -2,8 +2,6 @@ import findNeedle from '.';
 
 describe('findNeedle', () => {
   it('should find `needle` in a haystack', () => {
-    expect.assertions(3);
-
     expect(
       findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]),
     ).toBe('found the needle at position 3');

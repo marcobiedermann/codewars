@@ -2,8 +2,6 @@ import automorphic from '.';
 
 describe('automorphic', () => {
   it('should check if number is automorphic', () => {
-    expect.assertions(10);
-
     expect(automorphic(1)).toBe('Automorphic');
     expect(automorphic(3)).toBe('Not!!');
     expect(automorphic(6)).toBe('Automorphic');

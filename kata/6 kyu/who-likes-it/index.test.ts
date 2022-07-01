@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import likes from '.';
 
 describe('likes', () => {
   it('should return test of liked people', () => {
-    expect.assertions(5);
-
     expect(likes([])).toBe('no one likes this');
     expect(likes(['Peter'])).toBe('Peter likes this');
     expect(likes(['Jacob', 'Alex'])).toBe('Jacob and Alex like this');

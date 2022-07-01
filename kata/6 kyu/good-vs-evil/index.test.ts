@@ -2,8 +2,6 @@ import goodVsEvil from '.';
 
 describe('expect', () => {
   it('should return winning side', () => {
-    expect.assertions(3);
-
     expect(goodVsEvil('1 1 1 1 1 1', '1 1 1 1 1 1 1')).toBe(
       'Battle Result: Evil eradicates all trace of Good',
     );

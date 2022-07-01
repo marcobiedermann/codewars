@@ -2,8 +2,6 @@ import solve from '.';
 
 describe('solve', () => {
   it('should divide its first argument by its second', () => {
-    expect.assertions(7);
-
     expect(solve(2, 1)).toBe(2);
     expect(solve(2, 4)).toBe(0.5);
     expect(solve(42, 0)).toStrictEqual(Infinity);

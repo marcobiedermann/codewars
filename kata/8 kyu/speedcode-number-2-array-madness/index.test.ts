@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import arrayMadness from '.';
 
 describe('arrayMadness', () => {
   it('should check is `a` is greater than `b`', () => {
-    expect.assertions(11);
-
     expect(arrayMadness([4, 5, 6], [1, 2, 3])).toBe(true);
     expect(arrayMadness([5, 6, 7], [4, 5, 6])).toBe(false);
     expect(arrayMadness([4, 5, 6], [3, 4, 5])).toBe(false);

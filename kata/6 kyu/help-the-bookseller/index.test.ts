@@ -2,8 +2,6 @@ import stockList from '.';
 
 describe('stockList', () => {
   it('should sum quantity of books for each category', () => {
-    expect.assertions(3);
-
     expect(
       stockList(['ABAR 200', 'CDXE 500', 'BKWR 250', 'BTSQ 890', 'DRTY 600'], ['A', 'B']),
     ).toBe('(A : 200) - (B : 1140)');

@@ -2,8 +2,6 @@ import isUpperCase from '.';
 
 describe('isUpperCase', () => {
   it('should work for the examples provided in the description', () => {
-    expect.assertions(7);
-
     expect(isUpperCase('')).toBeDefined();
     expect(isUpperCase('c')).toBe(false);
     expect(isUpperCase('C')).toBe(true);
@@ -14,8 +12,6 @@ describe('isUpperCase', () => {
   });
 
   it('should also work for a few other basic tests', () => {
-    expect.assertions(18);
-
     expect(isUpperCase('Hello World')).toBe(false);
     expect(isUpperCase('hello world')).toBe(false);
     expect(isUpperCase('Hello world')).toBe(false);

@@ -2,8 +2,6 @@ import findMissingNumber from '.';
 
 describe('findMissingNumber', () => {
   it('should find missing number in sequence', () => {
-    expect.assertions(8);
-
     expect(findMissingNumber('1 2 3 5')).toBe(4);
     expect(findMissingNumber('1 3')).toBe(2);
     expect(findMissingNumber('1 5')).toBe(2);

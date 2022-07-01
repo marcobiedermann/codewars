@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import comp from '.';
 
 describe('comp', () => {
   it('should check if both array are the same with the same multiplicities', () => {
-    expect.assertions(3);
-
     expect(
       comp(
         [121, 144, 19, 161, 19, 144, 19, 11],

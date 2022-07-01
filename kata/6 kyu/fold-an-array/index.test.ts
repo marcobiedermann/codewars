@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import foldArray from '.';
 
 describe('foldArray', () => {
   it('should fold array', () => {
-    expect.assertions(4);
-
     expect(foldArray([1, 2, 3, 4, 5], 1)).toStrictEqual([6, 6, 3]);
     expect(foldArray([1, 2, 3, 4, 5], 2)).toStrictEqual([9, 6]);
     expect(foldArray([1, 2, 3, 4, 5], 3)).toStrictEqual([15]);

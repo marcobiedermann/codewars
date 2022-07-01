@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import openOrSenior from '.';
 
 describe('openOrSenior', () => {
   it('should transform members in list to `Open` or `Senior`', () => {
-    expect.assertions(3);
-
     expect(
       openOrSenior([
         [45, 12],

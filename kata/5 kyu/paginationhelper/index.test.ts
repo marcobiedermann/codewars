@@ -2,8 +2,6 @@ import PaginationHelper from '.';
 
 describe('paginationHelper', () => {
   it('should query paging information', () => {
-    expect.assertions(9);
-
     const paginationHelper = new PaginationHelper(['a', 'b', 'c', 'd', 'e', 'f'], 4);
 
     expect(paginationHelper.pageCount()).toBe(2);

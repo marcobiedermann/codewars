@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import superSize from '.';
 
 describe('superSize', () => {
   it('should rearrange integer into largest possible value', () => {
-    expect.assertions(9);
-
     expect(superSize(69)).toBe(96);
     expect(superSize(513)).toBe(531);
     expect(superSize(2017)).toBe(7210);

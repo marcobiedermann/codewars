@@ -1,11 +1,10 @@
+import { expect, vi } from 'vitest';
 import _if from '.';
 
-jest.spyOn(console, 'log').mockImplementation();
+vi.spyOn(console, 'log').mockImplementation(() => 'True');
 
 describe('_if', () => {
   it('should call `func1` when `bool` is truthy, otherwise `func2`', () => {
-    expect.assertions(2);
-
     _if(
       true,
       () => {

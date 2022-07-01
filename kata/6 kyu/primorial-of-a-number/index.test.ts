@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import numPrimorial from '.';
 
 describe('numPrimorial', () => {
   it('should return primorial of `n`', () => {
-    expect.assertions(5);
-
     expect(numPrimorial(3)).toBe(30);
     expect(numPrimorial(4)).toBe(210);
     expect(numPrimorial(5)).toBe(2310);

@@ -2,8 +2,6 @@ import menFromBoys from '.';
 
 describe('menFromBoys', () => {
   it('should sort out men from boys', () => {
-    expect.assertions(15);
-
     expect(menFromBoys([7, 3, 14, 17])).toStrictEqual([14, 17, 7, 3]);
     expect(menFromBoys([2, 43, 95, 90, 37])).toStrictEqual([2, 90, 95, 43, 37]);
     expect(menFromBoys([20, 33, 50, 34, 43, 46])).toStrictEqual([20, 34, 46, 50, 43, 33]);

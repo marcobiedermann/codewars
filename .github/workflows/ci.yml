@@ -27,8 +27,8 @@ jobs:
       - name: 🔋 Install
         run: npm ci
 
-      - name: 🤖 Linting
-        run: npm run lint
+      # - name: 🤖 Linting
+      #   run: npm run lint
 
       - name: 🧪 Testing
         run: npm run test:ci

@@ -11,8 +11,8 @@
     "lint": "npm run lint:js",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged",
-    "test": "jest --maxWorkers=50% --watch",
-    "test:ci": "jest --ci --coverage"
+    "test": "vitest",
+    "test:ci": "vitest run --coverage"
   },
   "bin": {
     "@marcobiedermann/codewars": "./bin/index.mjs"
@@ -39,11 +39,9 @@
   },
   "homepage": "https://github.com/marcobiedermann/codewars#readme",
   "devDependencies": {
-    "@swc/jest": "^0.2.21",
-    "@types/jest": "^28.1.4",
-    "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
+    "c8": "^7.11.3",
     "eslint": "^8.18.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -51,9 +49,9 @@
     "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
-    "jest": "^28.1.2",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vitest": "^0.16.0"
   }
 }

@@ -2,8 +2,6 @@ import revrot from '.';
 
 describe('revrot', () => {
   it('should reverse or rotate string', () => {
-    expect.assertions(5);
-
     expect(revrot('1234', 0)).toBe('');
     expect(revrot('', 0)).toBe('');
     expect(revrot('1234', 5)).toBe('');

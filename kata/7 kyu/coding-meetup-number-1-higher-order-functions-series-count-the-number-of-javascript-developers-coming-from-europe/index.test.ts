@@ -2,8 +2,6 @@ import countDevelopers from '.';
 
 describe('countDevelopers', () => {
   it('should return the number of JavaScript developers from Europe', () => {
-    expect.assertions(2);
-
     expect(
       countDevelopers([
         {

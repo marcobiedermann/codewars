@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import howManyDalmatians from '.';
 
 describe('howManyDalmatians', () => {
   it('should return amount of dogs', () => {
-    expect.assertions(6);
-
     expect(howManyDalmatians(26)).toBe('More than a handful!');
     expect(howManyDalmatians(8)).toBe('Hardly any');
     expect(howManyDalmatians(14)).toBe('More than a handful!');

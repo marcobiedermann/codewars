@@ -2,8 +2,6 @@ import spacey from '.';
 
 describe('spacey', () => {
   it('should return an array showing the space decreasing', () => {
-    expect.assertions(2);
-
     expect(spacey(['kevin', 'has', 'no', 'space'])).toStrictEqual([
       'kevin',
       'kevinhas',

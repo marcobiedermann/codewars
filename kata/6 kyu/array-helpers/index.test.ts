@@ -2,8 +2,6 @@ import { average, cube, even, odd, square, sum } from '.';
 
 describe('foo', () => {
   it('should', () => {
-    expect.assertions(6);
-
     const numbers = [1, 2, 3, 4, 5];
 
     expect(square(numbers)).toStrictEqual([1, 4, 9, 16, 25]);

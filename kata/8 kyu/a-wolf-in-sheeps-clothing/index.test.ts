@@ -1,9 +1,8 @@
+import { expect } from 'vitest';
 import warnTheSheep from '.';
 
 describe('warnTheSheep', () => {
   it('should warn sheep in front of wolf', () => {
-    expect.assertions(5);
-
     expect(
       warnTheSheep(['sheep', 'sheep', 'sheep', 'sheep', 'sheep', 'wolf', 'sheep', 'sheep']),
     ).toBe('Oi! Sheep number 2! You are about to be eaten by a wolf!');

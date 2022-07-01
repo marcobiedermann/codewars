@@ -2,8 +2,6 @@ import addLetters from '.';
 
 describe('addLetters', () => {
   it('should add up letters to one letter', () => {
-    expect.assertions(7);
-
     expect(addLetters('a', 'b', 'c')).toBe('f');
     expect(addLetters('z')).toBe('z');
     expect(addLetters('a', 'b')).toBe('c');

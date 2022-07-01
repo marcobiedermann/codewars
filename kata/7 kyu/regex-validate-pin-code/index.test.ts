@@ -2,8 +2,6 @@ import validatePIN from '.';
 
 describe('validatePIN', () => {
   it('should return False for pins with length other than 4 or 6', () => {
-    expect.assertions(9);
-
     expect(validatePIN('1')).toBe(false);
     expect(validatePIN('12')).toBe(false);
     expect(validatePIN('123')).toBe(false);
@@ -16,15 +14,11 @@ describe('validatePIN', () => {
   });
 
   it('should return False for pins which contain characters other than digits', () => {
-    expect.assertions(2);
-
     expect(validatePIN('a234')).toBe(false);
     expect(validatePIN('.234')).toBe(false);
   });
 
   it('should return True for valid pins', () => {
-    expect.assertions(8);
-
     expect(validatePIN('1234')).toBe(true);
     expect(validatePIN('0000')).toBe(true);
     expect(validatePIN('1111')).toBe(true);

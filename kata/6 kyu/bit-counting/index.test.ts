@@ -2,8 +2,6 @@ import countBits from '.';
 
 describe('countBits', () => {
   it('should return the number of bits what are one', () => {
-    expect.assertions(5);
-
     expect(countBits(0)).toBe(0);
     expect(countBits(4)).toBe(1);
     expect(countBits(7)).toBe(3);

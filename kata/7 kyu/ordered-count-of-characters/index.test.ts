@@ -2,8 +2,6 @@ import orderedCount from '.';
 
 describe('orderedCount', () => {
   it('should count number of occurrences of each character', () => {
-    expect.assertions(3);
-
     expect(orderedCount('abracadabra')).toStrictEqual([
       ['a', 5],
       ['b', 2],

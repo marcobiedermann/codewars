@@ -2,8 +2,6 @@ import solve from '.';
 
 describe('solve', () => {
   it('should return an array of the number of letters that occupy their positions in the alphabet', () => {
-    expect.assertions(4);
-
     expect(solve(['abode', 'ABc', 'xyzD'])).toStrictEqual([4, 3, 1]);
     expect(solve(['abide', 'ABc', 'xyz'])).toStrictEqual([4, 3, 0]);
     expect(solve(['IAMDEFANDJKL', 'thedefgh', 'xyzDEFghijabc'])).toStrictEqual([6, 5, 7]);

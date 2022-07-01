@@ -2,8 +2,6 @@ import validate from '.';
 
 describe('validate', () => {
   it('should validate credit card numbers', () => {
-    expect.assertions(5);
-
     expect(validate(123)).toBe(false);
     expect(validate(1)).toBe(false);
     expect(validate(2121)).toBe(true);

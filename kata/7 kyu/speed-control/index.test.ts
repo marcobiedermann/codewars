@@ -2,8 +2,6 @@ import gps from '.';
 
 describe('gps', () => {
   it('should calculate max average speed', () => {
-    expect.assertions(12);
-
     expect(gps(20, [0.0, 0.23, 0.46, 0.69, 0.92, 1.15, 1.38, 1.61])).toBe(41);
 
     expect(

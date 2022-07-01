@@ -2,8 +2,6 @@ import remove from '.';
 
 describe('remove', () => {
   it('should all exclamation marks from the end of sentence', () => {
-    expect.assertions(6);
-
     expect(remove('Hi!')).toBe('Hi');
     expect(remove('Hi!!!')).toBe('Hi');
     expect(remove('!Hi')).toBe('!Hi');

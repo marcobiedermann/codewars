@@ -2,8 +2,6 @@ import dataReverse from '.';
 
 describe('dataReverse', () => {
   it('should reverse chunks of 8', () => {
-    expect.assertions(2);
-
     expect(
       dataReverse([
         1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1,

@@ -2,8 +2,6 @@ import flattenAndSort from '.';
 
 describe('flattenAndSort', () => {
   it('should flatten and sort array', () => {
-    expect.assertions(4);
-
     expect(flattenAndSort([])).toStrictEqual([]);
     expect(flattenAndSort([[], [1]])).toStrictEqual([1]);
     expect(
