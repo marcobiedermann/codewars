@@ -1,7 +1,7 @@
 import nthFibo from '.';
 
 describe('nthFibo', () => {
-  it('should', () => {
+  it('should return the nth Fibonacci number', () => {
     expect.assertions(4);
 
     expect(nthFibo(1)).toBe(0);
