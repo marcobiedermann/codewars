@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import _if from '.';
 
 jest.spyOn(console, 'log').mockImplementation();

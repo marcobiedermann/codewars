@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import helloWorld from '.';
 
 jest.spyOn(console, 'log').mockImplementation();

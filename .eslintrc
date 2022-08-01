@@ -28,7 +28,8 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "jest/max-expects": 0
   },
   "settings": {
     "import/parsers": {
