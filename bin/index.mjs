@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { mkdir, writeFile } from 'node:fs/promises';
+import { parseArgs } from 'node:util';
 
 function readmeTemplate(options) {
   const { description, name, tags, url } = options;
@@ -54,7 +55,11 @@ async function createFile(path, filename, content) {
   await writeFile(`${path}/${filename}`, content);
 }
 
-const [id] = process.argv.slice(2);
+const {
+  positionals: [id],
+} = parseArgs({
+  allowPositionals: true,
+});
 
 if (!id) {
   throw new Error('Please provide Kata ID');
