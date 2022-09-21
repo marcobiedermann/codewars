@@ -1,5 +1,5 @@
 function ArrowFunc(arr: number[]): string {
-  return arr.map((code) => String.fromCharCode(code)).join('');
+  return String.fromCharCode(...arr);
 }
 
 export default ArrowFunc;
