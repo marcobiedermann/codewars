@@ -42,7 +42,7 @@
   "devDependencies": {
     "@swc/jest": "^0.2.23",
     "@types/jest": "^29.1.1",
-    "@types/node": "^18.7.23",
+    "@types/node": "^18.11.8",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.24.0",
