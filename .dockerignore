@@ -1,4 +1,5 @@
 .dependabot
+.eslintcache
 .github
 coverage
 dist
