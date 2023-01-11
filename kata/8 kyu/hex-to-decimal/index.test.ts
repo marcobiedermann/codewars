@@ -8,6 +8,6 @@ describe('hexToDec', () => {
     expect(hexToDec('a')).toBe(10);
     expect(hexToDec('10')).toBe(16);
     expect(hexToDec('FF')).toBe(255);
-    expect(hexToDec('-C')).toStrictEqual(-12);
+    expect(hexToDec('-C')).toBe(-12);
   });
 });

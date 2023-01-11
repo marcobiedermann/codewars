@@ -9,8 +9,8 @@ describe('nextBigger', () => {
     expect(nextBigger(2017)).toBe(2071);
     expect(nextBigger(414)).toBe(441);
     expect(nextBigger(144)).toBe(414);
-    expect(nextBigger(9)).toStrictEqual(-1);
-    expect(nextBigger(111)).toStrictEqual(-1);
-    expect(nextBigger(531)).toStrictEqual(-1);
+    expect(nextBigger(9)).toBe(-1);
+    expect(nextBigger(111)).toBe(-1);
+    expect(nextBigger(531)).toBe(-1);
   });
 });

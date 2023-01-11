@@ -9,7 +9,7 @@ describe('findDigit', () => {
     expect(findDigit(-2825, 3)).toBe(8);
     expect(findDigit(-456, 4)).toBe(0);
     expect(findDigit(0, 20)).toBe(0);
-    expect(findDigit(65, 0)).toStrictEqual(-1);
-    expect(findDigit(24, -8)).toStrictEqual(-1);
+    expect(findDigit(65, 0)).toBe(-1);
+    expect(findDigit(24, -8)).toBe(-1);
   });
 });

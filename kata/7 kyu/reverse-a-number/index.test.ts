@@ -5,7 +5,7 @@ describe('reverseNumber', () => {
     expect.assertions(7);
 
     expect(reverseNumber(123)).toBe(321);
-    expect(reverseNumber(-123)).toStrictEqual(-321);
+    expect(reverseNumber(-123)).toBe(-321);
     expect(reverseNumber(1000)).toBe(1);
     expect(reverseNumber(4321234)).toBe(4321234);
     expect(reverseNumber(5)).toBe(5);

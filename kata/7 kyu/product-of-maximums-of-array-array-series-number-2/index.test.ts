@@ -11,8 +11,8 @@ describe('maxProduct', () => {
     expect(maxProduct([13, 12, -27, -302, 25, 37, 133, 155, -14], 5)).toBe(247895375);
     expect(maxProduct([-4, -27, -15, -6, -1], 2)).toBe(4);
     expect(maxProduct([-17, -8, -102, -309], 2)).toBe(136);
-    expect(maxProduct([10, 3, -27, -1], 3)).toStrictEqual(-30);
-    expect(maxProduct([14, 29, -28, 39, -16, -48], 4)).toStrictEqual(-253344);
+    expect(maxProduct([10, 3, -27, -1], 3)).toBe(-30);
+    expect(maxProduct([14, 29, -28, 39, -16, -48], 4)).toBe(-253344);
     expect(maxProduct([1], 1)).toBe(1);
   });
 });

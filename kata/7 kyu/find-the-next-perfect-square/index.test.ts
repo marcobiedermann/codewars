@@ -13,7 +13,7 @@ describe('findNextSquare', () => {
   it("should return -1 for numbers which aren't perfect squares", () => {
     expect.assertions(2);
 
-    expect(findNextSquare(155)).toStrictEqual(-1);
-    expect(findNextSquare(342786627)).toStrictEqual(-1);
+    expect(findNextSquare(155)).toBe(-1);
+    expect(findNextSquare(342786627)).toBe(-1);
   });
 });
