@@ -10,7 +10,7 @@ describe('sameCase', () => {
     expect(sameCase('A', 's')).toBe(0);
     expect(sameCase('c', 'B')).toBe(0);
     expect(sameCase('b', 'Z')).toBe(0);
-    expect(sameCase('\t', 'Z')).toStrictEqual(-1);
-    expect(sameCase('H', ':')).toStrictEqual(-1);
+    expect(sameCase('\t', 'Z')).toBe(-1);
+    expect(sameCase('H', ':')).toBe(-1);
   });
 });

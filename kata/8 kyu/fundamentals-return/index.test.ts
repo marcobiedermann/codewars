@@ -9,6 +9,6 @@ describe('calculate', () => {
     expect(divide(2, 1)).toBe(2);
     expect(mod(1, 2)).toBe(1);
     expect(exponent(1, 2)).toBe(1);
-    expect(subt(1, 2)).toStrictEqual(-1);
+    expect(subt(1, 2)).toBe(-1);
   });
 });

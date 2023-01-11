@@ -4,7 +4,7 @@ describe('min', () => {
   it('should return min number in list', () => {
     expect.assertions(2);
 
-    expect(min([-52, 56, 30, 29, -54, 0, -110])).toStrictEqual(-110);
+    expect(min([-52, 56, 30, 29, -54, 0, -110])).toBe(-110);
     expect(min([42, 54, 65, 87, 0])).toBe(0);
   });
 });

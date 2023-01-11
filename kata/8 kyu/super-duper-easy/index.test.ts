@@ -11,7 +11,7 @@ describe('problem', () => {
     expect(problem(1.2)).toBe(66);
     expect(problem(3)).toBe(156);
     expect(problem('RyanIsCool')).toBe('Error');
-    expect(problem(-3)).toStrictEqual(-144);
+    expect(problem(-3)).toBe(-144);
     expect(problem('')).toBe('Error');
     expect(problem(0.03)).toBe(7.5);
   });
