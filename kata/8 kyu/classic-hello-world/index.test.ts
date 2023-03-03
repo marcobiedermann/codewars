@@ -2,7 +2,7 @@
 
 import Solution from '.';
 
-jest.spyOn(console, 'log').mockImplementation();
+vi.spyOn(console, 'log').mockImplementation(() => ({}));
 
 describe('solution', () => {
   it('should log `Hello World!`', () => {

@@ -1,5 +1,3 @@
-/* eslint-disable jest/require-hook */
-
 type Item = Record<string, string>;
 
 const items: Item[] = [];

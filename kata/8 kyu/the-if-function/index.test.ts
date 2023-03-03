@@ -2,7 +2,7 @@
 
 import _if from '.';
 
-jest.spyOn(console, 'log').mockImplementation();
+vi.spyOn(console, 'log').mockImplementation(() => ({}));
 
 describe('_if', () => {
   it('should call `func1` when `bool` is truthy, otherwise `func2`', () => {

@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable jest/no-conditional-in-test */
 /* eslint-disable no-bitwise */
 
 // @ts-nocheck

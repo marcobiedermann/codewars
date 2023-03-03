@@ -2,7 +2,7 @@
 
 import helloWorld from '.';
 
-jest.spyOn(console, 'log').mockImplementation();
+vi.spyOn(console, 'log').mockImplementation(() => ({}));
 
 describe('helloWorld', () => {
   it('should define function `helloWorld`', () => {
