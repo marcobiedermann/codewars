@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { getFirst, getLast, getLength, popElement, pushElement } from '.';
 
 describe('array', () => {

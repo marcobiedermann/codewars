@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import roundToNext5 from '.';
 
 describe('roundToNext5', () => {

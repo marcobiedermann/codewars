@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import powersOfTwo from '.';
 
 describe('powersOfTwo', () => {

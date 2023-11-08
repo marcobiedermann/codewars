@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 
+import { describe, expect, it } from 'vitest';
 import shorter_reverse_longer from '.';
 
 describe('shorter_reverse_longer', () => {

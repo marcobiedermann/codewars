@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import parseF from '.';
 
 describe('parseF', () => {

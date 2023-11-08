@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import pipeFix from '.';
 
 describe('pipeFix', () => {

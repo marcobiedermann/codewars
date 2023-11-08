@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import maxDiff from '.';
 
 describe('maxDiff', () => {

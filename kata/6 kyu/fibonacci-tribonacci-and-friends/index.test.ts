@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import Xbonacci from '.';
 
 describe('xbonacci', () => {

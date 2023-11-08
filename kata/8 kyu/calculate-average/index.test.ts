@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 
+import { describe, expect, it } from 'vitest';
 import find_average from '.';
 
 describe('find_average', () => {

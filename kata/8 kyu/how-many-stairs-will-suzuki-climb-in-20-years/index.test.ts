@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import stairsIn20 from '.';
 
 describe('stairsIn20', () => {

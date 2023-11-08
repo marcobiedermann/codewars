@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 
+import { describe, expect, it } from 'vitest';
 import digital_root from '.';
 
 describe('foo', () => {

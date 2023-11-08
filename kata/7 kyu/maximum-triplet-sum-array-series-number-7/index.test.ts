@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import maxTriSum from '.';
 
 describe('maxTriSum', () => {

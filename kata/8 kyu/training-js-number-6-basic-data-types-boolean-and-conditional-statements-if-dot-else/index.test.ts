@@ -3,6 +3,7 @@
 
 // @ts-nocheck
 
+import { describe, expect, it } from 'vitest';
 import trueOrFalse from '.';
 
 describe('trueOrFalse', () => {

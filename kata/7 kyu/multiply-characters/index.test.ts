@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import spam from '.';
 
 describe('spam', () => {

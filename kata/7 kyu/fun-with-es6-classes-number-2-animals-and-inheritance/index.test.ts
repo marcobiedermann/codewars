@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { Cat, Dog, Shark } from '.';
 
 describe('the Shark class', () => {

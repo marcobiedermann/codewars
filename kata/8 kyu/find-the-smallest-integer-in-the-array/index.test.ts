@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import SmallestIntegerFinder from '.';
 
 describe('smallestIntegerFinder', () => {

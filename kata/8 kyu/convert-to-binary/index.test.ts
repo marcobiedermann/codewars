@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import toBinary from '.';
 
 describe('toBinary', () => {

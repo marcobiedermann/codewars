@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import vowelIndices from '.';
 
 describe('vowelIndices', () => {

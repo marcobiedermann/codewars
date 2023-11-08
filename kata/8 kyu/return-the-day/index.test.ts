@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import whatday from '.';
 
 describe('whatday', () => {

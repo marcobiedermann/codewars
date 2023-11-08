@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import distanceBetweenPoints, { Point } from '.';
 
 describe('distanceBetweenPoints', () => {

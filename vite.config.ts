@@ -6,6 +6,5 @@ export default defineConfig({
       all: true,
       include: ['kata'],
     },
-    globals: true,
   },
 });

@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import isDivideBy from '.';
 
 describe('isDivideBy', () => {

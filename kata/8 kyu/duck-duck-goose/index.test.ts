@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import duckDuckGoose, { Player } from '.';
 
 const exNames = ['a', 'b', 'c', 'd', 'c', 'e', 'f', 'g', 'h', 'z'];

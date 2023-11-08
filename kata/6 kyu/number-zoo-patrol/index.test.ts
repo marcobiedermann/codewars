@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import findNumber from '.';
 
 describe('findNumber', () => {

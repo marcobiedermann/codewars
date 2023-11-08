@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import makeUpperCase from '.';
 
 describe('makeUpperCase', () => {

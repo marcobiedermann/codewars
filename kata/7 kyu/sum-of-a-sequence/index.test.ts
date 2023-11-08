@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import sequenceSum from '.';
 
 describe('sequenceSum', () => {

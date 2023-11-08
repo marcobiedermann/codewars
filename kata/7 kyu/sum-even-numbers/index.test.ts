@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import sumEvenNumbers from '.';
 
 describe('sumEvenNumbers', () => {
