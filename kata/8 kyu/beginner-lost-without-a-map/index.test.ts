@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import maps from '.';
 
 describe('maps', () => {

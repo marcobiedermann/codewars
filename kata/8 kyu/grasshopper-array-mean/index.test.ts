@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import findAverage from '.';
 
 describe('findAverage', () => {

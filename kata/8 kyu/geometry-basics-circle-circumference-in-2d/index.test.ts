@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import circleCircumference from '.';
 import Circle from './circle';
 import Point from './point';

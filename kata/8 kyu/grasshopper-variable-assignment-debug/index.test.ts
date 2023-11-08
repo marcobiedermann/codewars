@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { a, b, name } from '.';
 
 describe('variable assignment', () => {

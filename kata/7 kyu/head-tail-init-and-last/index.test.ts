@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { head, init, last, tail } from '.';
 
 describe('head, tail, init, last', () => {

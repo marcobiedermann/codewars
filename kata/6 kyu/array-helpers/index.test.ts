@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import { average, cube, even, odd, square, sum } from '.';
 
 describe('foo', () => {

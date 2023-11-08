@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import lastSurvivor from '.';
 
 describe('lastSurvivor', () => {

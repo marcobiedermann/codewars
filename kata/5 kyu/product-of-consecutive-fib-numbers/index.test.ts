@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import productFib from '.';
 
 describe('productFib', () => {

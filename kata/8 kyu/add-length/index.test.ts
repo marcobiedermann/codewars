@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import addLength from '.';
 
 describe('addLength', () => {

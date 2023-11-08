@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import createArray from '.';
 
 describe('createArray', () => {

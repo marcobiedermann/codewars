@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import automorphic from '.';
 
 describe('automorphic', () => {

@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import findScreenHeight from '.';
 
 describe('findScreenHeight', () => {

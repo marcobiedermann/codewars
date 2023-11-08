@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import oper, { horMirror, vertMirror } from '.';
 
 describe('opstrings', () => {

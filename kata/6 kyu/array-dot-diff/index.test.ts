@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 
+import { describe, expect, it } from 'vitest';
 import array_diff from '.';
 
 describe('array_diff', () => {

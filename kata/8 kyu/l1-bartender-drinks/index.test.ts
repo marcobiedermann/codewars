@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import getDrinkByProfession from '.';
 
 describe('getDrinkByProfession', () => {

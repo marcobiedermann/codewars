@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 
+import { describe, expect, it } from 'vitest';
 import even_or_odd from '.';
 
 describe('even_or_odd', () => {

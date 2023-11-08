@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest';
 import findUnique from '.';
 
 describe('findUnique', () => {
