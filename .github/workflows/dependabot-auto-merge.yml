@@ -3,6 +3,6 @@ name: Dependabot auto-merge
 on: pull_request
 
 jobs:
-  ci:
+  dependabot:
     uses: marcobiedermann/actions/.github/workflows/dependabot-auto-merge.yml@main
     secrets: inherit
