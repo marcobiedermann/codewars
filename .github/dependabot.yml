@@ -4,3 +4,12 @@ updates:
     directory: '/'
     schedule:
       interval: 'monthly'
+    groups:
+      eslint:
+        patterns:
+          - '@typescript-eslint/*'
+          - 'eslint*'
+      vitest:
+        patterns:
+          - '@vitest/*'
+          - 'vitest'
