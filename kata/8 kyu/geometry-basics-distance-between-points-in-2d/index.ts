@@ -1,6 +1,9 @@
 class Point {
   // eslint-disable-next-line no-useless-constructor
-  constructor(public x: number, public y: number) {}
+  constructor(
+    public x: number,
+    public y: number,
+  ) {}
 }
 
 function distanceBetweenPoints(a: Point, b: Point): number {

@@ -1,5 +1,8 @@
 class Ship {
-  constructor(private draft: number, private crew: number) {
+  constructor(
+    private draft: number,
+    private crew: number,
+  ) {
     this.draft = draft;
     this.crew = crew;
   }
