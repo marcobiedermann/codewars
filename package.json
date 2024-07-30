@@ -10,7 +10,6 @@
     "lint:js": "eslint --cache --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "prepare": "husky",
-    "pretty-quick": "pretty-quick --staged",
     "test": "vitest",
     "test:ci": "vitest run --coverage",
     "update": "npx npm-check-updates --format group --interactive"
