@@ -10,8 +10,8 @@
     "lint:js": "eslint --cache --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "prepare": "husky",
-    "test": "vitest",
-    "test:ci": "vitest run --coverage",
+    "test": "node --experimental-strip-types --no-warnings --test --watch",
+    "test:ci": "mkdir -p coverage && node --experimental-strip-types --experimental-test-coverage --no-warnings --test --test-reporter=lcov --test-reporter-destination=coverage/lcov.info",
     "update": "npx npm-check-updates --format group --interactive"
   },
   "bin": {
@@ -39,16 +39,15 @@
   },
   "homepage": "https://github.com/marcobiedermann/codewars#readme",
   "devDependencies": {
+    "@types/node": "^22.10.6",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
-    "@vitest/coverage-v8": "^2.1.8",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
     "prettier": "^3.4.2",
-    "typescript": "^5.7.2",
-    "vitest": "^2.0.5"
+    "typescript": "^5.7.2"
   },
   "lint-staged": {
     "**/*": "npm run format"
