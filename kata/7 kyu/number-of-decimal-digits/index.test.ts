@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import digits from '.';
+import digits from './index.ts';
 
 describe('digits', () => {
   it('should count the number of digits in number', () => {

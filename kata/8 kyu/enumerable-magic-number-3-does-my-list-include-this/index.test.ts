@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import include from '.';
+import include from './index.ts';
 
 describe('include', () => {
   it('should check if item is in list', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import createPhoneNumber from '.';
+import createPhoneNumber from './index.ts';
 
 describe('createPhoneNumber', () => {
   it('should format array of numbers to phone number', () => {

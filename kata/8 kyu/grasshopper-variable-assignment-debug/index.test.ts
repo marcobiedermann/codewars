@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { a, b, name } from '.';
+import { a, b, name } from './index.ts';
 
 describe('variable assignment', () => {
   it('should assign the string to its variable', () => {

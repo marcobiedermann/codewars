@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import twoHighest from '.';
+import twoHighest from './index.ts';
 
 describe('twoHighest', () => {
   it('should return the two distinct highest values in a list', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { add, divide, exponent, mod, multiply, subt } from '.';
+import { add, divide, exponent, mod, multiply, subt } from './index.ts';
 
 describe('calculate', () => {
   it('should calculate result', () => {

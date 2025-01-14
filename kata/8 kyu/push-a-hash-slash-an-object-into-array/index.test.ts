@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import items from '.';
+import items from './index.ts';
 
 describe('items', () => {
   it('should push an object into an array', () => {

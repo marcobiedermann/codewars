@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import leo from '.';
+import leo from './index.ts';
 
 describe('leo', () => {
   it('should describe leo', () => {

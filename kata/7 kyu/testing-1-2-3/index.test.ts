@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import number from '.';
+import number from './index.ts';
 
 describe('number', () => {
   it('should prepend lines by line number', () => {

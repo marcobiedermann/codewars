@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 
 import { describe, expect, it } from 'vitest';
-import even_or_odd from '.';
+import even_or_odd from './index.ts';
 
 describe('even_or_odd', () => {
   it('should return `Even` for even numbers and `Odd` for odd numbers', () => {

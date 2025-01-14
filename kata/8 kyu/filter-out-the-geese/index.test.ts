@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import gooseFilter from '.';
+import gooseFilter from './index.ts';
 
 describe('gooseFilter', () => {
   it('mixed list', () => {

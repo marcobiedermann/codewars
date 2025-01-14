@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import XO from '.';
+import XO from './index.ts';
 
 describe('xo', () => {
   it('should check if string has the same amount of `x`s and `o`s', () => {

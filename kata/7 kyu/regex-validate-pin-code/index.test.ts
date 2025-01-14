@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import validatePIN from '.';
+import validatePIN from './index.ts';
 
 describe('validatePIN', () => {
   it('should return False for pins with length other than 4 or 6', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import addFive from '.';
+import addFive from './index.ts';
 
 describe('addFive', () => {
   it('should add `5` to the given number', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import lovefunc from '.';
+import lovefunc from './index.ts';
 
 describe('lovefunc', () => {
   it('should check if one number is odd and one is even', () => {

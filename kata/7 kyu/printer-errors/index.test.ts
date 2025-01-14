@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import printerError from '.';
+import printerError from './index.ts';
 
 describe('printerError', () => {
   it('should print number of errors', () => {

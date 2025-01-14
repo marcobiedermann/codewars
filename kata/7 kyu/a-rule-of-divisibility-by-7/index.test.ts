@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import seven from '.';
+import seven from './index.ts';
 
 describe('seven', () => {
   it('should return stack of last number and stack', () => {

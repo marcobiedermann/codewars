@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumTwoSmallestNumbers from '.';
+import sumTwoSmallestNumbers from './index.ts';
 
 describe('sumTwoSmallestNumbers', () => {
   it('should sum the two lowest positive integers', () => {

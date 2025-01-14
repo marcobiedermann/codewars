@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import divisibleBy from '.';
+import divisibleBy from './index.ts';
 
 describe('divisibleBy', () => {
   it('should return numbers which are divisible by divisor', () => {

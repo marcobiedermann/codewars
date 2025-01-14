@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import shark from '.';
+import shark from './index.ts';
 
 describe('shark', () => {
   it('should return "Alive!" if you make it, if not, return "Shark Bait!".', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import movie from '.';
+import movie from './index.ts';
 
 describe('movie', () => {
   it('should calculate how many times you have to go to the cinema', () => {

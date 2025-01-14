@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import twoSort from '.';
+import twoSort from './index.ts';
 
 describe('twoSort', () => {
   it('should sort words and return first separated by `***`', () => {

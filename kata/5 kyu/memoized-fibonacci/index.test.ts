@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import fibonacci from '.';
+import fibonacci from './index.ts';
 
 describe('fibonacci', () => {
   it('should calculate the nth fibonacci number', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getAverage from '.';
+import getAverage from './index.ts';
 
 describe('getAverage', () => {
   it('should return rounded average of numbers', () => {

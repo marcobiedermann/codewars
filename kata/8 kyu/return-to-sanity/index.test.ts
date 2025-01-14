@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import mystery from '.';
+import mystery from './index.ts';
 
 describe('mystery', () => {
   it('should return an object', () => {

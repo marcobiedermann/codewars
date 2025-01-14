@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import predictAge from '.';
+import predictAge from './index.ts';
 
 describe('predictAge', () => {
   it('should predict age', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import createFunctions from '.';
+import createFunctions from './index.ts';
 
 describe('createFunctions', () => {
   it('should return an array of function which return their index', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import greet from '.';
+import greet from './index.ts';
 
 describe('greet', () => {
   it('is it a function?', () => {

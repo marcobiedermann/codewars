@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import greetDevelopers from '.';
+import greetDevelopers from './index.ts';
 
 describe('greetDevelopers', () => {
   it('should return a new list of developers where each having a new property `greeting`', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getSize from '.';
+import getSize from './index.ts';
 
 describe('getSize', () => {
   it('should return area and volume of box', () => {

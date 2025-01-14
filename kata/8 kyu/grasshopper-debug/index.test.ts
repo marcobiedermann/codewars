@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import weatherInfo from '.';
+import weatherInfo from './index.ts';
 
 describe('weatherInfo', () => {
   it('should convert fahrenheit to celsius', () => {

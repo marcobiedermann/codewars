@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import camelCase from '.';
+import camelCase from './index.ts';
 
 describe('camelCase', () => {
   it('should camelcase each word in sentence', () => {

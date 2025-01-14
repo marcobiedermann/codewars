@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import between from '.';
+import between from './index.ts';
 
 describe('between', () => {
   it('should return all integers between the lower and upper boundaries, including', () => {

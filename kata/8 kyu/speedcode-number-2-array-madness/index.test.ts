@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import arrayMadness from '.';
+import arrayMadness from './index.ts';
 
 describe('arrayMadness', () => {
   it('should check is `a` is greater than `b`', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nearestSq from '.';
+import nearestSq from './index.ts';
 
 describe('nearestSq', () => {
   it('should find nearest square number', () => {

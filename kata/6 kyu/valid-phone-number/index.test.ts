@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import validPhoneNumber from '.';
+import validPhoneNumber from './index.ts';
 
 describe('validPhoneNumber', () => {
   it('should check if phone number is valid', () => {

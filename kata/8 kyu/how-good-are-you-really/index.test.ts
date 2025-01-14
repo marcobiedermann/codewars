@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import betterThanAverage from '.';
+import betterThanAverage from './index.ts';
 
 describe('example Tests', () => {
   it('betterThanAverage([2, 3], 5) should return True', () => {

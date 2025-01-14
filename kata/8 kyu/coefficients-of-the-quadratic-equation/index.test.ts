@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import quadratic from '.';
+import quadratic from './index.ts';
 
 describe('quadratic', () => {
   it('should return the coefficients of quadratic equation', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import bmi from '.';
+import bmi from './index.ts';
 
 describe('bmi', () => {
   it('should calculate BMI', () => {

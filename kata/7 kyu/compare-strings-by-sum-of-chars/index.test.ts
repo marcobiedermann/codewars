@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import compare from '.';
+import compare from './index.ts';
 
 describe('compare', () => {
   it('should compare two strings by their values', () => {

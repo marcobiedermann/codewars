@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import booleanToString from '.';
+import booleanToString from './index.ts';
 
 describe('booleanToString', () => {
   it('should convert boolean to string', () => {

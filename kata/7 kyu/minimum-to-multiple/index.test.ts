@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import minimum from '.';
+import minimum from './index.ts';
 
 describe('minimum', () => {
   it('should return minimum number to add / subtract to make multiple', () => {

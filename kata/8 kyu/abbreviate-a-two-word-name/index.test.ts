@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import abbrevName from '.';
+import abbrevName from './index.ts';
 
 describe('abbrevName', () => {
   it('should return two capital letters with a dot separating them', () => {

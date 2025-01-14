@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isLeapYear from '.';
+import isLeapYear from './index.ts';
 
 describe('isLeapYear', () => {
   it('should check whether year is a leap year', () => {

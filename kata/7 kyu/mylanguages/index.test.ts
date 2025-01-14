@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import myLanguages from '.';
+import myLanguages from './index.ts';
 
 describe('myLanguages', () => {
   it('should return the list of languages where your test score is at least 60, in descending order', () => {

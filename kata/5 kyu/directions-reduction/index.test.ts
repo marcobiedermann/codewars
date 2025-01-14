@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import dirReduc from '.';
+import dirReduc from './index.ts';
 
 describe('dirReduc', () => {
   it('should return reduced directions', () => {

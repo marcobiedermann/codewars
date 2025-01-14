@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import digit from '.';
+import digit from './index.ts';
 
 describe('digit', () => {
   it('should check if value is digit', () => {

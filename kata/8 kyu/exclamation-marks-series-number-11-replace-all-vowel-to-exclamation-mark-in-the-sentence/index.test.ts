@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import replace from '.';
+import replace from './index.ts';
 
 describe('replace', () => {
   it('should replace all vowel by exclamation mark', () => {

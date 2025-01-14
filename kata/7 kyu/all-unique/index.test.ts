@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import hasUniqueChars from '.';
+import hasUniqueChars from './index.ts';
 
 describe('hasUniqueChars', () => {
   it('should check if a string contains only unique characters', () => {

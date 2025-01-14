@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maxRot from '.';
+import maxRot from './index.ts';
 
 describe('maxRot', () => {
   it('should return max rotated value', () => {

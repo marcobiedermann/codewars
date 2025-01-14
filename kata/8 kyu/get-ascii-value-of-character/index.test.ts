@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getASCII from '.';
+import getASCII from './index.ts';
 
 describe('getASCII', () => {
   it('should return the ASCII code of a character', () => {

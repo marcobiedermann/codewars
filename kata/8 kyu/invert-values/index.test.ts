@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import invert from '.';
+import invert from './index.ts';
 
 describe('invent', () => {
   it('should return inverse of each', () => {

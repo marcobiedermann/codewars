@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import checkAlive from '.';
+import checkAlive from './index.ts';
 
 describe('checkAlive', () => {
   it('should check if user is still alive', () => {

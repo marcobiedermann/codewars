@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import foldTo from '.';
+import foldTo from './index.ts';
 
 describe('foldTo', () => {
   it('should calculate number of folds to reach distance', () => {

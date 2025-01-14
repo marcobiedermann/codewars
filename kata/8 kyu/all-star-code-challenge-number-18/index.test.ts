@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import strCount from '.';
+import strCount from './index.ts';
 
 describe('strCount', () => {
   it('should count occurrences of letter in word', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getEvenNumbers from '.';
+import getEvenNumbers from './index.ts';
 
 describe('getEvenNumbers', () => {
   it('should filter even numbers', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Person from '.';
+import Person from './index.ts';
 
 describe('person', () => {
   it('should return its name', () => {

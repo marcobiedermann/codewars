@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import solve from '.';
+import solve from './index.ts';
 
 describe('solve', () => {
   it('should return an array of the number of letters that occupy their positions in the alphabet', () => {

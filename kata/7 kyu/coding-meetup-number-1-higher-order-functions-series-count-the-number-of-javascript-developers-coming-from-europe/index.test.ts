@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countDevelopers from '.';
+import countDevelopers from './index.ts';
 
 describe('countDevelopers', () => {
   it('should return the number of JavaScript developers from Europe', () => {

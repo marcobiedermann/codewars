@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import howMuchWater from '.';
+import howMuchWater from './index.ts';
 
 describe('howMuchWater', () => {
   it('should calculate the amount of water needed', () => {

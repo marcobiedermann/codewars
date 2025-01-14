@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import abbreviate from '.';
+import abbreviate from './index.ts';
 
 describe('abbreviate', () => {
   it('should turn words into an abbreviation', () => {

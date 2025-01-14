@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import reverseLetter from '.';
+import reverseLetter from './index.ts';
 
 describe('reverseLetter', () => {
   it('should reverse string, ommitting all non-alphabetic characters', () => {

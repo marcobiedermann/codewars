@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import rainAmount from '.';
+import rainAmount from './index.ts';
 
 describe('rainAmount', () => {
   it('should report if your plant needs water', () => {

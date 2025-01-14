@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getNumberFromString from '.';
+import getNumberFromString from './index.ts';
 
 describe('getNumberFromString', () => {
   it('should get all numbers from string', () => {

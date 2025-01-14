@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import binaryArrayToNumber from '.';
+import binaryArrayToNumber from './index.ts';
 
 describe('binaryArrayToNumber', () => {
   it('should convert binary value in array to integer', () => {

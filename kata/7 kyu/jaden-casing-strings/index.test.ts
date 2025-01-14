@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toJadenCase from '.';
+import toJadenCase from './index.ts';
 
 describe('toJadenCase', () => {
   it('should transform string', () => {

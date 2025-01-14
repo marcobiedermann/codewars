@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import decodeMorse from '.';
+import decodeMorse from './index.ts';
 
 describe('decodeMorse', () => {
   it('should decode the morse code', () => {

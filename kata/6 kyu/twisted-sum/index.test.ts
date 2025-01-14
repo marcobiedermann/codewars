@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import twistedSum from '.';
+import twistedSum from './index.ts';
 
 describe('twistedSum', () => {
   it('should return the sum of the digits of all numbers from 1 to `n`', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import powersOfTwo from '.';
+import powersOfTwo from './index.ts';
 
 describe('powersOfTwo', () => {
   it('should return list of all the powers of 2', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findDeletedNumber from '.';
+import findDeletedNumber from './index.ts';
 
 describe('findDeletedNumber', () => {
   it('should find the deleted number', () => {

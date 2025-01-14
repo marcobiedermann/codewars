@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import reverseList from '.';
+import reverseList from './index.ts';
 
 describe('reverseList', () => {
   it('should reverse array', () => {

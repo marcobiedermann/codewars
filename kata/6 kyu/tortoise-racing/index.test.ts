@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import race from '.';
+import race from './index.ts';
 
 describe('race', () => {
   it('should return time it takes `B` to catch `A`', () => {

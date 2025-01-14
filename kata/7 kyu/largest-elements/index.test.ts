@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import largest from '.';
+import largest from './index.ts';
 
 describe('largest', () => {
   it('should find the `n` largest elements in the list', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isVow from '.';
+import isVow from './index.ts';
 
 describe('isVow', () => {
   it('should change any character code for vowels to a string', () => {

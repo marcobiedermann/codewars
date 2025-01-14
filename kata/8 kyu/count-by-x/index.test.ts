@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countBy from '.';
+import countBy from './index.ts';
 
 describe('countBy', () => {
   it('should return array of multiples', () => {

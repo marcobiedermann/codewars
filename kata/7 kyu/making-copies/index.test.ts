@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import copyList from '.';
+import copyList from './index.ts';
 
 describe('copyList', () => {
   it('should create a copy', () => {

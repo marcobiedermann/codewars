@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import generateShape from '.';
+import generateShape from './index.ts';
 
 describe('generateShape', () => {
   it('should generate a square that is as long and wide as the integer', () => {

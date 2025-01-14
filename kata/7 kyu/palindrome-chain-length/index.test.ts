@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import palindromeChainLength from '.';
+import palindromeChainLength from './index.ts';
 
 describe('palindromeChainLength', () => {
   it('should', () => {

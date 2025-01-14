@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import basicOp from '.';
+import basicOp from './index.ts';
 
 describe('basicOp', () => {
   it('should perform basic operations', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import removeNb from '.';
+import removeNb from './index.ts';
 
 describe('removeNb', () => {
   it('should return array of all numbers which are the possible removed numbers in the sequence', () => {

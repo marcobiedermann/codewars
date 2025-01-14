@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import twoDecimalPlaces from '.';
+import twoDecimalPlaces from './index.ts';
 
 describe('twoDecimalPlaces', () => {
   it('should round number to two decimal places', () => {

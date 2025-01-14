@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nextId from '.';
+import nextId from './index.ts';
 
 describe('nextId', () => {
   it('should', () => {

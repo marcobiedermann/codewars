@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getGrade from '.';
+import getGrade from './index.ts';
 
 describe('getGrade', () => {
   it('should return an A', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import roundToNext5 from '.';
+import roundToNext5 from './index.ts';
 
 describe('roundToNext5', () => {
   it('should round to the next multiple of 5', () => {

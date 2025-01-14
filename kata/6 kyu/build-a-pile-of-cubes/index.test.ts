@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findNb from '.';
+import findNb from './index.ts';
 
 describe('findNb', () => {
   it('should return numbers of cube exactly fitting in volume', () => {

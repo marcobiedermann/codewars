@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import christmasTree from '.';
+import christmasTree from './index.ts';
 
 describe('christmasTree', () => {
   it('should return a christmas tree of the correct hight', () => {

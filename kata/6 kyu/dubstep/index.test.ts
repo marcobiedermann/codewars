@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import songDecoder from '.';
+import songDecoder from './index.ts';
 
 describe('songDecoder', () => {
   it('should remove `WUB` and separate words with space', () => {

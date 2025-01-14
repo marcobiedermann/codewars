@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import cubeChecker from '.';
+import cubeChecker from './index.ts';
 
 describe('cubeChecker', () => {
   it('should check if the shape is a cube', () => {

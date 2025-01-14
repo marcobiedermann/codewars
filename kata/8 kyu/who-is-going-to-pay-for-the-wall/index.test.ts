@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import whoIsPaying from '.';
+import whoIsPaying from './index.ts';
 
 describe('whoIsPaying', () => {
   it('should truncate string to max two letters', () => {

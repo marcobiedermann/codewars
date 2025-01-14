@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stringy from '.';
+import stringy from './index.ts';
 
 describe('stringy', () => {
   it('should return a string', () => {

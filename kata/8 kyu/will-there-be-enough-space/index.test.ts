@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import enough from '.';
+import enough from './index.ts';
 
 describe('enough', () => {
   it('should return number of non fitting passengers', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import numPrimorial from '.';
+import numPrimorial from './index.ts';
 
 describe('numPrimorial', () => {
   it('should return primorial of `n`', () => {

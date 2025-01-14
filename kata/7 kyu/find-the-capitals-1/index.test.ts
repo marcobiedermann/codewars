@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import capitals from '.';
+import capitals from './index.ts';
 
 describe('capitals', () => {
   it('should return list of indexed of all capital letters', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findOutlier from '.';
+import findOutlier from './index.ts';
 
 describe('findOutlier', () => {
   it('should return the single even or single odd number', () => {

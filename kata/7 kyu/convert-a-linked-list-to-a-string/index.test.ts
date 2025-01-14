@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stringify, { Node } from '.';
+import stringify, { Node } from './index.ts';
 
 describe('stringify', () => {
   it('should convert a linked list to a string', () => {

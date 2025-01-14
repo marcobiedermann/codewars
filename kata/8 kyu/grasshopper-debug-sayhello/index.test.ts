@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sayHello from '.';
+import sayHello from './index.ts';
 
 describe('sayHello', () => {
   it('should should say hello to name passed in', () => {

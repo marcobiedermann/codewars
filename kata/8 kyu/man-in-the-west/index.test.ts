@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import checkTheBucket from '.';
+import checkTheBucket from './index.ts';
 
 describe('checkTheBucket', () => {
   it('should check if there is gold in the bucket', () => {

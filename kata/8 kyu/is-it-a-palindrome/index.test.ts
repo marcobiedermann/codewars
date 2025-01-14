@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isPalindrome from '.';
+import isPalindrome from './index.ts';
 
 describe('isPalindrome', () => {
   it('should check if string is palindrome', () => {

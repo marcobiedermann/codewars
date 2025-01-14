@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import position from '.';
+import position from './index.ts';
 
 describe('position', () => {
   it('should position of letter in alphabet', () => {

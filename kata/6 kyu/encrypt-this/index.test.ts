@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import encryptThis from '.';
+import encryptThis from './index.ts';
 
 describe('encryptThis', () => {
   it('should encrypt the message', () => {

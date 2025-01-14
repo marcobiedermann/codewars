@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import longest from '.';
+import longest from './index.ts';
 
 describe('longest', () => {
   it('should return a new sorted string containing distinct letters', () => {

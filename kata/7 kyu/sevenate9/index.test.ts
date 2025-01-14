@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sevenAte9 from '.';
+import sevenAte9 from './index.ts';
 
 describe('sevenAte9', () => {
   it('should remove evert `9` that is in between `7`s', () => {

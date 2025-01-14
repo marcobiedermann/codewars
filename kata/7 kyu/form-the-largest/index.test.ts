@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maxNumber from '.';
+import maxNumber from './index.ts';
 
 describe('maxNumber', () => {
   it('should return maximum number from digitis of number', () => {

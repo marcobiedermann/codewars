@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countPositivesSumNegatives from '.';
+import countPositivesSumNegatives from './index.ts';
 
 describe('countPositivesSumNegatives', () => {
   it('should count positive number and sum positive numbers', () => {

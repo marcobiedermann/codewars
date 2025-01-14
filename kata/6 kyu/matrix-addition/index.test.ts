@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import matrixAddition from '.';
+import matrixAddition from './index.ts';
 
 describe('matrixAddition', () => {
   it('should add two matrices', () => {

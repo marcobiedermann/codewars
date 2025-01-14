@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pickIt from '.';
+import pickIt from './index.ts';
 
 describe('pickIt', () => {
   it('should return array or even and odd numbers', () => {

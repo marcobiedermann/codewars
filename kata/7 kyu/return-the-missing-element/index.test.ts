@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getMissingElement from '.';
+import getMissingElement from './index.ts';
 
 describe('getMissingElement', () => {
   it('should find the missing element in the sequence', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import domainName from '.';
+import domainName from './index.ts';
 
 describe('domainName', () => {
   it('should extract domain from url', () => {

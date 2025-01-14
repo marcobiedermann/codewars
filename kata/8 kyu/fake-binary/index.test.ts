@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import fakeBin from '.';
+import fakeBin from './index.ts';
 
 describe('fakeBin', () => {
   it('should replace digits below 5 with `0` and rest by `1`', () => {

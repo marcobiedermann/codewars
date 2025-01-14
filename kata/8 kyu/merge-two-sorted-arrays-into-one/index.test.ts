@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import mergeArrays from '.';
+import mergeArrays from './index.ts';
 
 describe('mergeArrays', () => {
   it('should merge two arrays into one', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isUpperCase from '.';
+import isUpperCase from './index.ts';
 
 describe('isUpperCase', () => {
   it('should work for the examples provided in the description', () => {

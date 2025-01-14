@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import testEven from '.';
+import testEven from './index.ts';
 
 describe('testEven', () => {
   it('should check if number is even', () => {

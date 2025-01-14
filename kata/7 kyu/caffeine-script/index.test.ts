@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import caffeineBuzz from '.';
+import caffeineBuzz from './index.ts';
 
 describe('caffeineBuzz', () => {
   it('should return caffein script', () => {

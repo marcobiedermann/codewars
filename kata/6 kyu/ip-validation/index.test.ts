@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isValidIP from '.';
+import isValidIP from './index.ts';
 
 describe('isValidIP', () => {
   it('should check if IP is valid', () => {

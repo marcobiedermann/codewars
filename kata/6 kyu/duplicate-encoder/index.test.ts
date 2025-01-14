@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import duplicateEncode from '.';
+import duplicateEncode from './index.ts';
 
 describe('duplicateEncode', () => {
   it('should convert string', () => {

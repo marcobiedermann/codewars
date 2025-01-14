@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import grow from '.';
+import grow from './index.ts';
 
 describe('grow', () => {
   it('should multiply all numbers in list', () => {

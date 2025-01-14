@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import wordsToMarks from '.';
+import wordsToMarks from './index.ts';
 
 describe('wordsToMarks', () => {
   it('should sum up char codes of characters in string', () => {

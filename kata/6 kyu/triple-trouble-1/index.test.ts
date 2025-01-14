@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import tripledouble from '.';
+import tripledouble from './index.ts';
 
 describe('tripledouble', () => {
   it('should check for triple and double', () => {

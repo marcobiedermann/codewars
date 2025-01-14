@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import addBinary from '.';
+import addBinary from './index.ts';
 
 describe('addBinary', () => {
   const results1 = addBinary(1, 2);

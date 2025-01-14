@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findScreenHeight from '.';
+import findScreenHeight from './index.ts';
 
 describe('findScreenHeight', () => {
   it('should return width and height of monitor', () => {

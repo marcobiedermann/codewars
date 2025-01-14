@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countSheeps from '.';
+import countSheeps from './index.ts';
 
 describe('countSheeps', () => {
   it('should count present sheep in array', () => {

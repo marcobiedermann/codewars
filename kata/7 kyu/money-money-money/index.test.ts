@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import calculateYears from '.';
+import calculateYears from './index.ts';
 
 describe('calculateYears', () => {
   it('should calculate years to reach investment', () => {

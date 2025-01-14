@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import monkeyCount from '.';
+import monkeyCount from './index.ts';
 
 describe('monkeyCount', () => {
   it('should return an array with all numbers up to that number', () => {

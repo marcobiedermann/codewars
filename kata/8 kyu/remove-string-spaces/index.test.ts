@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import noSpace from '.';
+import noSpace from './index.ts';
 
 describe('noSpace', () => {
   it('should remove all whitespace from string', () => {

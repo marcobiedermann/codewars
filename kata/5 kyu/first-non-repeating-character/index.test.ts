@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import firstNonRepeatingLetter from '.';
+import firstNonRepeatingLetter from './index.ts';
 
 describe('firstNonRepeatingLetter', () => {
   it('should return first non repeating letter in string', () => {

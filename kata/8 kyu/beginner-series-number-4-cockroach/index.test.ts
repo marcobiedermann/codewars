@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import cockroachSpeed from '.';
+import cockroachSpeed from './index.ts';
 
 describe('cockroachSpeed', () => {
   it('should return cm per second', () => {

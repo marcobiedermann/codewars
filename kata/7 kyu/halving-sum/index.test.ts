@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import halvingSum from '.';
+import halvingSum from './index.ts';
 
 describe('halvingSum', () => {
   it('should return sum of integer division', () => {

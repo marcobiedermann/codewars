@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import validParentheses from '.';
+import validParentheses from './index.ts';
 
 describe('validParentheses', () => {
   it('should if order of the parentheses is valid', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import repeatStr from '.';
+import repeatStr from './index.ts';
 
 describe('repeatStr', () => {
   it('should repeat string by count', () => {

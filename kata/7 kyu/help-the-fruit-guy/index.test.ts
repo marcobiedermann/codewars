@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import removeRotten from '.';
+import removeRotten from './index.ts';
 
 describe('removeRotten', () => {
   it('should remove all rotten fruits', () => {

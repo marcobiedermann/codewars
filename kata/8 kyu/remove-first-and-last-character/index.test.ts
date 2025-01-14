@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import removeChar from '.';
+import removeChar from './index.ts';
 
 describe('removeChar', () => {
   it('should remove the first and last character from string', () => {

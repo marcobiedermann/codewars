@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import factorial from '.';
+import factorial from './index.ts';
 
 describe('factorial', () => {
   it('should calculate the factorial', () => {

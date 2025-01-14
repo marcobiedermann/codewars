@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sixToast from '.';
+import sixToast from './index.ts';
 
 describe('sixToast', () => {
   it('should count the number of pieces of toast', () => {

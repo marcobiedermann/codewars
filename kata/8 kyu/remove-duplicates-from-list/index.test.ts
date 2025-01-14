@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import distinct from '.';
+import distinct from './index.ts';
 
 describe('distinct', () => {
   it('should filter duplicated items', () => {

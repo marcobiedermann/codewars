@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import rowSumOddNumbers from '.';
+import rowSumOddNumbers from './index.ts';
 
 describe('rowSumOddNumbers', () => {
   it('should return row sum of consecutive odd numbers', () => {

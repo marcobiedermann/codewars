@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getAge from '.';
+import getAge from './index.ts';
 
 describe('getAge', () => {
   it('should return first character as number', () => {

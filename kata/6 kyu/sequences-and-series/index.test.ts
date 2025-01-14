@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getScore from '.';
+import getScore from './index.ts';
 
 describe('getScore', () => {
   it('should return the score for any positive number', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pipeFix from '.';
+import pipeFix from './index.ts';
 
 describe('pipeFix', () => {
   it('should return each number in range', () => {

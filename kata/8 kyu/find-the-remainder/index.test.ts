@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import remainder from '.';
+import remainder from './index.ts';
 
 describe('remainder', () => {
   it('should find the remainder', () => {

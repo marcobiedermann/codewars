@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import checkExam from '.';
+import checkExam from './index.ts';
 
 describe('checkExam', () => {
   it('should calculate score of exam', () => {

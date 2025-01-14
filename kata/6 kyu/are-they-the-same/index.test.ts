@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import comp from '.';
+import comp from './index.ts';
 
 describe('comp', () => {
   it('should check if both array are the same with the same multiplicities', () => {

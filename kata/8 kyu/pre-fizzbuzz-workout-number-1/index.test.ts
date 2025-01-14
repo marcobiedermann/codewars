@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import preFizz from '.';
+import preFizz from './index.ts';
 
 describe('preFizz', () => {
   it('should return an array of positive integers from 1 to `n`', () => {

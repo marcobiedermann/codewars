@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import litres from '.';
+import litres from './index.ts';
 
 describe('litres', () => {
   it('should return number of litres', () => {

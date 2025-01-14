@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import apple from '.';
+import apple from './index.ts';
 
 describe('apple', () => {
   it('should check for apple turnover', () => {

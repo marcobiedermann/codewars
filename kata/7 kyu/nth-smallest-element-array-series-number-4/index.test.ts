@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nthSmallest from '.';
+import nthSmallest from './index.ts';
 
 describe('nthSmallest', () => {
   it('should find the nth smallest number in the array', () => {

@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 
 import { describe, expect, it } from 'vitest';
-import Person from '.';
+import Person from './index.ts';
 
 describe('person', () => {
   it('should fill fields', () => {

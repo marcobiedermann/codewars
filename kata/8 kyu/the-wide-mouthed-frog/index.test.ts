@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import mouthSize from '.';
+import mouthSize from './index.ts';
 
 describe('mouthSize', () => {
   it('should return mouth size of frog', () => {

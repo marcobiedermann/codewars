@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import largestPairSum from '.';
+import largestPairSum from './index.ts';
 
 describe('largestPairSum', () => {
   it('should find the largest pair sum in sequence', () => {

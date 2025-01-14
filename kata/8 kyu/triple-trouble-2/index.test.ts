@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import tripleTrouble from '.';
+import tripleTrouble from './index.ts';
 
 describe('tripleTrouble', () => {
   it('should combine all letters of the three strings', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import combineNames from '.';
+import combineNames from './index.ts';
 
 describe('combineNames', () => {
   it('should combine names', () => {

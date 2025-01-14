@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import FileNameExtractor from '.';
+import FileNameExtractor from './index.ts';
 
 describe('fileNameExtractor', () => {
   it('should extract the file name', () => {

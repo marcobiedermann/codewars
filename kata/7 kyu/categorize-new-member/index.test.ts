@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import openOrSenior from '.';
+import openOrSenior from './index.ts';
 
 describe('openOrSenior', () => {
   it('should transform members in list to `Open` or `Senior`', () => {

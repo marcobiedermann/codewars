@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import removeDuplicateWords from '.';
+import removeDuplicateWords from './index.ts';
 
 describe('removeDuplicateWords', () => {
   it('should remove duplicate words', () => {

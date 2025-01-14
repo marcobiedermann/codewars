@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Dinglemouse from '.';
+import Dinglemouse from './index.ts';
 
 describe('dinglemouse', () => {
   it('should get the full name', () => {

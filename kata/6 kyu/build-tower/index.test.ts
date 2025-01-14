@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import towerBuilder from '.';
+import towerBuilder from './index.ts';
 
 describe('towerBuilder', () => {
   it('should build tower', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import foldArray from '.';
+import foldArray from './index.ts';
 
 describe('foldArray', () => {
   it('should fold array', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toAlternatingCase from '.';
+import toAlternatingCase from './index.ts';
 
 describe('toAlternatingCase', () => {
   it('should work for fixed tests (provided in the description)', () => {

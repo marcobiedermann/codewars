@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findDigit from '.';
+import findDigit from './index.ts';
 
 describe('findDigit', () => {
   it('should find the nth digit of a number', () => {

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import circleArea from '.';
 import Circle from './circle';
+import circleArea from './index.ts';
 import Point from './point';
 
 describe('circleArea', () => {

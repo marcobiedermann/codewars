@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getPlanetName from '.';
+import getPlanetName from './index.ts';
 
 describe('getPlanetName', () => {
   it('should return planet name by ID', () => {

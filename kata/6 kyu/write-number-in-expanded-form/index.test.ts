@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import expandedForm from '.';
+import expandedForm from './index.ts';
 
 describe('expandedForm', () => {
   it('should return number in expanded form', () => {

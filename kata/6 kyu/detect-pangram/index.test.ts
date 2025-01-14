@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isPangram from '.';
+import isPangram from './index.ts';
 
 describe('isPangram', () => {
   it('should detect if string is pangram', () => {

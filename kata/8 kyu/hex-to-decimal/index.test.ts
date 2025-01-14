@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import hexToDec from '.';
+import hexToDec from './index.ts';
 
 describe('hexToDec', () => {
   it('should convert hex to decimal', () => {

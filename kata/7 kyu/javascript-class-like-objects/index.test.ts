@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Animal from '.';
+import Animal from './index.ts';
 
 describe('animal', () => {
   it('should create a class like object called `Animal`', () => {

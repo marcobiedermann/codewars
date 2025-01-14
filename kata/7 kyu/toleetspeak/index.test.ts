@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toLeetSpeak from '.';
+import toLeetSpeak from './index.ts';
 
 describe('toLeetSpeak', () => {
   it('should convert to Leetspeak', () => {

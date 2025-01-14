@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import replaceDots from '.';
+import replaceDots from './index.ts';
 
 describe('replaceDots', () => {
   it('should replace all dots with dashes', () => {

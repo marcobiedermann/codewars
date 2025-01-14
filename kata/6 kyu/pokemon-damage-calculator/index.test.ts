@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import calculateDamage from '.';
+import calculateDamage from './index.ts';
 
 describe('calculateDamage', () => {
   it('should calculate move damage', () => {

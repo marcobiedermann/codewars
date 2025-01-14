@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import amIWilson from '.';
+import amIWilson from './index.ts';
 
 describe('amIWilson', () => {
   it('should check if number is a Wilson prime', () => {

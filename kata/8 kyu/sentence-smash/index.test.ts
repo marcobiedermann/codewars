@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import smash from '.';
+import smash from './index.ts';
 
 describe('smash', () => {
   it('should smash words together', () => {

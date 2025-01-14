@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import REGEXP from '.';
+import REGEXP from './index.ts';
 
 describe('regexp', () => {
   it('should validate a password', () => {

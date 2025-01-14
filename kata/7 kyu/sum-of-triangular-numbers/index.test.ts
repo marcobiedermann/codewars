@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumTriangularNumbers from '.';
+import sumTriangularNumbers from './index.ts';
 
 describe('sumTriangularNumbers', () => {
   it('should calculate sum of triangular numbers', () => {

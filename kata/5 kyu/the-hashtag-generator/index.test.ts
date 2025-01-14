@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import generateHashtag from '.';
+import generateHashtag from './index.ts';
 
 describe('generateHashtag', () => {
   it('should generate a hashtag', () => {

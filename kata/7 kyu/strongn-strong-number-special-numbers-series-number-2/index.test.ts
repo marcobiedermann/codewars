@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import strong from '.';
+import strong from './index.ts';
 
 describe('strong', () => {
   it('should check if it is a strong number', () => {

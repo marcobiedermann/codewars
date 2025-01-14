@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findEvenIndex from '.';
+import findEvenIndex from './index.ts';
 
 describe('findEvenIndex', () => {
   it('should find the index where the sum of the integers to the left is equal to the right one', () => {

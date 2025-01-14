@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumMul from '.';
+import sumMul from './index.ts';
 
 describe('sumMul', () => {
   it('should return the sum of all multiples of `n` below `m`', () => {

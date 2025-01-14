@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import otherAngle from '.';
+import otherAngle from './index.ts';
 
 describe('otherAngle', () => {
   it('should return third angle of triangle', () => {

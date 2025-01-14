@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isRubyComing from '.';
+import isRubyComing from './index.ts';
 
 describe('isRubyComing', () => {
   it('should return true if at least one Ruby developer is in the list of developers', () => {

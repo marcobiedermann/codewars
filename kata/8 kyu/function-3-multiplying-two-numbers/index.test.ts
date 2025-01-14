@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import multiply from '.';
+import multiply from './index.ts';
 
 describe('multiply', () => {
   it('should multiply two numbers', () => {

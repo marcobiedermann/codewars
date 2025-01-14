@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import oper, { horMirror, vertMirror } from '.';
+import oper, { horMirror, vertMirror } from './index.ts';
 
 describe('opstrings', () => {
   it('basic tests vertMirror', () => {

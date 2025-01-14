@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import noBoringZeros from '.';
+import noBoringZeros from './index.ts';
 
 describe('noBoringZeros', () => {
   it('should remove trailing zeros from number', () => {

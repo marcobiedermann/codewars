@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import wordValue from '.';
+import wordValue from './index.ts';
 
 describe('wordValue', () => {
   it('should count word value', () => {

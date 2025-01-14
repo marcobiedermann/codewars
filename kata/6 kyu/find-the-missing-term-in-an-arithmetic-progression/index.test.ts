@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findMissing from '.';
+import findMissing from './index.ts';
 
 describe('findMissing', () => {
   it('should find missing term in in arithmetic progression', () => {

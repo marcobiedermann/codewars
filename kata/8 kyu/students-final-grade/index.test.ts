@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import finalGrade from '.';
+import finalGrade from './index.ts';
 
 describe('finalGrade', () => {
   it('should calculate final grade', () => {

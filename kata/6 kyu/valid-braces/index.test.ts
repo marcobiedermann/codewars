@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import validBraces from '.';
+import validBraces from './index.ts';
 
 describe('validBraces', () => {
   it('should validate braces', () => {

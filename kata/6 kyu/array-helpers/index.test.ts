@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { average, cube, even, odd, square, sum } from '.';
+import { average, cube, even, odd, square, sum } from './index.ts';
 
 describe('foo', () => {
   it('should', () => {

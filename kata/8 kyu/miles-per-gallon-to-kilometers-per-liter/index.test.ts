@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import converter from '.';
+import converter from './index.ts';
 
 describe('converter', () => {
   it('should convert miles per imperial gallon into kilometers per liter', () => {

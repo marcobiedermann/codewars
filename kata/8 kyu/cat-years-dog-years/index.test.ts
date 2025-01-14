@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import humanYearsCatYearsDogYears from '.';
+import humanYearsCatYearsDogYears from './index.ts';
 
 describe('humanYearsCatYearsDogYears', () => {
   it('should human years in cat and dog years', () => {

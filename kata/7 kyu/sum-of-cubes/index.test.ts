@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumCubes from '.';
+import sumCubes from './index.ts';
 
 describe('sumCubes', () => {
   it('should sum the cubed values from 1 to n', () => {

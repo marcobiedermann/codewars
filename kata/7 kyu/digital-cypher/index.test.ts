@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import encode from '.';
+import encode from './index.ts';
 
 describe('encode', () => {
   it('should encode string', () => {

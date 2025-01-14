@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import move from '.';
+import move from './index.ts';
 
 describe('move', () => {
   it('should return new position of hero', () => {

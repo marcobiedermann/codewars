@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import searchNames from '.';
+import searchNames from './index.ts';
 
 describe('searchNames', () => {
   it('should filter all login pairs that end with `_`', () => {

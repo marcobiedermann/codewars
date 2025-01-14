@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import shortenToDate from '.';
+import shortenToDate from './index.ts';
 
 describe('shortenToDate', () => {
   it('should remove the time from date', () => {

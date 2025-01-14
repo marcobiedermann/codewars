@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import flyBy from '.';
+import flyBy from './index.ts';
 
 describe('flyBy', () => {
   it('should return the resulting `lamps` string', () => {

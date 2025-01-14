@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import numberOfPairs from '.';
+import numberOfPairs from './index.ts';
 
 describe('numberOfPairs', () => {
   it('should return the number of pairs', () => {

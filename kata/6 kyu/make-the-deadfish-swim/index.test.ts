@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import parse from '.';
+import parse from './index.ts';
 
 describe('parse', () => {
   it('should parse and run Deadfish', () => {

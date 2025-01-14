@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import usdcny from '.';
+import usdcny from './index.ts';
 
 describe('usdcny', () => {
   it('should convert US dollars to Chinese Yuan', () => {

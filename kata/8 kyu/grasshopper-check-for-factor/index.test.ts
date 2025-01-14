@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import checkForFactor from '.';
+import checkForFactor from './index.ts';
 
 describe('checkForFactor', () => {
   it('should return true', () => {

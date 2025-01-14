@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getFirstPython from '.';
+import getFirstPython from './index.ts';
 
 describe('getFirstPython', () => {
   it('should find the first Python developer', () => {

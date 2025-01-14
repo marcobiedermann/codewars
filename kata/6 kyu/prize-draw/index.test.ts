@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import rank from '.';
+import rank from './index.ts';
 
 describe('rank', () => {
   it('should return the firstname of the participant at rank `n`', () => {

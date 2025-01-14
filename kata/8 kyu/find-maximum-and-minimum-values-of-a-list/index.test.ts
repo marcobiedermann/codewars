@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { max, min } from '.';
+import { max, min } from './index.ts';
 
 describe('min', () => {
   it('should return min number in list', () => {

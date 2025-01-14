@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import kebabize from '.';
+import kebabize from './index.ts';
 
 describe('kebabize', () => {
   it('should convert a camel case string into a kebab case', () => {

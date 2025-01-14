@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import spacify from '.';
+import spacify from './index.ts';
 
 describe('spacify', () => {
   it('should add a space between each character', () => {

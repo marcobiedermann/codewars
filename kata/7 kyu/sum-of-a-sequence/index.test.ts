@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sequenceSum from '.';
+import sequenceSum from './index.ts';
 
 describe('sequenceSum', () => {
   it('should return sum of sequence', () => {

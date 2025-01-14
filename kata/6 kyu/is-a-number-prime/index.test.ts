@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isPrime from '.';
+import isPrime from './index.ts';
 
 describe('isPrime', () => {
   it('basic tests', () => {

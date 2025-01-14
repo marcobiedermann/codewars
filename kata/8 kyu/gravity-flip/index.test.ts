@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import flip from '.';
+import flip from './index.ts';
 
 describe('flip', () => {
   it('should move items to left or right', () => {

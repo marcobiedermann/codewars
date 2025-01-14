@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import thirt from '.';
+import thirt from './index.ts';
 
 describe('thirt', () => {
   it('should get the remainder when deviding by 13', () => {

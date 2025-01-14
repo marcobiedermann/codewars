@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import disariumNumber from '.';
+import disariumNumber from './index.ts';
 
 describe('disariumNumber', () => {
   it('should check if number is a disarium number', () => {

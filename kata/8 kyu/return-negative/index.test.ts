@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import makeNegative from '.';
+import makeNegative from './index.ts';
 
 describe('makeNegative', () => {
   it('should make the number negative', () => {

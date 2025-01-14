@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import chromosomeCheck from '.';
+import chromosomeCheck from './index.ts';
 
 describe('chromosomeCheck', () => {
   it('should determin the sex of the offspring', () => {

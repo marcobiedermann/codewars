@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Guesser from '.';
+import Guesser from './index.ts';
 
 describe('guesser', () => {
   it('correct guess should return true', () => {

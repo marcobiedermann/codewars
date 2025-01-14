@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import hoopCount from '.';
+import hoopCount from './index.ts';
 
 describe('hoopCount', () => {
   it('should return an encouraging message', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import quarterOf from '.';
+import quarterOf from './index.ts';
 
 describe('quarterOf', () => {
   it('should return the quarter of month', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import remove from '.';
+import remove from './index.ts';
 
 describe('remove', () => {
   it('should remove n amount of exclamatin marks', () => {

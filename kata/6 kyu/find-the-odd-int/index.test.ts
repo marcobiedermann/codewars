@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findOdd from '.';
+import findOdd from './index.ts';
 
 describe('findOdd', () => {
   it('should find the one which appears an odd number of times', () => {

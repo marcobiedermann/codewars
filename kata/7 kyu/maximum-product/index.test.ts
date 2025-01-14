@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import adjacentElementsProduct from '.';
+import adjacentElementsProduct from './index.ts';
 
 describe('adjacentElementsProduct', () => {
   it('positive numbers', () => {

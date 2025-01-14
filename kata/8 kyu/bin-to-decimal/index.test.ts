@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import binToDec from '.';
+import binToDec from './index.ts';
 
 describe('binToDec', () => {
   it('should convert binary to decimal number', () => {

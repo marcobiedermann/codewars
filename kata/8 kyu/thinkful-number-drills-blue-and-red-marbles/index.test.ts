@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import guessBlue from '.';
+import guessBlue from './index.ts';
 
 describe('guessBlue', () => {
   it('should return the probability of drawing a blue marble', () => {

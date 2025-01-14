@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Ship from '.';
+import Ship from './index.ts';
 
 describe('ship', () => {
   it('should check if the ship is worth it', () => {

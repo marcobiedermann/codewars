@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import swapValues from '.';
+import swapValues from './index.ts';
 
 describe('swapValues', () => {
   it('should swap values in array', () => {

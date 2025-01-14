@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import plural from '.';
+import plural from './index.ts';
 
 describe('plural', () => {
   it('should check if plural should be used', () => {

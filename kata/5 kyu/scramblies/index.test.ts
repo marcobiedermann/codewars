@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import scramble from '.';
+import scramble from './index.ts';
 
 describe('scramble', () => {
   it('should check if a portion of `str1` can be rearranged to match `str2`', () => {

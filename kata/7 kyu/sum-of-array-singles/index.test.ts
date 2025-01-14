@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import repeats from '.';
+import repeats from './index.ts';
 
 describe('repeats', () => {
   it('should sum the numbers that occur only once', () => {

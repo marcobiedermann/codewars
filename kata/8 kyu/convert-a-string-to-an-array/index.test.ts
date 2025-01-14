@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stringToArray from '.';
+import stringToArray from './index.ts';
 
 describe('stringToArray', () => {
   it('should covert string into words', () => {

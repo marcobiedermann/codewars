@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countSmileys from '.';
+import countSmileys from './index.ts';
 
 describe('countSmileys', () => {
   it('should count smiley faces in list', () => {

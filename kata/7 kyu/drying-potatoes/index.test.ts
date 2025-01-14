@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import potatoes from '.';
+import potatoes from './index.ts';
 
 describe('potatoes', () => {
   it('should return final weight coming out of the oven', () => {

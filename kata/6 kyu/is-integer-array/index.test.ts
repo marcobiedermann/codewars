@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isIntArray from '.';
+import isIntArray from './index.ts';
 
 describe('isIntArray', () => {
   it('should check if every element in an array in an integer', () => {

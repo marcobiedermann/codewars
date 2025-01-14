@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import rentalCarCost from '.';
+import rentalCarCost from './index.ts';
 
 describe('regular Tests:', () => {
   it('should work for under 3 days:', () => {

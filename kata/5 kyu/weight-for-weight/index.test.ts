@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import orderWeight from '.';
+import orderWeight from './index.ts';
 
 describe('orderWeight', () => {
   it('should order weights', () => {

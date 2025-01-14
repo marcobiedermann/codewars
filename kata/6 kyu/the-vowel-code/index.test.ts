@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { decode, encode } from '.';
+import { decode, encode } from './index.ts';
 
 describe('foo', () => {
   it('should', () => {

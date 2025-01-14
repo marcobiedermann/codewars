@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import unluckyDays from '.';
+import unluckyDays from './index.ts';
 
 describe('unluckyDays', () => {
   it('should return the number of Friday 13th in the given year', () => {

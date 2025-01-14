@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import orderedCount from '.';
+import orderedCount from './index.ts';
 
 describe('orderedCount', () => {
   it('should count number of occurrences of each character', () => {

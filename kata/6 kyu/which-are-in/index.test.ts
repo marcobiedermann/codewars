@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import inArray from '.';
+import inArray from './index.ts';
 
 describe('inArray', () => {
   it('should return containing substrings in alphabetical order', () => {

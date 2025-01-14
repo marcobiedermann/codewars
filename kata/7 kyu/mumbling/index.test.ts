@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import accum from '.';
+import accum from './index.ts';
 
 describe('accum', () => {
   it('should mumble string', () => {

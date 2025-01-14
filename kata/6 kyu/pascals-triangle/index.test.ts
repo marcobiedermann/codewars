@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pascalsTriangle from '.';
+import pascalsTriangle from './index.ts';
 
 describe('pascalsTriangle', () => {
   it('should return pascals triangle flattened into a list', () => {

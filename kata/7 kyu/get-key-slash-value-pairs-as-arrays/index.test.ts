@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import keysAndValues from '.';
+import keysAndValues from './index.ts';
 
 describe('keysAndValues', () => {
   it('should return the keys and values as separate arrays', () => {

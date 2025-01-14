@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import dontGiveMeFive from '.';
+import dontGiveMeFive from './index.ts';
 
 describe('dontGiveMeFive', () => {
   it('should return total numbers which do not include digit `5`', () => {

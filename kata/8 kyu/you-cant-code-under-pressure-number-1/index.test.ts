@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import doubleInteger from '.';
+import doubleInteger from './index.ts';
 
 describe('doubleInteger', () => {
   it('should double integer', () => {

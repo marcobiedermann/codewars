@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import calculateAge from '.';
+import calculateAge from './index.ts';
 
 describe('calculateAge', () => {
   it('should', () => {

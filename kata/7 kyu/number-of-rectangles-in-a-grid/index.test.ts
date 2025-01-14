@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import numberOfRectangles from '.';
+import numberOfRectangles from './index.ts';
 
 describe('numberOfRectangles', () => {
   it('should calculate number of rectangles in rectangle', () => {

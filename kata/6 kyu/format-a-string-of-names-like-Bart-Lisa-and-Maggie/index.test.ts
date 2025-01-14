@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import list from '.';
+import list from './index.ts';
 
 describe('list', () => {
   it('should separate names by comma, except for the last two', () => {

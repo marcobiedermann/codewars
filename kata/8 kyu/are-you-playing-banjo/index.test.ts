@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import areYouPlayingBanjo from '.';
+import areYouPlayingBanjo from './index.ts';
 
 describe('areYouPlayingBanjo', () => {
   it('should append if person is playing banjo to name', () => {

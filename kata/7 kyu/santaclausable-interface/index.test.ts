@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import { describe, expect, it } from 'vitest';
-import isSantaClausable from '.';
+import isSantaClausable from './index.ts';
 
 describe('isSantaClausable', () => {
   it('should check if object implemented the `santa` interface', () => {

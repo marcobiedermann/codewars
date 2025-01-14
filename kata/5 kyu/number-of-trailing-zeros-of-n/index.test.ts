@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import zeros from '.';
+import zeros from './index.ts';
 
 describe('zeros', () => {
   it('should count number of trailing zeros in a factorial of a given number', () => {

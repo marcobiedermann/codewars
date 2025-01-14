@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import parseF from '.';
+import parseF from './index.ts';
 
 describe('parseF', () => {
   it('should parse string to float', () => {

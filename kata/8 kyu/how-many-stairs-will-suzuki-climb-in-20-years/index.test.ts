@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stairsIn20 from '.';
+import stairsIn20 from './index.ts';
 
 describe('stairsIn20', () => {
   it('should return the 20 year estimate of the stairs climed', () => {

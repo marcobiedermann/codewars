@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import solution from '.';
+import solution from './index.ts';
 
 describe('solution', () => {
   it('should check if string end with', () => {

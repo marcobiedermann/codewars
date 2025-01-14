@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import billboard from '.';
+import billboard from './index.ts';
 
 describe('billboard', () => {
   it('should calculate the billboard ad cost', () => {

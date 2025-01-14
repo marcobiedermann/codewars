@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import derive from '.';
+import derive from './index.ts';
 
 describe('derive', () => {
   it('should take the derivative', () => {

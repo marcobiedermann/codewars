@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import fixTheMeerkat from '.';
+import fixTheMeerkat from './index.ts';
 
 describe('fixTheMeerkat', () => {
   it('should reverse elements in array', () => {

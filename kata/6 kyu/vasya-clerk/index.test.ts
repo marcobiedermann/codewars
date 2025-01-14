@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import tickets from '.';
+import tickets from './index.ts';
 
 describe('tickets', () => {
   it('should return `YES` if you can sell a ticket to every person', () => {

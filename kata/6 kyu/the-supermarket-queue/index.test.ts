@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import queueTime from '.';
+import queueTime from './index.ts';
 
 describe('queueTime', () => {
   it('should calculate total time of queues', () => {

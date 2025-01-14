@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import warnTheSheep from '.';
+import warnTheSheep from './index.ts';
 
 describe('warnTheSheep', () => {
   it('should warn sheep in front of wolf', () => {

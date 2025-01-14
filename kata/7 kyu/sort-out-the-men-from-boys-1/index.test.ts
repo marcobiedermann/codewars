@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import menFromBoys from '.';
+import menFromBoys from './index.ts';
 
 describe('menFromBoys', () => {
   it('should sort out men from boys', () => {

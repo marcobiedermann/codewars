@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stockList from '.';
+import stockList from './index.ts';
 
 describe('stockList', () => {
   it('should sum quantity of books for each category', () => {

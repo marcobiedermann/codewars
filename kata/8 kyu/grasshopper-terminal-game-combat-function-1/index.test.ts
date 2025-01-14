@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import combat from '.';
+import combat from './index.ts';
 
 describe('combat', () => {
   it('should calculate health after damage', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import God, { Man } from '.';
+import God, { Man } from './index.ts';
 
 describe('god', () => {
   it('should return a man and woman', () => {

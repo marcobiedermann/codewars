@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { decrypt, encrypt } from '.';
+import { decrypt, encrypt } from './index.ts';
 
 describe('encrypt/decrypt', () => {
   it('should encrypt text', () => {

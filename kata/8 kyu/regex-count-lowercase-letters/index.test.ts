@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import lowercaseCount from '.';
+import lowercaseCount from './index.ts';
 
 describe('lowercaseCount', () => {
   it('should cound lowercase letters in string', () => {

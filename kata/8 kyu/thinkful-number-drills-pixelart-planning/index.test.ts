@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isDivisible from '.';
+import isDivisible from './index.ts';
 
 describe('isDivisible', () => {
   it('should check if product is divisible by number', () => {

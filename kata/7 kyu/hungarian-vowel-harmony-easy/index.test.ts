@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import dative from '.';
+import dative from './index.ts';
 
 describe('dative', () => {
   it('should return the valid form of a valid Hungarian word', () => {

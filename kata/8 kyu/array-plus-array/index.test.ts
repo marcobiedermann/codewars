@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import arrayPlusArray from '.';
+import arrayPlusArray from './index.ts';
 
 describe('arrayPlusArray', () => {
   it('should sum elements', () => {

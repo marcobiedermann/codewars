@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maxDiff from '.';
+import maxDiff from './index.ts';
 
 describe('maxDiff', () => {
   it('should return difference between the biggest and the smallest value', () => {

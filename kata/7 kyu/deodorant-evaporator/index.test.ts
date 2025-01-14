@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import evaporator from '.';
+import evaporator from './index.ts';
 
 describe('evaporator', () => {
   it('should calculate day on which the vaporator will be out of use', () => {

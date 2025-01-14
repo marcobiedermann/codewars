@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import divCon from '.';
+import divCon from './index.ts';
 
 describe('divCon', () => {
   it('should', () => {

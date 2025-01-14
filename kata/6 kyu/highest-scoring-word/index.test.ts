@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import high from '.';
+import high from './index.ts';
 
 describe('high', () => {
   it('should return highest scoring word', () => {

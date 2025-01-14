@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import switchItUp from '.';
+import switchItUp from './index.ts';
 
 describe('switchItUp', () => {
   it('should return number in words', () => {

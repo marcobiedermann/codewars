@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import boolToWord from '.';
+import boolToWord from './index.ts';
 
 describe('boolToWord', () => {
   it('should convert boolean to word', () => {

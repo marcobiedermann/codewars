@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import tribonacci from '.';
+import tribonacci from './index.ts';
 
 describe('tribonacci', () => {
   it('should generate tribonacci sequance', () => {

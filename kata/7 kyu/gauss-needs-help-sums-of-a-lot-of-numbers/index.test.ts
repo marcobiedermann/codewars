@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import f from '.';
+import f from './index.ts';
 
 describe('f', () => {
   it('should sum up all number through `n`', () => {

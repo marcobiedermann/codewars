@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maskify from '.';
+import maskify from './index.ts';
 
 describe('maskify', () => {
   it('should change all but last four characters into `#`', () => {

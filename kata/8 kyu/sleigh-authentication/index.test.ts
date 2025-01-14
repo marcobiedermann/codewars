@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Sleigh from '.';
+import Sleigh from './index.ts';
 
 describe('sleigh', () => {
   const sleigh = new Sleigh();

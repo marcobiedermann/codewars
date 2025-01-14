@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findDifference from '.';
+import findDifference from './index.ts';
 
 describe('findDifference', () => {
   it('should calculate difference of cuboids volumes', () => {

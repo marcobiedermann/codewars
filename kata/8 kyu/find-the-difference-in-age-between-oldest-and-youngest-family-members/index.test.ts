@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import differenceInAges from '.';
+import differenceInAges from './index.ts';
 
 describe('differenceInAges', () => {
   it('should find the difference in age between oldest and youngest', () => {

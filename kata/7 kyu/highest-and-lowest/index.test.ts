@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import highAndLow from '.';
+import highAndLow from './index.ts';
 
 describe('highAndLow', () => {
   it('should return the highest and lowest number', () => {

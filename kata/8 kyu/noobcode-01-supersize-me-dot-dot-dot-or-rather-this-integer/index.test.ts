@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import superSize from '.';
+import superSize from './index.ts';
 
 describe('superSize', () => {
   it('should rearrange integer into largest possible value', () => {

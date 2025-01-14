@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import areaOrPerimeter from '.';
+import areaOrPerimeter from './index.ts';
 
 describe('areaOrPerimeter', () => {
   it('should calculate area or perimeter, depending on shape', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import remove from '.';
+import remove from './index.ts';
 
 describe('remove', () => {
   it('should all exclamation marks from the end of sentence', () => {

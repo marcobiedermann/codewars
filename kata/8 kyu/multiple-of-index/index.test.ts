@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import multipleOfIndex from '.';
+import multipleOfIndex from './index.ts';
 
 describe('multipleOfIndex', () => {
   it('should return array of elements which are multiple of their own index', () => {

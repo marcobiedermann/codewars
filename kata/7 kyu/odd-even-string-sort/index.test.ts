@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sortMyString from '.';
+import sortMyString from './index.ts';
 
 describe('sortMyString', () => {
   it('should group characters by even and odd index', () => {

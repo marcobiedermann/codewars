@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getNames from '.';
+import getNames from './index.ts';
 
 describe('getNames', () => {
   it('should return a list of names', () => {

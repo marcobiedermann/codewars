@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stringTransformer from '.';
+import stringTransformer from './index.ts';
 
 describe('stringTransformer', () => {
   it('should change lower to upper and reverse the order of words', () => {

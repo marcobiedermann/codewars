@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import feast from '.';
+import feast from './index.ts';
 
 describe('feast', () => {
   it('should check if beast is allowed to bring dish to feast', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import newAvg from '.';
+import newAvg from './index.ts';
 
 describe('newAvg', () => {
   it('should find the missing number to reach the new average', () => {

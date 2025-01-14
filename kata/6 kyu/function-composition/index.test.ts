@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import compose from '.';
+import compose from './index.ts';
 
 describe('compose', () => {
   it('should compose two functions', () => {

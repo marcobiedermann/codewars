@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import perimeter from '.';
+import perimeter from './index.ts';
 
 describe('perimeter', () => {
   it('should return sum or all squares', () => {

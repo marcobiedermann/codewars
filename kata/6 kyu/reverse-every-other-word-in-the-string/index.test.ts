@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import reverse from '.';
+import reverse from './index.ts';
 
 describe('reverse', () => {
   it('should reverse every other word in the string', () => {

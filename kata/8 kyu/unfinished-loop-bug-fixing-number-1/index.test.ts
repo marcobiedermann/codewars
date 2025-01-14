@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import createArray from '.';
+import createArray from './index.ts';
 
 describe('createArray', () => {
   it('should return array of each number in sequence', () => {

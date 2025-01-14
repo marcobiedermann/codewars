@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import capitalize from '.';
+import capitalize from './index.ts';
 
 describe('capitalize', () => {
   it('should capitalize all letters at the given indices', () => {

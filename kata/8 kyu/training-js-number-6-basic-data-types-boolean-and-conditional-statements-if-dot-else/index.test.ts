@@ -4,7 +4,7 @@
 // @ts-nocheck
 
 import { describe, expect, it } from 'vitest';
-import trueOrFalse from '.';
+import trueOrFalse from './index.ts';
 
 describe('trueOrFalse', () => {
   it('should test for equations and inequalities', () => {

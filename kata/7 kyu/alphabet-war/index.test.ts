@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import alphabetWar from '.';
+import alphabetWar from './index.ts';
 
 describe('alphabetWar', () => {
   it('should return which side wins the war', () => {

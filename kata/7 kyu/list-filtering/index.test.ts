@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 
 import { describe, expect, it } from 'vitest';
-import filter_list from '.';
+import filter_list from './index.ts';
 
 describe('filter_list', () => {
   it('should return list of integers', () => {

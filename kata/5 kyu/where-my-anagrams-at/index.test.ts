@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import anagrams from '.';
+import anagrams from './index.ts';
 
 describe('anagrams', () => {
   it('should find all anagrams of a word from a list', () => {

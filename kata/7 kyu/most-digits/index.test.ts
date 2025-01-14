@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findLongest from '.';
+import findLongest from './index.ts';
 
 describe('findLongest', () => {
   it('should find number with most digist', () => {

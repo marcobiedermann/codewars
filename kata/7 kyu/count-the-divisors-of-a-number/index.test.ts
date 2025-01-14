@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getDivisorsCnt from '.';
+import getDivisorsCnt from './index.ts';
 
 describe('getDivisorsCnt', () => {
   it('should count number of divisors', () => {

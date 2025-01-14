@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import multiplyAll from '.';
+import multiplyAll from './index.ts';
 
 describe('multiplyAll', () => {
   it('should multiply each element in array with integer', () => {

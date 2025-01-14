@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import elapsedSeconds from '.';
+import elapsedSeconds from './index.ts';
 
 describe('elapsedSeconds', () => {
   it('should return the number of seconds elapsed between the start and end time', () => {

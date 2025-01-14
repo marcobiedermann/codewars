@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import modifiedSum from '.';
+import modifiedSum from './index.ts';
 
 describe('modifiedSum', () => {
   it('should return modified sum', () => {

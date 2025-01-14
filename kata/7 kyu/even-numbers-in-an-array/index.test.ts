@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import evenNumbers from '.';
+import evenNumbers from './index.ts';
 
 describe('evenNumbers', () => {
   it('should return last even numbers', () => {

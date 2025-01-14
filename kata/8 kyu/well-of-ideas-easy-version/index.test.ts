@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import well from '.';
+import well from './index.ts';
 
 describe('well', () => {
   it('should should check good ideas', () => {

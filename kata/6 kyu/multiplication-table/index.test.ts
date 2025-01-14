@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import multiplicationTable from '.';
+import multiplicationTable from './index.ts';
 
 describe('multiplicationTable', () => {
   it('should create a NxN multiplication table', () => {

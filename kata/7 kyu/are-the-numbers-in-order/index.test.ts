@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import inAscOrder from '.';
+import inAscOrder from './index.ts';
 
 describe('inAscOrder', () => {
   it('should check if numbers are in order', () => {

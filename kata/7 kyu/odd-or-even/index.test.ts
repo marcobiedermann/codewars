@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import oddOrEven from '.';
+import oddOrEven from './index.ts';
 
 describe('oddOrEven', () => {
   it('edge tests', () => {

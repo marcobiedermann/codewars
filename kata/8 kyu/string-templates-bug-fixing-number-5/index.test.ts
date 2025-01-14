@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import buildString from '.';
+import buildString from './index.ts';
 
 describe('buildString', () => {
   it('should join items in string', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import defineSuit from '.';
+import defineSuit from './index.ts';
 
 describe('defineSuit', () => {
   it('should return the suit of the card', () => {

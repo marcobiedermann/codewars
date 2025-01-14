@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumEvenNumbers from '.';
+import sumEvenNumbers from './index.ts';
 
 describe('sumEvenNumbers', () => {
   it('should return the sum of the even values', () => {

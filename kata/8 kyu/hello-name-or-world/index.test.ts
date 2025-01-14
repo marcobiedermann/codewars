@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import hello from '.';
+import hello from './index.ts';
 
 describe('hello', () => {
   it('should return `Hello, world!` or `Hello, name!`', () => {

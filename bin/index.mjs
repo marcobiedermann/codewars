@@ -31,7 +31,7 @@ export default foo;
 }
 
 function testTemplate() {
-  return `import foo from '.';
+  return `import foo from './index.ts';
 
 describe('foo', () => {
   it('should', () => {

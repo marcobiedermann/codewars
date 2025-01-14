@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import minValue from '.';
+import minValue from './index.ts';
 
 describe('minValue', () => {
   it('should return smallest number', () => {

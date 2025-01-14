@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import reverseNumber from '.';
+import reverseNumber from './index.ts';
 
 describe('reverseNumber', () => {
   it('should reverse its digits', () => {

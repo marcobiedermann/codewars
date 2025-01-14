@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 
 import { describe, expect, it } from 'vitest';
-import array_diff from '.';
+import array_diff from './index.ts';
 
 describe('array_diff', () => {
   it('should remove all values from list `a` which are present in list `b`', () => {

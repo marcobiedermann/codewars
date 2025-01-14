@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maxTriSum from '.';
+import maxTriSum from './index.ts';
 
 describe('maxTriSum', () => {
   it('should return maximum sum of triplets', () => {

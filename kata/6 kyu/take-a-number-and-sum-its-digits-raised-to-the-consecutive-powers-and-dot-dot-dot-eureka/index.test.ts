@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumDigPow from '.';
+import sumDigPow from './index.ts';
 
 describe('sumDigPow', () => {
   it('should return list of numbers which digits raised to their consecutive power is same as number', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import alternateCase from '.';
+import alternateCase from './index.ts';
 
 describe('alternateCase', () => {
   it('should switch every letter from upper to lower and from lower to upper', () => {

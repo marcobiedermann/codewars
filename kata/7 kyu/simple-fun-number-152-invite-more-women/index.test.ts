@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import inviteMoreWomen from '.';
+import inviteMoreWomen from './index.ts';
 
 describe('inviteMoreWomen', () => {
   it('should check if Arthur needs to invite more women', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import rot13 from '.';
+import rot13 from './index.ts';
 
 describe('rot13', () => {
   it('should rotate letters in string', () => {

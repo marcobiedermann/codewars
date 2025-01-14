@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import printArray from '.';
+import printArray from './index.ts';
 
 describe('printArray', () => {
   it('should join elements in array delimited by comma', () => {

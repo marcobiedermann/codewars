@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import drawStairs from '.';
+import drawStairs from './index.ts';
 
 describe('drawStairs', () => {
   it('draw stairs with only 1 step', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import divisors from '.';
+import divisors from './index.ts';
 
 describe('divisors', () => {
   it('should return list of divisors or prime', () => {

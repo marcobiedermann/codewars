@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import partsSums from '.';
+import partsSums from './index.ts';
 
 describe('partsSums', () => {
   it('return list of the sums of its parts', () => {

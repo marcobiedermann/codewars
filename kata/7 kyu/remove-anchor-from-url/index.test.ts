@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import removeUrlAnchor from '.';
+import removeUrlAnchor from './index.ts';
 
 describe('removeUrlAnchor', () => {
   it('should remove fragment from URL', () => {

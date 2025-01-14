@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stray from '.';
+import stray from './index.ts';
 
 describe('stray', () => {
   it('should find single different number', () => {

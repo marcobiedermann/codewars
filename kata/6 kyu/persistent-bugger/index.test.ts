@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import persistence from '.';
+import persistence from './index.ts';
 
 describe('persistence', () => {
   it('should multiply digits until it reach a single digit', () => {

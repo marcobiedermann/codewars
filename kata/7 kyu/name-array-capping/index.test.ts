@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import capMe from '.';
+import capMe from './index.ts';
 
 describe('capMe', () => {
   it('should capitalize each name in the array', () => {

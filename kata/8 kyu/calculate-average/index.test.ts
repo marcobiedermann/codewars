@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 
 import { describe, expect, it } from 'vitest';
-import find_average from '.';
+import find_average from './index.ts';
 
 describe('find_average', () => {
   it('should calculate average of numbers', () => {

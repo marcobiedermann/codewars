@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import whatday from '.';
+import whatday from './index.ts';
 
 describe('whatday', () => {
   it('should return the weekday', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findNeedle from '.';
+import findNeedle from './index.ts';
 
 describe('findNeedle', () => {
   it('should find `needle` in a haystack', () => {

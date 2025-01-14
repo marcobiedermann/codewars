@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isLockNessMonster from '.';
+import isLockNessMonster from './index.ts';
 
 describe('isLockNessMonster', () => {
   it('should', () => {

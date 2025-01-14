@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import simpleMultiplication from '.';
+import simpleMultiplication from './index.ts';
 
 describe('simpleMultiplication', () => {
   it('should multiply value by 8 if even otherwise by 9', () => {

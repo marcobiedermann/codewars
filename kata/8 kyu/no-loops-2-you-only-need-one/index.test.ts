@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import check from '.';
+import check from './index.ts';
 
 describe('check', () => {
   it('should check if array includes values', () => {

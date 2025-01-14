@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import lastSurvivor from '.';
+import lastSurvivor from './index.ts';
 
 describe('lastSurvivor', () => {
   it('should remove letters', () => {

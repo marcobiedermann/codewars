@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import spacey from '.';
+import spacey from './index.ts';
 
 describe('spacey', () => {
   it('should return an array showing the space decreasing', () => {

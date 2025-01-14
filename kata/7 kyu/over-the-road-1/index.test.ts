@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import overTheRoad from '.';
+import overTheRoad from './index.ts';
 
 describe('overTheRoad', () => {
   it('should return house address on opposite side', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import playPass from '.';
+import playPass from './index.ts';
 
 describe('playPass', () => {
   it('should return the passphrase', () => {

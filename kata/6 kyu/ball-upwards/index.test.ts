@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maxBall from '.';
+import maxBall from './index.ts';
 
 describe('maxBall', () => {
   it('should return the time of the maximum height', () => {

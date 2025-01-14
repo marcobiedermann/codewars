@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nbDig from '.';
+import nbDig from './index.ts';
 
 describe('nbDig', () => {
   it('should count all digits used in writing all `k**2`', () => {

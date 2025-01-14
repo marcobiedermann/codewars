@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import bonusTime from '.';
+import bonusTime from './index.ts';
 
 describe('bonusTime', () => {
   it('should calculate bonus', () => {

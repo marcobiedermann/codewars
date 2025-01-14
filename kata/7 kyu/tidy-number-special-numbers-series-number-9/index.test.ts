@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import tidyNumber from '.';
+import tidyNumber from './index.ts';
 
 describe('tidyNumber', () => {
   it('should check if the number is a tidy number', () => {

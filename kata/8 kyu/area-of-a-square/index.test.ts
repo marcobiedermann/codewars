@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import squareArea from '.';
+import squareArea from './index.ts';
 
 describe('squareAre', () => {
   it('should return the area of the square', () => {

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import { describe, expect, it, vi } from 'vitest';
-import Solution from '.';
+import Solution from './index.ts';
 
 vi.spyOn(console, 'log').mockImplementation(() => ({}));
 

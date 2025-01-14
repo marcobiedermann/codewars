@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import numberToString from '.';
+import numberToString from './index.ts';
 
 describe('numberToString', () => {
   it('should convert number to string', () => {

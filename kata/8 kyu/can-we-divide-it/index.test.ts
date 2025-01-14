@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isDivideBy from '.';
+import isDivideBy from './index.ts';
 
 describe('isDivideBy', () => {
   it('should check if number is divisible by arguments', () => {

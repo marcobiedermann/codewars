@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pigIt from '.';
+import pigIt from './index.ts';
 
 describe('pigIt', () => {
   it('should move first letter of each word to end and append `ay`', () => {

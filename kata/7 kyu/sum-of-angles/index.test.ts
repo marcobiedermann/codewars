@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import angle from '.';
+import angle from './index.ts';
 
 describe('angle', () => {
   it('should get inner sum of angles in n-sided polygon', () => {

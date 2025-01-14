@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import minMax from '.';
+import minMax from './index.ts';
 
 describe('minMax', () => {
   it('should return the minimum and maximum number of array', () => {

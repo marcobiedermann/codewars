@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import bouncingBall from '.';
+import bouncingBall from './index.ts';
 
 describe('bouncingBall', () => {
   it('should count bounces of ball', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maxProduct from '.';
+import maxProduct from './index.ts';
 
 describe('maxProduct', () => {
   it('should return the product of the `k` maximal numbers', () => {

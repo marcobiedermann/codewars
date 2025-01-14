@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findMultiples from '.';
+import findMultiples from './index.ts';
 
 describe('findMultiples', () => {
   it('should find multiples of number', () => {

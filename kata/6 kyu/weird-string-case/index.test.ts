@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toWeirdCase from '.';
+import toWeirdCase from './index.ts';
 
 describe('toWeirdCase', () => {
   it('should return the correct value for a single word', () => {

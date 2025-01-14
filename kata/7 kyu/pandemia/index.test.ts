@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import infected from '.';
+import infected from './index.ts';
 
 describe('infected', () => {
   it('should calculate percentage of infected populatopn', () => {

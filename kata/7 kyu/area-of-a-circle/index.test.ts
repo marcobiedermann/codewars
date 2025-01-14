@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import circleArea from '.';
+import circleArea from './index.ts';
 
 describe('circleArea', () => {
   it('should calculate the area of a circle with the given radius', () => {

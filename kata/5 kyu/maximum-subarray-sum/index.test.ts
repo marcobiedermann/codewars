@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maxSequence from '.';
+import maxSequence from './index.ts';
 
 describe('maxSequence', () => {
   it('should return max sum of subarray', () => {

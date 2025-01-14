@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import last from '.';
+import last from './index.ts';
 
 describe('last', () => {
   it('should get the last element of the given argument(s)', () => {

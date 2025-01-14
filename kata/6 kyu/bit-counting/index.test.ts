@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countBits from '.';
+import countBits from './index.ts';
 
 describe('countBits', () => {
   it('should return the number of bits what are one', () => {

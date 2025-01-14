@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findNextSquare from '.';
+import findNextSquare from './index.ts';
 
 describe('findNextSquare', () => {
   it('should return the next square for perfect squares', () => {

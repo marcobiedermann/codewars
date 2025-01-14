@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import vowel from '.';
+import vowel from './index.ts';
 
 describe('vowel', () => {
   it('should check if the string is a vowel', () => {

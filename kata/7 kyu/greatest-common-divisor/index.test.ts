@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import mygcd from '.';
+import mygcd from './index.ts';
 
 describe('mygcd', () => {
   it('should return greatest common divisor', () => {

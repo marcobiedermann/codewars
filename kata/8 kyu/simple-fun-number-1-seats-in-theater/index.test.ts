@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import seatsInTheater from '.';
+import seatsInTheater from './index.ts';
 
 describe('seatsInTheater', () => {
   it('should number of people sitting behind and to your left', () => {

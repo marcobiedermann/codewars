@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import SeriesSum from '.';
+import SeriesSum from './index.ts';
 
 describe('seriesSum', () => {
   it('should sum series up to nth term', () => {

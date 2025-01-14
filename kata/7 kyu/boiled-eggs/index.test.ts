@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import cookingTime from '.';
+import cookingTime from './index.ts';
 
 describe('cookingTime', () => {
   it('should calculate the cooking time', () => {

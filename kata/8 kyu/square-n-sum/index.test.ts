@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import squareSum from '.';
+import squareSum from './index.ts';
 
 describe('squareSum', () => {
   it('should square each number', () => {

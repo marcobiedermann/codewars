@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumOrProduct from '.';
+import sumOrProduct from './index.ts';
 
 describe('sumOrProduct', () => {
   it('should return the sum or product', () => {

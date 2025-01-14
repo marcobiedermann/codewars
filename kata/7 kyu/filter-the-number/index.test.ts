@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import filterString from '.';
+import filterString from './index.ts';
 
 describe('filterString', () => {
   it('should extract number from string', () => {

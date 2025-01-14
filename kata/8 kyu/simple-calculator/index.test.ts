@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import calculator from '.';
+import calculator from './index.ts';
 
 describe('calculator', () => {
   it('should calculate result', () => {

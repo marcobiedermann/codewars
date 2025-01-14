@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import removeSmallest from '.';
+import removeSmallest from './index.ts';
 
 describe('removeSmallest', () => {
   it('works for the examples', () => {

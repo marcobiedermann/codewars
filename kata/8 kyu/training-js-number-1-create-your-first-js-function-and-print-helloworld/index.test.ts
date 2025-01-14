@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import { describe, expect, it, vi } from 'vitest';
-import helloWorld from '.';
+import helloWorld from './index.ts';
 
 vi.spyOn(console, 'log').mockImplementation(() => ({}));
 

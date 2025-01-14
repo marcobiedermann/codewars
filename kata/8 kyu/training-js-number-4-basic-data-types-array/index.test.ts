@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getFirst, getLast, getLength, popElement, pushElement } from '.';
+import { getFirst, getLast, getLength, popElement, pushElement } from './index.ts';
 
 describe('array', () => {
   it('should perform operations on array', () => {

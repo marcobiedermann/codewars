@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import correct from '.';
+import correct from './index.ts';
 
 describe('correct', () => {
   it('should correct errors in text', () => {

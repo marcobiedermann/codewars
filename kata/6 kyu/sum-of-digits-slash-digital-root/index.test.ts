@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 
 import { describe, expect, it } from 'vitest';
-import digital_root from '.';
+import digital_root from './index.ts';
 
 describe('foo', () => {
   it('should sum digits until a single-digit number is produced', () => {

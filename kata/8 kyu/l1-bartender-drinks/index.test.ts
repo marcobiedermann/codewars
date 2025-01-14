@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getDrinkByProfession from '.';
+import getDrinkByProfession from './index.ts';
 
 describe('getDrinkByProfession', () => {
   it('should return profession by drink', () => {

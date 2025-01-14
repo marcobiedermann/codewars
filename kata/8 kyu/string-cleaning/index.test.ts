@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import stringClean from '.';
+import stringClean from './index.ts';
 
 describe('stringClean', () => {
   it('should remove numbers from string', () => {

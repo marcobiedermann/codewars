@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import vaporcode from '.';
+import vaporcode from './index.ts';
 
 describe('vaporcode', () => {
   it('should convert the sentence into a V A P O R W A V E sentence', () => {

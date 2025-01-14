@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import index from '.';
+import index from './index.ts';
 
 describe('index', () => {
   it('should return the N-th power of the element in the array with the index N', () => {

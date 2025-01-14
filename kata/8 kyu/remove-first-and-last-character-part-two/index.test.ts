@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import array from '.';
+import array from './index.ts';
 
 describe('array', () => {
   it('should remove the first and last character', () => {

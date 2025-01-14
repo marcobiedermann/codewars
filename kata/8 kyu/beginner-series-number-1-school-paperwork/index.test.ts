@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import paperwork from '.';
+import paperwork from './index.ts';
 
 describe('paperwork', () => {
   it('should return number of copies', () => {

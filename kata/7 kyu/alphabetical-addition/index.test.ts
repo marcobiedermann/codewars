@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import addLetters from '.';
+import addLetters from './index.ts';
 
 describe('addLetters', () => {
   it('should add up letters to one letter', () => {

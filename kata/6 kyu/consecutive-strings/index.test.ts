@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import longestConsec from '.';
+import longestConsec from './index.ts';
 
 describe('longestConsec', () => {
   it('return the first longest string consisting of k consecutive strings taken in the array', () => {

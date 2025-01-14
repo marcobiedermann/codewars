@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import breakChocolate from '.';
+import breakChocolate from './index.ts';
 
 describe('breakChocolate', () => {
   it('should return the minimum number of breaks needed to split the chocolate bar', () => {

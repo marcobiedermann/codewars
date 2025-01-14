@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import uniqueInOrder from '.';
+import uniqueInOrder from './index.ts';
 
 describe('uniqueInOrder', () => {
   it('should return unique items in order', () => {

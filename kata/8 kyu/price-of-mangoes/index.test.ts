@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import mango from '.';
+import mango from './index.ts';
 
 describe('mango', () => {
   it('should return the total cost of the mangoes', () => {

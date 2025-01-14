@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import dataReverse from '.';
+import dataReverse from './index.ts';
 
 describe('dataReverse', () => {
   it('should reverse chunks of 8', () => {

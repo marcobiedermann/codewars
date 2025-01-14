@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import makeUpperCase from '.';
+import makeUpperCase from './index.ts';
 
 describe('makeUpperCase', () => {
   it('should transform string to uppercase', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import presses from '.';
+import presses from './index.ts';
 
 describe('presses', () => {
   it('should calculate the number of button presses', () => {

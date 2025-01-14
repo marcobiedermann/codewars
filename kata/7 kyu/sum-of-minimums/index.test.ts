@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumOfMinimums from '.';
+import sumOfMinimums from './index.ts';
 
 describe('sumOfMinimums', () => {
   it('should sum minimum of each row', () => {

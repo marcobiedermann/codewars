@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import fizzbuzz from '.';
+import fizzbuzz from './index.ts';
 
 describe('fizzbuzz', () => {
   it('should return FizzBuzz until `n`', () => {

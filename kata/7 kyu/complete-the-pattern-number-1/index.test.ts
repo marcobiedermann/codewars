@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pattern from '.';
+import pattern from './index.ts';
 
 describe('pattern', () => {
   it('should return pattern', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isPowerOfTwo from '.';
+import isPowerOfTwo from './index.ts';
 
 describe('isPowerOfTwo', () => {
   it('should check if number is a power of two', () => {

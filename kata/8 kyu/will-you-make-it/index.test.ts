@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import zeroFuel from '.';
+import zeroFuel from './index.ts';
 
 describe('zeroFuel', () => {
   it('should check if it is possible to get to the pump', () => {

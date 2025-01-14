@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import bump from '.';
+import bump from './index.ts';
 
 describe('bump', () => {
   it('should check if your can make it home safely', () => {

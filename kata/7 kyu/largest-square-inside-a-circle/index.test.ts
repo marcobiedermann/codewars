@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import areaLargestSquare from '.';
+import areaLargestSquare from './index.ts';
 
 describe('areaLargestSquare', () => {
   it('should get the area of the largest square that can fit inside a circle', () => {

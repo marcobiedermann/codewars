@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import count from '.';
+import count from './index.ts';
 
 describe('count', () => {
   it('should count all element in an array', () => {

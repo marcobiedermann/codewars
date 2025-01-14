@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import removeEveryOther from '.';
+import removeEveryOther from './index.ts';
 
 describe('removeEveryOther', () => {
   it('should remove every other element from array', () => {

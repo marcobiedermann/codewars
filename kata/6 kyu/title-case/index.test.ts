@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import titleCase from '.';
+import titleCase from './index.ts';
 
 describe('titleCase', () => {
   it('should return string in titlecase', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import spam from '.';
+import spam from './index.ts';
 
 describe('spam', () => {
   it('should repeat the word `n` times', () => {

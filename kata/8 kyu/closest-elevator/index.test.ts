@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import elevator from '.';
+import elevator from './index.ts';
 
 describe('elevator', () => {
   it("if the left elevator is closer to the call, should return 'left'", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import spEng from '.';
+import spEng from './index.ts';
 
 describe('spEng', () => {
   it('should check is sentence contains `english`', () => {

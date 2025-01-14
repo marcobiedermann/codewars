@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findLongest from '.';
+import findLongest from './index.ts';
 
 describe('findLongest', () => {
   it('should return longest word as a number', () => {

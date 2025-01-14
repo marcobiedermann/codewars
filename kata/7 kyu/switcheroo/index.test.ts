@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import switcheroo from '.';
+import switcheroo from './index.ts';
 
 describe('switcheroo', () => {
   it('should switch all `a` to `b` and vise versa', () => {

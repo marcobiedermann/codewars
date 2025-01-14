@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import reverseSeq from '.';
+import reverseSeq from './index.ts';
 
 describe('reverseSeq', () => {
   it('should return sequence in reversed order', () => {

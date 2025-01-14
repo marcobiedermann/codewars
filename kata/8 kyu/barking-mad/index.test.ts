@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { scoobydoo, snoopy } from '.';
+import { scoobydoo, snoopy } from './index.ts';
 
 describe('dog', () => {
   it('should bark', () => {

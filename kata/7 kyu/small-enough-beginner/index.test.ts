@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import smallEnough from '.';
+import smallEnough from './index.ts';
 
 describe('smallEnough', () => {
   it('should check if all values are below or equal to the limit', () => {

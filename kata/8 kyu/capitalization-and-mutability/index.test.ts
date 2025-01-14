@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import capitalizeWord from '.';
+import capitalizeWord from './index.ts';
 
 describe('capitalizeWord', () => {
   it('should capitalize word', () => {

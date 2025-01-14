@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import averages from '.';
+import averages from './index.ts';
 
 describe('averages', () => {
   it('should return average for each number and his follower', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Ball from '.';
+import Ball from './index.ts';
 
 describe('ball', () => {
   it('should set `ballType` on instantiation', () => {

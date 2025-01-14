@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import containAllRots from '.';
+import containAllRots from './index.ts';
 
 describe('containAllRots', () => {
   it('should check if all rotations of string are included', () => {

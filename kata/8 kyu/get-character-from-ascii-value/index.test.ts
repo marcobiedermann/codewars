@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getChar from '.';
+import getChar from './index.ts';
 
 describe('getChar', () => {
   it('should return ASCII char of value', () => {

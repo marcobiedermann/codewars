@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import slope from '.';
+import slope from './index.ts';
 
 describe('slope', () => {
   it('should return string represenation of slope', () => {

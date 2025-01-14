@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import noOdds from '.';
+import noOdds from './index.ts';
 
 describe('noOdds', () => {
   it('should return not odd numbers', () => {

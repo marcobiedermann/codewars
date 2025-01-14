@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import DNAtoRNA from '.';
+import DNAtoRNA from './index.ts';
 
 describe('dNAtoRNA', () => {
   it('should convert DNA to RNA by replacing `T` by `U`', () => {

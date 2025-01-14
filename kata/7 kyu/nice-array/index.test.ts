@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isNice from '.';
+import isNice from './index.ts';
 
 describe('isNice', () => {
   it('should check if array is nice', () => {

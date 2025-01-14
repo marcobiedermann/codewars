@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nbYear from '.';
+import nbYear from './index.ts';
 
 describe('nbYear', () => {
   it('should get years to reach population', () => {

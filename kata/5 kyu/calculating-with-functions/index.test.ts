@@ -14,7 +14,7 @@ import {
   times,
   two,
   zero,
-} from '.';
+} from './index.ts';
 
 describe('calculations', () => {
   it('should calculate with functions', () => {

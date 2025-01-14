@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import mostFrequentItemCount from '.';
+import mostFrequentItemCount from './index.ts';
 
 describe('mostFrequentItemCount', () => {
   it('should find the count of the most frequent item of an array', () => {

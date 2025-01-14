@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findAverage from '.';
+import findAverage from './index.ts';
 
 describe('findAverage', () => {
   it('should find the average of numners', () => {

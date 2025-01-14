@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import iqTest from '.';
+import iqTest from './index.ts';
 
 describe('iqTest', () => {
   it('should return position of different number in string', () => {

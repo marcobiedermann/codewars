@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import questions from '.';
+import questions from './index.ts';
 
 describe('questions', () => {
   it('should add a new property to every object in the array', () => {

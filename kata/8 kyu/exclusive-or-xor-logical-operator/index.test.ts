@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import xor from '.';
+import xor from './index.ts';
 
 describe('xor', () => {
   it('should return `true` if exactly one of the two expressions evaluate to `true`', () => {

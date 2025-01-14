@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import explode from '.';
+import explode from './index.ts';
 
 describe('explode', () => {
   it('should return digit by its value', () => {

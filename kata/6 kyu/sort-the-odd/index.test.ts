@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sortArray from '.';
+import sortArray from './index.ts';
 
 describe('sortArray', () => {
   it('should sort the odd numbers in ascending order while leaving the even numbers', () => {

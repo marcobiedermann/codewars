@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import vowelIndices from '.';
+import vowelIndices from './index.ts';
 
 describe('vowelIndices', () => {
   it('should return list of vowel indices', () => {

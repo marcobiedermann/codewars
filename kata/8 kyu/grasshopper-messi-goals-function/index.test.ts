@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import goals from '.';
+import goals from './index.ts';
 
 describe('goals', () => {
   it('should sum number of arguments', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import createSecretHolder from '.';
+import createSecretHolder from './index.ts';
 
 describe('createSecretHolder', () => {
   it('should store the secret as a private property', () => {

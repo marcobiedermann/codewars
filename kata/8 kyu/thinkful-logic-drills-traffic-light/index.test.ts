@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import updateLight from '.';
+import updateLight from './index.ts';
 
 describe('updateLight', () => {
   it('should return next color', () => {

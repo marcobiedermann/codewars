@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import flatten from '.';
+import flatten from './index.ts';
 
 describe('flatten', () => {
   it('should flatten `Array` of `Array`', () => {

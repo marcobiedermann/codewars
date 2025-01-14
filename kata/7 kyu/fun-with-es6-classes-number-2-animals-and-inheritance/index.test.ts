@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { Cat, Dog, Shark } from '.';
+import { Cat, Dog, Shark } from './index.ts';
 
 describe('the Shark class', () => {
   it('should construct an object properly', () => {

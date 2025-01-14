@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import digitize from '.';
+import digitize from './index.ts';
 
 describe('digitize', () => {
   it('should return digits of number within an array in reversed order', () => {

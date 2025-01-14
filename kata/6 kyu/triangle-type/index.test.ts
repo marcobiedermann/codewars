@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import triangleType from '.';
+import triangleType from './index.ts';
 
 describe('triangleType', () => {
   it('should return the triangle type', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pillars from '.';
+import pillars from './index.ts';
 
 describe('pillars', () => {
   it('should calculate the distance between the first and the last pillar', () => {

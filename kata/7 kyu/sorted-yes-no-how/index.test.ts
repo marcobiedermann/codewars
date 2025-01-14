@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isSortedAndHow from '.';
+import isSortedAndHow from './index.ts';
 
 describe('isSortedAndHow', () => {
   it('should return sorting order', () => {

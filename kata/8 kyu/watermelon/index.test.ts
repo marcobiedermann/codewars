@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import divide from '.';
+import divide from './index.ts';
 
 describe('divide', () => {
   it('should check if number is evenly divisible', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countWords from '.';
+import countWords from './index.ts';
 
 describe('countWords', () => {
   it('should work in basic form of problem', () => {

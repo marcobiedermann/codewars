@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import incrementer from '.';
+import incrementer from './index.ts';
 
 describe('incrementer', () => {
   it('should increment each digit by its position', () => {

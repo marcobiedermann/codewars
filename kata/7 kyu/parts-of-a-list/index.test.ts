@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import partlist from '.';
+import partlist from './index.ts';
 
 describe('partlist', () => {
   it('should divide a list by all the ways', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countSheep from '.';
+import countSheep from './index.ts';
 
 describe('countSheep', () => {
   it('should return string with a murmur', () => {

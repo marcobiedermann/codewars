@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import spread from '.';
+import spread from './index.ts';
 
 describe('spread', () => {
   it('should call the function with the given arguments', () => {

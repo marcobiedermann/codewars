@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import correctTail from '.';
+import correctTail from './index.ts';
 
 describe('assertEquals', () => {
   it('should check if character is last in string', () => {

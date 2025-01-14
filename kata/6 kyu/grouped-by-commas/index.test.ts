@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import groupByCommas from '.';
+import groupByCommas from './index.ts';
 
 describe('groupByCommas', () => {
   it('should', () => {

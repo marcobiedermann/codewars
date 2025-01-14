@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Kata from '.';
+import Kata from './index.ts';
 
 describe('getVolumeOfCuboid', () => {
   it('should calculate volume of cuboid', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getCount from '.';
+import getCount from './index.ts';
 
 describe('getCount', () => {
   it('should count vowels in string', () => {

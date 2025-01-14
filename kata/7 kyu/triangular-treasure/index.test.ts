@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import triangular from '.';
+import triangular from './index.ts';
 
 describe('triangular', () => {
   it('should return triangular number', () => {

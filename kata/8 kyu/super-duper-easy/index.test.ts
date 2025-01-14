@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import problem from '.';
+import problem from './index.ts';
 
 describe('problem', () => {
   it('should return value multiplied by 50 and increased by 6', () => {

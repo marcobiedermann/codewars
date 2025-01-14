@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import goodVsEvil from '.';
+import goodVsEvil from './index.ts';
 
 describe('expect', () => {
   it('should return winning side', () => {

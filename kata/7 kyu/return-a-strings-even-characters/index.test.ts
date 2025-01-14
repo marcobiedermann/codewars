@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import evenChars from '.';
+import evenChars from './index.ts';
 
 describe('evenChars', () => {
   it('should return even characters', () => {

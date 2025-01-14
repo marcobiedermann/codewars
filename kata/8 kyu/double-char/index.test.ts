@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import doubleChar from '.';
+import doubleChar from './index.ts';
 
 describe('doubleChar', () => {
   it('should repeat each character in string', () => {

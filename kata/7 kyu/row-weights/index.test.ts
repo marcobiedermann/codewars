@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import rowWeights from '.';
+import rowWeights from './index.ts';
 
 describe('rowWeights', () => {
   it('should return total weight of team 1 and team 2', () => {

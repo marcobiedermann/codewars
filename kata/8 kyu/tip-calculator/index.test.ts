@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import calculateTip from '.';
+import calculateTip from './index.ts';
 
 describe('calculateTip', () => {
   it('should calculate tip', () => {

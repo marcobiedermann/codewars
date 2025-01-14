@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nameShuffler from '.';
+import nameShuffler from './index.ts';
 
 describe('nameShuffler', () => {
   it('should', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import checkCoupon from '.';
+import checkCoupon from './index.ts';
 
 describe('checkCoupon', () => {
   it('should verify coupon code', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import dutyFree from '.';
+import dutyFree from './index.ts';
 
 describe('dutyFree', () => {
   it('should calculate bottles needed to cover cost of the holiday', () => {

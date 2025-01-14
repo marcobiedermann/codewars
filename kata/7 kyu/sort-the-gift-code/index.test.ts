@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sortGiftCode from '.';
+import sortGiftCode from './index.ts';
 
 describe('sortGiftCode', () => {
   it('should sort letters in string', () => {

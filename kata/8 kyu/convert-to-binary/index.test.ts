@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toBinary from '.';
+import toBinary from './index.ts';
 
 describe('toBinary', () => {
   it('should convert value to binary format', () => {

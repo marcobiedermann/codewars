@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumOfDifferences from '.';
+import sumOfDifferences from './index.ts';
 
 describe('sumOfDifferences', () => {
   it('should sum the differences between consecutive pairs in the array in descending order', () => {

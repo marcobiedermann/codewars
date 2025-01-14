@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import alphanumeric from '.';
+import alphanumeric from './index.ts';
 
 describe('alphanumeric', () => {
   it('should validate if the string is alphanumeric', () => {

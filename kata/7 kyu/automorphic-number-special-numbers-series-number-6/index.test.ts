@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import automorphic from '.';
+import automorphic from './index.ts';
 
 describe('automorphic', () => {
   it('should check if number is automorphic', () => {

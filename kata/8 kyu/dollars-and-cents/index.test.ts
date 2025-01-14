@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import formatMoney from '.';
+import formatMoney from './index.ts';
 
 describe('formatMoney', () => {
   it('should form the amount formatting in dollars and cents', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import validateUsr from '.';
+import validateUsr from './index.ts';
 
 describe('validateUsr', () => {
   it('should validate username', () => {

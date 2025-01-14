@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import minSum from '.';
+import minSum from './index.ts';
 
 describe('minSum', () => {
   it('should find the minimum sum which is obtained from summing each two integers product .', () => {

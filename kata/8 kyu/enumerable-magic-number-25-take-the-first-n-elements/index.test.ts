@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import take from '.';
+import take from './index.ts';
 
 describe('take', () => {
   it('should take `n` elements from array', () => {

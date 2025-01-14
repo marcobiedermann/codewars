@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findUnique from '.';
+import findUnique from './index.ts';
 
 describe('findUnique', () => {
   it('should find the only unique number in an array', () => {

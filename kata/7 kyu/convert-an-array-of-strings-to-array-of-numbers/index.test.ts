@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toNumberArray from '.';
+import toNumberArray from './index.ts';
 
 describe('toNumberArray', () => {
   it('should convert convert an array of strings to an array of numbers', () => {

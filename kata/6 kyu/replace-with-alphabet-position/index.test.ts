@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import alphabetPosition from '.';
+import alphabetPosition from './index.ts';
 
 describe('alphabetPosition', () => {
   it('should replace every letter with its position in the alphabet', () => {

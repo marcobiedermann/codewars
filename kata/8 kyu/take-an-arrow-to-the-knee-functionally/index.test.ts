@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import ArrowFunc from '.';
+import ArrowFunc from './index.ts';
 
 describe('arrowFunc', () => {
   it('should convert the number to its corresponding ascii character', () => {

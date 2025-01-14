@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import growingPlant from '.';
+import growingPlant from './index.ts';
 
 describe('growingPlant', () => {
   it('should return days needed to reach desired height', () => {

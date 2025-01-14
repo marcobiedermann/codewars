@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import numberOfOccurrences from '.';
+import numberOfOccurrences from './index.ts';
 
 describe('numberOfOccurrences', () => {
   it('should return number of occurrences', () => {

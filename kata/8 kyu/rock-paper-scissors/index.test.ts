@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import rps from '.';
+import rps from './index.ts';
 
 describe('rps', () => {
   const getMsg = (n: number): string => `Player ${n} won!`;

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import solve from '.';
+import solve from './index.ts';
 
 describe('solve', () => {
   it('should remove left-most duplicates from list', () => {

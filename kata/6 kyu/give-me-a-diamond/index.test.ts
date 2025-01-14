@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import diamond from '.';
+import diamond from './index.ts';
 
 describe('diamond', () => {
   it('should print diamond', () => {

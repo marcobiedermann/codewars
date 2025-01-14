@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toCamelCase from '.';
+import toCamelCase from './index.ts';
 
 describe('toCamelCase', () => {
   it('should transform string to camelCase', () => {

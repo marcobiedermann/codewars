@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import cubeOdd from '.';
+import cubeOdd from './index.ts';
 
 describe('cubeOdd', () => {
   it('should return sum of odd numbers after cubing each', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import humanReadable from '.';
+import humanReadable from './index.ts';
 
 describe('humanReadable', () => {
   it('should return the time in a human-readable format', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import moveZeros from '.';
+import moveZeros from './index.ts';
 
 describe('moveZeros', () => {
   it('should move all zeros to the end', () => {

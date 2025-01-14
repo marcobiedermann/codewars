@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import cannonsReady from '.';
+import cannonsReady from './index.ts';
 
 describe('cannonsReady', () => {
   it('should check if all cannons are ready', () => {

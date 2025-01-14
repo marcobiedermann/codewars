@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import meeting from '.';
+import meeting from './index.ts';
 
 describe('meeting', () => {
   it('should transform names to uppercase and sort them alphabetically by last name', () => {

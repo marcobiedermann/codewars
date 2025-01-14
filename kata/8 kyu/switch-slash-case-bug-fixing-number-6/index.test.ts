@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import evalObject from '.';
+import evalObject from './index.ts';
 
 describe('evalObject', () => {
   it('should calculate the result', () => {

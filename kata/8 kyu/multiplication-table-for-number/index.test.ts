@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import multiTable from '.';
+import multiTable from './index.ts';
 
 describe('multiTable', () => {
   it('should return a multiplication table for `number`', () => {

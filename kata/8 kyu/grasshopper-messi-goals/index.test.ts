@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import totalGoals from '.';
+import totalGoals from './index.ts';
 
 describe('totalGoals', () => {
   it('should sum the goals Messi scored', () => {

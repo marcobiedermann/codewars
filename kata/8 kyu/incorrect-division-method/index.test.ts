@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import solve from '.';
+import solve from './index.ts';
 
 describe('solve', () => {
   it('should divide its first argument by its second', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import findSum from '.';
+import findSum from './index.ts';
 
 describe('findSum', () => {
   it('should sum all products of `3` or `5`', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nextBigger from '.';
+import nextBigger from './index.ts';
 
 describe('nextBigger', () => {
   it('should return next bigger number', () => {

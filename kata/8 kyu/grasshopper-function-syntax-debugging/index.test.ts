@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import main from '.';
+import main from './index.ts';
 
 describe('main', () => {
   it('should concatenate two strings', () => {

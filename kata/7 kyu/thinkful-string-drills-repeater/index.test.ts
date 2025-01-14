@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import repeater from '.';
+import repeater from './index.ts';
 
 describe('repeater', () => {
   it('should repeat string `n` times', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import deleteNth from '.';
+import deleteNth from './index.ts';
 
 describe('deleteNth', () => {
   it('should return list containing each number at most N times', () => {

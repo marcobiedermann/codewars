@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import recycle from '.';
+import recycle from './index.ts';
 
 describe('recycle', () => {
   it('should recycle all materials into their bins', () => {

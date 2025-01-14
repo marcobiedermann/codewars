@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import closeCompare from '.';
+import closeCompare from './index.ts';
 
 describe('closeCompare', () => {
   it('should', () => {

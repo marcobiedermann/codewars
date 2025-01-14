@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pyramid from '.';
+import pyramid from './index.ts';
 
 describe('pyramid', () => {
   it('should return an array of ascending length subarrays', () => {

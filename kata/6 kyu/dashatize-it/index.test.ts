@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import dashatize from '.';
+import dashatize from './index.ts';
 
 describe('dashatize', () => {
   it('should place a dash between each odd number', () => {

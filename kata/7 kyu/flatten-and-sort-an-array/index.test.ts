@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import flattenAndSort from '.';
+import flattenAndSort from './index.ts';
 
 describe('flattenAndSort', () => {
   it('should flatten and sort array', () => {

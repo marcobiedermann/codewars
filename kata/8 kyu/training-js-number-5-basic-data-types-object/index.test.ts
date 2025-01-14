@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import animal from '.';
+import animal from './index.ts';
 
 describe('animal', () => {
   it('should return a string, describing the given object', () => {

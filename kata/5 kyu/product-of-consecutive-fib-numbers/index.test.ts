@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import productFib from '.';
+import productFib from './index.ts';
 
 describe('productFib', () => {
   it('should calculate product of consecutive fibonacci numbers', () => {

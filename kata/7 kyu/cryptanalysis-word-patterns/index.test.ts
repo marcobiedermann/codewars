@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import wordPattern from '.';
+import wordPattern from './index.ts';
 
 describe('wordPattern', () => {
   it('should return the word pattern for a given word', () => {

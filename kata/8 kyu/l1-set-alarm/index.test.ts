@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import setAlarm from '.';
+import setAlarm from './index.ts';
 
 describe('setAlarm', () => {
   it('should return true if you are employed and not on vacation', () => {

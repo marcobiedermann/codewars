@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import gimme from '.';
+import gimme from './index.ts';
 
 describe('gimme', () => {
   it('should return middle element of triplet', () => {

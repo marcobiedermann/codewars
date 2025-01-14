@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sqInRect from '.';
+import sqInRect from './index.ts';
 
 describe('sqInRect', () => {
   it('should return number of squares in rect', () => {

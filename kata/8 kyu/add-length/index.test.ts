@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import addLength from '.';
+import addLength from './index.ts';
 
 describe('addLength', () => {
   it('should count length of words separated by space', () => {

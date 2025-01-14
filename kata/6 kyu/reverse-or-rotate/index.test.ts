@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import revrot from '.';
+import revrot from './index.ts';
 
 describe('revrot', () => {
   it('should reverse or rotate string', () => {

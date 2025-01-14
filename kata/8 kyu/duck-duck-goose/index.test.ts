@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import duckDuckGoose, { Player } from '.';
+import duckDuckGoose, { Player } from './index.ts';
 
 const exNames = ['a', 'b', 'c', 'd', 'c', 'e', 'f', 'g', 'h', 'z'];
 const players = exNames.map((n) => new Player(n));

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import deepCount from '.';
+import deepCount from './index.ts';
 
 describe('deepCount', () => {
   it('should count all elements within an array, including inner-level arrays', () => {

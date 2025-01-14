@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sakuraFall from '.';
+import sakuraFall from './index.ts';
 
 describe('sakuraFall', () => {
   it('should return time it takes to reach the ground', () => {

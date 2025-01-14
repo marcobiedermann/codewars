@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import oddCount from '.';
+import oddCount from './index.ts';
 
 describe('oddCount', () => {
   it('should count odd numbers below `n`', () => {

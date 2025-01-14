@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 
 import { describe, expect, it } from 'vitest';
-import shorter_reverse_longer from '.';
+import shorter_reverse_longer from './index.ts';
 
 describe('shorter_reverse_longer', () => {
   it('should concatenate the shorter string and the longer string in reversed order', () => {

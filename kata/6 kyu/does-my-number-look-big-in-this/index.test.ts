@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import narcissistic from '.';
+import narcissistic from './index.ts';
 
 describe('narcissistic', () => {
   it('should find small numbers are all narcissistic', () => {

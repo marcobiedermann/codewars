@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import wave from '.';
+import wave from './index.ts';
 
 describe('wave', () => {
   it('should turn string into Mexican Wave', () => {

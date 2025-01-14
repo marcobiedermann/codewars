@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import toCsvText from '.';
+import toCsvText from './index.ts';
 
 describe('toCsvText', () => {
   it('should return the CSV representation of a two-dimensional array', () => {

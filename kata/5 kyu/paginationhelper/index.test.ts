@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import PaginationHelper from '.';
+import PaginationHelper from './index.ts';
 
 describe('paginationHelper', () => {
   it('should query paging information', () => {

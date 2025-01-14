@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sameCase from '.';
+import sameCase from './index.ts';
 
 describe('sameCase', () => {
   it('should check if two given characters are the same case', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import maps from '.';
+import maps from './index.ts';
 
 describe('maps', () => {
   it('should double each value in array', () => {

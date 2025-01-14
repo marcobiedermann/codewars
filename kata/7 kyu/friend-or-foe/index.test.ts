@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import friend from '.';
+import friend from './index.ts';
 
 describe('friend', () => {
   it('should filter names by length of 4', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import contamination from '.';
+import contamination from './index.ts';
 
 describe('contamination', () => {
   it('should mutate the text', () => {

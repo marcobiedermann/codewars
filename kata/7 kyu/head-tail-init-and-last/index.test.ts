@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { head, init, last, tail } from '.';
+import { head, init, last, tail } from './index.ts';
 
 describe('head, tail, init, last', () => {
   it('should get `head`, `tail`, `init` and `last` from array', () => {

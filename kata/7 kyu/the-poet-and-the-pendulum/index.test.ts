@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pendulum from '.';
+import pendulum from './index.ts';
 
 describe('pendulum', () => {
   it('should check short length positives', () => {

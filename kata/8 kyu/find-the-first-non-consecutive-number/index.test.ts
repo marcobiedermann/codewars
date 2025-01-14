@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import firstNonConsecutive from '.';
+import firstNonConsecutive from './index.ts';
 
 describe('firstNonConsecutive', () => {
   it('should find first non consecutive element', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import squareOrSquareRoot from '.';
+import squareOrSquareRoot from './index.ts';
 
 describe('squareOrSquareRoot', () => {
   it('should return array of numbers, if the number has an integer square root, take this, otherwise square the number', () => {

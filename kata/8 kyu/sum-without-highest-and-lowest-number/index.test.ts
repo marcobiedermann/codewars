@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumArray from '.';
+import sumArray from './index.ts';
 
 describe('sumArray', () => {
   it('should sum all numbers except the highest and lowest', () => {

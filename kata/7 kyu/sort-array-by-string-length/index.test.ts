@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sortByLength from '.';
+import sortByLength from './index.ts';
 
 describe('sortByLength', () => {
   it('should sort strings by length', () => {

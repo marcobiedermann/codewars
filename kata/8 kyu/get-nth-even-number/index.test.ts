@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import nthEven from '.';
+import nthEven from './index.ts';
 
 describe('nthEven', () => {
   it('should return the nth even number', () => {

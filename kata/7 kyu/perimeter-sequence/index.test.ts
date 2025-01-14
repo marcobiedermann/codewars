@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import perimeterSequence from '.';
+import perimeterSequence from './index.ts';
 
 describe('perimeterSequence', () => {
   it('should calculate the perimeter of the `nth` shape', () => {

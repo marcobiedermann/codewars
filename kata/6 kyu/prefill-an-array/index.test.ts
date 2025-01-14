@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import prefill from '.';
+import prefill from './index.ts';
 
 describe('prefill', () => {
   it('should prefill an array of `n` elements having value `v`', () => {

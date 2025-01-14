@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import pairs from '.';
+import pairs from './index.ts';
 
 describe('pairs', () => {
   it('should count the number of consecutive pairs', () => {

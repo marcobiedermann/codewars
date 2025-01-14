@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import websites from '.';
+import websites from './index.ts';
 
 describe('websites', () => {
   it('should contain `codewars` in the array', () => {

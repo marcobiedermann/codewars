@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import SmallestIntegerFinder from '.';
+import SmallestIntegerFinder from './index.ts';
 
 describe('smallestIntegerFinder', () => {
   it('should find the smallest integer', () => {

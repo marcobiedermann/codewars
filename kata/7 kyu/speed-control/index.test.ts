@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import gps from '.';
+import gps from './index.ts';
 
 describe('gps', () => {
   it('should calculate max average speed', () => {

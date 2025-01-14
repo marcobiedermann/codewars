@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import digPow from '.';
+import digPow from './index.ts';
 
 describe('digPow', () => {
   it('should return a positive integer if exists such as the sum of the digits is equal to `k` * `n`', () => {

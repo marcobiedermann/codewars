@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import disemvowel from '.';
+import disemvowel from './index.ts';
 
 describe('disemvowel', () => {
   it('should remove all vowels', () => {

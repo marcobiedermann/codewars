@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import getRealFloor from '.';
+import getRealFloor from './index.ts';
 
 describe('getRealFloor', () => {
   it('should return the floor in the european system', () => {

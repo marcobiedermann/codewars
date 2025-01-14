@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import convert from '.';
+import convert from './index.ts';
 
 describe('convert', () => {
   it('should convert the word to number', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import sumStrings from '.';
+import sumStrings from './index.ts';
 
 describe('sumStrings', () => {
   it('should sum two strings', () => {

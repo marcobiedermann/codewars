@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import twiceAsOld from '.';
+import twiceAsOld from './index.ts';
 
 describe('twiceAsOld', () => {
   it("testing for dad's age: 36 and son's age: 7", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import Xbonacci from '.';
+import Xbonacci from './index.ts';
 
 describe('xbonacci', () => {
   it('should return a xbonacci sequence', () => {

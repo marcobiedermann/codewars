@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import shortcut from '.';
+import shortcut from './index.ts';
 
 describe('shortcut', () => {
   it('should remove all lowercase vowels from string', () => {

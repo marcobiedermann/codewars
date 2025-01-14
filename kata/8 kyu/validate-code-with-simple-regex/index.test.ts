@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import validateCode from '.';
+import validateCode from './index.ts';
 
 describe('validateCode', () => {
   it('should check if the code begins with `1`, `2` or `3`', () => {
