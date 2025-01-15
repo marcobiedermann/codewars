@@ -1,4 +1,4 @@
-import Point from './point';
+import Point from './point.ts';
 
 class Circle {
   center: Point;

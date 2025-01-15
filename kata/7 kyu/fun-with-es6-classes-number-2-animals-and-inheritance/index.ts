@@ -1,13 +1,13 @@
 /* eslint-disable max-classes-per-file */
 
 class Animal {
-  constructor(
-    public name: string,
-    public age: number,
-    public legs: number,
-    public species: string,
-    public status: string,
-  ) {
+  public name: string;
+  public age: number;
+  public legs: number;
+  public species: string;
+  public status: string;
+
+  constructor(name: string, age: number, legs: number, species: string, status: string) {
     this.name = name;
     this.age = age;
     this.legs = legs;
@@ -37,12 +37,9 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-  constructor(
-    name: string,
-    age: number,
-    status: string,
-    private master: string,
-  ) {
+  private master: string;
+
+  constructor(name: string, age: number, status: string, master: string) {
     super(name, age, 4, 'dog', status);
 
     this.master = master;
@@ -54,4 +51,4 @@ class Dog extends Animal {
 }
 
 export default Animal;
-export { Shark, Cat, Dog };
+export { Cat, Dog, Shark };

@@ -1,16 +1,15 @@
-import { describe, expect, it } from 'vitest';
-import litres from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import litres from './index.ts';
 
 describe('litres', () => {
   it('should return number of litres', () => {
-    expect.assertions(7);
-
-    expect(litres(2)).toBe(1);
-    expect(litres(1.4)).toBe(0);
-    expect(litres(12.3)).toBe(6);
-    expect(litres(0.82)).toBe(0);
-    expect(litres(11.8)).toBe(5);
-    expect(litres(1787)).toBe(893);
-    expect(litres(0)).toBe(0);
+    assert.strictEqual(litres(2), 1);
+    assert.strictEqual(litres(1.4), 0);
+    assert.strictEqual(litres(12.3), 6);
+    assert.strictEqual(litres(0.82), 0);
+    assert.strictEqual(litres(11.8), 5);
+    assert.strictEqual(litres(1787), 893);
+    assert.strictEqual(litres(0), 0);
   });
 });

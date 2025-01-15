@@ -1,12 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import repeatIt from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import repeatIt from './index.ts';
 
 describe('repeatIt', () => {
   it('should repeat string `n` times', () => {
-    expect.assertions(3);
-
-    expect(repeatIt('*', 3)).toBe('***');
-    expect(repeatIt('Hello', 11)).toBe('HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello');
-    expect(repeatIt(1234, 5)).toBe('Not a string');
+    assert.strictEqual(repeatIt('*', 3), '***');
+    assert.strictEqual(
+      repeatIt('Hello', 11),
+      'HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello',
+    );
+    assert.strictEqual(repeatIt(1234, 5), 'Not a string');
   });
 });

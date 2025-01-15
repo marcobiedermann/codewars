@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import isSquare from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import isSquare from './index.ts';
 
 describe('isSquare', () => {
   it('should check if number is square', () => {
-    expect.assertions(6);
-
-    expect(isSquare(-1)).toBe(false);
-    expect(isSquare(0)).toBe(true);
-    expect(isSquare(3)).toBe(false);
-    expect(isSquare(4)).toBe(true);
-    expect(isSquare(25)).toBe(true);
-    expect(isSquare(26)).toBe(false);
+    assert.strictEqual(isSquare(-1), false);
+    assert.strictEqual(isSquare(0), true);
+    assert.strictEqual(isSquare(3), false);
+    assert.strictEqual(isSquare(4), true);
+    assert.strictEqual(isSquare(25), true);
+    assert.strictEqual(isSquare(26), false);
   });
 });

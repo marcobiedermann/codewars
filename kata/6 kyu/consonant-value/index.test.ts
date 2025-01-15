@@ -1,16 +1,15 @@
-import { describe, expect, it } from 'vitest';
-import solve from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import solve from './index.ts';
 
 describe('solve', () => {
   it('should', () => {
-    expect.assertions(7);
-
-    expect(solve('zodiac')).toBe(26);
-    expect(solve('chruschtschov')).toBe(80);
-    expect(solve('khrushchev')).toBe(38);
-    expect(solve('strength')).toBe(57);
-    expect(solve('catchphrase')).toBe(73);
-    expect(solve('twelfthstreet')).toBe(103);
-    expect(solve('mischtschenkoana')).toBe(80);
+    assert.strictEqual(solve('zodiac'), 26);
+    assert.strictEqual(solve('chruschtschov'), 80);
+    assert.strictEqual(solve('khrushchev'), 38);
+    assert.strictEqual(solve('strength'), 57);
+    assert.strictEqual(solve('catchphrase'), 73);
+    assert.strictEqual(solve('twelfthstreet'), 103);
+    assert.strictEqual(solve('mischtschenkoana'), 80);
   });
 });

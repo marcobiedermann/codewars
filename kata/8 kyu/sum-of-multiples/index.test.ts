@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import sumMul from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sumMul from './index.ts';
 
 describe('sumMul', () => {
   it('should return the sum of all multiples of `n` below `m`', () => {
-    expect.assertions(3);
-
-    expect(sumMul(0, 0)).toBe('INVALID');
-    expect(sumMul(2, 9)).toBe(20);
-    expect(sumMul(4, -7)).toBe('INVALID');
+    assert.strictEqual(sumMul(0, 0), 'INVALID');
+    assert.strictEqual(sumMul(2, 9), 20);
+    assert.strictEqual(sumMul(4, -7), 'INVALID');
   });
 });

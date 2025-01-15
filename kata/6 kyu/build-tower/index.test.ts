@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import towerBuilder from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import towerBuilder from './index.ts';
 
 describe('towerBuilder', () => {
   it('should build tower', () => {
-    expect.assertions(3);
-
-    expect(towerBuilder(1)).toStrictEqual(['*']);
-    expect(towerBuilder(2)).toStrictEqual([' * ', '***']);
-    expect(towerBuilder(3)).toStrictEqual(['  *  ', ' *** ', '*****']);
+    assert.deepEqual(towerBuilder(1), ['*']);
+    assert.deepEqual(towerBuilder(2), [' * ', '***']);
+    assert.deepEqual(towerBuilder(3), ['  *  ', ' *** ', '*****']);
   });
 });

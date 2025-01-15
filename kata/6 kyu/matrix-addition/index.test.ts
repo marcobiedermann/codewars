@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import matrixAddition from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import matrixAddition from './index.ts';
 
 describe('matrixAddition', () => {
   it('should add two matrices', () => {
-    expect.assertions(3);
-
-    expect(
+    assert.deepEqual(
       matrixAddition(
         [
           [1, 2],
@@ -16,12 +15,13 @@ describe('matrixAddition', () => {
           [2, 3],
         ],
       ),
-    ).toStrictEqual([
-      [3, 5],
-      [3, 5],
-    ]);
-    expect(matrixAddition([[1]], [[2]])).toStrictEqual([[3]]);
-    expect(
+      [
+        [3, 5],
+        [3, 5],
+      ],
+    );
+    assert.deepEqual(matrixAddition([[1]], [[2]]), [[3]]);
+    assert.deepEqual(
       matrixAddition(
         [
           [1, 2, 3],
@@ -34,10 +34,11 @@ describe('matrixAddition', () => {
           [1, 1, 3],
         ],
       ),
-    ).toStrictEqual([
-      [3, 4, 4],
-      [6, 4, 4],
-      [2, 2, 4],
-    ]);
+      [
+        [3, 4, 4],
+        [6, 4, 4],
+        [2, 2, 4],
+      ],
+    );
   });
 });

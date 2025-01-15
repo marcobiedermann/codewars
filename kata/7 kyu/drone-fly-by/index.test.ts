@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import flyBy from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import flyBy from './index.ts';
 
 describe('flyBy', () => {
   it('should return the resulting `lamps` string', () => {
-    expect.assertions(3);
-
-    expect(flyBy('xxxxxx', '====T')).toBe('ooooox');
-    expect(flyBy('xxxxxxxxx', '==T')).toBe('oooxxxxxx');
-    expect(flyBy('xxxxxxxxxxxxxxx', '=========T')).toBe('ooooooooooxxxxx');
+    assert.strictEqual(flyBy('xxxxxx', '====T'), 'ooooox');
+    assert.strictEqual(flyBy('xxxxxxxxx', '==T'), 'oooxxxxxx');
+    assert.strictEqual(flyBy('xxxxxxxxxxxxxxx', '=========T'), 'ooooooooooxxxxx');
   });
 });

@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import toBinary from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import toBinary from './index.ts';
 
 describe('toBinary', () => {
   it('should convert value to binary format', () => {
-    expect.assertions(4);
-
-    expect(toBinary(1)).toBe(1);
-    expect(toBinary(2)).toBe(10);
-    expect(toBinary(3)).toBe(11);
-    expect(toBinary(5)).toBe(101);
+    assert.strictEqual(toBinary(1), 1);
+    assert.strictEqual(toBinary(2), 10);
+    assert.strictEqual(toBinary(3), 11);
+    assert.strictEqual(toBinary(5), 101);
   });
 });

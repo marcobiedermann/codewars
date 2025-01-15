@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import largestPairSum from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import largestPairSum from './index.ts';
 
 describe('largestPairSum', () => {
   it('should find the largest pair sum in sequence', () => {
-    expect.assertions(4);
-
-    expect(largestPairSum([10, 14, 2, 23, 19])).toBe(42);
-    expect(largestPairSum([-100, -29, -24, -19, 19])).toBe(0);
-    expect(largestPairSum([1, 2, 3, 4, 6, -1, 2])).toBe(10);
-    expect(largestPairSum([-10, -8, -16, -18, -19])).toBe(-18);
+    assert.strictEqual(largestPairSum([10, 14, 2, 23, 19]), 42);
+    assert.strictEqual(largestPairSum([-100, -29, -24, -19, 19]), 0);
+    assert.strictEqual(largestPairSum([1, 2, 3, 4, 6, -1, 2]), 10);
+    assert.strictEqual(largestPairSum([-10, -8, -16, -18, -19]), -18);
   });
 });

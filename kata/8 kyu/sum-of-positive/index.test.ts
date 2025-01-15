@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import positiveSum from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import positiveSum from './index.ts';
 
 describe('positiveSum', () => {
   it('should sum all positive numbers', () => {
-    expect.assertions(5);
-
-    expect(positiveSum([1, 2, 3, 4, 5])).toBe(15);
-    expect(positiveSum([1, -2, 3, 4, 5])).toBe(13);
-    expect(positiveSum([])).toBe(0);
-    expect(positiveSum([-1, -2, -3, -4, -5])).toBe(0);
-    expect(positiveSum([-1, 2, 3, 4, -5])).toBe(9);
+    assert.strictEqual(positiveSum([1, 2, 3, 4, 5]), 15);
+    assert.strictEqual(positiveSum([1, -2, 3, 4, 5]), 13);
+    assert.strictEqual(positiveSum([]), 0);
+    assert.strictEqual(positiveSum([-1, -2, -3, -4, -5]), 0);
+    assert.strictEqual(positiveSum([-1, 2, 3, 4, -5]), 9);
   });
 });

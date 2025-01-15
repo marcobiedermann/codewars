@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import solution from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import solution from './index.ts';
 
 describe('solution', () => {
   it('should reverse string', () => {
-    expect.assertions(1);
-
-    expect(solution('world')).toBe('dlrow');
+    assert.strictEqual(solution('world'), 'dlrow');
   });
 });

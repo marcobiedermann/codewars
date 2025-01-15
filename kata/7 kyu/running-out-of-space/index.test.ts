@@ -1,17 +1,16 @@
-import { describe, expect, it } from 'vitest';
-import spacey from '.';
+import assert from 'assert';
+import { describe, it } from 'node:test';
+import spacey from './index.ts';
 
 describe('spacey', () => {
   it('should return an array showing the space decreasing', () => {
-    expect.assertions(2);
-
-    expect(spacey(['kevin', 'has', 'no', 'space'])).toStrictEqual([
+    assert.deepEqual(spacey(['kevin', 'has', 'no', 'space']), [
       'kevin',
       'kevinhas',
       'kevinhasno',
       'kevinhasnospace',
     ]);
-    expect(spacey(['this', 'cheese', 'has', 'no', 'holes'])).toStrictEqual([
+    assert.deepEqual(spacey(['this', 'cheese', 'has', 'no', 'holes']), [
       'this',
       'thischeese',
       'thischeesehas',

@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import wordsToMarks from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import wordsToMarks from './index.ts';
 
 describe('wordsToMarks', () => {
   it('should sum up char codes of characters in string', () => {
-    expect.assertions(5);
-
-    expect(wordsToMarks('attitude')).toBe(100);
-    expect(wordsToMarks('friends')).toBe(75);
-    expect(wordsToMarks('family')).toBe(66);
-    expect(wordsToMarks('selfness')).toBe(99);
-    expect(wordsToMarks('knowledge')).toBe(96);
+    assert.strictEqual(wordsToMarks('attitude'), 100);
+    assert.strictEqual(wordsToMarks('friends'), 75);
+    assert.strictEqual(wordsToMarks('family'), 66);
+    assert.strictEqual(wordsToMarks('selfness'), 99);
+    assert.strictEqual(wordsToMarks('knowledge'), 96);
   });
 });

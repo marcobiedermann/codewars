@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import repeater from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import repeater from './index.ts';
 
 describe('repeater', () => {
   it('should repeat string `n` times', () => {
-    expect.assertions(3);
-
-    expect(repeater('a', 5)).toBe('aaaaa');
-    expect(repeater('Na', 16)).toBe('NaNaNaNaNaNaNaNaNaNaNaNaNaNaNaNa');
-    expect(repeater('Wub ', 6)).toBe('Wub Wub Wub Wub Wub Wub ');
+    assert.strictEqual(repeater('a', 5), 'aaaaa');
+    assert.strictEqual(repeater('Na', 16), 'NaNaNaNaNaNaNaNaNaNaNaNaNaNaNaNa');
+    assert.strictEqual(repeater('Wub ', 6), 'Wub Wub Wub Wub Wub Wub ');
   });
 });

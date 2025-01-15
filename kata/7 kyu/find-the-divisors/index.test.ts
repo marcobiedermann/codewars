@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import divisors from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import divisors from './index.ts';
 
 describe('divisors', () => {
   it('should return list of divisors or prime', () => {
-    expect.assertions(3);
-
-    expect(divisors(15)).toStrictEqual([3, 5]);
-    expect(divisors(12)).toStrictEqual([2, 3, 4, 6]);
-    expect(divisors(13)).toBe('13 is prime');
+    assert.deepEqual(divisors(15), [3, 5]);
+    assert.deepEqual(divisors(12), [2, 3, 4, 6]);
+    assert.strictEqual(divisors(13), '13 is prime');
   });
 });

@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import feast from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import feast from './index.ts';
 
 describe('feast', () => {
   it('should check if beast is allowed to bring dish to feast', () => {
-    expect.assertions(3);
-
-    expect(feast('great blue heron', 'garlic naan')).toBe(true);
-    expect(feast('chickadee', 'chocolate cake')).toBe(true);
-    expect(feast('brown bear', 'bear claw')).toBe(false);
+    assert.strictEqual(feast('great blue heron', 'garlic naan'), true);
+    assert.strictEqual(feast('chickadee', 'chocolate cake'), true);
+    assert.strictEqual(feast('brown bear', 'bear claw'), false);
   });
 });

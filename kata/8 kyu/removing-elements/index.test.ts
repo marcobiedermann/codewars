@@ -1,16 +1,15 @@
-import { describe, expect, it } from 'vitest';
-import removeEveryOther from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import removeEveryOther from './index.ts';
 
 describe('removeEveryOther', () => {
   it('should remove every other element from array', () => {
-    expect.assertions(4);
-
-    expect(removeEveryOther(['Hello', 'Goodbye', 'Hello Again'])).toStrictEqual([
+    assert.deepEqual(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']), [
       'Hello',
       'Hello Again',
     ]);
-    expect(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toStrictEqual([1, 3, 5, 7, 9]);
-    expect(removeEveryOther([[1, 2]])).toStrictEqual([[1, 2]]);
-    expect(removeEveryOther([['Goodbye'], { Great: 'Job' }])).toStrictEqual([['Goodbye']]);
+    assert.deepEqual(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), [1, 3, 5, 7, 9]);
+    assert.deepEqual(removeEveryOther([[1, 2]]), [[1, 2]]);
+    assert.deepEqual(removeEveryOther([['Goodbye'], { Great: 'Job' }]), [['Goodbye']]);
   });
 });

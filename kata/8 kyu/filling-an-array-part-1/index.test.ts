@@ -1,22 +1,17 @@
-import { describe, expect, it } from 'vitest';
-import arr from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import arr from './index.ts';
 
 describe('arr', () => {
   it('should return an array', () => {
-    expect.assertions(1);
-
-    expect(arr()).toBeInstanceOf(Array);
+    assert.strictEqual(arr() instanceof Array, true);
   });
 
   it('should return a blank array when called with no argument', () => {
-    expect.assertions(1);
-
-    expect(arr()).toStrictEqual([]);
+    assert.deepEqual(arr(), []);
   });
 
   it('should return 0 to 3 when called with 4', () => {
-    expect.assertions(1);
-
-    expect(arr(4)).toStrictEqual([0, 1, 2, 3]);
+    assert.deepEqual(arr(4), [0, 1, 2, 3]);
   });
 });

@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import { add, divide, exponent, mod, multiply, subt } from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { add, divide, exponent, mod, multiply, subt } from './index.ts';
 
 describe('calculate', () => {
   it('should calculate result', () => {
-    expect.assertions(6);
-
-    expect(add(1, 2)).toBe(3);
-    expect(multiply(1, 2)).toBe(2);
-    expect(divide(2, 1)).toBe(2);
-    expect(mod(1, 2)).toBe(1);
-    expect(exponent(1, 2)).toBe(1);
-    expect(subt(1, 2)).toBe(-1);
+    assert.strictEqual(add(1, 2), 3);
+    assert.strictEqual(multiply(1, 2), 2);
+    assert.strictEqual(divide(2, 1), 2);
+    assert.strictEqual(mod(1, 2), 1);
+    assert.strictEqual(exponent(1, 2), 1);
+    assert.strictEqual(subt(1, 2), -1);
   });
 });

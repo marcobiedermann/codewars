@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import countSheep from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import countSheep from './index.ts';
 
 describe('countSheep', () => {
   it('should return string with a murmur', () => {
-    expect.assertions(3);
-
-    expect(countSheep(1)).toBe('1 sheep...');
-    expect(countSheep(2)).toBe('1 sheep...2 sheep...');
-    expect(countSheep(3)).toBe('1 sheep...2 sheep...3 sheep...');
+    assert.strictEqual(countSheep(1), '1 sheep...');
+    assert.strictEqual(countSheep(2), '1 sheep...2 sheep...');
+    assert.strictEqual(countSheep(3), '1 sheep...2 sheep...3 sheep...');
   });
 });

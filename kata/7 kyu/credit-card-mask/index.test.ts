@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import maskify from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import maskify from './index.ts';
 
 describe('maskify', () => {
   it('should change all but last four characters into `#`', () => {
-    expect.assertions(3);
-
-    expect(maskify('4556364607935616')).toBe('############5616');
-    expect(maskify('1')).toBe('1');
-    expect(maskify('11111')).toBe('#1111');
+    assert.strictEqual(maskify('4556364607935616'), '############5616');
+    assert.strictEqual(maskify('1'), '1');
+    assert.strictEqual(maskify('11111'), '#1111');
   });
 });

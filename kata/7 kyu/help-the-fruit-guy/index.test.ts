@@ -1,20 +1,19 @@
-import { describe, expect, it } from 'vitest';
-import removeRotten from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import removeRotten from './index.ts';
 
 describe('removeRotten', () => {
   it('should remove all rotten fruits', () => {
-    expect.assertions(4);
-
-    expect(removeRotten(['apple', 'banana', 'kiwi', 'melone', 'orange'])).toStrictEqual([
+    assert.deepEqual(removeRotten(['apple', 'banana', 'kiwi', 'melone', 'orange']), [
       'apple',
       'banana',
       'kiwi',
       'melone',
       'orange',
     ]);
-    expect(removeRotten([])).toStrictEqual([]);
-    expect(removeRotten(null)).toStrictEqual([]);
-    expect(removeRotten(['apple', 'rottenBanana', 'apple'])).toStrictEqual([
+    assert.deepEqual(removeRotten([]), []);
+    assert.deepEqual(removeRotten(null), []);
+    assert.deepEqual(removeRotten(['apple', 'rottenBanana', 'apple']), [
       'apple',
       'banana',
       'apple',

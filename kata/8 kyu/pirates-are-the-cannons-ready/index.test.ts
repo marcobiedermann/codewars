@@ -1,12 +1,15 @@
-import { describe, expect, it } from 'vitest';
-import cannonsReady from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import cannonsReady from './index.ts';
 
 describe('cannonsReady', () => {
   it('should check if all cannons are ready', () => {
-    expect.assertions(2);
-
-    expect(cannonsReady({ Mike: 'aye', Joe: 'aye', Johnson: 'aye', Peter: 'aye' })).toBe('Fire!');
-    expect(cannonsReady({ Mike: 'aye', Joe: 'nay', Johnson: 'aye', Peter: 'aye' })).toBe(
+    assert.strictEqual(
+      cannonsReady({ Mike: 'aye', Joe: 'aye', Johnson: 'aye', Peter: 'aye' }),
+      'Fire!',
+    );
+    assert.strictEqual(
+      cannonsReady({ Mike: 'aye', Joe: 'nay', Johnson: 'aye', Peter: 'aye' }),
       'Shiver me timbers!',
     );
   });

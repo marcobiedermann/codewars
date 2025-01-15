@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import { scoobydoo, snoopy } from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { scoobydoo, snoopy } from './index.ts';
 
 describe('dog', () => {
   it('should bark', () => {
-    expect.assertions(2);
-
-    expect(snoopy.bark()).toBe('Woof');
-    expect(scoobydoo.bark()).toBe('Woof');
+    assert.strictEqual(snoopy.bark(), 'Woof');
+    assert.strictEqual(scoobydoo.bark(), 'Woof');
   });
 });

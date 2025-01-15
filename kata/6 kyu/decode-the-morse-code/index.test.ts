@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import decodeMorse from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import decodeMorse from './index.ts';
 
 describe('decodeMorse', () => {
   it('should decode the morse code', () => {
-    expect.assertions(1);
-
-    expect(decodeMorse('.... . -.--   .--- ..- -.. .')).toBe('HEY JUDE');
+    assert.strictEqual(decodeMorse('.... . -.--   .--- ..- -.. .'), 'HEY JUDE');
   });
 });

@@ -1,16 +1,15 @@
-import { describe, expect, it } from 'vitest';
-import reverseNumber from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import reverseNumber from './index.ts';
 
 describe('reverseNumber', () => {
   it('should reverse its digits', () => {
-    expect.assertions(7);
-
-    expect(reverseNumber(123)).toBe(321);
-    expect(reverseNumber(-123)).toBe(-321);
-    expect(reverseNumber(1000)).toBe(1);
-    expect(reverseNumber(4321234)).toBe(4321234);
-    expect(reverseNumber(5)).toBe(5);
-    expect(reverseNumber(0)).toBe(0);
-    expect(reverseNumber(98989898)).toBe(89898989);
+    assert.strictEqual(reverseNumber(123), 321);
+    assert.strictEqual(reverseNumber(-123), -321);
+    assert.strictEqual(reverseNumber(1000), 1);
+    assert.strictEqual(reverseNumber(4321234), 4321234);
+    assert.strictEqual(reverseNumber(5), 5);
+    assert.strictEqual(reverseNumber(0), 0);
+    assert.strictEqual(reverseNumber(98989898), 89898989);
   });
 });

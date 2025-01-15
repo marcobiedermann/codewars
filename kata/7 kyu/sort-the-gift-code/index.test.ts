@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import sortGiftCode from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sortGiftCode from './index.ts';
 
 describe('sortGiftCode', () => {
   it('should sort letters in string', () => {
-    expect.assertions(3);
-
-    expect(sortGiftCode('abcdef')).toBe('abcdef');
-    expect(sortGiftCode('pqksuvy')).toBe('kpqsuvy');
-    expect(sortGiftCode('zyxwvutsrqponmlkjihgfedcba')).toBe('abcdefghijklmnopqrstuvwxyz');
+    assert.strictEqual(sortGiftCode('abcdef'), 'abcdef');
+    assert.strictEqual(sortGiftCode('pqksuvy'), 'kpqsuvy');
+    assert.strictEqual(sortGiftCode('zyxwvutsrqponmlkjihgfedcba'), 'abcdefghijklmnopqrstuvwxyz');
   });
 });

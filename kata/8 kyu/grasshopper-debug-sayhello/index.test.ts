@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import sayHello from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sayHello from './index.ts';
 
 describe('sayHello', () => {
   it('should should say hello to name passed in', () => {
-    expect.assertions(4);
-
-    expect(sayHello('Mr. Spock')).toBe('Hello, Mr. Spock');
-    expect(sayHello('Captain Kirk')).toBe('Hello, Captain Kirk');
-    expect(sayHello('Liutenant Uhura')).toBe('Hello, Liutenant Uhura');
-    expect(sayHello('Dr. McCoy')).toBe('Hello, Dr. McCoy');
+    assert.strictEqual(sayHello('Mr. Spock'), 'Hello, Mr. Spock');
+    assert.strictEqual(sayHello('Captain Kirk'), 'Hello, Captain Kirk');
+    assert.strictEqual(sayHello('Liutenant Uhura'), 'Hello, Liutenant Uhura');
+    assert.strictEqual(sayHello('Dr. McCoy'), 'Hello, Dr. McCoy');
   });
 });

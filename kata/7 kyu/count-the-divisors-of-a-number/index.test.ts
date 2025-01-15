@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import getDivisorsCnt from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import getDivisorsCnt from './index.ts';
 
 describe('getDivisorsCnt', () => {
   it('should count number of divisors', () => {
-    expect.assertions(4);
-
-    expect(getDivisorsCnt(1)).toBe(1);
-    expect(getDivisorsCnt(10)).toBe(4);
-    expect(getDivisorsCnt(11)).toBe(2);
-    expect(getDivisorsCnt(54)).toBe(8);
+    assert.strictEqual(getDivisorsCnt(1), 1);
+    assert.strictEqual(getDivisorsCnt(10), 4);
+    assert.strictEqual(getDivisorsCnt(11), 2);
+    assert.strictEqual(getDivisorsCnt(54), 8);
   });
 });

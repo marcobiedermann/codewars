@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import findMissing from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import findMissing from './index.ts';
 
 describe('findMissing', () => {
   it('should find missing term in in arithmetic progression', () => {
-    expect.assertions(1);
-
-    expect(findMissing([1, 3, 4])).toBe(2);
+    assert.strictEqual(findMissing([1, 3, 4]), 2);
   });
 });

@@ -1,23 +1,23 @@
-import { describe, expect, it } from 'vitest';
-import generateHashtag from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import generateHashtag from './index.ts';
 
 describe('generateHashtag', () => {
   it('should generate a hashtag', () => {
-    expect.assertions(10);
-
-    expect(generateHashtag('')).toBe(false);
-    expect(generateHashtag(' '.repeat(200))).toBe(false);
-    expect(generateHashtag('Do We have A Hashtag')).toBe('#DoWeHaveAHashtag');
-    expect(generateHashtag('Codewars')).toBe('#Codewars');
-    expect(generateHashtag('Codewars Is Nice')).toBe('#CodewarsIsNice');
-    expect(generateHashtag('Codewars is nice')).toBe('#CodewarsIsNice');
-    expect(generateHashtag(`code${' '.repeat(140)}wars`)).toBe('#CodeWars');
-    expect(
+    assert.strictEqual(generateHashtag(''), false);
+    assert.strictEqual(generateHashtag(' '.repeat(200)), false);
+    assert.strictEqual(generateHashtag('Do We have A Hashtag'), '#DoWeHaveAHashtag');
+    assert.strictEqual(generateHashtag('Codewars'), '#Codewars');
+    assert.strictEqual(generateHashtag('Codewars Is Nice'), '#CodewarsIsNice');
+    assert.strictEqual(generateHashtag('Codewars is nice'), '#CodewarsIsNice');
+    assert.strictEqual(generateHashtag(`code${' '.repeat(140)}wars`), '#CodeWars');
+    assert.strictEqual(
       generateHashtag(
         'Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat',
       ),
-    ).toBe(false);
-    expect(generateHashtag('a'.repeat(139))).toBe(`#A${'a'.repeat(138)}`);
-    expect(generateHashtag('a'.repeat(140))).toBe(false);
+      false,
+    );
+    assert.strictEqual(generateHashtag('a'.repeat(139)), `#A${'a'.repeat(138)}`);
+    assert.strictEqual(generateHashtag('a'.repeat(140)), false);
   });
 });

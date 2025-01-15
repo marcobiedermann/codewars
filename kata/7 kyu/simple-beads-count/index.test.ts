@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import countRedBeads from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import countRedBeads from './index.ts';
 
 describe('countRedBeads', () => {
   it('should count red beads', () => {
-    expect.assertions(4);
-
-    expect(countRedBeads(0)).toBe(0);
-    expect(countRedBeads(1)).toBe(0);
-    expect(countRedBeads(3)).toBe(4);
-    expect(countRedBeads(5)).toBe(8);
+    assert.strictEqual(countRedBeads(0), 0);
+    assert.strictEqual(countRedBeads(1), 0);
+    assert.strictEqual(countRedBeads(3), 4);
+    assert.strictEqual(countRedBeads(5), 8);
   });
 });

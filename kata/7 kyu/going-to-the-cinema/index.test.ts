@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import movie from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import movie from './index.ts';
 
 describe('movie', () => {
   it('should calculate how many times you have to go to the cinema', () => {
-    expect.assertions(2);
-
-    expect(movie(500, 15, 0.9)).toBe(43);
-    expect(movie(100, 10, 0.95)).toBe(24);
+    assert.strictEqual(movie(500, 15, 0.9), 43);
+    assert.strictEqual(movie(100, 10, 0.95), 24);
   });
 });

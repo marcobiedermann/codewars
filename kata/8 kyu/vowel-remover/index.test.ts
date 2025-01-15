@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import shortcut from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import shortcut from './index.ts';
 
 describe('shortcut', () => {
   it('should remove all lowercase vowels from string', () => {
-    expect.assertions(4);
-
-    expect(shortcut('hello')).toBe('hll');
-    expect(shortcut('how are you today?')).toBe('hw r y tdy?');
-    expect(shortcut('complain')).toBe('cmpln');
-    expect(shortcut('never')).toBe('nvr');
+    assert.strictEqual(shortcut('hello'), 'hll');
+    assert.strictEqual(shortcut('how are you today?'), 'hw r y tdy?');
+    assert.strictEqual(shortcut('complain'), 'cmpln');
+    assert.strictEqual(shortcut('never'), 'nvr');
   });
 });

@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import solution from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import solution from './index.ts';
 
 describe('solution', () => {
   it('should decode roman number', () => {
-    expect.assertions(5);
-
-    expect(solution('XXI')).toBe(21);
-    expect(solution('I')).toBe(1);
-    expect(solution('IV')).toBe(4);
-    expect(solution('MMVIII')).toBe(2008);
-    expect(solution('MDCLXVI')).toBe(1666);
+    assert.strictEqual(solution('XXI'), 21);
+    assert.strictEqual(solution('I'), 1);
+    assert.strictEqual(solution('IV'), 4);
+    assert.strictEqual(solution('MMVIII'), 2008);
+    assert.strictEqual(solution('MDCLXVI'), 1666);
   });
 });

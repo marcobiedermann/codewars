@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import filterString from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import filterString from './index.ts';
 
 describe('filterString', () => {
   it('should extract number from string', () => {
-    expect.assertions(3);
-
-    expect(filterString('123')).toBe(123);
-    expect(filterString('a1b2c3')).toBe(123);
-    expect(filterString('aa1bb2cc3dd')).toBe(123);
+    assert.strictEqual(filterString('123'), 123);
+    assert.strictEqual(filterString('a1b2c3'), 123);
+    assert.strictEqual(filterString('aa1bb2cc3dd'), 123);
   });
 });

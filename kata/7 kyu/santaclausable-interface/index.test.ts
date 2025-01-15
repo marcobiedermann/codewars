@@ -1,12 +1,11 @@
 /* eslint-disable no-console */
 
-import { describe, expect, it } from 'vitest';
-import isSantaClausable from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import isSantaClausable from './index.ts';
 
 describe('isSantaClausable', () => {
   it('should check if object implemented the `santa` interface', () => {
-    expect.assertions(2);
-
     const santa = {
       sayHoHoHo() {
         console.log('Ho Ho Ho!');
@@ -26,7 +25,7 @@ describe('isSantaClausable', () => {
       // no distributeGifts() and no goDownTheChimney()
     };
 
-    expect(isSantaClausable(santa)).toBe(true);
-    expect(isSantaClausable(notSanta)).toBe(false);
+    assert.strictEqual(isSantaClausable(santa), true);
+    assert.strictEqual(isSantaClausable(notSanta), false);
   });
 });

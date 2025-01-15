@@ -1,16 +1,15 @@
-import { describe, expect, it } from 'vitest';
-import bonusTime from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import bonusTime from './index.ts';
 
 describe('bonusTime', () => {
   it('should calculate bonus', () => {
-    expect.assertions(7);
-
-    expect(bonusTime(10000, true)).toBe('£100000');
-    expect(bonusTime(25000, true)).toBe('£250000');
-    expect(bonusTime(10000, false)).toBe('£10000');
-    expect(bonusTime(60000, false)).toBe('£60000');
-    expect(bonusTime(2, true)).toBe('£20');
-    expect(bonusTime(78, false)).toBe('£78');
-    expect(bonusTime(67890, true)).toBe('£678900');
+    assert.strictEqual(bonusTime(10000, true), '£100000');
+    assert.strictEqual(bonusTime(25000, true), '£250000');
+    assert.strictEqual(bonusTime(10000, false), '£10000');
+    assert.strictEqual(bonusTime(60000, false), '£60000');
+    assert.strictEqual(bonusTime(2, true), '£20');
+    assert.strictEqual(bonusTime(78, false), '£78');
+    assert.strictEqual(bonusTime(67890, true), '£678900');
   });
 });

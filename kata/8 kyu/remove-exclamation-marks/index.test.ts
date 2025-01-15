@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import removeExclamationMarks from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import removeExclamationMarks from './index.ts';
 
 describe('removeExclamationMarks', () => {
   it('should remove exclamation marks from string', () => {
-    expect.assertions(1);
-
-    expect(removeExclamationMarks('Hello World!')).toBe('Hello World');
+    assert.strictEqual(removeExclamationMarks('Hello World!'), 'Hello World');
   });
 });

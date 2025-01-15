@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import deepCount from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import deepCount from './index.ts';
 
 describe('deepCount', () => {
   it('should count all elements within an array, including inner-level arrays', () => {
-    expect.assertions(5);
-
-    expect(deepCount([])).toBe(0);
-    expect(deepCount([1, 2, 3])).toBe(3);
-    expect(deepCount(['x', 'y', ['z']])).toBe(4);
-    expect(deepCount([1, 2, [3, 4, [5]]])).toBe(7);
-    expect(deepCount([[[[[[[[[]]]]]]]]])).toBe(8);
+    assert.strictEqual(deepCount([]), 0);
+    assert.strictEqual(deepCount([1, 2, 3]), 3);
+    assert.strictEqual(deepCount(['x', 'y', ['z']]), 4);
+    assert.strictEqual(deepCount([1, 2, [3, 4, [5]]]), 7);
+    assert.strictEqual(deepCount([[[[[[[[[]]]]]]]]]), 8);
   });
 });

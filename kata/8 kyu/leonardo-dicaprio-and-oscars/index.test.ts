@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import leo from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import leo from './index.ts';
 
 describe('leo', () => {
   it('should describe leo', () => {
-    expect.assertions(4);
-
-    expect(leo(89)).toBe('Leo got one already!');
-    expect(leo(88)).toBe('Leo finally won the oscar! Leo is happy');
-    expect(leo(87)).toBe('When will you give Leo an Oscar?');
-    expect(leo(86)).toBe('Not even for Wolf of wallstreet?!');
+    assert.strictEqual(leo(89), 'Leo got one already!');
+    assert.strictEqual(leo(88), 'Leo finally won the oscar! Leo is happy');
+    assert.strictEqual(leo(87), 'When will you give Leo an Oscar?');
+    assert.strictEqual(leo(86), 'Not even for Wolf of wallstreet?!');
   });
 });

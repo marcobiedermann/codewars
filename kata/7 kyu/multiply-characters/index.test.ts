@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import spam from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import spam from './index.ts';
 
 describe('spam', () => {
   it('should repeat the word `n` times', () => {
-    expect.assertions(3);
-
-    expect(spam(1)).toBe('hue');
-    expect(spam(6)).toBe('huehuehuehuehuehue');
-    expect(spam(14)).toBe('huehuehuehuehuehuehuehuehuehuehuehuehuehue');
+    assert.strictEqual(spam(1), 'hue');
+    assert.strictEqual(spam(6), 'huehuehuehuehuehue');
+    assert.strictEqual(spam(14), 'huehuehuehuehuehuehuehuehuehuehuehuehuehue');
   });
 });

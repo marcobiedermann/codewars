@@ -1,17 +1,16 @@
-import { describe, expect, it } from 'vitest';
-import sameCase from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sameCase from './index.ts';
 
 describe('sameCase', () => {
   it('should check if two given characters are the same case', () => {
-    expect.assertions(8);
-
-    expect(sameCase('C', 'B')).toBe(1);
-    expect(sameCase('b', 'a')).toBe(1);
-    expect(sameCase('d', 'd')).toBe(1);
-    expect(sameCase('A', 's')).toBe(0);
-    expect(sameCase('c', 'B')).toBe(0);
-    expect(sameCase('b', 'Z')).toBe(0);
-    expect(sameCase('\t', 'Z')).toBe(-1);
-    expect(sameCase('H', ':')).toBe(-1);
+    assert.strictEqual(sameCase('C', 'B'), 1);
+    assert.strictEqual(sameCase('b', 'a'), 1);
+    assert.strictEqual(sameCase('d', 'd'), 1);
+    assert.strictEqual(sameCase('A', 's'), 0);
+    assert.strictEqual(sameCase('c', 'B'), 0);
+    assert.strictEqual(sameCase('b', 'Z'), 0);
+    assert.strictEqual(sameCase('\t', 'Z'), -1);
+    assert.strictEqual(sameCase('H', ':'), -1);
   });
 });

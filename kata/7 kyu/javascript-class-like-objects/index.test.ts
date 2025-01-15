@@ -1,17 +1,16 @@
-import { describe, expect, it } from 'vitest';
-import Animal from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import Animal from './index.ts';
 
 describe('animal', () => {
   it('should create a class like object called `Animal`', () => {
-    expect.assertions(4);
-
     const dog = new Animal('Max', 'dog');
 
-    expect(dog.toString()).toBe('Max is a dog');
-    expect(dog.type).toBe('dog');
-    expect(dog.name).toBe('Max');
+    assert.strictEqual(dog.toString(), 'Max is a dog');
+    assert.strictEqual(dog.type, 'dog');
+    assert.strictEqual(dog.name, 'Max');
 
     dog.name = 'Lassie';
-    expect(dog.name).toBe('Lassie');
+    assert.strictEqual(dog.name, 'Lassie');
   });
 });

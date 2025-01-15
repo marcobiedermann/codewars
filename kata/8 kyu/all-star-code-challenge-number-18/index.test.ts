@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import strCount from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import strCount from './index.ts';
 
 describe('strCount', () => {
   it('should count occurrences of letter in word', () => {
-    expect.assertions(3);
-
-    expect(strCount('Hello', 'o')).toBe(1);
-    expect(strCount('Hello', 'l')).toBe(2);
-    expect(strCount('', 'z')).toBe(0);
+    assert.strictEqual(strCount('Hello', 'o'), 1);
+    assert.strictEqual(strCount('Hello', 'l'), 2);
+    assert.strictEqual(strCount('', 'z'), 0);
   });
 });

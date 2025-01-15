@@ -1,20 +1,19 @@
-import { describe, expect, it } from 'vitest';
-import getChar from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import getChar from './index.ts';
 
 describe('getChar', () => {
   it('should return ASCII char of value', () => {
-    expect.assertions(11);
-
-    expect(getChar(55)).toBe('7');
-    expect(getChar(56)).toBe('8');
-    expect(getChar(57)).toBe('9');
-    expect(getChar(58)).toBe(':');
-    expect(getChar(59)).toBe(';');
-    expect(getChar(60)).toBe('<');
-    expect(getChar(61)).toBe('=');
-    expect(getChar(62)).toBe('>');
-    expect(getChar(63)).toBe('?');
-    expect(getChar(64)).toBe('@');
-    expect(getChar(65)).toBe('A');
+    assert.strictEqual(getChar(55), '7');
+    assert.strictEqual(getChar(56), '8');
+    assert.strictEqual(getChar(57), '9');
+    assert.strictEqual(getChar(58), ':');
+    assert.strictEqual(getChar(59), ';');
+    assert.strictEqual(getChar(60), '<');
+    assert.strictEqual(getChar(61), '=');
+    assert.strictEqual(getChar(62), '>');
+    assert.strictEqual(getChar(63), '?');
+    assert.strictEqual(getChar(64), '@');
+    assert.strictEqual(getChar(65), 'A');
   });
 });

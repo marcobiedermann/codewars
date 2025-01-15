@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import updateLight from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import updateLight from './index.ts';
 
 describe('updateLight', () => {
   it('should return next color', () => {
-    expect.assertions(3);
-
-    expect(updateLight('green')).toBe('yellow');
-    expect(updateLight('yellow')).toBe('red');
-    expect(updateLight('red')).toBe('green');
+    assert.strictEqual(updateLight('green'), 'yellow');
+    assert.strictEqual(updateLight('yellow'), 'red');
+    assert.strictEqual(updateLight('red'), 'green');
   });
 });

@@ -1,17 +1,16 @@
-import { describe, expect, it } from 'vitest';
-import { average, cube, even, odd, square, sum } from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { average, cube, even, odd, square, sum } from './index.ts';
 
 describe('foo', () => {
   it('should', () => {
-    expect.assertions(6);
-
     const numbers = [1, 2, 3, 4, 5];
 
-    expect(square(numbers)).toStrictEqual([1, 4, 9, 16, 25]);
-    expect(cube(numbers)).toStrictEqual([1, 8, 27, 64, 125]);
-    expect(sum(numbers)).toBe(15);
-    expect(average(numbers)).toBe(3);
-    expect(even(numbers)).toStrictEqual([2, 4]);
-    expect(odd(numbers)).toStrictEqual([1, 3, 5]);
+    assert.deepEqual(square(numbers), [1, 4, 9, 16, 25]);
+    assert.deepEqual(cube(numbers), [1, 8, 27, 64, 125]);
+    assert.strictEqual(sum(numbers), 15);
+    assert.strictEqual(average(numbers), 3);
+    assert.deepEqual(even(numbers), [2, 4]);
+    assert.deepEqual(odd(numbers), [1, 3, 5]);
   });
 });

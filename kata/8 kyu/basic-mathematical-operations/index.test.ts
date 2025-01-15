@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import basicOp from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import basicOp from './index.ts';
 
 describe('basicOp', () => {
   it('should perform basic operations', () => {
-    expect.assertions(4);
-
-    expect(basicOp('+', 4, 7)).toBe(11);
-    expect(basicOp('-', 15, 18)).toBe(-3);
-    expect(basicOp('*', 5, 5)).toBe(25);
-    expect(basicOp('/', 49, 7)).toBe(7);
+    assert.strictEqual(basicOp('+', 4, 7), 11);
+    assert.strictEqual(basicOp('-', 15, 18), -3);
+    assert.strictEqual(basicOp('*', 5, 5), 25);
+    assert.strictEqual(basicOp('/', 49, 7), 7);
   });
 });

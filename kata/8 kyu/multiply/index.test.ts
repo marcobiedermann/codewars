@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import multiply from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import multiply from './index.ts';
 
 describe('multiply', () => {
   it('should multiply two numbers', () => {
-    expect.assertions(4);
-
-    expect(multiply(1, 1)).toBe(1);
-    expect(multiply(2, 1)).toBe(2);
-    expect(multiply(2, 2)).toBe(4);
-    expect(multiply(3, 5)).toBe(15);
+    assert.strictEqual(multiply(1, 1), 1);
+    assert.strictEqual(multiply(2, 1), 2);
+    assert.strictEqual(multiply(2, 2), 4);
+    assert.strictEqual(multiply(3, 5), 15);
   });
 });

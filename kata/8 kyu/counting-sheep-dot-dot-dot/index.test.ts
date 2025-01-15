@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import countSheeps from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import countSheeps from './index.ts';
 
 describe('countSheeps', () => {
   it('should count present sheep in array', () => {
-    expect.assertions(1);
-
-    expect(
+    assert.strictEqual(
       countSheeps([
         true,
         true,
@@ -32,6 +31,7 @@ describe('countSheeps', () => {
         true,
         true,
       ]),
-    ).toBe(17);
+      17,
+    );
   });
 });

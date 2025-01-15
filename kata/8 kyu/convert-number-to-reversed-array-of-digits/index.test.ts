@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import digitize from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import digitize from './index.ts';
 
 describe('digitize', () => {
   it('should return digits of number within an array in reversed order', () => {
-    expect.assertions(1);
-
-    expect(digitize(35231)).toStrictEqual([1, 3, 2, 5, 3]);
+    assert.deepEqual(digitize(35231), [1, 3, 2, 5, 3]);
   });
 });

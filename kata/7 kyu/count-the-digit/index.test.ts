@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import nbDig from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import nbDig from './index.ts';
 
 describe('nbDig', () => {
   it('should count all digits used in writing all `k**2`', () => {
-    expect.assertions(4);
-
-    expect(nbDig(5750, 0)).toBe(4700);
-    expect(nbDig(11011, 2)).toBe(9481);
-    expect(nbDig(12224, 8)).toBe(7733);
-    expect(nbDig(11549, 1)).toBe(11905);
+    assert.strictEqual(nbDig(5750, 0), 4700);
+    assert.strictEqual(nbDig(11011, 2), 9481);
+    assert.strictEqual(nbDig(12224, 8), 7733);
+    assert.strictEqual(nbDig(11549, 1), 11905);
   });
 });

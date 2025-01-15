@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import getAverage from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import getAverage from './index.ts';
 
 describe('getAverage', () => {
   it('should return rounded average of numbers', () => {
-    expect.assertions(3);
-
-    expect(getAverage([2, 2, 2, 2])).toBe(2);
-    expect(getAverage([1, 2, 3, 4, 5])).toBe(3);
-    expect(getAverage([1, 1, 1, 1, 1, 1, 1, 2])).toBe(1);
+    assert.strictEqual(getAverage([2, 2, 2, 2]), 2);
+    assert.strictEqual(getAverage([1, 2, 3, 4, 5]), 3);
+    assert.strictEqual(getAverage([1, 1, 1, 1, 1, 1, 1, 2]), 1);
   });
 });

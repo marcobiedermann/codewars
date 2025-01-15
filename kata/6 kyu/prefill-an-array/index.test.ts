@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import prefill from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import prefill from './index.ts';
 
 describe('prefill', () => {
   it('should prefill an array of `n` elements having value `v`', () => {
-    expect.assertions(7);
-
-    expect(prefill(3, 1)).toStrictEqual([1, 1, 1]);
-    expect(prefill(2, 'abc')).toStrictEqual(['abc', 'abc']);
-    expect(prefill('1', 1)).toStrictEqual([1]);
-    expect(prefill(0, 1)).toStrictEqual([]);
-    expect(prefill(3, prefill(2, '2d'))).toStrictEqual([
+    assert.deepEqual(prefill(3, 1), [1, 1, 1]);
+    assert.deepEqual(prefill(2, 'abc'), ['abc', 'abc']);
+    assert.deepEqual(prefill('1', 1), [1]);
+    assert.deepEqual(prefill(0, 1), []);
+    assert.deepEqual(prefill(3, prefill(2, '2d')), [
       ['2d', '2d'],
       ['2d', '2d'],
       ['2d', '2d'],
@@ -17,7 +16,7 @@ describe('prefill', () => {
 
     const t = () => prefill('xyz', 1);
 
-    expect(t).toThrow(TypeError);
-    expect(t).toThrow('xyz is invalid');
+    assert.throws(t, TypeError);
+    assert.throws(t, new TypeError('xyz is invalid'));
   });
 });

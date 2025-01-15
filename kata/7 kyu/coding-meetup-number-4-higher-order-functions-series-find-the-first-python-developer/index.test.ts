@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import getFirstPython from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import getFirstPython from './index.ts';
 
 describe('getFirstPython', () => {
   it('should find the first Python developer', () => {
-    expect.assertions(2);
-
-    expect(
+    assert.strictEqual(
       getFirstPython([
         {
           firstName: 'Mark',
@@ -32,8 +31,9 @@ describe('getFirstPython', () => {
           language: 'Clojure',
         },
       ]),
-    ).toBe('Victoria, Puerto Rico');
-    expect(
+      'Victoria, Puerto Rico',
+    );
+    assert.strictEqual(
       getFirstPython([
         {
           firstName: 'Kseniya',
@@ -52,6 +52,7 @@ describe('getFirstPython', () => {
           language: 'Ruby',
         },
       ]),
-    ).toBe('There will be no Python developers');
+      'There will be no Python developers',
+    );
   });
 });

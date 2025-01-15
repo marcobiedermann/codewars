@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import lastSurvivor from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import lastSurvivor from './index.ts';
 
 describe('lastSurvivor', () => {
   it('should remove letters', () => {
-    expect.assertions(5);
-
-    expect(lastSurvivor('abc', [1, 1])).toBe('a');
-    expect(lastSurvivor('kbc', [0, 1])).toBe('b');
-    expect(lastSurvivor('zbk', [2, 1])).toBe('z');
-    expect(lastSurvivor('c', [])).toBe('c');
-    expect(
+    assert.strictEqual(lastSurvivor('abc', [1, 1]), 'a');
+    assert.strictEqual(lastSurvivor('kbc', [0, 1]), 'b');
+    assert.strictEqual(lastSurvivor('zbk', [2, 1]), 'z');
+    assert.strictEqual(lastSurvivor('c', []), 'c');
+    assert.strictEqual(
       lastSurvivor(
         'foiflxtpicahhkqjswjuyhmypkrdbwnmwbrrvdycqespfvdviucjoyvskltqaqirtjqulprjjoaiagobpftywabqjdmiofpsr',
         [
@@ -19,6 +18,7 @@ describe('lastSurvivor', () => {
           1, 2, 20, 8, 2, 11, 5, 7, 0, 10, 10, 8, 12, 3, 5, 1, 7, 7, 5, 1, 4, 0, 4, 0, 0, 1,
         ],
       ),
-    ).toBe('d');
+      'd',
+    );
   });
 });

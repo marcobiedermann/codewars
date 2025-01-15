@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import Ball from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import Ball from './index.ts';
 
 describe('ball', () => {
   it('should set `ballType` on instantiation', () => {
-    expect.assertions(2);
-
-    expect(new Ball().ballType).toBe('regular');
-    expect(new Ball('super').ballType).toBe('super');
+    assert.strictEqual(new Ball().ballType, 'regular');
+    assert.strictEqual(new Ball('super').ballType, 'super');
   });
 });

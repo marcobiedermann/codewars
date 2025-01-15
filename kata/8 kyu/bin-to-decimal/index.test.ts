@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import binToDec from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import binToDec from './index.ts';
 
 describe('binToDec', () => {
   it('should convert binary to decimal number', () => {
-    expect.assertions(3);
-
-    expect(binToDec('1')).toBe(1);
-    expect(binToDec('0')).toBe(0);
-    expect(binToDec('1001001')).toBe(73);
+    assert.strictEqual(binToDec('1'), 1);
+    assert.strictEqual(binToDec('0'), 0);
+    assert.strictEqual(binToDec('1001001'), 73);
   });
 });

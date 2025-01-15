@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import sqInRect from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sqInRect from './index.ts';
 
 describe('sqInRect', () => {
   it('should return number of squares in rect', () => {
-    expect.assertions(4);
-
-    expect(sqInRect(5, 5)).toBeNull();
-    expect(sqInRect(5, 3)).toStrictEqual([3, 2, 1, 1]);
-    expect(sqInRect(3, 5)).toStrictEqual([3, 2, 1, 1]);
-    expect(sqInRect(20, 14)).toStrictEqual([14, 6, 6, 2, 2, 2]);
+    assert.strictEqual(sqInRect(5, 5), null);
+    assert.deepEqual(sqInRect(5, 3), [3, 2, 1, 1]);
+    assert.deepEqual(sqInRect(3, 5), [3, 2, 1, 1]);
+    assert.deepEqual(sqInRect(20, 14), [14, 6, 6, 2, 2, 2]);
   });
 });

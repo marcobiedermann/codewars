@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import peopleWithAgeDrink from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import peopleWithAgeDrink from './index.ts';
 
 describe('peopleWithAgeDrink', () => {
   it('should return drink based on age', () => {
-    expect.assertions(4);
-
-    expect(peopleWithAgeDrink(22)).toBe('drink whisky');
-    expect(peopleWithAgeDrink(18)).toBe('drink beer');
-    expect(peopleWithAgeDrink(16)).toBe('drink coke');
-    expect(peopleWithAgeDrink(3)).toBe('drink toddy');
+    assert.strictEqual(peopleWithAgeDrink(22), 'drink whisky');
+    assert.strictEqual(peopleWithAgeDrink(18), 'drink beer');
+    assert.strictEqual(peopleWithAgeDrink(16), 'drink coke');
+    assert.strictEqual(peopleWithAgeDrink(3), 'drink toddy');
   });
 });

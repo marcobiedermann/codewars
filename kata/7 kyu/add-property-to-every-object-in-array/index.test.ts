@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import questions from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import questions from './index.ts';
 
 describe('questions', () => {
   it('should add a new property to every object in the array', () => {
-    expect.assertions(1);
-
-    expect(questions[0].usersAnswer).toBeNull();
+    assert.strictEqual(questions[0].usersAnswer, null);
   });
 });

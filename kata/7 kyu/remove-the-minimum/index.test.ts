@@ -1,23 +1,20 @@
-import { describe, expect, it } from 'vitest';
-import removeSmallest from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import removeSmallest from './index.ts';
 
 describe('removeSmallest', () => {
   it('works for the examples', () => {
-    expect.assertions(4);
-
-    expect(removeSmallest([1, 2, 3, 4, 5])).toStrictEqual([2, 3, 4, 5]);
-    expect(removeSmallest([5, 3, 2, 1, 4])).toStrictEqual([5, 3, 2, 4]);
-    expect(removeSmallest([2, 2, 1, 2, 1])).toStrictEqual([2, 2, 2, 1]);
-    expect(removeSmallest([])).toStrictEqual([]);
+    assert.deepEqual(removeSmallest([1, 2, 3, 4, 5]), [2, 3, 4, 5]);
+    assert.deepEqual(removeSmallest([5, 3, 2, 1, 4]), [5, 3, 2, 4]);
+    assert.deepEqual(removeSmallest([2, 2, 1, 2, 1]), [2, 2, 2, 1]);
+    assert.deepEqual(removeSmallest([]), []);
   });
 
   it('returns [] if the list has only one element', () => {
-    expect.assertions(10);
-
     for (let i = 0; i < 10; i += 1) {
       const x = Math.floor(Math.random() * 400);
 
-      expect(removeSmallest([x])).toStrictEqual([]);
+      assert.deepEqual(removeSmallest([x]), []);
     }
   });
 
@@ -26,13 +23,11 @@ describe('removeSmallest', () => {
   }
 
   it('returns a list that misses only one element', () => {
-    expect.assertions(10);
-
     for (let i = 0; i < 10; i += 1) {
       const arr = randomArray(Math.floor(Math.random() * 10) + 1);
       const l = arr.length;
 
-      expect(removeSmallest(arr)).toHaveLength(l - 1);
+      assert.strictEqual(removeSmallest(arr).length, l - 1);
     }
   });
 });

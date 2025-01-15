@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import compare from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import compare from './index.ts';
 
 describe('compare', () => {
   it('should compare two strings by their values', () => {
-    expect.assertions(4);
-
-    expect(compare('AD', 'BC')).toBe(true);
-    expect(compare('AD', 'DD')).toBe(false);
-    expect(compare('!!', '??')).toBe(true);
-    expect(compare(null, null)).toBe(true);
+    assert.strictEqual(compare('AD', 'BC'), true);
+    assert.strictEqual(compare('AD', 'DD'), false);
+    assert.strictEqual(compare('!!', '??'), true);
+    assert.strictEqual(compare(null, null), true);
   });
 });

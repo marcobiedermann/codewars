@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import createArray from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import createArray from './index.ts';
 
 describe('createArray', () => {
   it('should return array of each number in sequence', () => {
-    expect.assertions(5);
-
-    expect(createArray(1)).toStrictEqual([1]);
-    expect(createArray(2)).toStrictEqual([1, 2]);
-    expect(createArray(3)).toStrictEqual([1, 2, 3]);
-    expect(createArray(4)).toStrictEqual([1, 2, 3, 4]);
-    expect(createArray(5)).toStrictEqual([1, 2, 3, 4, 5]);
+    assert.deepEqual(createArray(1), [1]);
+    assert.deepEqual(createArray(2), [1, 2]);
+    assert.deepEqual(createArray(3), [1, 2, 3]);
+    assert.deepEqual(createArray(4), [1, 2, 3, 4]);
+    assert.deepEqual(createArray(5), [1, 2, 3, 4, 5]);
   });
 });

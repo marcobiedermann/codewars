@@ -1,17 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import toWeirdCase from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import toWeirdCase from './index.ts';
 
 describe('toWeirdCase', () => {
   it('should return the correct value for a single word', () => {
-    expect.assertions(2);
-
-    expect(toWeirdCase('This')).toBe('ThIs');
-    expect(toWeirdCase('is')).toBe('Is');
+    assert.strictEqual(toWeirdCase('This'), 'ThIs');
+    assert.strictEqual(toWeirdCase('is'), 'Is');
   });
 
   it('should return the correct value for multiple words', () => {
-    expect.assertions(1);
-
-    expect(toWeirdCase('This is a test')).toBe('ThIs Is A TeSt');
+    assert.strictEqual(toWeirdCase('This is a test'), 'ThIs Is A TeSt');
   });
 });

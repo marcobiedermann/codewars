@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import pattern from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import pattern from './index.ts';
 
 describe('pattern', () => {
   it('should return pattern', () => {
-    expect.assertions(3);
-
-    expect(pattern(1)).toBe('1');
-    expect(pattern(2)).toBe('1\n22');
-    expect(pattern(5)).toBe('1\n22\n333\n4444\n55555');
+    assert.strictEqual(pattern(1), '1');
+    assert.strictEqual(pattern(2), '1\n22');
+    assert.strictEqual(pattern(5), '1\n22\n333\n4444\n55555');
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import isPangram from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import isPangram from './index.ts';
 
 describe('isPangram', () => {
   it('should detect if string is pangram', () => {
-    expect.assertions(2);
-
-    expect(isPangram('The quick brown fox jumps over the lazy dog.')).toBe(true);
-    expect(isPangram('This is not a pangram.')).toBe(false);
+    assert.strictEqual(isPangram('The quick brown fox jumps over the lazy dog.'), true);
+    assert.strictEqual(isPangram('This is not a pangram.'), false);
   });
 });

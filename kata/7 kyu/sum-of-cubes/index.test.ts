@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import sumCubes from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sumCubes from './index.ts';
 
 describe('sumCubes', () => {
   it('should sum the cubed values from 1 to n', () => {
-    expect.assertions(6);
-
-    expect(sumCubes(1)).toBe(1);
-    expect(sumCubes(2)).toBe(9);
-    expect(sumCubes(3)).toBe(36);
-    expect(sumCubes(4)).toBe(100);
-    expect(sumCubes(10)).toBe(3025);
-    expect(sumCubes(123)).toBe(58155876);
+    assert.strictEqual(sumCubes(1), 1);
+    assert.strictEqual(sumCubes(2), 9);
+    assert.strictEqual(sumCubes(3), 36);
+    assert.strictEqual(sumCubes(4), 100);
+    assert.strictEqual(sumCubes(10), 3025);
+    assert.strictEqual(sumCubes(123), 58155876);
   });
 });

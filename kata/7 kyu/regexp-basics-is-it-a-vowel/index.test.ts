@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import vowel from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import vowel from './index.ts';
 
 describe('vowel', () => {
   it('should check if the string is a vowel', () => {
-    expect.assertions(6);
-
-    expect(vowel('')).toBe(false);
-    expect(vowel('a')).toBe(true);
-    expect(vowel('E')).toBe(true);
-    expect(vowel('ou')).toBe(false);
-    expect(vowel('z')).toBe(false);
-    expect(vowel('lol')).toBe(false);
+    assert.strictEqual(vowel(''), false);
+    assert.strictEqual(vowel('a'), true);
+    assert.strictEqual(vowel('E'), true);
+    assert.strictEqual(vowel('ou'), false);
+    assert.strictEqual(vowel('z'), false);
+    assert.strictEqual(vowel('lol'), false);
   });
 });

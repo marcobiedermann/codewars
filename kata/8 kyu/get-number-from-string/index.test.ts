@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import getNumberFromString from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import getNumberFromString from './index.ts';
 
 describe('getNumberFromString', () => {
   it('should get all numbers from string', () => {
-    expect.assertions(3);
-
-    expect(getNumberFromString('1')).toBe(1);
-    expect(getNumberFromString('123')).toBe(123);
-    expect(getNumberFromString('this is number: 7')).toBe(7);
+    assert.strictEqual(getNumberFromString('1'), 1);
+    assert.strictEqual(getNumberFromString('123'), 123);
+    assert.strictEqual(getNumberFromString('this is number: 7'), 7);
   });
 });

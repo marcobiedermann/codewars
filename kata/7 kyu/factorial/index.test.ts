@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import factorial from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import factorial from './index.ts';
 
 describe('factorial', () => {
   it('should return factorial', () => {
-    expect.assertions(6);
-
-    expect(factorial(0)).toBe(1);
-    expect(factorial(1)).toBe(1);
-    expect(factorial(2)).toBe(2);
-    expect(factorial(3)).toBe(6);
-    expect(() => factorial(-1)).toThrow(RangeError);
-    expect(() => factorial(13)).toThrow(RangeError);
+    assert.strictEqual(factorial(0), 1);
+    assert.strictEqual(factorial(1), 1);
+    assert.strictEqual(factorial(2), 2);
+    assert.strictEqual(factorial(3), 6);
+    assert.throws(() => factorial(-1), RangeError);
+    assert.throws(() => factorial(13), RangeError);
   });
 });

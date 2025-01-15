@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import apple from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import apple from './index.ts';
 
 describe('apple', () => {
   it('should check for apple turnover', () => {
-    expect.assertions(2);
-
-    expect(apple('50')).toBe("It's hotter than the sun!!");
-    expect(apple(4)).toBe('Help yourself to a honeycomb Yorkie for the glovebox.');
+    assert.strictEqual(apple('50'), "It's hotter than the sun!!");
+    assert.strictEqual(apple(4), 'Help yourself to a honeycomb Yorkie for the glovebox.');
   });
 });

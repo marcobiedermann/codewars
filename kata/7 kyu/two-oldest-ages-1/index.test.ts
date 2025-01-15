@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import twoOldestAges from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import twoOldestAges from './index.ts';
 
 describe('twoOldestAges', () => {
   it('should return two oldest ages', () => {
-    expect.assertions(1);
-
-    expect(twoOldestAges([1, 2, 10, 8])).toStrictEqual([8, 10]);
+    assert.deepEqual(twoOldestAges([1, 2, 10, 8]), [8, 10]);
   });
 });

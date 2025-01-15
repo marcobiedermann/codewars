@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import toCamelCase from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import toCamelCase from './index.ts';
 
 describe('toCamelCase', () => {
   it('should transform string to camelCase', () => {
-    expect.assertions(4);
-
-    expect(toCamelCase('')).toBe('');
-    expect(toCamelCase('the_stealth_warrior')).toBe('theStealthWarrior');
-    expect(toCamelCase('The-Stealth-Warrior')).toBe('TheStealthWarrior');
-    expect(toCamelCase('A-B-C')).toBe('ABC');
+    assert.strictEqual(toCamelCase(''), '');
+    assert.strictEqual(toCamelCase('the_stealth_warrior'), 'theStealthWarrior');
+    assert.strictEqual(toCamelCase('The-Stealth-Warrior'), 'TheStealthWarrior');
+    assert.strictEqual(toCamelCase('A-B-C'), 'ABC');
   });
 });

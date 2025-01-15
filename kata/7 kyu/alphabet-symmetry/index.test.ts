@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import solve from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import solve from './index.ts';
 
 describe('solve', () => {
   it('should return an array of the number of letters that occupy their positions in the alphabet', () => {
-    expect.assertions(4);
-
-    expect(solve(['abode', 'ABc', 'xyzD'])).toStrictEqual([4, 3, 1]);
-    expect(solve(['abide', 'ABc', 'xyz'])).toStrictEqual([4, 3, 0]);
-    expect(solve(['IAMDEFANDJKL', 'thedefgh', 'xyzDEFghijabc'])).toStrictEqual([6, 5, 7]);
-    expect(solve(['encode', 'abc', 'xyzD', 'ABmD'])).toStrictEqual([1, 3, 1, 3]);
+    assert.deepEqual(solve(['abode', 'ABc', 'xyzD']), [4, 3, 1]);
+    assert.deepEqual(solve(['abide', 'ABc', 'xyz']), [4, 3, 0]);
+    assert.deepEqual(solve(['IAMDEFANDJKL', 'thedefgh', 'xyzDEFghijabc']), [6, 5, 7]);
+    assert.deepEqual(solve(['encode', 'abc', 'xyzD', 'ABmD']), [1, 3, 1, 3]);
   });
 });

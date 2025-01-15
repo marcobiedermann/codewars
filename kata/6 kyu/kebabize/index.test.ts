@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import kebabize from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import kebabize from './index.ts';
 
 describe('kebabize', () => {
   it('should convert a camel case string into a kebab case', () => {
-    expect.assertions(2);
-
-    expect(kebabize('myCamelCasedString')).toBe('my-camel-cased-string');
-    expect(kebabize('myCamelHas3Humps')).toBe('my-camel-has-humps');
+    assert.strictEqual(kebabize('myCamelCasedString'), 'my-camel-cased-string');
+    assert.strictEqual(kebabize('myCamelHas3Humps'), 'my-camel-has-humps');
   });
 });

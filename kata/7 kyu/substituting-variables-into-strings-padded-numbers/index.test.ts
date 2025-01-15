@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import solution from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import solution from './index.ts';
 
 describe('solution', () => {
   it('should return a 5 digit padded number', () => {
-    expect.assertions(4);
-
-    expect(solution(5)).toBe('Value is 00005');
-    expect(solution(1204)).toBe('Value is 01204');
-    expect(solution(109)).toBe('Value is 00109');
-    expect(solution(0)).toBe('Value is 00000');
+    assert.strictEqual(solution(5), 'Value is 00005');
+    assert.strictEqual(solution(1204), 'Value is 01204');
+    assert.strictEqual(solution(109), 'Value is 00109');
+    assert.strictEqual(solution(0), 'Value is 00000');
   });
 });

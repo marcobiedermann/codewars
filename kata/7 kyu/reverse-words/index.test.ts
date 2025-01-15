@@ -1,15 +1,15 @@
-import { describe, expect, it } from 'vitest';
-import reverseWords from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import reverseWords from './index.ts';
 
 describe('reverseWords', () => {
   it('should reverse each word in string', () => {
-    expect.assertions(4);
-
-    expect(reverseWords('The quick brown fox jumps over the lazy dog.')).toBe(
+    assert.strictEqual(
+      reverseWords('The quick brown fox jumps over the lazy dog.'),
       'ehT kciuq nworb xof spmuj revo eht yzal .god',
     );
-    expect(reverseWords('apple')).toBe('elppa');
-    expect(reverseWords('a b c d')).toBe('a b c d');
-    expect(reverseWords('double  spaced  words')).toBe('elbuod  decaps  sdrow');
+    assert.strictEqual(reverseWords('apple'), 'elppa');
+    assert.strictEqual(reverseWords('a b c d'), 'a b c d');
+    assert.strictEqual(reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow');
   });
 });

@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import diamond from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import diamond from './index.ts';
 
 describe('diamond', () => {
   it('should print diamond', () => {
-    expect.assertions(6);
-
-    expect(diamond(1)).toBe('*\n');
-    expect(diamond(3)).toBe(' *\n***\n *\n');
-    expect(diamond(5)).toBe('  *\n ***\n*****\n ***\n  *\n');
-    expect(diamond(2)).toBeNull();
-    expect(diamond(-3)).toBeNull();
-    expect(diamond(0)).toBeNull();
+    assert.strictEqual(diamond(1), '*\n');
+    assert.strictEqual(diamond(3), ' *\n***\n *\n');
+    assert.strictEqual(diamond(5), '  *\n ***\n*****\n ***\n  *\n');
+    assert.strictEqual(diamond(2), null);
+    assert.strictEqual(diamond(-3), null);
+    assert.strictEqual(diamond(0), null);
   });
 });

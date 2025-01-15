@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import numberToString from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import numberToString from './index.ts';
 
 describe('numberToString', () => {
   it('should convert number to string', () => {
-    expect.assertions(1);
-
-    expect(numberToString(67)).toBe('67');
+    assert.strictEqual(numberToString(67), '67');
   });
 });

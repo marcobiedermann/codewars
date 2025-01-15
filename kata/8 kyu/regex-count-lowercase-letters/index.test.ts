@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import lowercaseCount from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import lowercaseCount from './index.ts';
 
 describe('lowercaseCount', () => {
   it('should cound lowercase letters in string', () => {
-    expect.assertions(6);
-
-    expect(lowercaseCount('abc')).toBe(3);
-    expect(lowercaseCount('abcABC123')).toBe(3);
-    expect(lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|':;?/>.<,~")).toBe(3);
-    expect(lowercaseCount('')).toBe(0);
-    expect(lowercaseCount("ABC123!@€£#$%^&*()_-+=}{[]|':;?/>.<,~")).toBe(0);
-    expect(lowercaseCount('abcdefghijklmnopqrstuvwxyz')).toBe(26);
+    assert.strictEqual(lowercaseCount('abc'), 3);
+    assert.strictEqual(lowercaseCount('abcABC123'), 3);
+    assert.strictEqual(lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|':;?/>.<,~"), 3);
+    assert.strictEqual(lowercaseCount(''), 0);
+    assert.strictEqual(lowercaseCount("ABC123!@€£#$%^&*()_-+=}{[]|':;?/>.<,~"), 0);
+    assert.strictEqual(lowercaseCount('abcdefghijklmnopqrstuvwxyz'), 26);
   });
 });

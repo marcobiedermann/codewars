@@ -1,30 +1,25 @@
-import { describe, expect, it } from 'vitest';
-import rps from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import rps from './index.ts';
 
 describe('rps', () => {
   const getMsg = (n: number): string => `Player ${n} won!`;
 
   it('player 1 win', () => {
-    expect.assertions(3);
-
-    expect(rps('rock', 'scissors')).toStrictEqual(getMsg(1));
-    expect(rps('scissors', 'paper')).toStrictEqual(getMsg(1));
-    expect(rps('paper', 'rock')).toStrictEqual(getMsg(1));
+    assert.strictEqual(rps('rock', 'scissors'), getMsg(1));
+    assert.strictEqual(rps('scissors', 'paper'), getMsg(1));
+    assert.strictEqual(rps('paper', 'rock'), getMsg(1));
   });
 
   it('player 2 win', () => {
-    expect.assertions(3);
-
-    expect(rps('scissors', 'rock')).toStrictEqual(getMsg(2));
-    expect(rps('paper', 'scissors')).toStrictEqual(getMsg(2));
-    expect(rps('rock', 'paper')).toStrictEqual(getMsg(2));
+    assert.strictEqual(rps('scissors', 'rock'), getMsg(2));
+    assert.strictEqual(rps('paper', 'scissors'), getMsg(2));
+    assert.strictEqual(rps('rock', 'paper'), getMsg(2));
   });
 
   it('draw', () => {
-    expect.assertions(3);
-
-    expect(rps('rock', 'rock')).toBe('Draw!');
-    expect(rps('scissors', 'scissors')).toBe('Draw!');
-    expect(rps('paper', 'paper')).toBe('Draw!');
+    assert.strictEqual(rps('rock', 'rock'), 'Draw!');
+    assert.strictEqual(rps('scissors', 'scissors'), 'Draw!');
+    assert.strictEqual(rps('paper', 'paper'), 'Draw!');
   });
 });

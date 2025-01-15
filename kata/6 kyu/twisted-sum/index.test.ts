@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import twistedSum from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import twistedSum from './index.ts';
 
 describe('twistedSum', () => {
   it('should return the sum of the digits of all numbers from 1 to `n`', () => {
-    expect.assertions(4);
-
-    expect(twistedSum(3)).toBe(6);
-    expect(twistedSum(10)).toBe(46);
-    expect(twistedSum(11)).toBe(48);
-    expect(twistedSum(12)).toBe(51);
+    assert.strictEqual(twistedSum(3), 6);
+    assert.strictEqual(twistedSum(10), 46);
+    assert.strictEqual(twistedSum(11), 48);
+    assert.strictEqual(twistedSum(12), 51);
   });
 });

@@ -1,44 +1,35 @@
-import { describe, expect, it } from 'vitest';
-import oddOrEven from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import oddOrEven from './index.ts';
 
 describe('oddOrEven', () => {
   it('edge tests', () => {
-    expect.assertions(3);
-
-    expect(oddOrEven([0])).toBe('even');
-    expect(oddOrEven([1])).toBe('odd');
-    expect(oddOrEven([])).toBe('even');
+    assert.strictEqual(oddOrEven([0]), 'even');
+    assert.strictEqual(oddOrEven([1]), 'odd');
+    assert.strictEqual(oddOrEven([]), 'even');
   });
 
   it('even tests', () => {
-    expect.assertions(3);
-
-    expect(oddOrEven([0, 1, 5])).toBe('even');
-    expect(oddOrEven([0, 1, 3])).toBe('even');
-    expect(oddOrEven([1023, 1, 2])).toBe('even');
+    assert.strictEqual(oddOrEven([0, 1, 5]), 'even');
+    assert.strictEqual(oddOrEven([0, 1, 3]), 'even');
+    assert.strictEqual(oddOrEven([1023, 1, 2]), 'even');
   });
 
   it('negative Even tests', () => {
-    expect.assertions(3);
-
-    expect(oddOrEven([0, -1, -5])).toBe('even');
-    expect(oddOrEven([0, -1, -3])).toBe('even');
-    expect(oddOrEven([-1023, 1, -2])).toBe('even');
+    assert.strictEqual(oddOrEven([0, -1, -5]), 'even');
+    assert.strictEqual(oddOrEven([0, -1, -3]), 'even');
+    assert.strictEqual(oddOrEven([-1023, 1, -2]), 'even');
   });
 
   it('odd tests', () => {
-    expect.assertions(3);
-
-    expect(oddOrEven([0, 1, 2])).toBe('odd');
-    expect(oddOrEven([0, 1, 4])).toBe('odd');
-    expect(oddOrEven([1023, 1, 3])).toBe('odd');
+    assert.strictEqual(oddOrEven([0, 1, 2]), 'odd');
+    assert.strictEqual(oddOrEven([0, 1, 4]), 'odd');
+    assert.strictEqual(oddOrEven([1023, 1, 3]), 'odd');
   });
 
   it('negative Odd tests', () => {
-    expect.assertions(3);
-
-    expect(oddOrEven([0, -1, 2])).toBe('odd');
-    expect(oddOrEven([0, 1, -4])).toBe('odd');
-    expect(oddOrEven([-1023, -1, 3])).toBe('odd');
+    assert.strictEqual(oddOrEven([0, -1, 2]), 'odd');
+    assert.strictEqual(oddOrEven([0, 1, -4]), 'odd');
+    assert.strictEqual(oddOrEven([-1023, -1, 3]), 'odd');
   });
 });

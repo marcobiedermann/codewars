@@ -1,12 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import contamination from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import contamination from './index.ts';
 
 describe('contamination', () => {
   it('should mutate the text', () => {
-    expect(contamination('abc', 'z')).toEqual('zzz');
-    expect(contamination('', 'z')).toEqual('');
-    expect(contamination('abc', '')).toEqual('');
-    expect(contamination('_3ebzgh4', '&')).toEqual('&&&&&&&&');
-    expect(contamination('//case', ' ')).toEqual('      ');
+    assert.strictEqual(contamination('abc', 'z'), 'zzz');
+    assert.strictEqual(contamination('', 'z'), '');
+    assert.strictEqual(contamination('abc', ''), '');
+    assert.strictEqual(contamination('_3ebzgh4', '&'), '&&&&&&&&');
+    assert.strictEqual(contamination('//case', ' '), '      ');
   });
 });

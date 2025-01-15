@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import maxDiff from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import maxDiff from './index.ts';
 
 describe('maxDiff', () => {
   it('should return difference between the biggest and the smallest value', () => {
-    expect.assertions(5);
-
-    expect(maxDiff([0, 1, 2, 3, 4, 5, 6])).toBe(6);
-    expect(maxDiff([-0, 1, 2, -3, 4, 5, -6])).toBe(11);
-    expect(maxDiff([0, 1, 2, 3, 4, 5, 16])).toBe(16);
-    expect(maxDiff([16])).toBe(0);
-    expect(maxDiff([])).toBe(0);
+    assert.strictEqual(maxDiff([0, 1, 2, 3, 4, 5, 6]), 6);
+    assert.strictEqual(maxDiff([-0, 1, 2, -3, 4, 5, -6]), 11);
+    assert.strictEqual(maxDiff([0, 1, 2, 3, 4, 5, 16]), 16);
+    assert.strictEqual(maxDiff([16]), 0);
+    assert.strictEqual(maxDiff([]), 0);
   });
 });

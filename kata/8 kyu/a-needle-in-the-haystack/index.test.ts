@@ -1,14 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import findNeedle from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import findNeedle from './index.ts';
 
 describe('findNeedle', () => {
   it('should find `needle` in a haystack', () => {
-    expect.assertions(3);
-
-    expect(
+    assert.strictEqual(
       findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]),
-    ).toBe('found the needle at position 3');
-    expect(
+      'found the needle at position 3',
+    );
+    assert.strictEqual(
       findNeedle([
         '283497238987234',
         'a dog',
@@ -18,8 +18,9 @@ describe('findNeedle', () => {
         'needle',
         'something somebody lost a while ago',
       ]),
-    ).toBe('found the needle at position 5');
-    expect(
+      'found the needle at position 5',
+    );
+    assert.strictEqual(
       findNeedle([
         1,
         2,
@@ -66,6 +67,7 @@ describe('findNeedle', () => {
         45,
         54,
       ]),
-    ).toBe('found the needle at position 30');
+      'found the needle at position 30',
+    );
   });
 });

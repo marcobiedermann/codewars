@@ -1,16 +1,15 @@
 /* eslint-disable no-console */
 
-import { describe, expect, it, vi } from 'vitest';
-import Solution from '.';
+import assert from 'node:assert/strict';
+import { describe, it, mock } from 'node:test';
+import Solution from './index.ts';
 
-vi.spyOn(console, 'log').mockImplementation(() => ({}));
+const logSpy = mock.method(console, 'log');
 
 describe('solution', () => {
   it('should log `Hello World!`', () => {
-    expect.assertions(1);
-
     Solution.main();
 
-    expect(console.log).toHaveBeenCalledWith('Hello World!');
+    assert.strictEqual(logSpy.mock.calls[0].arguments[0], 'Hello World!');
   });
 });

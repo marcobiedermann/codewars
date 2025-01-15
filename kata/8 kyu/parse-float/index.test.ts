@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import parseF from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import parseF from './index.ts';
 
 describe('parseF', () => {
   it('should parse string to float', () => {
-    expect.assertions(2);
-
-    expect(parseF('1')).toBe(1.0);
-    expect(parseF('A')).toBeNull();
+    assert.strictEqual(parseF('1'), 1.0);
+    assert.strictEqual(parseF('A'), null);
   });
 });

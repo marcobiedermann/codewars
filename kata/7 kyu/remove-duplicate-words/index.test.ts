@@ -1,14 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import removeDuplicateWords from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import removeDuplicateWords from './index.ts';
 
 describe('removeDuplicateWords', () => {
   it('should remove duplicate words', () => {
-    expect.assertions(1);
-
-    expect(
+    assert.strictEqual(
       removeDuplicateWords(
         'alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta',
       ),
-    ).toBe('alpha beta gamma delta');
+      'alpha beta gamma delta',
+    );
   });
 });

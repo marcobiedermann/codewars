@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import solve from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import solve from './index.ts';
 
 describe('solve', () => {
   it('should reverse string while keeping position of spaces', () => {
-    expect.assertions(4);
-
-    expect(solve('codewars')).toBe('srawedoc');
-    expect(solve('your code')).toBe('edoc ruoy');
-    expect(solve('your code rocks')).toBe('skco redo cruoy');
-    expect(solve('i love codewars')).toBe('s rawe docevoli');
+    assert.strictEqual(solve('codewars'), 'srawedoc');
+    assert.strictEqual(solve('your code'), 'edoc ruoy');
+    assert.strictEqual(solve('your code rocks'), 'skco redo cruoy');
+    assert.strictEqual(solve('i love codewars'), 's rawe docevoli');
   });
 });

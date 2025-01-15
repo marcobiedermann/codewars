@@ -1,19 +1,17 @@
-import { describe, expect, it } from 'vitest';
-import array from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import array from './index.ts';
 
 describe('array', () => {
   it('should remove the first and last character', () => {
-    expect.assertions(3);
-
-    expect(array('1,2,3')).toBe('2');
-    expect(array('1,2,3,4')).toBe('2 3');
-    expect(array('1,2,3,4,5')).toBe('2 3 4');
+    assert.strictEqual(array('1,2,3'), '2');
+    assert.strictEqual(array('1,2,3,4'), '2 3');
+    assert.strictEqual(array('1,2,3,4,5'), '2 3 4');
   });
-  it('should return null if the final result is an empty string', () => {
-    expect.assertions(3);
 
-    expect(array('')).toBeNull();
-    expect(array('1')).toBeNull();
-    expect(array('1,2')).toBeNull();
+  it('should return null if the final result is an empty string', () => {
+    assert.strictEqual(array(''), null);
+    assert.strictEqual(array('1'), null);
+    assert.strictEqual(array('1,2'), null);
   });
 });

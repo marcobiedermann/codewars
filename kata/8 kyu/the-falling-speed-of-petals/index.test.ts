@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import sakuraFall from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sakuraFall from './index.ts';
 
 describe('sakuraFall', () => {
   it('should return time it takes to reach the ground', () => {
-    expect.assertions(3);
-
-    expect(sakuraFall(5)).toBe(80);
-    expect(sakuraFall(10)).toBe(40);
-    expect(sakuraFall(-1)).toBe(0);
+    assert.strictEqual(sakuraFall(5), 80);
+    assert.strictEqual(sakuraFall(10), 40);
+    assert.strictEqual(sakuraFall(-1), 0);
   });
 });

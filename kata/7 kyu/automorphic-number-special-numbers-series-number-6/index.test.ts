@@ -1,19 +1,18 @@
-import { describe, expect, it } from 'vitest';
-import automorphic from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import automorphic from './index.ts';
 
 describe('automorphic', () => {
   it('should check if number is automorphic', () => {
-    expect.assertions(10);
-
-    expect(automorphic(1)).toBe('Automorphic');
-    expect(automorphic(3)).toBe('Not!!');
-    expect(automorphic(6)).toBe('Automorphic');
-    expect(automorphic(9)).toBe('Not!!');
-    expect(automorphic(25)).toBe('Automorphic');
-    expect(automorphic(53)).toBe('Not!!');
-    expect(automorphic(76)).toBe('Automorphic');
-    expect(automorphic(95)).toBe('Not!!');
-    expect(automorphic(625)).toBe('Automorphic');
-    expect(automorphic(225)).toBe('Not!!');
+    assert.strictEqual(automorphic(1), 'Automorphic');
+    assert.strictEqual(automorphic(3), 'Not!!');
+    assert.strictEqual(automorphic(6), 'Automorphic');
+    assert.strictEqual(automorphic(9), 'Not!!');
+    assert.strictEqual(automorphic(25), 'Automorphic');
+    assert.strictEqual(automorphic(53), 'Not!!');
+    assert.strictEqual(automorphic(76), 'Automorphic');
+    assert.strictEqual(automorphic(95), 'Not!!');
+    assert.strictEqual(automorphic(625), 'Automorphic');
+    assert.strictEqual(automorphic(225), 'Not!!');
   });
 });

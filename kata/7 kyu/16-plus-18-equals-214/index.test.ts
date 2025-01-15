@@ -1,29 +1,24 @@
-import { describe, expect, it } from 'vitest';
-import add from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import add from './index.ts';
 
 describe('add', () => {
   it('real addition', () => {
-    expect.assertions(3);
-
-    expect(add(2, 11)).toBe(13);
-    expect(add(0, 1)).toBe(1);
-    expect(add(0, 0)).toBe(0);
+    assert.strictEqual(add(2, 11), 13);
+    assert.strictEqual(add(0, 1), 1);
+    assert.strictEqual(add(0, 0), 0);
   });
 
   it('silly addition', () => {
-    expect.assertions(3);
-
-    expect(add(16, 18)).toBe(214);
-    expect(add(26, 39)).toBe(515);
-    expect(add(122, 81)).toBe(1103);
+    assert.strictEqual(add(16, 18), 214);
+    assert.strictEqual(add(26, 39), 515);
+    assert.strictEqual(add(122, 81), 1103);
   });
 
   it('big addition', () => {
-    expect.assertions(4);
-
-    expect(add(1222, 30277)).toBe(31499);
-    expect(add(1236, 30977)).toBe(31111013);
-    expect(add(38810, 1383)).toBe(391193);
-    expect(add(49999, 49999)).toBe(818181818);
+    assert.strictEqual(add(1222, 30277), 31499);
+    assert.strictEqual(add(1236, 30977), 31111013);
+    assert.strictEqual(add(38810, 1383), 391193);
+    assert.strictEqual(add(49999, 49999), 818181818);
   });
 });

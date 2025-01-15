@@ -1,28 +1,23 @@
-import { describe, expect, it } from 'vitest';
-import rentalCarCost from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import rentalCarCost from './index.ts';
 
 describe('regular Tests:', () => {
   it('should work for under 3 days:', () => {
-    expect.assertions(2);
-
-    expect(rentalCarCost(1)).toBe(40);
-    expect(rentalCarCost(2)).toBe(80);
+    assert.strictEqual(rentalCarCost(1), 40);
+    assert.strictEqual(rentalCarCost(2), 80);
   });
 
   it('should work for under 7 days:', () => {
-    expect.assertions(4);
-
-    expect(rentalCarCost(3)).toBe(100);
-    expect(rentalCarCost(4)).toBe(140);
-    expect(rentalCarCost(5)).toBe(180);
-    expect(rentalCarCost(6)).toBe(220);
+    assert.strictEqual(rentalCarCost(3), 100);
+    assert.strictEqual(rentalCarCost(4), 140);
+    assert.strictEqual(rentalCarCost(5), 180);
+    assert.strictEqual(rentalCarCost(6), 220);
   });
   it('should work for 7 or more days:', () => {
-    expect.assertions(4);
-
-    expect(rentalCarCost(7)).toBe(230);
-    expect(rentalCarCost(8)).toBe(270);
-    expect(rentalCarCost(9)).toBe(310);
-    expect(rentalCarCost(10)).toBe(350);
+    assert.strictEqual(rentalCarCost(7), 230);
+    assert.strictEqual(rentalCarCost(8), 270);
+    assert.strictEqual(rentalCarCost(9), 310);
+    assert.strictEqual(rentalCarCost(10), 350);
   });
 });

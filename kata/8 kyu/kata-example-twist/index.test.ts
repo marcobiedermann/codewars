@@ -1,12 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import websites from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import websites from './index.ts';
 
 describe('websites', () => {
   it('should store the value `codewars` 1000 times', () => {
-    expect.assertions(3);
-
-    expect(websites.length).toBeGreaterThan(0);
-    expect(websites).toHaveLength(1000);
-    expect(websites.every((website) => website === 'codewars')).toBe(true);
+    assert.strictEqual(websites.length > 0, true);
+    assert.strictEqual(websites.length, 1000);
+    assert.strictEqual(
+      websites.every((website) => website === 'codewars'),
+      true,
+    );
   });
 });

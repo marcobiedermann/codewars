@@ -1,16 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import greet from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import greet from './index.ts';
 
 describe('greet', () => {
   it('is it a function?', () => {
-    expect.assertions(1);
-
-    expect(typeof greet).toBe('function');
+    assert.strictEqual(typeof greet, 'function');
   });
 
   it('correct return-value?', () => {
-    expect.assertions(1);
-
-    expect(greet()).toBe('hello world!');
+    assert.strictEqual(greet(), 'hello world!');
   });
 });

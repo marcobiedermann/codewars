@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import digits from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import digits from './index.ts';
 
 describe('digits', () => {
   it('should count the number of digits in number', () => {
-    expect.assertions(3);
-
-    expect(digits(5)).toBe(1);
-    expect(digits(12345)).toBe(5);
-    expect(digits(9876543210)).toBe(10);
+    assert.strictEqual(digits(5), 1);
+    assert.strictEqual(digits(12345), 5);
+    assert.strictEqual(digits(9876543210), 10);
   });
 });

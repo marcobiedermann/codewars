@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import switcheroo from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import switcheroo from './index.ts';
 
 describe('switcheroo', () => {
   it('should switch all `a` to `b` and vise versa', () => {
-    expect.assertions(3);
-
-    expect(switcheroo('abc')).toBe('bac');
-    expect(switcheroo('aaabcccbaaa')).toBe('bbbacccabbb');
-    expect(switcheroo('ccccc')).toBe('ccccc');
+    assert.strictEqual(switcheroo('abc'), 'bac');
+    assert.strictEqual(switcheroo('aaabcccbaaa'), 'bbbacccabbb');
+    assert.strictEqual(switcheroo('ccccc'), 'ccccc');
   });
 });

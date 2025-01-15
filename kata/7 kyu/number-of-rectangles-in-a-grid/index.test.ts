@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import numberOfRectangles from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import numberOfRectangles from './index.ts';
 
 describe('numberOfRectangles', () => {
   it('should calculate number of rectangles in rectangle', () => {
-    expect.assertions(2);
-
-    expect(numberOfRectangles(4, 4)).toBe(100);
-    expect(numberOfRectangles(5, 5)).toBe(225);
+    assert.strictEqual(numberOfRectangles(4, 4), 100);
+    assert.strictEqual(numberOfRectangles(5, 5), 225);
   });
 });

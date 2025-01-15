@@ -1,14 +1,13 @@
 /* eslint-disable no-console */
 
-import { describe, expect, it, vi } from 'vitest';
-import _if from '.';
+import assert from 'node:assert/strict';
+import { describe, it, mock } from 'node:test';
+import _if from './index.ts';
 
-vi.spyOn(console, 'log').mockImplementation(() => ({}));
+const logSpy = mock.method(console, 'log');
 
 describe('_if', () => {
   it('should call `func1` when `bool` is truthy, otherwise `func2`', () => {
-    expect.assertions(2);
-
     _if(
       true,
       () => {
@@ -18,7 +17,7 @@ describe('_if', () => {
         console.log('false');
       },
     );
-    expect(_if).toBeDefined();
-    expect(console.log).toHaveBeenCalledWith('True');
+    assert.notStrictEqual(_if, undefined);
+    assert.strictEqual(logSpy.mock.calls[0].arguments[0], 'True');
   });
 });

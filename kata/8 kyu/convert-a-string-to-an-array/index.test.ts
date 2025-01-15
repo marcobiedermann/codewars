@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import stringToArray from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import stringToArray from './index.ts';
 
 describe('stringToArray', () => {
   it('should covert string into words', () => {
-    expect.assertions(2);
-
-    expect(stringToArray('Robin Singh')).toStrictEqual(['Robin', 'Singh']);
-    expect(stringToArray('I love arrays they are my favorite')).toStrictEqual([
+    assert.deepEqual(stringToArray('Robin Singh'), ['Robin', 'Singh']);
+    assert.deepEqual(stringToArray('I love arrays they are my favorite'), [
       'I',
       'love',
       'arrays',

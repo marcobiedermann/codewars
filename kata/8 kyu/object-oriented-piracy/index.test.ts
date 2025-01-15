@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import Ship from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import Ship from './index.ts';
 
 describe('ship', () => {
   it('should check if the ship is worth it', () => {
-    expect.assertions(1);
-
     const emptyShip = new Ship(0, 0);
 
-    expect(emptyShip.isWorthIt()).toBe(false);
+    assert.strictEqual(emptyShip.isWorthIt(), false);
   });
 });

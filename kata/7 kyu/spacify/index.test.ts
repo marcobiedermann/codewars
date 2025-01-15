@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import spacify from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import spacify from './index.ts';
 
 describe('spacify', () => {
   it('should add a space between each character', () => {
-    expect.assertions(2);
-
-    expect(spacify('hello world')).toBe('h e l l o   w o r l d');
-    expect(spacify('12345')).toBe('1 2 3 4 5');
+    assert.strictEqual(spacify('hello world'), 'h e l l o   w o r l d');
+    assert.strictEqual(spacify('12345'), '1 2 3 4 5');
   });
 });

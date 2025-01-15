@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import cockroachSpeed from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import cockroachSpeed from './index.ts';
 
 describe('cockroachSpeed', () => {
   it('should return cm per second', () => {
-    expect.assertions(3);
-
-    expect(cockroachSpeed(1.08)).toBe(30);
-    expect(cockroachSpeed(1.09)).toBe(30);
-    expect(cockroachSpeed(0)).toBe(0);
+    assert.strictEqual(cockroachSpeed(1.08), 30);
+    assert.strictEqual(cockroachSpeed(1.09), 30);
+    assert.strictEqual(cockroachSpeed(0), 0);
   });
 });

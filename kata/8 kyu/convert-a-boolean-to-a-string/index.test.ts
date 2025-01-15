@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import booleanToString from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import booleanToString from './index.ts';
 
 describe('booleanToString', () => {
   it('should convert boolean to string', () => {
-    expect.assertions(2);
-
-    expect(booleanToString(true)).toBe('true');
-    expect(booleanToString(false)).toBe('false');
+    assert.strictEqual(booleanToString(true), 'true');
+    assert.strictEqual(booleanToString(false), 'false');
   });
 });

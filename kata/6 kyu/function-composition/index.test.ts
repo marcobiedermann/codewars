@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
-import compose from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import compose from './index.ts';
 
 describe('compose', () => {
   it('should compose two functions', () => {
-    expect.assertions(2);
-
     function add1(a: number): number {
       return a + 1;
     }
@@ -16,7 +15,7 @@ describe('compose', () => {
       return a + b + c;
     }
 
-    expect(compose(add1, id)(0)).toBe(1);
-    expect(compose(add1, addAll3)(1, 2, 3)).toBe(7);
+    assert.strictEqual(compose(add1, id)(0), 1);
+    assert.strictEqual(compose(add1, addAll3)(1, 2, 3), 7);
   });
 });

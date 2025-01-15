@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import fizzbuzz from '.';
+import assert from 'assert';
+import { describe, it } from 'node:test';
+import fizzbuzz from './index.ts';
 
 describe('fizzbuzz', () => {
   it('should return FizzBuzz until `n`', () => {
-    expect.assertions(1);
-
-    expect(fizzbuzz(15)).toStrictEqual([
+    assert.deepEqual(fizzbuzz(15), [
       1,
       2,
       'Fizz',

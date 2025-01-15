@@ -1,17 +1,18 @@
-import { describe, expect, it } from 'vitest';
-import rank from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import rank from './index.ts';
 
 describe('rank', () => {
   it('should return the firstname of the participant at rank `n`', () => {
-    expect.assertions(4);
-
-    expect(
+    assert.strictEqual(
       rank('Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin', [4, 2, 1, 4, 3, 1, 2], 4),
-    ).toBe('Benjamin');
-    expect(rank('Lagon,Lily', [1, 5], 2)).toBe('Lagon');
-    expect(
+      'Benjamin',
+    );
+    assert.strictEqual(rank('Lagon,Lily', [1, 5], 2), 'Lagon');
+    assert.strictEqual(
       rank('Addison,Jayden,Sofia,Michael,Andrew,Lily,Benjamin', [4, 2, 1, 4, 3, 1, 2], 8),
-    ).toBe('Not enough participants');
-    expect(rank('', [4, 2, 1, 4, 3, 1, 2], 6)).toBe('No participants');
+      'Not enough participants',
+    );
+    assert.strictEqual(rank('', [4, 2, 1, 4, 3, 1, 2], 6), 'No participants');
   });
 });

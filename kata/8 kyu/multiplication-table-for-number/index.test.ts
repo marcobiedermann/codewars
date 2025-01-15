@@ -1,11 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import multiTable from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import multiTable from './index.ts';
 
 describe('multiTable', () => {
   it('should return a multiplication table for `number`', () => {
-    expect.assertions(2);
-
-    expect(multiTable(5)).toBe(`1 * 5 = 5
+    assert.strictEqual(
+      multiTable(5),
+      `1 * 5 = 5
 2 * 5 = 10
 3 * 5 = 15
 4 * 5 = 20
@@ -14,8 +15,11 @@ describe('multiTable', () => {
 7 * 5 = 35
 8 * 5 = 40
 9 * 5 = 45
-10 * 5 = 50`);
-    expect(multiTable(1)).toBe(`1 * 1 = 1
+10 * 5 = 50`,
+    );
+    assert.strictEqual(
+      multiTable(1),
+      `1 * 1 = 1
 2 * 1 = 2
 3 * 1 = 3
 4 * 1 = 4
@@ -24,6 +28,7 @@ describe('multiTable', () => {
 7 * 1 = 7
 8 * 1 = 8
 9 * 1 = 9
-10 * 1 = 10`);
+10 * 1 = 10`,
+    );
   });
 });

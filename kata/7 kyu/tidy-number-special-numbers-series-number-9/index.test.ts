@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import tidyNumber from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import tidyNumber from './index.ts';
 
 describe('tidyNumber', () => {
   it('should check if the number is a tidy number', () => {
-    expect.assertions(5);
-
-    expect(tidyNumber(12)).toBe(true);
-    expect(tidyNumber(102)).toBe(false);
-    expect(tidyNumber(9672)).toBe(false);
-    expect(tidyNumber(2789)).toBe(true);
-    expect(tidyNumber(2335)).toBe(true);
+    assert.strictEqual(tidyNumber(12), true);
+    assert.strictEqual(tidyNumber(102), false);
+    assert.strictEqual(tidyNumber(9672), false);
+    assert.strictEqual(tidyNumber(2789), true);
+    assert.strictEqual(tidyNumber(2335), true);
   });
 });

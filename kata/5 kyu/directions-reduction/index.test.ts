@@ -1,19 +1,18 @@
-import { describe, expect, it } from 'vitest';
-import dirReduc from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import dirReduc from './index.ts';
 
 describe('dirReduc', () => {
   it('should return reduced directions', () => {
-    expect.assertions(3);
-
-    expect(dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST'])).toStrictEqual([
+    assert.deepEqual(dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']), [
       'WEST',
     ]);
-    expect(dirReduc(['NORTH', 'WEST', 'SOUTH', 'EAST'])).toStrictEqual([
+    assert.deepEqual(dirReduc(['NORTH', 'WEST', 'SOUTH', 'EAST']), [
       'NORTH',
       'WEST',
       'SOUTH',
       'EAST',
     ]);
-    expect(dirReduc(['NORTH', 'SOUTH', 'EAST', 'WEST', 'EAST', 'WEST'])).toStrictEqual([]);
+    assert.deepEqual(dirReduc(['NORTH', 'SOUTH', 'EAST', 'WEST', 'EAST', 'WEST']), []);
   });
 });

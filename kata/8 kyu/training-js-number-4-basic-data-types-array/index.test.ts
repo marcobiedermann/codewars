@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import { getFirst, getLast, getLength, popElement, pushElement } from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { getFirst, getLast, getLength, popElement, pushElement } from './index.ts';
 
 describe('array', () => {
   it('should perform operations on array', () => {
-    expect.assertions(5);
-
-    expect(getLength([1, 2, 3])).toBe(3);
-    expect(getFirst([1, 2, 3])).toBe(1);
-    expect(getLast([1, 2, 3])).toBe(3);
-    expect(pushElement([1, 2, 3])).toHaveLength(4);
-    expect(popElement([1, 2, 3])).toHaveLength(2);
+    assert.strictEqual(getLength([1, 2, 3]), 3);
+    assert.strictEqual(getFirst([1, 2, 3]), 1);
+    assert.strictEqual(getLast([1, 2, 3]), 3);
+    assert.strictEqual(pushElement([1, 2, 3]).length, 4);
+    assert.strictEqual(popElement([1, 2, 3]).length, 2);
   });
 });

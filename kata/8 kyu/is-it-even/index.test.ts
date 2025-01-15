@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import testEven from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import testEven from './index.ts';
 
 describe('testEven', () => {
   it('should check if number is even', () => {
-    expect.assertions(5);
-
-    expect(testEven(0)).toBe(true);
-    expect(testEven(0.5)).toBe(false);
-    expect(testEven(1)).toBe(false);
-    expect(testEven(2)).toBe(true);
-    expect(testEven(-4)).toBe(true);
+    assert.strictEqual(testEven(0), true);
+    assert.strictEqual(testEven(0.5), false);
+    assert.strictEqual(testEven(1), false);
+    assert.strictEqual(testEven(2), true);
+    assert.strictEqual(testEven(-4), true);
   });
 });

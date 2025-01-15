@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import chromosomeCheck from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import chromosomeCheck from './index.ts';
 
 describe('chromosomeCheck', () => {
   it('should determin the sex of the offspring', () => {
-    expect.assertions(2);
-
-    expect(chromosomeCheck('XY')).toBe("Congratulations! You're going to have a son.");
-    expect(chromosomeCheck('XX')).toBe("Congratulations! You're going to have a daughter.");
+    assert.strictEqual(chromosomeCheck('XY'), "Congratulations! You're going to have a son.");
+    assert.strictEqual(chromosomeCheck('XX'), "Congratulations! You're going to have a daughter.");
   });
 });

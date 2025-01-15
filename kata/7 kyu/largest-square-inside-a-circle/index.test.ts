@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import areaLargestSquare from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import areaLargestSquare from './index.ts';
 
 describe('areaLargestSquare', () => {
   it('should get the area of the largest square that can fit inside a circle', () => {
-    expect.assertions(3);
-
-    expect(areaLargestSquare(5)).toBe(50);
-    expect(areaLargestSquare(7)).toBe(98);
-    expect(areaLargestSquare(15)).toBe(450);
+    assert.strictEqual(areaLargestSquare(5), 50);
+    assert.strictEqual(areaLargestSquare(7), 98);
+    assert.strictEqual(areaLargestSquare(15), 450);
   });
 });

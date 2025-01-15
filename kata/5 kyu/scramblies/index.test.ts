@@ -1,18 +1,17 @@
-import { describe, expect, it } from 'vitest';
-import scramble from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import scramble from './index.ts';
 
 describe('scramble', () => {
   it('should check if a portion of `str1` can be rearranged to match `str2`', () => {
-    expect.assertions(9);
-
-    expect(scramble('rkqodlw', 'world')).toBe(true);
-    expect(scramble('cedewaraaossoqqyt', 'codewars')).toBe(true);
-    expect(scramble('katas', 'steak')).toBe(false);
-    expect(scramble('scriptjava', 'javascript')).toBe(true);
-    expect(scramble('scriptingjava', 'javascript')).toBe(true);
-    expect(scramble('scriptsjava', 'javascripts')).toBe(true);
-    expect(scramble('jscripts', 'javascript')).toBe(false);
-    expect(scramble('aabbcamaomsccdd', 'commas')).toBe(true);
-    expect(scramble('scriptjavx', 'javascript')).toBe(false);
+    assert.strictEqual(scramble('rkqodlw', 'world'), true);
+    assert.strictEqual(scramble('cedewaraaossoqqyt', 'codewars'), true);
+    assert.strictEqual(scramble('katas', 'steak'), false);
+    assert.strictEqual(scramble('scriptjava', 'javascript'), true);
+    assert.strictEqual(scramble('scriptingjava', 'javascript'), true);
+    assert.strictEqual(scramble('scriptsjava', 'javascripts'), true);
+    assert.strictEqual(scramble('jscripts', 'javascript'), false);
+    assert.strictEqual(scramble('aabbcamaomsccdd', 'commas'), true);
+    assert.strictEqual(scramble('scriptjavx', 'javascript'), false);
   });
 });

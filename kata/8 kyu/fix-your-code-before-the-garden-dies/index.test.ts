@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import rainAmount from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import rainAmount from './index.ts';
 
 describe('rainAmount', () => {
   it('should report if your plant needs water', () => {
-    expect.assertions(2);
-
-    expect(rainAmount(100)).toBe('Your plant has had more than enough water for today!');
-    expect(rainAmount(39)).toBe('You need to give your plant 1mm of water');
+    assert.strictEqual(rainAmount(100), 'Your plant has had more than enough water for today!');
+    assert.strictEqual(rainAmount(39), 'You need to give your plant 1mm of water');
   });
 });

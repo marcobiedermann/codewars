@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import sixToast from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sixToast from './index.ts';
 
 describe('sixToast', () => {
   it('should count the number of pieces of toast', () => {
-    expect.assertions(3);
-
-    expect(sixToast(6)).toBe(0);
-    expect(sixToast(17)).toBe(11);
-    expect(sixToast(3)).toBe(3);
+    assert.strictEqual(sixToast(6), 0);
+    assert.strictEqual(sixToast(17), 11);
+    assert.strictEqual(sixToast(3), 3);
   });
 });

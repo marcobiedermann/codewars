@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import evenChars from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import evenChars from './index.ts';
 
 describe('evenChars', () => {
   it('should return even characters', () => {
-    expect.assertions(2);
-
-    expect(evenChars('a')).toBe('invalid string');
-    expect(evenChars('abcdefghijklm')).toStrictEqual(['b', 'd', 'f', 'h', 'j', 'l']);
+    assert.strictEqual(evenChars('a'), 'invalid string');
+    assert.deepEqual(evenChars('abcdefghijklm'), ['b', 'd', 'f', 'h', 'j', 'l']);
   });
 });

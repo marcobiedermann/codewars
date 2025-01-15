@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
-import Person from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import Person from './index.ts';
 
 describe('person', () => {
   describe('info', () => {
     it('should return info of person', () => {
-      expect.assertions(1);
-
       const john = new Person('john', 34);
 
-      expect(john.info).toBe('johns age is 34');
+      assert.strictEqual(john.info, 'johns age is 34');
     });
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import solution from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import solution from './index.ts';
 
 describe('solution', () => {
   it('should check if string end with', () => {
-    expect.assertions(2);
-
-    expect(solution('abcde', 'cde')).toBe(true);
-    expect(solution('abcde', 'abc')).toBe(false);
+    assert.strictEqual(solution('abcde', 'cde'), true);
+    assert.strictEqual(solution('abcde', 'abc'), false);
   });
 });

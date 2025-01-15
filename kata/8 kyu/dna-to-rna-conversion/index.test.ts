@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import DNAtoRNA from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import DNAtoRNA from './index.ts';
 
 describe('dNAtoRNA', () => {
   it('should convert DNA to RNA by replacing `T` by `U`', () => {
-    expect.assertions(3);
-
-    expect(DNAtoRNA('TTTT')).toBe('UUUU');
-    expect(DNAtoRNA('GCAT')).toBe('GCAU');
-    expect(DNAtoRNA('GACCGCCGCC')).toBe('GACCGCCGCC');
+    assert.strictEqual(DNAtoRNA('TTTT'), 'UUUU');
+    assert.strictEqual(DNAtoRNA('GCAT'), 'GCAU');
+    assert.strictEqual(DNAtoRNA('GACCGCCGCC'), 'GACCGCCGCC');
   });
 });

@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import { decode, encode } from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import { decode, encode } from './index.ts';
 
 describe('foo', () => {
   it('should', () => {
-    expect.assertions(4);
-
-    expect(encode('hello')).toBe('h2ll4');
-    expect(encode('How are you today?')).toBe('H4w 1r2 y45 t4d1y?');
-    expect(encode('This is an encoding test.')).toBe('Th3s 3s 1n 2nc4d3ng t2st.');
-    expect(decode('h2ll4')).toBe('hello');
+    assert.strictEqual(encode('hello'), 'h2ll4');
+    assert.strictEqual(encode('How are you today?'), 'H4w 1r2 y45 t4d1y?');
+    assert.strictEqual(encode('This is an encoding test.'), 'Th3s 3s 1n 2nc4d3ng t2st.');
+    assert.strictEqual(decode('h2ll4'), 'hello');
   });
 });

@@ -1,17 +1,16 @@
-import { describe, expect, it } from 'vitest';
-import f from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import f from './index.ts';
 
 describe('f', () => {
   it('should sum up all number through `n`', () => {
-    expect.assertions(8);
-
-    expect(f(100)).toBe(5050);
-    expect(f(300)).toBe(45150);
-    expect(f(50000)).toBe(1250025000);
-    expect(f('n')).toBe(false);
-    expect(f()).toBe(false);
-    expect(f(3.14)).toBe(false);
-    expect(f(0)).toBe(false);
-    expect(f(-10)).toBe(false);
+    assert.strictEqual(f(100), 5050);
+    assert.strictEqual(f(300), 45150);
+    assert.strictEqual(f(50000), 1250025000);
+    assert.strictEqual(f('n'), false);
+    assert.strictEqual(f(), false);
+    assert.strictEqual(f(3.14), false);
+    assert.strictEqual(f(0), false);
+    assert.strictEqual(f(-10), false);
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import sortMyString from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import sortMyString from './index.ts';
 
 describe('sortMyString', () => {
   it('should group characters by even and odd index', () => {
-    expect.assertions(2);
-
-    expect(sortMyString('CodeWars')).toBe('CdWr oeas');
-    expect(sortMyString("YCOLUE'VREER")).toBe("YOU'RE CLEVER");
+    assert.strictEqual(sortMyString('CodeWars'), 'CdWr oeas');
+    assert.strictEqual(sortMyString("YCOLUE'VREER"), "YOU'RE CLEVER");
   });
 });

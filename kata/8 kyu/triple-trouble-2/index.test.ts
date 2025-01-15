@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import tripleTrouble from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import tripleTrouble from './index.ts';
 
 describe('tripleTrouble', () => {
   it('should combine all letters of the three strings', () => {
-    expect.assertions(4);
-
-    expect(tripleTrouble('this', 'test', 'lock')).toBe('ttlheoiscstk');
-    expect(tripleTrouble('aa', 'bb', 'cc')).toBe('abcabc');
-    expect(tripleTrouble('Bm', 'aa', 'tn')).toBe('Batman');
-    expect(tripleTrouble('LLh', 'euo', 'xtr')).toBe('LexLuthor');
+    assert.strictEqual(tripleTrouble('this', 'test', 'lock'), 'ttlheoiscstk');
+    assert.strictEqual(tripleTrouble('aa', 'bb', 'cc'), 'abcabc');
+    assert.strictEqual(tripleTrouble('Bm', 'aa', 'tn'), 'Batman');
+    assert.strictEqual(tripleTrouble('LLh', 'euo', 'xtr'), 'LexLuthor');
   });
 });

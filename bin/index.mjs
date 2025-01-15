@@ -31,14 +31,15 @@ export default foo;
 }
 
 function testTemplate() {
-  return `import foo from '.';
+  return `import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import foo from './index.ts';
 
 describe('foo', () => {
   it('should', () => {
-
+    assert.strictEqual(foo(), );
   });
-});
-`;
+});`;
 }
 
 async function getKata(id) {

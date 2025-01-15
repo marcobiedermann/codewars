@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
-import isNice from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import isNice from './index.ts';
 
 describe('isNice', () => {
   it('should check if array is nice', () => {
-    expect.assertions(3);
-
-    expect(isNice([2, 10, 9, 3])).toBe(true);
-    expect(isNice([3, 4, 5, 7])).toBe(false);
-    expect(isNice([])).toBe(false);
+    assert.strictEqual(isNice([2, 10, 9, 3]), true);
+    assert.strictEqual(isNice([3, 4, 5, 7]), false);
+    assert.strictEqual(isNice([]), false);
   });
 });

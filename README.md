@@ -39,7 +39,7 @@ npm run lint
 
 ### Testing
 
-Run tests using [Vitest](https://vitest.dev/) testing framework.
+Run tests using [Node Test](https://nodejs.org/api/test.html) test runner.
 
 ```sh
 npm test

@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
-import otherAngle from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import otherAngle from './index.ts';
 
 describe('otherAngle', () => {
   it('should return third angle of triangle', () => {
-    expect.assertions(4);
-
-    expect(otherAngle(30, 60)).toBe(90);
-    expect(otherAngle(60, 60)).toBe(60);
-    expect(otherAngle(43, 78)).toBe(59);
-    expect(otherAngle(10, 20)).toBe(150);
+    assert.strictEqual(otherAngle(30, 60), 90);
+    assert.strictEqual(otherAngle(60, 60), 60);
+    assert.strictEqual(otherAngle(43, 78), 59);
+    assert.strictEqual(otherAngle(10, 20), 150);
   });
 });

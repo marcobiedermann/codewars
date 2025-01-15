@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
-import calculator from '.';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import calculator from './index.ts';
 
 describe('calculator', () => {
   it('should calculate result', () => {
-    expect.assertions(6);
-
-    expect(calculator(1, 2, '+')).toBe(3);
-    expect(calculator(1, 2, '-')).toBe(-1);
-    expect(calculator(3, 5, '*')).toBe(15);
-    expect(calculator(6, 2, '/')).toBe(3);
-    expect(calculator(6, 2, '$')).toBe('unknown value');
-    expect(calculator(6, 'h', '*')).toBe('unknown value');
+    assert.strictEqual(calculator(1, 2, '+'), 3);
+    assert.strictEqual(calculator(1, 2, '-'), -1);
+    assert.strictEqual(calculator(3, 5, '*'), 15);
+    assert.strictEqual(calculator(6, 2, '/'), 3);
+    assert.strictEqual(calculator(6, 2, '$'), 'unknown value');
+    assert.strictEqual(calculator(6, 'h', '*'), 'unknown value');
   });
 });
