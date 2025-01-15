@@ -40,10 +40,10 @@
   "homepage": "https://github.com/marcobiedermann/codewars#readme",
   "devDependencies": {
     "@types/node": "^22.10.6",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
     "eslint": "^8.51.0",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-prettier": "^10.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
     "prettier": "^3.4.2",
