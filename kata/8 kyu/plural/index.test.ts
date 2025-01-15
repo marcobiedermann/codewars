@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import plural from './index.ts';
 
 describe('plural', () => {
   it('should check if plural should be used', () => {
-    expect.assertions(5);
-
-    expect(plural(0)).toBe(true);
-    expect(plural(0.5)).toBe(true);
-    expect(plural(1)).toBe(false);
-    expect(plural(100)).toBe(true);
-    expect(plural(Infinity)).toBe(true);
+    assert.strictEqual(plural(0), true);
+    assert.strictEqual(plural(0.5), true);
+    assert.strictEqual(plural(1), false);
+    assert.strictEqual(plural(100), true);
+    assert.strictEqual(plural(Infinity), true);
   });
 });

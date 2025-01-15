@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import numberOfPairs from './index.ts';
 
 describe('numberOfPairs', () => {
   it('should return the number of pairs', () => {
-    expect.assertions(3);
-
-    expect(numberOfPairs(['red', 'red'])).toBe(1);
-    expect(numberOfPairs(['red', 'green', 'blue'])).toBe(0);
-    expect(numberOfPairs(['gray', 'black', 'purple', 'purple', 'gray', 'black'])).toBe(3);
+    assert.strictEqual(numberOfPairs(['red', 'red']), 1);
+    assert.strictEqual(numberOfPairs(['red', 'green', 'blue']), 0);
+    assert.strictEqual(numberOfPairs(['gray', 'black', 'purple', 'purple', 'gray', 'black']), 3);
   });
 });

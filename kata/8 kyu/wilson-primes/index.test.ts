@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import amIWilson from './index.ts';
 
 describe('amIWilson', () => {
   it('should check if number is a Wilson prime', () => {
-    expect.assertions(3);
-
-    expect(amIWilson(5)).toBe(true);
-    expect(amIWilson(9)).toBe(false);
-    expect(amIWilson(6)).toBe(false);
+    assert.strictEqual(amIWilson(5), true);
+    assert.strictEqual(amIWilson(9), false);
+    assert.strictEqual(amIWilson(6), false);
   });
 });

@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import domainName from './index.ts';
 
 describe('domainName', () => {
   it('should extract domain from url', () => {
-    expect.assertions(4);
-
-    expect(domainName('http://google.com')).toBe('google');
-    expect(domainName('http://google.co.jp')).toBe('google');
-    expect(domainName('www.xakep.ru')).toBe('xakep');
-    expect(domainName('https://youtube.com')).toBe('youtube');
+    assert.strictEqual(domainName('http://google.com'), 'google');
+    assert.strictEqual(domainName('http://google.co.jp'), 'google');
+    assert.strictEqual(domainName('www.xakep.ru'), 'xakep');
+    assert.strictEqual(domainName('https://youtube.com'), 'youtube');
   });
 });

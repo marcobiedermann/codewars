@@ -1,21 +1,20 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import minimum from './index.ts';
 
 describe('minimum', () => {
   it('should return minimum number to add / subtract to make multiple', () => {
-    expect.assertions(12);
-
-    expect(minimum(1, 1)).toBe(0);
-    expect(minimum(9, 4)).toBe(1);
-    expect(minimum(10, 6)).toBe(2);
-    expect(minimum(60, 45)).toBe(15);
-    expect(minimum(57, 50)).toBe(7);
-    expect(minimum(28, 16)).toBe(4);
-    expect(minimum(84, 80)).toBe(4);
-    expect(minimum(129, 49)).toBe(18);
-    expect(minimum(150, 67)).toBe(16);
-    expect(minimum(121, 46)).toBe(17);
-    expect(minimum(83, 81)).toBe(2);
-    expect(minimum(89, 74)).toBe(15);
+    assert.strictEqual(minimum(1, 1), 0);
+    assert.strictEqual(minimum(9, 4), 1);
+    assert.strictEqual(minimum(10, 6), 2);
+    assert.strictEqual(minimum(60, 45), 15);
+    assert.strictEqual(minimum(57, 50), 7);
+    assert.strictEqual(minimum(28, 16), 4);
+    assert.strictEqual(minimum(84, 80), 4);
+    assert.strictEqual(minimum(129, 49), 18);
+    assert.strictEqual(minimum(150, 67), 16);
+    assert.strictEqual(minimum(121, 46), 17);
+    assert.strictEqual(minimum(83, 81), 2);
+    assert.strictEqual(minimum(89, 74), 15);
   });
 });

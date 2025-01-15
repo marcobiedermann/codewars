@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import alternateCase from './index.ts';
 
 describe('alternateCase', () => {
   it('should switch every letter from upper to lower and from lower to upper', () => {
-    expect.assertions(3);
-
-    expect(alternateCase('abc')).toBe('ABC');
-    expect(alternateCase('ABC')).toBe('abc');
-    expect(alternateCase('Hello World')).toBe('hELLO wORLD');
+    assert.strictEqual(alternateCase('abc'), 'ABC');
+    assert.strictEqual(alternateCase('ABC'), 'abc');
+    assert.strictEqual(alternateCase('Hello World'), 'hELLO wORLD');
   });
 });

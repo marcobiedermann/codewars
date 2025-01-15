@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import solution from './index.ts';
 
 describe('solution', () => {
   it('should split string into pairs of two', () => {
-    expect.assertions(3);
-
-    expect(solution('abcdef')).toStrictEqual(['ab', 'cd', 'ef']);
-    expect(solution('abcdefg')).toStrictEqual(['ab', 'cd', 'ef', 'g_']);
-    expect(solution('')).toStrictEqual([]);
+    assert.deepEqual(solution('abcdef'), ['ab', 'cd', 'ef']);
+    assert.deepEqual(solution('abcdefg'), ['ab', 'cd', 'ef', 'g_']);
+    assert.deepEqual(solution(''), []);
   });
 });

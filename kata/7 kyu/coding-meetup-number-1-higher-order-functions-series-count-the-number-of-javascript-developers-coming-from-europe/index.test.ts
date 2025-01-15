@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import countDevelopers from './index.ts';
 
 describe('countDevelopers', () => {
   it('should return the number of JavaScript developers from Europe', () => {
-    expect.assertions(2);
-
-    expect(
+    assert.strictEqual(
       countDevelopers([
         {
           firstName: 'Noah',
@@ -40,8 +39,9 @@ describe('countDevelopers', () => {
           language: 'CSS',
         },
       ]),
-    ).toBe(1);
-    expect(
+      1,
+    );
+    assert.strictEqual(
       countDevelopers([
         {
           firstName: 'Oliver',
@@ -60,6 +60,7 @@ describe('countDevelopers', () => {
           language: 'HTML',
         },
       ]),
-    ).toBe(0);
+      0,
+    );
   });
 });

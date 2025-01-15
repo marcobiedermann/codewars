@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import containAllRots from './index.ts';
 
 describe('containAllRots', () => {
   it('should check if all rotations of string are included', () => {
-    expect.assertions(4);
-
-    expect(containAllRots('', [])).toBe(true);
-    expect(containAllRots('', ['bsjq', 'qbsj'])).toBe(true);
-    expect(containAllRots('bsjq', ['bsjq', 'qbsj', 'sjqb', 'twZNsslC', 'jqbs'])).toBe(true);
-    expect(
+    assert.strictEqual(containAllRots('', []), true);
+    assert.strictEqual(containAllRots('', ['bsjq', 'qbsj']), true);
+    assert.strictEqual(containAllRots('bsjq', ['bsjq', 'qbsj', 'sjqb', 'twZNsslC', 'jqbs']), true);
+    assert.strictEqual(
       containAllRots('XjYABhR', [
         'TzYxlgfnhf',
         'yqVAuoLjMLy',
@@ -19,6 +18,7 @@ describe('containAllRots', () => {
         'XjYABhR',
         'ABhRXjY',
       ]),
-    ).toBe(false);
+      false,
+    );
   });
 });

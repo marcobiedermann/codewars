@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import howManyLightsabersDoYouOwn from './index.ts';
 
 describe('howManyLightsabersDoYouOwn', () => {
   it('should return number of lightsabers', () => {
-    expect.assertions(3);
-
-    expect(howManyLightsabersDoYouOwn()).toBe(0);
-    expect(howManyLightsabersDoYouOwn('Adam')).toBe(0);
-    expect(howManyLightsabersDoYouOwn('Zach')).toBe(18);
+    assert.strictEqual(howManyLightsabersDoYouOwn(), 0);
+    assert.strictEqual(howManyLightsabersDoYouOwn('Adam'), 0);
+    assert.strictEqual(howManyLightsabersDoYouOwn('Zach'), 18);
   });
 });

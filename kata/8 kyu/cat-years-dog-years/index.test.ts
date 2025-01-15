@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import humanYearsCatYearsDogYears from './index.ts';
 
 describe('humanYearsCatYearsDogYears', () => {
   it('should human years in cat and dog years', () => {
-    expect.assertions(3);
-
-    expect(humanYearsCatYearsDogYears(1)).toStrictEqual([1, 15, 15]);
-    expect(humanYearsCatYearsDogYears(2)).toStrictEqual([2, 24, 24]);
-    expect(humanYearsCatYearsDogYears(10)).toStrictEqual([10, 56, 64]);
+    assert.deepEqual(humanYearsCatYearsDogYears(1), [1, 15, 15]);
+    assert.deepEqual(humanYearsCatYearsDogYears(2), [2, 24, 24]);
+    assert.deepEqual(humanYearsCatYearsDogYears(10), [10, 56, 64]);
   });
 });

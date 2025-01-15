@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import songDecoder from './index.ts';
 
 describe('songDecoder', () => {
   it('should remove `WUB` and separate words with space', () => {
-    expect.assertions(3);
-
-    expect(songDecoder('AWUBBWUBC')).toBe('A B C');
-    expect(songDecoder('AWUBWUBWUBBWUBWUBWUBC')).toBe('A B C');
-    expect(songDecoder('WUBAWUBBWUBCWUB')).toBe('A B C');
+    assert.strictEqual(songDecoder('AWUBBWUBC'), 'A B C');
+    assert.strictEqual(songDecoder('AWUBWUBWUBBWUBWUBWUBC'), 'A B C');
+    assert.strictEqual(songDecoder('WUBAWUBBWUBCWUB'), 'A B C');
   });
 });

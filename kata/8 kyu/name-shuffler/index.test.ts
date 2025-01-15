@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import nameShuffler from './index.ts';
 
 describe('nameShuffler', () => {
   it('should', () => {
-    expect.assertions(1);
-
-    expect(nameShuffler('john McClane')).toBe('McClane john');
+    assert.strictEqual(nameShuffler('john McClane'), 'McClane john');
   });
 });

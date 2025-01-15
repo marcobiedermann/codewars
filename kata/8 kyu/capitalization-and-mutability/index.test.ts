@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import capitalizeWord from './index.ts';
 
 describe('capitalizeWord', () => {
   it('should capitalize word', () => {
-    expect.assertions(3);
-
-    expect(capitalizeWord('word')).toBe('Word');
-    expect(capitalizeWord('i')).toBe('I');
-    expect(capitalizeWord('glasswear')).toBe('Glasswear');
+    assert.strictEqual(capitalizeWord('word'), 'Word');
+    assert.strictEqual(capitalizeWord('i'), 'I');
+    assert.strictEqual(capitalizeWord('glasswear'), 'Glasswear');
   });
 });

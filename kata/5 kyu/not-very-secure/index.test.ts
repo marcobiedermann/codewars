@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import alphanumeric from './index.ts';
 
 describe('alphanumeric', () => {
   it('should validate if the string is alphanumeric', () => {
-    expect.assertions(4);
-
-    expect(alphanumeric('Mazinkaiser')).toBe(true);
-    expect(alphanumeric('hello world_')).toBe(false);
-    expect(alphanumeric('PassW0rd')).toBe(true);
-    expect(alphanumeric('     ')).toBe(false);
+    assert.strictEqual(alphanumeric('Mazinkaiser'), true);
+    assert.strictEqual(alphanumeric('hello world_'), false);
+    assert.strictEqual(alphanumeric('PassW0rd'), true);
+    assert.strictEqual(alphanumeric('     '), false);
   });
 });

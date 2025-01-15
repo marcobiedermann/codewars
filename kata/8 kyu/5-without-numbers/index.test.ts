@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import unusualFive from './index.ts';
 
 describe('unusualFive', () => {
   it('should return `5`', () => {
-    expect.assertions(1);
-
-    expect(unusualFive()).toBe(5);
+    assert.strictEqual(unusualFive(), 5);
   });
 });

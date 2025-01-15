@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import howManyDalmatians from './index.ts';
 
 describe('howManyDalmatians', () => {
   it('should return amount of dogs', () => {
-    expect.assertions(6);
-
-    expect(howManyDalmatians(26)).toBe('More than a handful!');
-    expect(howManyDalmatians(8)).toBe('Hardly any');
-    expect(howManyDalmatians(14)).toBe('More than a handful!');
-    expect(howManyDalmatians(80)).toBe("Woah that's a lot of dogs!");
-    expect(howManyDalmatians(100)).toBe("Woah that's a lot of dogs!");
-    expect(howManyDalmatians(101)).toBe('101 DALMATIANS!!!');
+    assert.strictEqual(howManyDalmatians(26), 'More than a handful!');
+    assert.strictEqual(howManyDalmatians(8), 'Hardly any');
+    assert.strictEqual(howManyDalmatians(14), 'More than a handful!');
+    assert.strictEqual(howManyDalmatians(80), "Woah that's a lot of dogs!");
+    assert.strictEqual(howManyDalmatians(100), "Woah that's a lot of dogs!");
+    assert.strictEqual(howManyDalmatians(101), '101 DALMATIANS!!!');
   });
 });

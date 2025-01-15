@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import Guesser from './index.ts';
 
 describe('guesser', () => {
   it('correct guess should return true', () => {
-    expect.assertions(1);
-
     const guesser = new Guesser(10, 2);
 
     guesser.guess(10);
@@ -12,29 +11,25 @@ describe('guesser', () => {
     guesser.guess(10);
     guesser.guess(10);
 
-    expect(guesser.guess(10)).toBe(true);
+    assert.strictEqual(guesser.guess(10), true);
   });
 
   it('wrong guess should return false', () => {
-    expect.assertions(1);
-
     const guesser = new Guesser(10, 2);
 
     guesser.guess(1);
 
-    expect(guesser.guess(1)).toBe(false);
+    assert.strictEqual(guesser.guess(1), false);
   });
 
   it('lives ran out should throw', () => {
-    expect.assertions(1);
-
     const guesser = new Guesser(10, 2);
 
     guesser.guess(1);
     guesser.guess(2);
 
-    expect(() => {
+    assert.throws(() => {
       guesser.guess(10);
-    }).toThrow('already dead');
+    }, new Error('already dead'));
   });
 });

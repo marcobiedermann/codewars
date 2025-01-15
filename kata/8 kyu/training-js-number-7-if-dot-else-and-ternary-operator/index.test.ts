@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import saleHotdogs from './index.ts';
 
 describe('saleHotdogs', () => {
   it('should', () => {
-    expect.assertions(6);
-
-    expect(saleHotdogs(1)).toBe(100);
-    expect(saleHotdogs(4)).toBe(400);
-    expect(saleHotdogs(5)).toBe(475);
-    expect(saleHotdogs(9)).toBe(855);
-    expect(saleHotdogs(10)).toBe(900);
-    expect(saleHotdogs(100)).toBe(9000);
+    assert.strictEqual(saleHotdogs(1), 100);
+    assert.strictEqual(saleHotdogs(4), 400);
+    assert.strictEqual(saleHotdogs(5), 475);
+    assert.strictEqual(saleHotdogs(9), 855);
+    assert.strictEqual(saleHotdogs(10), 900);
+    assert.strictEqual(saleHotdogs(100), 9000);
   });
 });

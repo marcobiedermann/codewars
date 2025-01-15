@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import cookingTime from './index.ts';
 
 describe('cookingTime', () => {
   it('should calculate the cooking time', () => {
-    expect.assertions(3);
-
-    expect(cookingTime(0)).toBe(0);
-    expect(cookingTime(5)).toBe(5);
-    expect(cookingTime(10)).toBe(10);
+    assert.strictEqual(cookingTime(0), 0);
+    assert.strictEqual(cookingTime(5), 5);
+    assert.strictEqual(cookingTime(10), 10);
   });
 });

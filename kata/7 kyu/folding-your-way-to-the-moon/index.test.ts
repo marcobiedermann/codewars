@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import foldTo from './index.ts';
 
 describe('foldTo', () => {
   it('should calculate number of folds to reach distance', () => {
-    expect.assertions(3);
-
-    expect(foldTo(-1)).toBeNull();
-    expect(foldTo(1, 2)).toBe(0);
-    expect(foldTo(384000000)).toBe(42);
+    assert.strictEqual(foldTo(-1), null);
+    assert.strictEqual(foldTo(1, 2), 0);
+    assert.strictEqual(foldTo(384000000), 42);
   });
 });

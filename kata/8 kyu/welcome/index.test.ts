@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import greet from './index.ts';
 
 describe('greet', () => {
   it('should translate `Welcome`', () => {
-    expect.assertions(3);
-
-    expect(greet('english')).toBe('Welcome');
-    expect(greet('dutch')).toBe('Welkom');
-    expect(greet('IP_ADDRESS_INVALID')).toBe('Welcome');
+    assert.strictEqual(greet('english'), 'Welcome');
+    assert.strictEqual(greet('dutch'), 'Welkom');
+    assert.strictEqual(greet('IP_ADDRESS_INVALID'), 'Welcome');
   });
 });

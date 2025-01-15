@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import race from './index.ts';
 
 describe('race', () => {
   it('should return time it takes `B` to catch `A`', () => {
-    expect.assertions(4);
-
-    expect(race(720, 850, 70)).toStrictEqual([0, 32, 18]);
-    expect(race(80, 91, 37)).toStrictEqual([3, 21, 49]);
-    expect(race(80, 100, 40)).toStrictEqual([2, 0, 0]);
-    expect(race(2, 1, 0)).toBeNull();
+    assert.deepEqual(race(720, 850, 70), [0, 32, 18]);
+    assert.deepEqual(race(80, 91, 37), [3, 21, 49]);
+    assert.deepEqual(race(80, 100, 40), [2, 0, 0]);
+    assert.strictEqual(race(2, 1, 0), null);
   });
 });

@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import isDivisible from './index.ts';
 
 describe('isDivisible', () => {
   it('should check if `x` is divisible by `y`', () => {
-    expect.assertions(4);
-
-    expect(isDivisible(3, 3, 4)).toBe(false);
-    expect(isDivisible(12, 3, 4)).toBe(true);
-    expect(isDivisible(8, 3, 4)).toBe(false);
-    expect(isDivisible(48, 3, 4)).toBe(true);
+    assert.strictEqual(isDivisible(3, 3, 4), false);
+    assert.strictEqual(isDivisible(12, 3, 4), true);
+    assert.strictEqual(isDivisible(8, 3, 4), false);
+    assert.strictEqual(isDivisible(48, 3, 4), true);
   });
 });

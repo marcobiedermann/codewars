@@ -1,13 +1,12 @@
 /* eslint-disable camelcase */
 
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import find_average from './index.ts';
 
 describe('find_average', () => {
   it('should calculate average of numbers', () => {
-    expect.assertions(2);
-
-    expect(find_average([1, 1, 1])).toBe(1);
-    expect(find_average([1, 2, 3])).toBe(2);
+    assert.strictEqual(find_average([1, 1, 1]), 1);
+    assert.strictEqual(find_average([1, 2, 3]), 2);
   });
 });

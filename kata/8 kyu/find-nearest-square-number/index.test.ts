@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import nearestSq from './index.ts';
 
 describe('nearestSq', () => {
   it('should find nearest square number', () => {
-    expect.assertions(5);
-
-    expect(nearestSq(1)).toBe(1);
-    expect(nearestSq(2)).toBe(1);
-    expect(nearestSq(10)).toBe(9);
-    expect(nearestSq(111)).toBe(121);
-    expect(nearestSq(9999)).toBe(10000);
+    assert.strictEqual(nearestSq(1), 1);
+    assert.strictEqual(nearestSq(2), 1);
+    assert.strictEqual(nearestSq(10), 9);
+    assert.strictEqual(nearestSq(111), 121);
+    assert.strictEqual(nearestSq(9999), 10000);
   });
 });

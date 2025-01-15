@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import greet from './index.ts';
 
 describe('greet', () => {
   it('should greet and capitalize name', () => {
-    expect.assertions(1);
-
-    expect(greet('riley')).toBe('Hello Riley!');
+    assert.strictEqual(greet('riley'), 'Hello Riley!');
   });
 });

@@ -1,20 +1,19 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import REGEXP from './index.ts';
 
 describe('regexp', () => {
   it('should validate a password', () => {
-    expect.assertions(11);
-
-    expect(REGEXP.test('fjd3IR9')).toBe(true);
-    expect(REGEXP.test('ghdfj32')).toBe(false);
-    expect(REGEXP.test('DSJKHD23')).toBe(false);
-    expect(REGEXP.test('dsF43')).toBe(false);
-    expect(REGEXP.test('4fdg5Fj3')).toBe(true);
-    expect(REGEXP.test('DHSJdhjsU')).toBe(false);
-    expect(REGEXP.test('fjd3IR9.;')).toBe(false);
-    expect(REGEXP.test('fjd3  IR9')).toBe(false);
-    expect(REGEXP.test('djI38D55')).toBe(true);
-    expect(REGEXP.test('djI3_8D55')).toBe(false);
-    expect(REGEXP.test('djI38D55@@')).toBe(false);
+    assert.strictEqual(REGEXP.test('fjd3IR9'), true);
+    assert.strictEqual(REGEXP.test('ghdfj32'), false);
+    assert.strictEqual(REGEXP.test('DSJKHD23'), false);
+    assert.strictEqual(REGEXP.test('dsF43'), false);
+    assert.strictEqual(REGEXP.test('4fdg5Fj3'), true);
+    assert.strictEqual(REGEXP.test('DHSJdhjsU'), false);
+    assert.strictEqual(REGEXP.test('fjd3IR9.;'), false);
+    assert.strictEqual(REGEXP.test('fjd3  IR9'), false);
+    assert.strictEqual(REGEXP.test('djI38D55'), true);
+    assert.strictEqual(REGEXP.test('djI3_8D55'), false);
+    assert.strictEqual(REGEXP.test('djI38D55@@'), false);
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import number from './index.ts';
 
 describe('number', () => {
   it('should prepend lines by line number', () => {
-    expect.assertions(2);
-
-    expect(number([])).toStrictEqual([]);
-    expect(number(['a', 'b', 'c'])).toStrictEqual(['1: a', '2: b', '3: c']);
+    assert.deepEqual(number([]), []);
+    assert.deepEqual(number(['a', 'b', 'c']), ['1: a', '2: b', '3: c']);
   });
 });

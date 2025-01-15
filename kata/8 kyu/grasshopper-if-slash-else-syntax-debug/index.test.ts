@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import checkAlive from './index.ts';
 
 describe('checkAlive', () => {
   it('should check if user is still alive', () => {
-    expect.assertions(2);
-
-    expect(checkAlive(5)).toBe(true);
-    expect(checkAlive(0)).toBe(false);
+    assert.strictEqual(checkAlive(5), true);
+    assert.strictEqual(checkAlive(0), false);
   });
 });

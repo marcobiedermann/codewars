@@ -1,11 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import sayHello from './index.ts';
 
 describe('sayHello', () => {
   it('should welcome a person', () => {
-    expect.assertions(1);
-
-    expect(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')).toBe(
+    assert.strictEqual(
+      sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'),
       'Hello, John Smith! Welcome to Phoenix, Arizona!',
     );
   });

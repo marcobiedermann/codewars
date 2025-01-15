@@ -1,14 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import twoSort from './index.ts';
 
 describe('twoSort', () => {
   it('should sort words and return first separated by `***`', () => {
-    expect.assertions(2);
-
-    expect(
+    assert.strictEqual(
       twoSort(['bitcoin', 'take', 'over', 'the', 'world', 'maybe', 'who', 'knows', 'perhaps']),
-    ).toBe('b***i***t***c***o***i***n');
-    expect(
+      'b***i***t***c***o***i***n',
+    );
+    assert.strictEqual(
       twoSort([
         'turns',
         'out',
@@ -23,6 +23,7 @@ describe('twoSort', () => {
         'basic',
         'ones',
       ]),
-    ).toBe('a***r***e');
+      'a***r***e',
+    );
   });
 });

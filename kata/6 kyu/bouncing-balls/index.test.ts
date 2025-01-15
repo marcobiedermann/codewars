@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import bouncingBall from './index.ts';
 
 describe('bouncingBall', () => {
   it('should count bounces of ball', () => {
-    expect.assertions(2);
-
-    expect(bouncingBall(3.0, 0.66, 1.5)).toBe(3);
-    expect(bouncingBall(30.0, 0.66, 1.5)).toBe(15);
+    assert.strictEqual(bouncingBall(3.0, 0.66, 1.5), 3);
+    assert.strictEqual(bouncingBall(30.0, 0.66, 1.5), 15);
   });
 });

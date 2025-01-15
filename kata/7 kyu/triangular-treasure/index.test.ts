@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import triangular from './index.ts';
 
 describe('triangular', () => {
   it('should return triangular number', () => {
-    expect.assertions(3);
-
-    expect(triangular(2)).toBe(3);
-    expect(triangular(4)).toBe(10);
-    expect(triangular(-10)).toBe(0);
+    assert.strictEqual(triangular(2), 3);
+    assert.strictEqual(triangular(4), 10);
+    assert.strictEqual(triangular(-10), 0);
   });
 });

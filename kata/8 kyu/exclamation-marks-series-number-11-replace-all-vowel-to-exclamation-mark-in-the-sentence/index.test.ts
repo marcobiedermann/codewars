@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import replace from './index.ts';
 
 describe('replace', () => {
   it('should replace all vowel by exclamation mark', () => {
-    expect.assertions(4);
-
-    expect(replace('Hi!')).toBe('H!!');
-    expect(replace('!Hi! Hi!')).toBe('!H!! H!!');
-    expect(replace('aeiou')).toBe('!!!!!');
-    expect(replace('ABCDE')).toBe('!BCD!');
+    assert.strictEqual(replace('Hi!'), 'H!!');
+    assert.strictEqual(replace('!Hi! Hi!'), '!H!! H!!');
+    assert.strictEqual(replace('aeiou'), '!!!!!');
+    assert.strictEqual(replace('ABCDE'), '!BCD!');
   });
 });

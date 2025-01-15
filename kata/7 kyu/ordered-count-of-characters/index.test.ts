@@ -1,18 +1,17 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'assert';
+import { describe, it } from 'node:test';
 import orderedCount from './index.ts';
 
 describe('orderedCount', () => {
   it('should count number of occurrences of each character', () => {
-    expect.assertions(3);
-
-    expect(orderedCount('abracadabra')).toStrictEqual([
+    assert.deepEqual(orderedCount('abracadabra'), [
       ['a', 5],
       ['b', 2],
       ['r', 2],
       ['c', 1],
       ['d', 1],
     ]);
-    expect(orderedCount('Code Wars')).toStrictEqual([
+    assert.deepEqual(orderedCount('Code Wars'), [
       ['C', 1],
       ['o', 1],
       ['d', 1],
@@ -23,7 +22,7 @@ describe('orderedCount', () => {
       ['r', 1],
       ['s', 1],
     ]);
-    expect(orderedCount('233312')).toStrictEqual([
+    assert.deepEqual(orderedCount('233312'), [
       ['2', 2],
       ['3', 3],
       ['1', 1],

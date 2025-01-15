@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import powersOfTwo from './index.ts';
 
 describe('powersOfTwo', () => {
   it('should return list of all the powers of 2', () => {
-    expect.assertions(3);
-
-    expect(powersOfTwo(0)).toStrictEqual([1]);
-    expect(powersOfTwo(1)).toStrictEqual([1, 2]);
-    expect(powersOfTwo(4)).toStrictEqual([1, 2, 4, 8, 16]);
+    assert.deepEqual(powersOfTwo(0), [1]);
+    assert.deepEqual(powersOfTwo(1), [1, 2]);
+    assert.deepEqual(powersOfTwo(4), [1, 2, 4, 8, 16]);
   });
 });

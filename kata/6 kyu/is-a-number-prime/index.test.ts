@@ -1,38 +1,33 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import isPrime from './index.ts';
 
 describe('isPrime', () => {
   it('basic tests', () => {
-    expect.assertions(6);
-
-    expect(isPrime(0)).toBe(false);
-    expect(isPrime(1)).toBe(false);
-    expect(isPrime(2)).toBe(true);
-    expect(isPrime(73)).toBe(true);
-    expect(isPrime(75)).toBe(false);
-    expect(isPrime(-1)).toBe(false);
+    assert.strictEqual(isPrime(0), false);
+    assert.strictEqual(isPrime(1), false);
+    assert.strictEqual(isPrime(2), true);
+    assert.strictEqual(isPrime(73), true);
+    assert.strictEqual(isPrime(75), false);
+    assert.strictEqual(isPrime(-1), false);
   });
 
   it('test prime', () => {
-    expect.assertions(5);
-
-    expect(isPrime(3)).toBe(true);
-    expect(isPrime(5)).toBe(true);
-    expect(isPrime(7)).toBe(true);
-    expect(isPrime(41)).toBe(true);
-    expect(isPrime(5099)).toBe(true);
+    assert.strictEqual(isPrime(3), true);
+    assert.strictEqual(isPrime(5), true);
+    assert.strictEqual(isPrime(7), true);
+    assert.strictEqual(isPrime(41), true);
+    assert.strictEqual(isPrime(5099), true);
   });
 
   it('test not prime', () => {
-    expect.assertions(8);
-
-    expect(isPrime(4)).toBe(false);
-    expect(isPrime(6)).toBe(false);
-    expect(isPrime(8)).toBe(false);
-    expect(isPrime(9)).toBe(false);
-    expect(isPrime(45)).toBe(false);
-    expect(isPrime(-5)).toBe(false);
-    expect(isPrime(-8)).toBe(false);
-    expect(isPrime(-41)).toBe(false);
+    assert.strictEqual(isPrime(4), false);
+    assert.strictEqual(isPrime(6), false);
+    assert.strictEqual(isPrime(8), false);
+    assert.strictEqual(isPrime(9), false);
+    assert.strictEqual(isPrime(45), false);
+    assert.strictEqual(isPrime(-5), false);
+    assert.strictEqual(isPrime(-8), false);
+    assert.strictEqual(isPrime(-41), false);
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import capMe from './index.ts';
 
 describe('capMe', () => {
   it('should capitalize each name in the array', () => {
-    expect.assertions(2);
-
-    expect(capMe(['jo', 'nelson', 'jurie'])).toStrictEqual(['Jo', 'Nelson', 'Jurie']);
-    expect(capMe(['KARLY', 'DANIEL', 'KELSEY'])).toStrictEqual(['Karly', 'Daniel', 'Kelsey']);
+    assert.deepEqual(capMe(['jo', 'nelson', 'jurie']), ['Jo', 'Nelson', 'Jurie']);
+    assert.deepEqual(capMe(['KARLY', 'DANIEL', 'KELSEY']), ['Karly', 'Daniel', 'Kelsey']);
   });
 });

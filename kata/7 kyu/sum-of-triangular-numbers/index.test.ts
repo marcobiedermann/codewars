@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import sumTriangularNumbers from './index.ts';
 
 describe('sumTriangularNumbers', () => {
   it('should calculate sum of triangular numbers', () => {
-    expect.assertions(5);
-
-    expect(sumTriangularNumbers(6)).toBe(56);
-    expect(sumTriangularNumbers(34)).toBe(7140);
-    expect(sumTriangularNumbers(-291)).toBe(0);
-    expect(sumTriangularNumbers(943)).toBe(140205240);
-    expect(sumTriangularNumbers(-971)).toBe(0);
+    assert.strictEqual(sumTriangularNumbers(6), 56);
+    assert.strictEqual(sumTriangularNumbers(34), 7140);
+    assert.strictEqual(sumTriangularNumbers(-291), 0);
+    assert.strictEqual(sumTriangularNumbers(943), 140205240);
+    assert.strictEqual(sumTriangularNumbers(-971), 0);
   });
 });

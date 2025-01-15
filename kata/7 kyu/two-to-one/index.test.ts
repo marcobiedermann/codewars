@@ -1,14 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import longest from './index.ts';
 
 describe('longest', () => {
   it('should return a new sorted string containing distinct letters', () => {
-    expect.assertions(3);
-
-    expect(longest('aretheyhere', 'yestheyarehere')).toBe('aehrsty');
-    expect(longest('loopingisfunbutdangerous', 'lessdangerousthancoding')).toBe(
+    assert.strictEqual(longest('aretheyhere', 'yestheyarehere'), 'aehrsty');
+    assert.strictEqual(
+      longest('loopingisfunbutdangerous', 'lessdangerousthancoding'),
       'abcdefghilnoprstu',
     );
-    expect(longest('inmanylanguages', 'theresapairoffunctions')).toBe('acefghilmnoprstuy');
+    assert.strictEqual(longest('inmanylanguages', 'theresapairoffunctions'), 'acefghilmnoprstuy');
   });
 });

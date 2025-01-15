@@ -1,18 +1,17 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import dative from './index.ts';
 
 describe('dative', () => {
   it('should return the valid form of a valid Hungarian word', () => {
-    expect.assertions(9);
-
-    expect(dative('ablak')).toBe('ablaknak');
-    expect(dative('tükör')).toBe('tükörnek');
-    expect(dative('keret')).toBe('keretnek');
-    expect(dative('otthon')).toBe('otthonnak');
-    expect(dative('virág')).toBe('virágnak');
-    expect(dative('tett')).toBe('tettnek');
-    expect(dative('rokkant')).toBe('rokkantnak');
-    expect(dative('rossz')).toBe('rossznak');
-    expect(dative('gonosz')).toBe('gonosznak');
+    assert.strictEqual(dative('ablak'), 'ablaknak');
+    assert.strictEqual(dative('tükör'), 'tükörnek');
+    assert.strictEqual(dative('keret'), 'keretnek');
+    assert.strictEqual(dative('otthon'), 'otthonnak');
+    assert.strictEqual(dative('virág'), 'virágnak');
+    assert.strictEqual(dative('tett'), 'tettnek');
+    assert.strictEqual(dative('rokkant'), 'rokkantnak');
+    assert.strictEqual(dative('rossz'), 'rossznak');
+    assert.strictEqual(dative('gonosz'), 'gonosznak');
   });
 });

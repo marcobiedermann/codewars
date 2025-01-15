@@ -1,19 +1,18 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import unluckyDays from './index.ts';
 
 describe('unluckyDays', () => {
   it('should return the number of Friday 13th in the given year', () => {
-    expect.assertions(10);
-
-    expect(unluckyDays(1586)).toBe(1);
-    expect(unluckyDays(1001)).toBe(3);
-    expect(unluckyDays(2819)).toBe(2);
-    expect(unluckyDays(2792)).toBe(2);
-    expect(unluckyDays(2723)).toBe(2);
-    expect(unluckyDays(1909)).toBe(1);
-    expect(unluckyDays(1812)).toBe(2);
-    expect(unluckyDays(1618)).toBe(2);
-    expect(unluckyDays(2132)).toBe(1);
-    expect(unluckyDays(2065)).toBe(3);
+    assert.strictEqual(unluckyDays(1586), 1);
+    assert.strictEqual(unluckyDays(1001), 3);
+    assert.strictEqual(unluckyDays(2819), 2);
+    assert.strictEqual(unluckyDays(2792), 2);
+    assert.strictEqual(unluckyDays(2723), 2);
+    assert.strictEqual(unluckyDays(1909), 1);
+    assert.strictEqual(unluckyDays(1812), 2);
+    assert.strictEqual(unluckyDays(1618), 2);
+    assert.strictEqual(unluckyDays(2132), 1);
+    assert.strictEqual(unluckyDays(2065), 3);
   });
 });

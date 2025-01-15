@@ -1,4 +1,5 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import Sleigh from './index.ts';
 
 describe('sleigh', () => {
@@ -6,17 +7,13 @@ describe('sleigh', () => {
 
   describe('authenticate', () => {
     it('must authenticate with correct credentials', () => {
-      expect.assertions(1);
-
-      expect(sleigh.authenticate('Santa Claus', 'Ho Ho Ho!')).toBe(true);
+      assert.strictEqual(sleigh.authenticate('Santa Claus', 'Ho Ho Ho!'), true);
     });
 
     it('must not authenticate with incorrect credentials', () => {
-      expect.assertions(3);
-
-      expect(sleigh.authenticate('Santa', 'Ho Ho Ho!')).toBe(false);
-      expect(sleigh.authenticate('Santa Claus', 'Ho Ho!')).toBe(false);
-      expect(sleigh.authenticate('jhoffner', 'CodeWars')).toBe(false);
+      assert.strictEqual(sleigh.authenticate('Santa', 'Ho Ho Ho!'), false);
+      assert.strictEqual(sleigh.authenticate('Santa Claus', 'Ho Ho!'), false);
+      assert.strictEqual(sleigh.authenticate('jhoffner', 'CodeWars'), false);
     });
   });
 });

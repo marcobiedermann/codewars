@@ -1,18 +1,15 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import greet from './index.ts';
 
 describe('jennygreet', () => {
   it('should greet some people normally', () => {
-    expect.assertions(3);
-
-    expect(greet('Jim')).toBe('Hello, Jim!');
-    expect(greet('Jane')).toBe('Hello, Jane!');
-    expect(greet('Simon')).toBe('Hello, Simon!');
+    assert.strictEqual(greet('Jim'), 'Hello, Jim!');
+    assert.strictEqual(greet('Jane'), 'Hello, Jane!');
+    assert.strictEqual(greet('Simon'), 'Hello, Simon!');
   });
 
   it('should greet Johnny a little bit more special', () => {
-    expect.assertions(1);
-
-    expect(greet('Johnny')).toBe('Hello, my love!');
+    assert.strictEqual(greet('Johnny'), 'Hello, my love!');
   });
 });

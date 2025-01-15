@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import mystery from './index.ts';
 
 describe('mystery', () => {
   it('should return an object', () => {
-    expect.assertions(1);
-
-    expect(mystery()).toStrictEqual({
+    assert.deepEqual(mystery(), {
       sanity: 'Hello',
     });
   });

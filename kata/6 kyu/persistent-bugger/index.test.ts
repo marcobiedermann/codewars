@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import persistence from './index.ts';
 
 describe('persistence', () => {
   it('should multiply digits until it reach a single digit', () => {
-    expect.assertions(4);
-
-    expect(persistence(39)).toBe(3);
-    expect(persistence(4)).toBe(0);
-    expect(persistence(25)).toBe(2);
-    expect(persistence(999)).toBe(4);
+    assert.strictEqual(persistence(39), 3);
+    assert.strictEqual(persistence(4), 0);
+    assert.strictEqual(persistence(25), 2);
+    assert.strictEqual(persistence(999), 4);
   });
 });

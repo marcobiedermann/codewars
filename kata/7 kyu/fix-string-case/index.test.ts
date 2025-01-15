@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import solve from './index.ts';
 
 describe('solve', () => {
   it('should fix string case', () => {
-    expect.assertions(4);
-
-    expect(solve('code')).toBe('code');
-    expect(solve('CODe')).toBe('CODE');
-    expect(solve('COde')).toBe('code');
-    expect(solve('Code')).toBe('code');
+    assert.strictEqual(solve('code'), 'code');
+    assert.strictEqual(solve('CODe'), 'CODE');
+    assert.strictEqual(solve('COde'), 'code');
+    assert.strictEqual(solve('Code'), 'code');
   });
 });

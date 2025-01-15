@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import solution from './index.ts';
 
 describe('solution', () => {
   it('should truncate the string if limit is reached', () => {
-    expect.assertions(3);
-
-    expect(solution('Testing String', 3)).toBe('Tes...');
-    expect(solution('Testing String', 8)).toBe('Testing ...');
-    expect(solution('Test', 8)).toBe('Test');
+    assert.strictEqual(solution('Testing String', 3), 'Tes...');
+    assert.strictEqual(solution('Testing String', 8), 'Testing ...');
+    assert.strictEqual(solution('Test', 8), 'Test');
   });
 });

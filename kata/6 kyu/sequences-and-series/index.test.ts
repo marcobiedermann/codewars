@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import getScore from './index.ts';
 
 describe('getScore', () => {
   it('should return the score for any positive number', () => {
-    expect.assertions(5);
-
-    expect(getScore(1)).toBe(50);
-    expect(getScore(2)).toBe(150);
-    expect(getScore(3)).toBe(300);
-    expect(getScore(4)).toBe(500);
-    expect(getScore(5)).toBe(750);
+    assert.strictEqual(getScore(1), 50);
+    assert.strictEqual(getScore(2), 150);
+    assert.strictEqual(getScore(3), 300);
+    assert.strictEqual(getScore(4), 500);
+    assert.strictEqual(getScore(5), 750);
   });
 });

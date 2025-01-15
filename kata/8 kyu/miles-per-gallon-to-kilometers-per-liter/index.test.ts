@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import converter from './index.ts';
 
 describe('converter', () => {
   it('should convert miles per imperial gallon into kilometers per liter', () => {
-    expect.assertions(3);
-
-    expect(converter(10)).toBe(3.54);
-    expect(converter(20)).toBe(7.08);
-    expect(converter(30)).toBe(10.62);
+    assert.strictEqual(converter(10), 3.54);
+    assert.strictEqual(converter(20), 7.08);
+    assert.strictEqual(converter(30), 10.62);
   });
 });

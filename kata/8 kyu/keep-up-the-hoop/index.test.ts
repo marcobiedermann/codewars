@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import hoopCount from './index.ts';
 
 describe('hoopCount', () => {
   it('should return an encouraging message', () => {
-    expect.assertions(2);
-
-    expect(hoopCount(3)).toBe('Keep at it until you get it');
-    expect(hoopCount(11)).toBe('Great, now move on to tricks');
+    assert.strictEqual(hoopCount(3), 'Keep at it until you get it');
+    assert.strictEqual(hoopCount(11), 'Great, now move on to tricks');
   });
 });

@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import reverseSeq from './index.ts';
 
 describe('reverseSeq', () => {
   it('should return sequence in reversed order', () => {
-    expect.assertions(1);
-
-    expect(reverseSeq(5)).toStrictEqual([5, 4, 3, 2, 1]);
+    assert.deepEqual(reverseSeq(5), [5, 4, 3, 2, 1]);
   });
 });

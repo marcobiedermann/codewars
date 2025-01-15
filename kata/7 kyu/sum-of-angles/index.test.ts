@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import angle from './index.ts';
 
 describe('angle', () => {
   it('should get inner sum of angles in n-sided polygon', () => {
-    expect.assertions(2);
-
-    expect(angle(3)).toBe(180);
-    expect(angle(4)).toBe(360);
+    assert.strictEqual(angle(3), 180);
+    assert.strictEqual(angle(4), 360);
   });
 });

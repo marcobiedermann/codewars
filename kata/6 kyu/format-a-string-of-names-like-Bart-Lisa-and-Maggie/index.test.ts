@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import list from './index.ts';
 
 describe('list', () => {
   it('should separate names by comma, except for the last two', () => {
-    expect.assertions(5);
-
-    expect(
+    assert.strictEqual(
       list([
         { name: 'Bart' },
         { name: 'Lisa' },
@@ -13,12 +12,14 @@ describe('list', () => {
         { name: 'Homer' },
         { name: 'Marge' },
       ]),
-    ).toBe('Bart, Lisa, Maggie, Homer & Marge');
-    expect(list([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }])).toBe(
+      'Bart, Lisa, Maggie, Homer & Marge',
+    );
+    assert.strictEqual(
+      list([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }]),
       'Bart, Lisa & Maggie',
     );
-    expect(list([{ name: 'Bart' }, { name: 'Lisa' }])).toBe('Bart & Lisa');
-    expect(list([{ name: 'Bart' }])).toBe('Bart');
-    expect(list([])).toBe('');
+    assert.strictEqual(list([{ name: 'Bart' }, { name: 'Lisa' }]), 'Bart & Lisa');
+    assert.strictEqual(list([{ name: 'Bart' }]), 'Bart');
+    assert.strictEqual(list([]), '');
   });
 });

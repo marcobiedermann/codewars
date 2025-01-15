@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import setAlarm from './index.ts';
 
 describe('setAlarm', () => {
   it('should return true if you are employed and not on vacation', () => {
-    expect.assertions(3);
-
-    expect(setAlarm(true, true)).toBe(false);
-    expect(setAlarm(false, true)).toBe(false);
-    expect(setAlarm(true, false)).toBe(true);
+    assert.strictEqual(setAlarm(true, true), false);
+    assert.strictEqual(setAlarm(false, true), false);
+    assert.strictEqual(setAlarm(true, false), true);
   });
 });

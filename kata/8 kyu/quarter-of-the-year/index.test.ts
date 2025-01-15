@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import quarterOf from './index.ts';
 
 describe('quarterOf', () => {
   it('should return the quarter of month', () => {
-    expect.assertions(3);
-
-    expect(quarterOf(3)).toBe(1);
-    expect(quarterOf(8)).toBe(3);
-    expect(quarterOf(11)).toBe(4);
+    assert.strictEqual(quarterOf(3), 1);
+    assert.strictEqual(quarterOf(8), 3);
+    assert.strictEqual(quarterOf(11), 4);
   });
 });

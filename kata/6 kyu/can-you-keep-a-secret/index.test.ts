@@ -1,16 +1,15 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import createSecretHolder from './index.ts';
 
 describe('createSecretHolder', () => {
   it('should store the secret as a private property', () => {
-    expect.assertions(2);
-
     const secretHolder = createSecretHolder(5);
 
-    expect(secretHolder.getSecret()).toBe(5);
+    assert.strictEqual(secretHolder.getSecret(), 5);
 
     secretHolder.setSecret(2);
 
-    expect(secretHolder.getSecret()).toBe(2);
+    assert.strictEqual(secretHolder.getSecret(), 2);
   });
 });

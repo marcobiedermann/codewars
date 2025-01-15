@@ -1,18 +1,17 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import getPlanetName from './index.ts';
 
 describe('getPlanetName', () => {
   it('should return planet name by ID', () => {
-    expect.assertions(9);
-
-    expect(getPlanetName(0)).toBe('ID does not match');
-    expect(getPlanetName(1)).toBe('Mercury');
-    expect(getPlanetName(2)).toBe('Venus');
-    expect(getPlanetName(3)).toBe('Earth');
-    expect(getPlanetName(4)).toBe('Mars');
-    expect(getPlanetName(5)).toBe('Jupiter');
-    expect(getPlanetName(6)).toBe('Saturn');
-    expect(getPlanetName(7)).toBe('Uranus');
-    expect(getPlanetName(8)).toBe('Neptune');
+    assert.strictEqual(getPlanetName(0), 'ID does not match');
+    assert.strictEqual(getPlanetName(1), 'Mercury');
+    assert.strictEqual(getPlanetName(2), 'Venus');
+    assert.strictEqual(getPlanetName(3), 'Earth');
+    assert.strictEqual(getPlanetName(4), 'Mars');
+    assert.strictEqual(getPlanetName(5), 'Jupiter');
+    assert.strictEqual(getPlanetName(6), 'Saturn');
+    assert.strictEqual(getPlanetName(7), 'Uranus');
+    assert.strictEqual(getPlanetName(8), 'Neptune');
   });
 });

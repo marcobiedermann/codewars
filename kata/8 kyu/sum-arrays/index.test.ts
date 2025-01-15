@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import sum from './index.ts';
 
 describe('sum', () => {
   it('should sum all numbers in array', () => {
-    expect.assertions(2);
-
-    expect(sum([])).toBe(0);
-    expect(sum([1, 5.2, 4, 0, -1])).toBe(9.2);
+    assert.strictEqual(sum([]), 0);
+    assert.strictEqual(sum([1, 5.2, 4, 0, -1]), 9.2);
   });
 });

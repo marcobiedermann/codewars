@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import findAverage from './index.ts';
 
 describe('findAverage', () => {
   it('should find the average of numners', () => {
-    expect.assertions(2);
-
-    expect(findAverage([1])).toBe(1);
-    expect(findAverage([1, 3, 5, 7])).toBe(4);
+    assert.strictEqual(findAverage([1]), 1);
+    assert.strictEqual(findAverage([1, 3, 5, 7]), 4);
   });
 });

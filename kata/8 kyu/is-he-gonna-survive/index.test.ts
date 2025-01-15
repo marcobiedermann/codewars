@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import hero from './index.ts';
 
 describe('hero', () => {
   it('should check if hero has enough bullets to survive', () => {
-    expect.assertions(6);
-
-    expect(hero(10, 5)).toBe(true);
-    expect(hero(7, 4)).toBe(false);
-    expect(hero(4, 5)).toBe(false);
-    expect(hero(100, 40)).toBe(true);
-    expect(hero(1500, 751)).toBe(false);
-    expect(hero(0, 1)).toBe(false);
+    assert.strictEqual(hero(10, 5), true);
+    assert.strictEqual(hero(7, 4), false);
+    assert.strictEqual(hero(4, 5), false);
+    assert.strictEqual(hero(100, 40), true);
+    assert.strictEqual(hero(1500, 751), false);
+    assert.strictEqual(hero(0, 1), false);
   });
 });

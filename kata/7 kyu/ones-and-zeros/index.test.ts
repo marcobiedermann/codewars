@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import binaryArrayToNumber from './index.ts';
 
 describe('binaryArrayToNumber', () => {
   it('should convert binary value in array to integer', () => {
-    expect.assertions(4);
-
-    expect(binaryArrayToNumber([0, 0, 0, 1])).toBe(1);
-    expect(binaryArrayToNumber([0, 0, 1, 0])).toBe(2);
-    expect(binaryArrayToNumber([1, 1, 1, 1])).toBe(15);
-    expect(binaryArrayToNumber([0, 1, 1, 0])).toBe(6);
+    assert.strictEqual(binaryArrayToNumber([0, 0, 0, 1]), 1);
+    assert.strictEqual(binaryArrayToNumber([0, 0, 1, 0]), 2);
+    assert.strictEqual(binaryArrayToNumber([1, 1, 1, 1]), 15);
+    assert.strictEqual(binaryArrayToNumber([0, 1, 1, 0]), 6);
   });
 });

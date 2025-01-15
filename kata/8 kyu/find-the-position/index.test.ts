@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import position from './index.ts';
 
 describe('position', () => {
   it('should position of letter in alphabet', () => {
-    expect.assertions(3);
-
-    expect(position('a')).toBe('Position of alphabet: 1');
-    expect(position('z')).toBe('Position of alphabet: 26');
-    expect(position('e')).toBe('Position of alphabet: 5');
+    assert.strictEqual(position('a'), 'Position of alphabet: 1');
+    assert.strictEqual(position('z'), 'Position of alphabet: 26');
+    assert.strictEqual(position('e'), 'Position of alphabet: 5');
   });
 });

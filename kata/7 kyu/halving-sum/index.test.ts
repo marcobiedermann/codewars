@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import halvingSum from './index.ts';
 
 describe('halvingSum', () => {
   it('should return sum of integer division', () => {
-    expect.assertions(2);
-
-    expect(halvingSum(25)).toBe(47);
-    expect(halvingSum(127)).toBe(247);
+    assert.strictEqual(halvingSum(25), 47);
+    assert.strictEqual(halvingSum(127), 247);
   });
 });

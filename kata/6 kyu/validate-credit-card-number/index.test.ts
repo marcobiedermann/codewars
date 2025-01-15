@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import validate from './index.ts';
 
 describe('validate', () => {
   it('should validate credit card numbers', () => {
-    expect.assertions(5);
-
-    expect(validate(123)).toBe(false);
-    expect(validate(1)).toBe(false);
-    expect(validate(2121)).toBe(true);
-    expect(validate(1230)).toBe(true);
-    expect(validate(8675309)).toBe(false);
+    assert.strictEqual(validate(123), false);
+    assert.strictEqual(validate(1), false);
+    assert.strictEqual(validate(2121), true);
+    assert.strictEqual(validate(1230), true);
+    assert.strictEqual(validate(8675309), false);
   });
 });

@@ -1,17 +1,16 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import friend from './index.ts';
 
 describe('friend', () => {
   it('should filter names by length of 4', () => {
-    expect.assertions(4);
-
-    expect(friend(['Ryan', 'Kieran', 'Mark'])).toStrictEqual(['Ryan', 'Mark']);
-    expect(friend(['Ryan', 'Jimmy', '123', '4', 'Cool Man'])).toStrictEqual(['Ryan']);
-    expect(friend(['Jimm', 'Cari', 'aret', 'truehdnviegkwgvke', 'sixtyiscooooool'])).toStrictEqual([
+    assert.deepEqual(friend(['Ryan', 'Kieran', 'Mark']), ['Ryan', 'Mark']);
+    assert.deepEqual(friend(['Ryan', 'Jimmy', '123', '4', 'Cool Man']), ['Ryan']);
+    assert.deepEqual(friend(['Jimm', 'Cari', 'aret', 'truehdnviegkwgvke', 'sixtyiscooooool']), [
       'Jimm',
       'Cari',
       'aret',
     ]);
-    expect(friend(['Love', 'Your', 'Face', '1'])).toStrictEqual(['Love', 'Your', 'Face']);
+    assert.deepEqual(friend(['Love', 'Your', 'Face', '1']), ['Love', 'Your', 'Face']);
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import presses from './index.ts';
 
 describe('presses', () => {
   it('should calculate the number of button presses', () => {
-    expect.assertions(2);
-
-    expect(presses('LOL')).toBe(9);
-    expect(presses('HOW R U')).toBe(13);
+    assert.strictEqual(presses('LOL'), 9);
+    assert.strictEqual(presses('HOW R U'), 13);
   });
 });

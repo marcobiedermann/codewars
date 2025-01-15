@@ -1,11 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import God, { Man } from './index.ts';
 
 describe('god', () => {
   it('should return a man and woman', () => {
-    expect.assertions(1);
-
     const humans = God.create();
-    expect(humans[0]).toBeInstanceOf(Man);
+
+    assert.strictEqual(humans[0] instanceof Man, true);
   });
 });

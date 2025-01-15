@@ -1,19 +1,18 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import problem from './index.ts';
 
 describe('problem', () => {
   it('should return value multiplied by 50 and increased by 6', () => {
-    expect.assertions(10);
-
-    expect(problem('hello')).toBe('Error');
-    expect(problem(1)).toBe(56);
-    expect(problem(5)).toBe(256);
-    expect(problem(0)).toBe(6);
-    expect(problem(1.2)).toBe(66);
-    expect(problem(3)).toBe(156);
-    expect(problem('RyanIsCool')).toBe('Error');
-    expect(problem(-3)).toBe(-144);
-    expect(problem('')).toBe('Error');
-    expect(problem(0.03)).toBe(7.5);
+    assert.strictEqual(problem('hello'), 'Error');
+    assert.strictEqual(problem(1), 56);
+    assert.strictEqual(problem(5), 256);
+    assert.strictEqual(problem(0), 6);
+    assert.strictEqual(problem(1.2), 66);
+    assert.strictEqual(problem(3), 156);
+    assert.strictEqual(problem('RyanIsCool'), 'Error');
+    assert.strictEqual(problem(-3), -144);
+    assert.strictEqual(problem(''), 'Error');
+    assert.strictEqual(problem(0.03), 7.5);
   });
 });

@@ -1,18 +1,17 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import fibonacci from './index.ts';
 
 describe('fibonacci', () => {
   it('should calculate the nth fibonacci number', () => {
-    expect.assertions(9);
-
-    expect(fibonacci(0)).toBe(0);
-    expect(fibonacci(1)).toBe(1);
-    expect(fibonacci(5)).toBe(5);
-    expect(fibonacci(10)).toBe(55);
-    expect(fibonacci(15)).toBe(610);
-    expect(fibonacci(20)).toBe(6765);
-    expect(fibonacci(50)).toBe(12586269025);
-    expect(fibonacci(60)).toBe(1548008755920);
-    expect(fibonacci(70)).toBe(190392490709135);
+    assert.strictEqual(fibonacci(0), 0);
+    assert.strictEqual(fibonacci(1), 1);
+    assert.strictEqual(fibonacci(5), 5);
+    assert.strictEqual(fibonacci(10), 55);
+    assert.strictEqual(fibonacci(15), 610);
+    assert.strictEqual(fibonacci(20), 6765);
+    assert.strictEqual(fibonacci(50), 12586269025);
+    assert.strictEqual(fibonacci(60), 1548008755920);
+    assert.strictEqual(fibonacci(70), 190392490709135);
   });
 });

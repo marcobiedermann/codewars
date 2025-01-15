@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import whoIsPaying from './index.ts';
 
 describe('whoIsPaying', () => {
   it('should truncate string to max two letters', () => {
-    expect.assertions(6);
-
-    expect(whoIsPaying('Mexico')).toStrictEqual(['Mexico', 'Me']);
-    expect(whoIsPaying('Melania')).toStrictEqual(['Melania', 'Me']);
-    expect(whoIsPaying('Melissa')).toStrictEqual(['Melissa', 'Me']);
-    expect(whoIsPaying('Me')).toStrictEqual(['Me']);
-    expect(whoIsPaying('')).toStrictEqual(['']);
-    expect(whoIsPaying('I')).toStrictEqual(['I']);
+    assert.deepEqual(whoIsPaying('Mexico'), ['Mexico', 'Me']);
+    assert.deepEqual(whoIsPaying('Melania'), ['Melania', 'Me']);
+    assert.deepEqual(whoIsPaying('Melissa'), ['Melissa', 'Me']);
+    assert.deepEqual(whoIsPaying('Me'), ['Me']);
+    assert.deepEqual(whoIsPaying(''), ['']);
+    assert.deepEqual(whoIsPaying('I'), ['I']);
   });
 });

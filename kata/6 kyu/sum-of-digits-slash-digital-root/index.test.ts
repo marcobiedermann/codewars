@@ -1,13 +1,12 @@
 /* eslint-disable camelcase */
 
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import digital_root from './index.ts';
 
 describe('foo', () => {
   it('should sum digits until a single-digit number is produced', () => {
-    expect.assertions(2);
-
-    expect(digital_root(16)).toBe(7);
-    expect(digital_root(456)).toBe(6);
+    assert.strictEqual(digital_root(16), 7);
+    assert.strictEqual(digital_root(456), 6);
   });
 });

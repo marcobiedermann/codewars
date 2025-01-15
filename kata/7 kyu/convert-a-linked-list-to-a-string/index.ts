@@ -1,8 +1,8 @@
 class Node {
-  constructor(
-    public data: number,
-    public next: Node | null = null,
-  ) {
+  public data: number;
+  public next: Node | null;
+
+  constructor(data: number, next: Node | null = null) {
     this.data = data;
     this.next = next;
   }

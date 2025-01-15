@@ -3,67 +3,62 @@
 
 // @ts-nocheck
 
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import trueOrFalse from './index.ts';
 
 describe('trueOrFalse', () => {
   it('should test for equations and inequalities', () => {
-    expect.assertions(10);
-
     const a = 1;
     const b = 2;
     const c = 1;
 
-    expect(trueOrFalse(a > b)).toBe('false');
-    expect(trueOrFalse(a === b)).toBe('false');
-    expect(trueOrFalse(a < b)).toBe('true');
-    expect(trueOrFalse(a !== b)).toBe('true');
-    expect(trueOrFalse(b > c)).toBe('true');
-    expect(trueOrFalse(b === c)).toBe('false');
-    expect(trueOrFalse(b < c)).toBe('false');
-    expect(trueOrFalse(b !== c)).toBe('true');
-    expect(trueOrFalse(a === c)).toBe('true');
-    expect(trueOrFalse(a !== c)).toBe('false');
+    assert.strictEqual(trueOrFalse(a > b), 'false');
+    assert.strictEqual(trueOrFalse(a === b), 'false');
+    assert.strictEqual(trueOrFalse(a < b), 'true');
+    assert.strictEqual(trueOrFalse(a !== b), 'true');
+    assert.strictEqual(trueOrFalse(b > c), 'true');
+    assert.strictEqual(trueOrFalse(b === c), 'false');
+    assert.strictEqual(trueOrFalse(b < c), 'false');
+    assert.strictEqual(trueOrFalse(b !== c), 'true');
+    assert.strictEqual(trueOrFalse(a === c), 'true');
+    assert.strictEqual(trueOrFalse(a !== c), 'false');
   });
 
   it('should test for logical operators and bitwise operators', () => {
-    expect.assertions(17);
-
     const t = true;
     const f = false;
 
-    expect(trueOrFalse(t && f)).toBe('false');
-    expect(trueOrFalse(f && f)).toBe('false');
-    expect(trueOrFalse(t && t)).toBe('true');
-    expect(trueOrFalse(t || f)).toBe('true');
-    expect(trueOrFalse(t || t)).toBe('true');
-    expect(trueOrFalse(f || f)).toBe('false');
-    expect(trueOrFalse(t & f)).toBe('false');
-    expect(trueOrFalse(t & t)).toBe('true');
-    expect(trueOrFalse(f & f)).toBe('false');
-    expect(trueOrFalse(t | f)).toBe('true');
-    expect(trueOrFalse(t | t)).toBe('true');
-    expect(trueOrFalse(f | f)).toBe('false');
-    expect(trueOrFalse(!t)).toBe('false');
-    expect(trueOrFalse(!f)).toBe('true');
-    expect(trueOrFalse(t ^ f)).toBe('true');
-    expect(trueOrFalse(t ^ t)).toBe('false');
-    expect(trueOrFalse(f ^ f)).toBe('false');
+    assert.strictEqual(trueOrFalse(t && f), 'false');
+    assert.strictEqual(trueOrFalse(f && f), 'false');
+    assert.strictEqual(trueOrFalse(t && t), 'true');
+    assert.strictEqual(trueOrFalse(t || f), 'true');
+    assert.strictEqual(trueOrFalse(t || t), 'true');
+    assert.strictEqual(trueOrFalse(f || f), 'false');
+    assert.strictEqual(trueOrFalse(t & f), 'false');
+    assert.strictEqual(trueOrFalse(t & t), 'true');
+    assert.strictEqual(trueOrFalse(f & f), 'false');
+    assert.strictEqual(trueOrFalse(t | f), 'true');
+    assert.strictEqual(trueOrFalse(t | t), 'true');
+    assert.strictEqual(trueOrFalse(f | f), 'false');
+    assert.strictEqual(trueOrFalse(!t), 'false');
+    assert.strictEqual(trueOrFalse(!f), 'true');
+    assert.strictEqual(trueOrFalse(t ^ f), 'true');
+    assert.strictEqual(trueOrFalse(t ^ t), 'false');
+    assert.strictEqual(trueOrFalse(f ^ f), 'false');
   });
 
   it('should test for implicit conversion', () => {
-    expect.assertions(11);
-
-    expect(trueOrFalse(true)).toBe('true');
-    expect(trueOrFalse(123)).toBe('true');
-    expect(trueOrFalse('123')).toBe('true');
-    expect(trueOrFalse(['123'])).toBe('true');
-    expect(trueOrFalse('false')).toBe('true');
-    expect(trueOrFalse(false)).toBe('false');
-    expect(trueOrFalse(0)).toBe('false');
-    expect(trueOrFalse('')).toBe('false');
-    expect(trueOrFalse(null)).toBe('false');
-    expect(trueOrFalse([].length)).toBe('false');
-    expect(trueOrFalse(undefined)).toBe('false');
+    assert.strictEqual(trueOrFalse(true), 'true');
+    assert.strictEqual(trueOrFalse(123), 'true');
+    assert.strictEqual(trueOrFalse('123'), 'true');
+    assert.strictEqual(trueOrFalse(['123']), 'true');
+    assert.strictEqual(trueOrFalse('false'), 'true');
+    assert.strictEqual(trueOrFalse(false), 'false');
+    assert.strictEqual(trueOrFalse(0), 'false');
+    assert.strictEqual(trueOrFalse(''), 'false');
+    assert.strictEqual(trueOrFalse(null), 'false');
+    assert.strictEqual(trueOrFalse([].length), 'false');
+    assert.strictEqual(trueOrFalse(undefined), 'false');
   });
 });

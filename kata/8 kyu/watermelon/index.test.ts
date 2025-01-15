@@ -1,19 +1,18 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import divide from './index.ts';
 
 describe('divide', () => {
   it('should check if number is evenly divisible', () => {
-    expect.assertions(10);
-
-    expect(divide(4)).toBe(true);
-    expect(divide(2)).toBe(false);
-    expect(divide(5)).toBe(false);
-    expect(divide(88)).toBe(true);
-    expect(divide(100)).toBe(true);
-    expect(divide(67)).toBe(false);
-    expect(divide(90)).toBe(true);
-    expect(divide(10)).toBe(true);
-    expect(divide(99)).toBe(false);
-    expect(divide(32)).toBe(true);
+    assert.strictEqual(divide(4), true);
+    assert.strictEqual(divide(2), false);
+    assert.strictEqual(divide(5), false);
+    assert.strictEqual(divide(88), true);
+    assert.strictEqual(divide(100), true);
+    assert.strictEqual(divide(67), false);
+    assert.strictEqual(divide(90), true);
+    assert.strictEqual(divide(10), true);
+    assert.strictEqual(divide(99), false);
+    assert.strictEqual(divide(32), true);
   });
 });

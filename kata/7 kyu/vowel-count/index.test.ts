@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import getCount from './index.ts';
 
 describe('getCount', () => {
   it('should count vowels in string', () => {
-    expect.assertions(1);
-
-    expect(getCount('abracadabra')).toBe(5);
+    assert.strictEqual(getCount('abracadabra'), 5);
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import stairsIn20 from './index.ts';
 
 describe('stairsIn20', () => {
   it('should return the 20 year estimate of the stairs climed', () => {
-    expect.assertions(1);
-
-    expect(
+    assert.strictEqual(
       stairsIn20([
         [
           6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274, 7148, 6152, 5940,
@@ -50,6 +49,7 @@ describe('stairsIn20', () => {
           7799, 7179, 5184, 7960, 9455, 5633, 9085,
         ],
       ]),
-    ).toBe(54636040);
+      54636040,
+    );
   });
 });

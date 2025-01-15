@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import finalGrade from './index.ts';
 
 describe('finalGrade', () => {
   it('should calculate final grade', () => {
-    expect.assertions(4);
-
-    expect(finalGrade(100, 12)).toBe(100);
-    expect(finalGrade(85, 5)).toBe(90);
-    expect(finalGrade(55, 3)).toBe(75);
-    expect(finalGrade(55, 0)).toBe(0);
+    assert.strictEqual(finalGrade(100, 12), 100);
+    assert.strictEqual(finalGrade(85, 5), 90);
+    assert.strictEqual(finalGrade(55, 3), 75);
+    assert.strictEqual(finalGrade(55, 0), 0);
   });
 });

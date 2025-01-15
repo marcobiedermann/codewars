@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import howMuchILoveYou from './index.ts';
 
 describe('howMuchILoveYou', () => {
   it('should return how much I love you', () => {
-    expect.assertions(3);
-
-    expect(howMuchILoveYou(7)).toBe('I love you');
-    expect(howMuchILoveYou(3)).toBe('a lot');
-    expect(howMuchILoveYou(6)).toBe('not at all');
+    assert.strictEqual(howMuchILoveYou(7), 'I love you');
+    assert.strictEqual(howMuchILoveYou(3), 'a lot');
+    assert.strictEqual(howMuchILoveYou(6), 'not at all');
   });
 });

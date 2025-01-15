@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import smash from './index.ts';
 
 describe('smash', () => {
   it('should smash words together', () => {
-    expect.assertions(2);
-
-    expect(smash(['hello'])).toBe('hello');
-    expect(smash(['hello', 'world'])).toBe('hello world');
+    assert.strictEqual(smash(['hello']), 'hello');
+    assert.strictEqual(smash(['hello', 'world']), 'hello world');
   });
 });

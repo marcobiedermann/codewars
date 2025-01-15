@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import hello from './index.ts';
 
 describe('hello', () => {
   it('should return `Hello, world!` or `Hello, name!`', () => {
-    expect.assertions(4);
-
-    expect(hello('johN')).toBe('Hello, John!');
-    expect(hello('alice')).toBe('Hello, Alice!');
-    expect(hello()).toBe('Hello, World!');
-    expect(hello('')).toBe('Hello, World!');
+    assert.strictEqual(hello('johN'), 'Hello, John!');
+    assert.strictEqual(hello('alice'), 'Hello, Alice!');
+    assert.strictEqual(hello(), 'Hello, World!');
+    assert.strictEqual(hello(''), 'Hello, World!');
   });
 });

@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import nbYear from './index.ts';
 
 describe('nbYear', () => {
   it('should get years to reach population', () => {
-    expect.assertions(3);
-
-    expect(nbYear(1500, 5, 100, 5000)).toBe(15);
-    expect(nbYear(1500000, 2.5, 10000, 2000000)).toBe(10);
-    expect(nbYear(1500000, 0.25, 1000, 2000000)).toBe(94);
+    assert.strictEqual(nbYear(1500, 5, 100, 5000), 15);
+    assert.strictEqual(nbYear(1500000, 2.5, 10000, 2000000), 10);
+    assert.strictEqual(nbYear(1500000, 0.25, 1000, 2000000), 94);
   });
 });

@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import averages from './index.ts';
 
 describe('averages', () => {
   it('should return average for each number and his follower', () => {
-    expect.assertions(3);
-
-    expect(averages([2, 2, 2, 2, 2])).toStrictEqual([2, 2, 2, 2]);
-    expect(averages([2, -2, 2, -2, 2])).toStrictEqual([0, 0, 0, 0]);
-    expect(averages([1, 3, 5, 1, -10])).toStrictEqual([2, 4, 3, -4.5]);
+    assert.deepEqual(averages([2, 2, 2, 2, 2]), [2, 2, 2, 2]);
+    assert.deepEqual(averages([2, -2, 2, -2, 2]), [0, 0, 0, 0]);
+    assert.deepEqual(averages([1, 3, 5, 1, -10]), [2, 4, 3, -4.5]);
   });
 });

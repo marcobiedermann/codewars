@@ -1,13 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import well from './index.ts';
 
 describe('well', () => {
   it('should should check good ideas', () => {
-    expect.assertions(3);
-
-    expect(well(['bad', 'bad', 'bad'])).toBe('Fail!');
-    expect(well(['good', 'bad', 'bad', 'bad', 'bad'])).toBe('Publish!');
-    expect(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good'])).toBe(
+    assert.strictEqual(well(['bad', 'bad', 'bad']), 'Fail!');
+    assert.strictEqual(well(['good', 'bad', 'bad', 'bad', 'bad']), 'Publish!');
+    assert.strictEqual(
+      well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']),
       'I smell a series!',
     );
   });

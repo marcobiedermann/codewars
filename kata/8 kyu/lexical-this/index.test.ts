@@ -1,12 +1,11 @@
 /* eslint-disable no-underscore-dangle */
 
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import Person from './index.ts';
 
 describe('person', () => {
   it('should fill fields', () => {
-    expect.assertions(4);
-
     const people = [
       ['bob', 'john'],
       ['bob', 'john', 'dave'],
@@ -19,7 +18,7 @@ describe('person', () => {
 
       person.fillFriends(people[i]);
 
-      expect(person._friends).toStrictEqual(people[i]);
+      assert.strictEqual(person._friends, people[i]);
     }
   });
 });

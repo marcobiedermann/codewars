@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import humanReadable from './index.ts';
 
 describe('humanReadable', () => {
   it('should return the time in a human-readable format', () => {
-    expect.assertions(5);
-
-    expect(humanReadable(0)).toBe('00:00:00');
-    expect(humanReadable(5)).toBe('00:00:05');
-    expect(humanReadable(60)).toBe('00:01:00');
-    expect(humanReadable(86399)).toBe('23:59:59');
-    expect(humanReadable(359999)).toBe('99:59:59');
+    assert.strictEqual(humanReadable(0), '00:00:00');
+    assert.strictEqual(humanReadable(5), '00:00:05');
+    assert.strictEqual(humanReadable(60), '00:01:00');
+    assert.strictEqual(humanReadable(86399), '23:59:59');
+    assert.strictEqual(humanReadable(359999), '99:59:59');
   });
 });

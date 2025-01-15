@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import correct from './index.ts';
 
 describe('correct', () => {
   it('should correct errors in text', () => {
-    expect.assertions(5);
-
-    expect(correct('L0ND0N')).toBe('LONDON');
-    expect(correct('DUBL1N')).toBe('DUBLIN');
-    expect(correct('51NGAP0RE')).toBe('SINGAPORE');
-    expect(correct('BUDAPE5T')).toBe('BUDAPEST');
-    expect(correct('PAR15')).toBe('PARIS');
+    assert.strictEqual(correct('L0ND0N'), 'LONDON');
+    assert.strictEqual(correct('DUBL1N'), 'DUBLIN');
+    assert.strictEqual(correct('51NGAP0RE'), 'SINGAPORE');
+    assert.strictEqual(correct('BUDAPE5T'), 'BUDAPEST');
+    assert.strictEqual(correct('PAR15'), 'PARIS');
   });
 });

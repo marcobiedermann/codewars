@@ -1,21 +1,16 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import sortByLength from './index.ts';
 
 describe('sortByLength', () => {
   it('should sort strings by length', () => {
-    expect.assertions(3);
-
-    expect(sortByLength(['Beg', 'Life', 'I', 'To'])).toStrictEqual(['I', 'To', 'Beg', 'Life']);
-    expect(sortByLength(['', 'Moderately', 'Brains', 'Pizza'])).toStrictEqual([
+    assert.deepEqual(sortByLength(['Beg', 'Life', 'I', 'To']), ['I', 'To', 'Beg', 'Life']);
+    assert.deepEqual(sortByLength(['', 'Moderately', 'Brains', 'Pizza']), [
       '',
       'Pizza',
       'Brains',
       'Moderately',
     ]);
-    expect(sortByLength(['Longer', 'Longest', 'Short'])).toStrictEqual([
-      'Short',
-      'Longer',
-      'Longest',
-    ]);
+    assert.deepEqual(sortByLength(['Longer', 'Longest', 'Short']), ['Short', 'Longer', 'Longest']);
   });
 });

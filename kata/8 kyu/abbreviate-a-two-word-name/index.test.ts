@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import abbrevName from './index.ts';
 
 describe('abbrevName', () => {
   it('should return two capital letters with a dot separating them', () => {
-    expect.assertions(5);
-
-    expect(abbrevName('Sam Harris')).toBe('S.H');
-    expect(abbrevName('Patrick Feenan')).toBe('P.F');
-    expect(abbrevName('Evan Cole')).toBe('E.C');
-    expect(abbrevName('P Favuzzi')).toBe('P.F');
-    expect(abbrevName('David Mendieta')).toBe('D.M');
+    assert.strictEqual(abbrevName('Sam Harris'), 'S.H');
+    assert.strictEqual(abbrevName('Patrick Feenan'), 'P.F');
+    assert.strictEqual(abbrevName('Evan Cole'), 'E.C');
+    assert.strictEqual(abbrevName('P Favuzzi'), 'P.F');
+    assert.strictEqual(abbrevName('David Mendieta'), 'D.M');
   });
 });

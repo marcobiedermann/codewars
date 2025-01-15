@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import abbreviate from './index.ts';
 
 describe('abbreviate', () => {
   it('should turn words into an abbreviation', () => {
-    expect.assertions(4);
-
-    expect(abbreviate('internationalization')).toBe('i18n');
-    expect(abbreviate('accessibility')).toBe('a11y');
-    expect(abbreviate('Accessibility')).toBe('A11y');
-    expect(abbreviate('elephant-ride')).toBe('e6t-r2e');
+    assert.strictEqual(abbreviate('internationalization'), 'i18n');
+    assert.strictEqual(abbreviate('accessibility'), 'a11y');
+    assert.strictEqual(abbreviate('Accessibility'), 'A11y');
+    assert.strictEqual(abbreviate('elephant-ride'), 'e6t-r2e');
   });
 });

@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import getASCII from './index.ts';
 
 describe('getASCII', () => {
   it('should return the ASCII code of a character', () => {
-    expect.assertions(3);
-
-    expect(getASCII('A')).toBe(65);
-    expect(getASCII(' ')).toBe(32);
-    expect(getASCII('!')).toBe(33);
+    assert.strictEqual(getASCII('A'), 65);
+    assert.strictEqual(getASCII(' '), 32);
+    assert.strictEqual(getASCII('!'), 33);
   });
 });

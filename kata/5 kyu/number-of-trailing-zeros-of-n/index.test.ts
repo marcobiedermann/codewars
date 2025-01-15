@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import zeros from './index.ts';
 
 describe('zeros', () => {
   it('should count number of trailing zeros in a factorial of a given number', () => {
-    expect.assertions(4);
-
-    expect(zeros(0)).toBe(0);
-    expect(zeros(5)).toBe(1);
-    expect(zeros(6)).toBe(1);
-    expect(zeros(30)).toBe(7);
+    assert.strictEqual(zeros(0), 0);
+    assert.strictEqual(zeros(5), 1);
+    assert.strictEqual(zeros(6), 1);
+    assert.strictEqual(zeros(30), 7);
   });
 });

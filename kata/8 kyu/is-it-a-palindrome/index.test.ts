@@ -1,17 +1,16 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import isPalindrome from './index.ts';
 
 describe('isPalindrome', () => {
   it('should check if string is palindrome', () => {
-    expect.assertions(8);
-
-    expect(isPalindrome('a')).toBe(true);
-    expect(isPalindrome('aba')).toBe(true);
-    expect(isPalindrome('Abba')).toBe(true);
-    expect(isPalindrome('hello')).toBe(false);
-    expect(isPalindrome('Bob')).toBe(true);
-    expect(isPalindrome('Madam')).toBe(true);
-    expect(isPalindrome('AbBa')).toBe(true);
-    expect(isPalindrome('')).toBe(true);
+    assert.strictEqual(isPalindrome('a'), true);
+    assert.strictEqual(isPalindrome('aba'), true);
+    assert.strictEqual(isPalindrome('Abba'), true);
+    assert.strictEqual(isPalindrome('hello'), false);
+    assert.strictEqual(isPalindrome('Bob'), true);
+    assert.strictEqual(isPalindrome('Madam'), true);
+    assert.strictEqual(isPalindrome('AbBa'), true);
+    assert.strictEqual(isPalindrome(''), true);
   });
 });

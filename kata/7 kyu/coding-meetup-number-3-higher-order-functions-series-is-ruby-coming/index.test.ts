@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import isRubyComing from './index.ts';
 
 describe('isRubyComing', () => {
   it('should return true if at least one Ruby developer is in the list of developers', () => {
-    expect.assertions(2);
-
-    expect(
+    assert.strictEqual(
       isRubyComing([
         {
           firstName: 'Sofia',
@@ -32,8 +31,9 @@ describe('isRubyComing', () => {
           language: 'Ruby',
         },
       ]),
-    ).toBe(true);
-    expect(
+      true,
+    );
+    assert.strictEqual(
       isRubyComing([
         {
           firstName: 'Sofia',
@@ -52,6 +52,7 @@ describe('isRubyComing', () => {
           language: 'Python',
         },
       ]),
-    ).toBe(false);
+      false,
+    );
   });
 });

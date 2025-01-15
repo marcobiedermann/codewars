@@ -1,36 +1,32 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import countWords from './index.ts';
 
 describe('countWords', () => {
   it('should work in basic form of problem', () => {
-    expect.assertions(6);
-
-    expect(countWords('Hello')).toBe(1);
-    expect(countWords('Hello, World!')).toBe(2);
-    expect(
+    assert.strictEqual(countWords('Hello'), 1);
+    assert.strictEqual(countWords('Hello, World!'), 2);
+    assert.strictEqual(
       countWords(
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ),
-    ).toBe(19);
-    expect(countWords('')).toBe(0);
-    expect(countWords('With! Symbol@ #Around! (Every) %Word$')).toBe(5);
-    expect(countWords('Dear   Victoria, I love  to press   space button.')).toBe(8);
+      19,
+    );
+    assert.strictEqual(countWords(''), 0);
+    assert.strictEqual(countWords('With! Symbol@ #Around! (Every) %Word$'), 5);
+    assert.strictEqual(countWords('Dear   Victoria, I love  to press   space button.'), 8);
   });
 
   it('should work with spaces around string', () => {
-    expect.assertions(5);
-
-    expect(countWords(' Arthur ')).toBe(1);
-    expect(countWords(' David')).toBe(1);
-    expect(countWords('Nelson ')).toBe(1);
-    expect(countWords('  Hello Gomer  ')).toBe(2);
-    expect(countWords('  Hello     Bart  ')).toBe(2);
+    assert.strictEqual(countWords(' Arthur '), 1);
+    assert.strictEqual(countWords(' David'), 1);
+    assert.strictEqual(countWords('Nelson '), 1);
+    assert.strictEqual(countWords('  Hello Gomer  '), 2);
+    assert.strictEqual(countWords('  Hello     Bart  '), 2);
   });
 
   it('should work with non-whitespace (ex. breakspace) chars', () => {
-    expect.assertions(2);
-
-    expect(countWords('﻿Hello﻿World ')).toBe(2);
-    expect(countWords('Hello﻿World')).toBe(2);
+    assert.strictEqual(countWords('﻿Hello﻿World '), 2);
+    assert.strictEqual(countWords('Hello﻿World'), 2);
   });
 });

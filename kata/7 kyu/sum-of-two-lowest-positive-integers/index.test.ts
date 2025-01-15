@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import sumTwoSmallestNumbers from './index.ts';
 
 describe('sumTwoSmallestNumbers', () => {
   it('should sum the two lowest positive integers', () => {
-    expect.assertions(5);
-
-    expect(sumTwoSmallestNumbers([5, 8, 12, 19, 22])).toBe(13);
-    expect(sumTwoSmallestNumbers([15, 28, 4, 2, 43])).toBe(6);
-    expect(sumTwoSmallestNumbers([3, 87, 45, 12, 7])).toBe(10);
-    expect(sumTwoSmallestNumbers([23, 71, 33, 82, 1])).toBe(24);
-    expect(sumTwoSmallestNumbers([52, 76, 14, 12, 4])).toBe(16);
+    assert.strictEqual(sumTwoSmallestNumbers([5, 8, 12, 19, 22]), 13);
+    assert.strictEqual(sumTwoSmallestNumbers([15, 28, 4, 2, 43]), 6);
+    assert.strictEqual(sumTwoSmallestNumbers([3, 87, 45, 12, 7]), 10);
+    assert.strictEqual(sumTwoSmallestNumbers([23, 71, 33, 82, 1]), 24);
+    assert.strictEqual(sumTwoSmallestNumbers([52, 76, 14, 12, 4]), 16);
   });
 });

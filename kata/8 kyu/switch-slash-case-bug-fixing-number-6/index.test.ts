@@ -1,16 +1,18 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import evalObject from './index.ts';
 
 describe('evalObject', () => {
   it('should calculate the result', () => {
-    expect.assertions(7);
-
-    expect(evalObject({ a: 1, b: 1, operation: '+' })).toBe(2);
-    expect(evalObject({ a: 1, b: 1, operation: '-' })).toBe(0);
-    expect(evalObject({ a: 1, b: 1, operation: '/' })).toBe(1);
-    expect(evalObject({ a: 1, b: 1, operation: '*' })).toBe(1);
-    expect(evalObject({ a: 1, b: 1, operation: '%' })).toBe(0);
-    expect(evalObject({ a: 1, b: 1, operation: '^' })).toBe(1);
-    expect(() => evalObject({ a: 1, b: 1, operation: '.' })).toThrow('Unsupported Operator');
+    assert.strictEqual(evalObject({ a: 1, b: 1, operation: '+' }), 2);
+    assert.strictEqual(evalObject({ a: 1, b: 1, operation: '-' }), 0);
+    assert.strictEqual(evalObject({ a: 1, b: 1, operation: '/' }), 1);
+    assert.strictEqual(evalObject({ a: 1, b: 1, operation: '*' }), 1);
+    assert.strictEqual(evalObject({ a: 1, b: 1, operation: '%' }), 0);
+    assert.strictEqual(evalObject({ a: 1, b: 1, operation: '^' }), 1);
+    assert.throws(
+      () => evalObject({ a: 1, b: 1, operation: '.' }),
+      new Error('Unsupported Operator'),
+    );
   });
 });

@@ -1,9 +1,8 @@
-import Point from './point';
+import Point from './point.ts';
 
 class Circle {
-  center: Point;
-
-  radius: number;
+  private center: Point;
+  private radius: number;
 
   constructor(center: Point, radius: number) {
     this.center = center;

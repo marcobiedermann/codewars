@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import firstNonRepeatingLetter from './index.ts';
 
 describe('firstNonRepeatingLetter', () => {
   it('should return first non repeating letter in string', () => {
-    expect.assertions(3);
-
-    expect(firstNonRepeatingLetter('a')).toBe('a');
-    expect(firstNonRepeatingLetter('stress')).toBe('t');
-    expect(firstNonRepeatingLetter('moonmen')).toBe('e');
+    assert.strictEqual(firstNonRepeatingLetter('a'), 'a');
+    assert.strictEqual(firstNonRepeatingLetter('stress'), 't');
+    assert.strictEqual(firstNonRepeatingLetter('moonmen'), 'e');
   });
 });

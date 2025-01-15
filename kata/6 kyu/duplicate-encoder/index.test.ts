@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import duplicateEncode from './index.ts';
 
 describe('duplicateEncode', () => {
   it('should convert string', () => {
-    expect.assertions(4);
-
-    expect(duplicateEncode('din')).toBe('(((');
-    expect(duplicateEncode('recede')).toBe('()()()');
-    expect(duplicateEncode('Success')).toBe(')())())');
-    expect(duplicateEncode('(( @')).toBe('))((');
+    assert.strictEqual(duplicateEncode('din'), '(((');
+    assert.strictEqual(duplicateEncode('recede'), '()()()');
+    assert.strictEqual(duplicateEncode('Success'), ')())())');
+    assert.strictEqual(duplicateEncode('(( @'), '))((');
   });
 });

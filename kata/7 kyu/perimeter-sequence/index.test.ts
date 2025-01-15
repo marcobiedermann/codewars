@@ -1,10 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import perimeterSequence from './index.ts';
 
 describe('perimeterSequence', () => {
   it('should calculate the perimeter of the `nth` shape', () => {
-    expect.assertions(1);
-
-    expect(perimeterSequence(1, 3)).toBe(12);
+    assert.strictEqual(perimeterSequence(1, 3), 12);
   });
 });

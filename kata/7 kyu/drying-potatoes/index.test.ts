@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import potatoes from './index.ts';
 
 describe('potatoes', () => {
   it('should return final weight coming out of the oven', () => {
-    expect.assertions(2);
-
-    expect(potatoes(82, 127, 80)).toBe(114);
-    expect(potatoes(93, 129, 91)).toBe(100);
+    assert.strictEqual(potatoes(82, 127, 80), 114);
+    assert.strictEqual(potatoes(93, 129, 91), 100);
   });
 });

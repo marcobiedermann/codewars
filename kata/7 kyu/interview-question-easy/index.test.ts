@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import getStrings from './index.ts';
 
 describe('getStrings', () => {
   it('should count occurrences of letters in string', () => {
-    expect.assertions(3);
-
-    expect(getStrings('Chicago')).toBe('c:**,h:*,i:*,a:*,g:*,o:*');
-    expect(getStrings('Bangkok')).toBe('b:*,a:*,n:*,g:*,k:**,o:*');
-    expect(getStrings('Las Vegas')).toBe('l:*,a:**,s:**,v:*,e:*,g:*');
+    assert.strictEqual(getStrings('Chicago'), 'c:**,h:*,i:*,a:*,g:*,o:*');
+    assert.strictEqual(getStrings('Bangkok'), 'b:*,a:*,n:*,g:*,k:**,o:*');
+    assert.strictEqual(getStrings('Las Vegas'), 'l:*,a:**,s:**,v:*,e:*,g:*');
   });
 });

@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import gimme from './index.ts';
 
 describe('gimme', () => {
   it('should return middle element of triplet', () => {
-    expect.assertions(2);
-
-    expect(gimme([2, 3, 1])).toBe(0);
-    expect(gimme([5, 10, 14])).toBe(1);
+    assert.strictEqual(gimme([2, 3, 1]), 0);
+    assert.strictEqual(gimme([5, 10, 14]), 1);
   });
 });

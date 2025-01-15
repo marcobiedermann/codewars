@@ -1,12 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import buildString from './index.ts';
 
 describe('buildString', () => {
   it('should join items in string', () => {
-    expect.assertions(3);
-
-    expect(buildString('Cheese', 'Milk', 'Chocolate')).toBe('I like Cheese, Milk, Chocolate!');
-    expect(buildString('Cheese', 'Milk')).toBe('I like Cheese, Milk!');
-    expect(buildString('Chocolate')).toBe('I like Chocolate!');
+    assert.strictEqual(
+      buildString('Cheese', 'Milk', 'Chocolate'),
+      'I like Cheese, Milk, Chocolate!',
+    );
+    assert.strictEqual(buildString('Cheese', 'Milk'), 'I like Cheese, Milk!');
+    assert.strictEqual(buildString('Chocolate'), 'I like Chocolate!');
   });
 });

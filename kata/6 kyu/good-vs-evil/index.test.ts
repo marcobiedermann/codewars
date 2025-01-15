@@ -1,17 +1,19 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import goodVsEvil from './index.ts';
 
 describe('expect', () => {
   it('should return winning side', () => {
-    expect.assertions(3);
-
-    expect(goodVsEvil('1 1 1 1 1 1', '1 1 1 1 1 1 1')).toBe(
+    assert.strictEqual(
+      goodVsEvil('1 1 1 1 1 1', '1 1 1 1 1 1 1'),
       'Battle Result: Evil eradicates all trace of Good',
     );
-    expect(goodVsEvil('0 0 0 0 0 10', '0 1 1 1 1 0 0')).toBe(
+    assert.strictEqual(
+      goodVsEvil('0 0 0 0 0 10', '0 1 1 1 1 0 0'),
       'Battle Result: Good triumphs over Evil',
     );
-    expect(goodVsEvil('1 0 0 0 0 0', '1 0 0 0 0 0 0')).toBe(
+    assert.strictEqual(
+      goodVsEvil('1 0 0 0 0 0', '1 0 0 0 0 0 0'),
       'Battle Result: No victor on this battle field',
     );
   });

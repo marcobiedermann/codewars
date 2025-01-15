@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import modifiedSum from './index.ts';
 
 describe('modifiedSum', () => {
   it('should return modified sum', () => {
-    expect.assertions(2);
-
-    expect(modifiedSum([1, 2, 3], 3)).toBe(30);
-    expect(modifiedSum([1, 2], 5)).toBe(30);
+    assert.strictEqual(modifiedSum([1, 2, 3], 3), 30);
+    assert.strictEqual(modifiedSum([1, 2], 5), 30);
   });
 });

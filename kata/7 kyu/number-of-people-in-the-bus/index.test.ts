@@ -1,18 +1,18 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import number from './index.ts';
 
 describe('number', () => {
   it('return number of people sitting in bus after last bus station', () => {
-    expect.assertions(3);
-
-    expect(
+    assert.strictEqual(
       number([
         [10, 0],
         [3, 5],
         [5, 8],
       ]),
-    ).toBe(5);
-    expect(
+      5,
+    );
+    assert.strictEqual(
       number([
         [3, 0],
         [9, 1],
@@ -21,8 +21,9 @@ describe('number', () => {
         [6, 1],
         [7, 10],
       ]),
-    ).toBe(17);
-    expect(
+      17,
+    );
+    assert.strictEqual(
       number([
         [3, 0],
         [9, 1],
@@ -31,6 +32,7 @@ describe('number', () => {
         [6, 1],
         [7, 8],
       ]),
-    ).toBe(21);
+      21,
+    );
   });
 });

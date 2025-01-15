@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import cakes from './index.ts';
 
 describe('cakes', () => {
   it('should return number of cakes', () => {
-    expect.assertions(2);
-
-    expect(
+    assert.strictEqual(
       cakes(
         {
           flour: 500,
@@ -19,8 +18,9 @@ describe('cakes', () => {
           milk: 200,
         },
       ),
-    ).toBe(2);
-    expect(
+      2,
+    );
+    assert.strictEqual(
       cakes(
         {
           apples: 3,
@@ -35,6 +35,7 @@ describe('cakes', () => {
           milk: 2000,
         },
       ),
-    ).toBe(0);
+      0,
+    );
   });
 });

@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import pyramid from './index.ts';
 
 describe('pyramid', () => {
   it('should return an array of ascending length subarrays', () => {
-    expect.assertions(4);
-
-    expect(pyramid(0)).toStrictEqual([]);
-    expect(pyramid(1)).toStrictEqual([[1]]);
-    expect(pyramid(2)).toStrictEqual([[1], [1, 1]]);
-    expect(pyramid(3)).toStrictEqual([[1], [1, 1], [1, 1, 1]]);
+    assert.deepEqual(pyramid(0), []);
+    assert.deepEqual(pyramid(1), [[1]]);
+    assert.deepEqual(pyramid(2), [[1], [1, 1]]);
+    assert.deepEqual(pyramid(3), [[1], [1, 1], [1, 1, 1]]);
   });
 });

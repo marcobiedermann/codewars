@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import { equal1, equal2, equal3, equal4, equal5 } from './index.ts';
 
 describe('equal', () => {
   it('should equal to 100', () => {
-    expect.assertions(5);
-
-    expect(equal1()).toBe(100);
-    expect(equal2()).toBe(100);
-    expect(equal3()).toBe(100);
-    expect(equal4()).toBe(100);
-    expect(equal5()).toBe(100);
+    assert.strictEqual(equal1(), 100);
+    assert.strictEqual(equal2(), 100);
+    assert.strictEqual(equal3(), 100);
+    assert.strictEqual(equal4(), 100);
+    assert.strictEqual(equal5(), 100);
   });
 });

@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import maxBall from './index.ts';
 
 describe('maxBall', () => {
   it('should return the time of the maximum height', () => {
-    expect.assertions(4);
-
-    expect(maxBall(37)).toBe(10);
-    expect(maxBall(45)).toBe(13);
-    expect(maxBall(99)).toBe(28);
-    expect(maxBall(85)).toBe(24);
+    assert.strictEqual(maxBall(37), 10);
+    assert.strictEqual(maxBall(45), 13);
+    assert.strictEqual(maxBall(99), 28);
+    assert.strictEqual(maxBall(85), 24);
   });
 });

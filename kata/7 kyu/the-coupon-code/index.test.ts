@@ -1,11 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import checkCoupon from './index.ts';
 
 describe('checkCoupon', () => {
   it('should verify coupon code', () => {
-    expect.assertions(2);
-
-    expect(checkCoupon('123', '123', 'September 5, 2014', 'October 1, 2014')).toBe(true);
-    expect(checkCoupon('123a', '123', 'September 5, 2014', 'October 1, 2014')).toBe(false);
+    assert.strictEqual(checkCoupon('123', '123', 'September 5, 2014', 'October 1, 2014'), true);
+    assert.strictEqual(checkCoupon('123a', '123', 'September 5, 2014', 'October 1, 2014'), false);
   });
 });

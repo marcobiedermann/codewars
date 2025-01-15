@@ -1,14 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import maxNumber from './index.ts';
 
 describe('maxNumber', () => {
   it('should return maximum number from digitis of number', () => {
-    expect.assertions(5);
-
-    expect(maxNumber(213)).toBe(321);
-    expect(maxNumber(7389)).toBe(9873);
-    expect(maxNumber(63792)).toBe(97632);
-    expect(maxNumber(566797)).toBe(977665);
-    expect(maxNumber(1000000)).toBe(1000000);
+    assert.strictEqual(maxNumber(213), 321);
+    assert.strictEqual(maxNumber(7389), 9873);
+    assert.strictEqual(maxNumber(63792), 97632);
+    assert.strictEqual(maxNumber(566797), 977665);
+    assert.strictEqual(maxNumber(1000000), 1000000);
   });
 });

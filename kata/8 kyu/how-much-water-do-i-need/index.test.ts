@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import howMuchWater from './index.ts';
 
 describe('howMuchWater', () => {
   it('should calculate the amount of water needed', () => {
-    expect.assertions(4);
-
-    expect(howMuchWater(10, 10, 21)).toBe('Too much clothes');
-    expect(howMuchWater(10, 10, 2)).toBe('Not enough clothes');
-    expect(howMuchWater(10, 11, 20)).toBe(23.58);
-    expect(howMuchWater(50, 15, 29)).toBe(189.87);
+    assert.strictEqual(howMuchWater(10, 10, 21), 'Too much clothes');
+    assert.strictEqual(howMuchWater(10, 10, 2), 'Not enough clothes');
+    assert.strictEqual(howMuchWater(10, 11, 20), 23.58);
+    assert.strictEqual(howMuchWater(50, 15, 29), 189.87);
   });
 });

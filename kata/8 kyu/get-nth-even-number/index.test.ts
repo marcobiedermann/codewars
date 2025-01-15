@@ -1,15 +1,14 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import nthEven from './index.ts';
 
 describe('nthEven', () => {
   it('should return the nth even number', () => {
-    expect.assertions(5);
+    assert.strictEqual(nthEven(1), 0);
+    assert.strictEqual(nthEven(2), 2);
+    assert.strictEqual(nthEven(3), 4);
 
-    expect(nthEven(1)).toBe(0);
-    expect(nthEven(2)).toBe(2);
-    expect(nthEven(3)).toBe(4);
-
-    expect(nthEven(100)).toBe(198);
-    expect(nthEven(1298734)).toBe(2597466);
+    assert.strictEqual(nthEven(100), 198);
+    assert.strictEqual(nthEven(1298734), 2597466);
   });
 });

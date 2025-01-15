@@ -1,16 +1,15 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import addLetters from './index.ts';
 
 describe('addLetters', () => {
   it('should add up letters to one letter', () => {
-    expect.assertions(7);
-
-    expect(addLetters('a', 'b', 'c')).toBe('f');
-    expect(addLetters('z')).toBe('z');
-    expect(addLetters('a', 'b')).toBe('c');
-    expect(addLetters('c')).toBe('c');
-    expect(addLetters('z', 'a')).toBe('a');
-    expect(addLetters('y', 'c', 'b')).toBe('d');
-    expect(addLetters()).toBe('z');
+    assert.strictEqual(addLetters('a', 'b', 'c'), 'f');
+    assert.strictEqual(addLetters('z'), 'z');
+    assert.strictEqual(addLetters('a', 'b'), 'c');
+    assert.strictEqual(addLetters('c'), 'c');
+    assert.strictEqual(addLetters('z', 'a'), 'a');
+    assert.strictEqual(addLetters('y', 'c', 'b'), 'd');
+    assert.strictEqual(addLetters(), 'z');
   });
 });

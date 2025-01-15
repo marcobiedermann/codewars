@@ -1,23 +1,27 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'assert';
+import { describe, it } from 'node:test';
 import accum from './index.ts';
 
 describe('accum', () => {
   it('should mumble string', () => {
-    expect.assertions(5);
-
-    expect(accum('ZpglnRxqenU')).toBe(
+    assert.strictEqual(
+      accum('ZpglnRxqenU'),
       'Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu',
     );
-    expect(accum('NyffsGeyylB')).toBe(
+    assert.strictEqual(
+      accum('NyffsGeyylB'),
       'N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb',
     );
-    expect(accum('MjtkuBovqrU')).toBe(
+    assert.strictEqual(
+      accum('MjtkuBovqrU'),
       'M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu',
     );
-    expect(accum('EvidjUnokmM')).toBe(
+    assert.strictEqual(
+      accum('EvidjUnokmM'),
       'E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm',
     );
-    expect(accum('HbideVbxncC')).toBe(
+    assert.strictEqual(
+      accum('HbideVbxncC'),
       'H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc',
     );
   });

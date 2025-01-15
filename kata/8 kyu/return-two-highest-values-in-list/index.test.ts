@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import twoHighest from './index.ts';
 
 describe('twoHighest', () => {
   it('should return the two distinct highest values in a list', () => {
-    expect.assertions(3);
-
-    expect(twoHighest([])).toStrictEqual([]);
-    expect(twoHighest([15])).toStrictEqual([15]);
-    expect(twoHighest([15, 20, 20, 17])).toStrictEqual([20, 17]);
+    assert.deepEqual(twoHighest([]), []);
+    assert.deepEqual(twoHighest([15]), [15]);
+    assert.deepEqual(twoHighest([15, 20, 20, 17]), [20, 17]);
   });
 });

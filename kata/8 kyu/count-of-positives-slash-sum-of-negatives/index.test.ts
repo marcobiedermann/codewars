@@ -1,17 +1,18 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import countPositivesSumNegatives from './index.ts';
 
 describe('countPositivesSumNegatives', () => {
   it('should count positive number and sum positive numbers', () => {
-    expect.assertions(4);
-
-    expect(
+    assert.deepEqual(
       countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]),
-    ).toStrictEqual([10, -65]);
-    expect(
+      [10, -65],
+    );
+    assert.deepEqual(
       countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]),
-    ).toStrictEqual([8, -50]);
-    expect(countPositivesSumNegatives([])).toStrictEqual([]);
-    expect(countPositivesSumNegatives(null)).toStrictEqual([]);
+      [8, -50],
+    );
+    assert.deepEqual(countPositivesSumNegatives([]), []);
+    assert.deepEqual(countPositivesSumNegatives(null), []);
   });
 });

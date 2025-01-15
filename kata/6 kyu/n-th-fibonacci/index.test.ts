@@ -1,13 +1,12 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import nthFibo from './index.ts';
 
 describe('nthFibo', () => {
   it('should return the nth Fibonacci number', () => {
-    expect.assertions(4);
-
-    expect(nthFibo(1)).toBe(0);
-    expect(nthFibo(2)).toBe(1);
-    expect(nthFibo(3)).toBe(1);
-    expect(nthFibo(4)).toBe(2);
+    assert.strictEqual(nthFibo(1), 0);
+    assert.strictEqual(nthFibo(2), 1);
+    assert.strictEqual(nthFibo(3), 1);
+    assert.strictEqual(nthFibo(4), 2);
   });
 });

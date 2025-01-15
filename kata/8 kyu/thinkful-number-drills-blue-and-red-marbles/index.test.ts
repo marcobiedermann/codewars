@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import guessBlue from './index.ts';
 
 describe('guessBlue', () => {
   it('should return the probability of drawing a blue marble', () => {
-    expect.assertions(3);
-
-    expect(guessBlue(5, 5, 2, 3)).toBe(0.6);
-    expect(guessBlue(5, 7, 4, 3)).toBe(0.2);
-    expect(guessBlue(12, 18, 4, 6)).toBe(0.4);
+    assert.strictEqual(guessBlue(5, 5, 2, 3), 0.6);
+    assert.strictEqual(guessBlue(5, 7, 4, 3), 0.2);
+    assert.strictEqual(guessBlue(12, 18, 4, 6), 0.4);
   });
 });

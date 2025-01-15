@@ -1,12 +1,11 @@
-import { describe, expect, it } from 'vitest';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 import wave from './index.ts';
 
 describe('wave', () => {
   it('should turn string into Mexican Wave', () => {
-    expect.assertions(5);
-
-    expect(wave('hello')).toStrictEqual(['Hello', 'hEllo', 'heLlo', 'helLo', 'hellO']);
-    expect(wave('codewars')).toStrictEqual([
+    assert.deepEqual(wave('hello'), ['Hello', 'hEllo', 'heLlo', 'helLo', 'hellO']);
+    assert.deepEqual(wave('codewars'), [
       'Codewars',
       'cOdewars',
       'coDewars',
@@ -16,8 +15,8 @@ describe('wave', () => {
       'codewaRs',
       'codewarS',
     ]);
-    expect(wave('')).toStrictEqual([]);
-    expect(wave('two words')).toStrictEqual([
+    assert.deepEqual(wave(''), []);
+    assert.deepEqual(wave('two words'), [
       'Two words',
       'tWo words',
       'twO words',
@@ -27,6 +26,6 @@ describe('wave', () => {
       'two worDs',
       'two wordS',
     ]);
-    expect(wave(' gap ')).toStrictEqual([' Gap ', ' gAp ', ' gaP ']);
+    assert.deepEqual(wave(' gap '), [' Gap ', ' gAp ', ' gaP ']);
   });
 });

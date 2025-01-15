@@ -1,5 +1,7 @@
-import { describe, expect, it } from 'vitest';
-import streetFighterSelection, { Move } from './index.ts';
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+import type { Move } from './index.ts';
+import streetFighterSelection from './index.ts';
 
 describe('streetFighterSelection', () => {
   const fighters = [
@@ -8,11 +10,9 @@ describe('streetFighterSelection', () => {
   ];
 
   it('should work with few moves', () => {
-    expect.assertions(1);
-
     const moves: Move[] = ['up', 'left', 'right', 'left', 'left'];
 
-    expect(streetFighterSelection(fighters, [0, 0], moves)).toStrictEqual([
+    assert.deepEqual(streetFighterSelection(fighters, [0, 0], moves), [
       'Ryu',
       'Vega',
       'Ryu',
@@ -22,19 +22,15 @@ describe('streetFighterSelection', () => {
   });
 
   it('should work with no selection cursor moves', () => {
-    expect.assertions(1);
-
     const moves: Move[] = [];
 
-    expect(streetFighterSelection(fighters, [0, 0], moves)).toStrictEqual([]);
+    assert.deepEqual(streetFighterSelection(fighters, [0, 0], moves), []);
   });
 
   it('should work when always moving left', () => {
-    expect.assertions(1);
-
     const moves: Move[] = ['left', 'left', 'left', 'left', 'left', 'left', 'left', 'left'];
 
-    expect(streetFighterSelection(fighters, [0, 0], moves)).toStrictEqual([
+    assert.deepEqual(streetFighterSelection(fighters, [0, 0], moves), [
       'Vega',
       'Balrog',
       'Guile',
@@ -47,11 +43,9 @@ describe('streetFighterSelection', () => {
   });
 
   it('should work when always moving right', () => {
-    expect.assertions(1);
-
     const moves: Move[] = ['right', 'right', 'right', 'right', 'right', 'right', 'right', 'right'];
 
-    expect(streetFighterSelection(fighters, [0, 0], moves)).toStrictEqual([
+    assert.deepEqual(streetFighterSelection(fighters, [0, 0], moves), [
       'E.Honda',
       'Blanka',
       'Guile',
@@ -64,11 +58,9 @@ describe('streetFighterSelection', () => {
   });
 
   it('should use all 4 directions clockwise twice', () => {
-    expect.assertions(1);
-
     const moves: Move[] = ['up', 'left', 'down', 'right', 'up', 'left', 'down', 'right'];
 
-    expect(streetFighterSelection(fighters, [0, 0], moves)).toStrictEqual([
+    assert.deepEqual(streetFighterSelection(fighters, [0, 0], moves), [
       'Ryu',
       'Vega',
       'M.Bison',
@@ -81,28 +73,14 @@ describe('streetFighterSelection', () => {
   });
 
   it('should work when always moving down', () => {
-    expect.assertions(1);
-
     const moves: Move[] = ['down', 'down', 'down', 'down'];
 
-    expect(streetFighterSelection(fighters, [0, 0], moves)).toStrictEqual([
-      'Ken',
-      'Ken',
-      'Ken',
-      'Ken',
-    ]);
+    assert.deepEqual(streetFighterSelection(fighters, [0, 0], moves), ['Ken', 'Ken', 'Ken', 'Ken']);
   });
 
   it('should work when always moving up', () => {
-    expect.assertions(1);
-
     const moves: Move[] = ['up', 'up', 'up', 'up'];
 
-    expect(streetFighterSelection(fighters, [0, 0], moves)).toStrictEqual([
-      'Ryu',
-      'Ryu',
-      'Ryu',
-      'Ryu',
-    ]);
+    assert.deepEqual(streetFighterSelection(fighters, [0, 0], moves), ['Ryu', 'Ryu', 'Ryu', 'Ryu']);
   });
 });
