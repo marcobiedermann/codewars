@@ -1,5 +1,3 @@
-/* eslint-disable no-useless-constructor */
-
 class Dinglemouse {
   private firstName: string;
   private lastName: string;

@@ -1,6 +1,4 @@
-/* eslint-disable */
-
-const symbols = {
+const letters = {
   M: 1000,
   CM: 900,
   D: 500,
@@ -16,16 +14,16 @@ const symbols = {
   I: 1,
 };
 
-type Symbol = keyof typeof symbols;
+type Letter = keyof typeof letters;
 
 function solution(num: number): string {
   let roman = '';
-  let i: Symbol;
+  let i: Letter;
 
-  for (i in symbols) {
-    while (num >= symbols[i]) {
+  for (i in letters) {
+    while (num >= letters[i]) {
       roman += i;
-      num -= symbols[i];
+      num -= letters[i];
     }
   }
 

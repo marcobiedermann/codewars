@@ -1,6 +1,8 @@
+import type { Any } from '../../@types/types.ts';
+
 type Type = 'electric' | 'fire' | 'grass' | 'water';
 
-type EffectivenessTable = Record<Type, any>;
+type EffectivenessTable = Record<Type, Any>;
 
 const effectivenessTable: EffectivenessTable = {
   electric: {

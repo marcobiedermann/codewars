@@ -1,5 +1,3 @@
-/* eslint-disable no-shadow */
-
 function sqInRect(lng: number, wdth: number): number[] | null {
   if (lng === wdth) {
     return null;

@@ -1,6 +1,6 @@
-/* eslint-disable camelcase */
+import type { Any } from '../../@types/types.ts';
 
-function filter_list(l: any[]): number[] {
+function filter_list(l: Any[]): number[] {
   return l.filter(Number.isInteger);
 }
 

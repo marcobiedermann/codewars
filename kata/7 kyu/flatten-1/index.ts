@@ -1,4 +1,6 @@
-function flatten(arr: any[]): any[] {
+import type { Any } from '../../@types/types.ts';
+
+function flatten(arr: Any[]): Any[] {
   return [].concat(...arr);
 }
 

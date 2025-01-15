@@ -1,5 +1,3 @@
-/* eslint-disable no-underscore-dangle */
-
 interface Person {
   _name: string;
   _friends: string[];

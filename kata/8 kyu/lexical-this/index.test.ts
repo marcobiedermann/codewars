@@ -1,5 +1,3 @@
-/* eslint-disable no-underscore-dangle */
-
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import Person from './index.ts';

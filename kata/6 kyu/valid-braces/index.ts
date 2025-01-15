@@ -1,3 +1,5 @@
+import type { Any } from '../../@types/types.ts';
+
 interface Matches {
   [key: string]: string;
 }
@@ -17,7 +19,7 @@ function validBraces(braces: string): boolean {
     if (matches[currentBrace]) {
       stack.push(currentBrace);
     } else {
-      const lastBrace: any = stack.pop();
+      const lastBrace: Any = stack.pop();
 
       if (currentBrace !== matches[lastBrace]) {
         return false;

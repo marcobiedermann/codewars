@@ -1,4 +1,4 @@
-function printArray(array: any[]): string {
+function printArray<T>(array: T[]): string {
   return array.join(',');
 }
 

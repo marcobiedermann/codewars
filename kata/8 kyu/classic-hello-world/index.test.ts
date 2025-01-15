@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import assert from 'node:assert/strict';
 import { describe, it, mock } from 'node:test';
 import Solution from './index.ts';

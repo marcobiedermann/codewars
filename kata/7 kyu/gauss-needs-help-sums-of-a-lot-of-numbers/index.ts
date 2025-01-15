@@ -1,4 +1,6 @@
-function f(n?: any): number | boolean {
+import type { Any } from '../../@types/types.ts';
+
+function f(n?: Any): number | boolean {
   if (!Number.isInteger(n) || n < 1) {
     return false;
   }
