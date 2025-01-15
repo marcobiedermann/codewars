@@ -1,4 +1,6 @@
-function prefill<T>(n: any, v: T): T[] {
+import type { Any } from '../../@types/types.ts';
+
+function prefill<T>(n: Any, v: T): T[] {
   const parsed = parseInt(n, 10);
 
   if (parsed !== Math.abs(n)) {

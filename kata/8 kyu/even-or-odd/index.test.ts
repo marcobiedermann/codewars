@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import even_or_odd from './index.ts';

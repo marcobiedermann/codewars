@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable no-bitwise */
-
 // @ts-nocheck
 
 import assert from 'node:assert/strict';

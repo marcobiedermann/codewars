@@ -1,8 +1,8 @@
-function isNumber(n: any): n is number {
+function isNumber(n: unknown): n is number {
   return typeof n === 'number';
 }
 
-function circleArea(radius: any): number | false {
+function circleArea(radius: unknown): number | false {
   if (!isNumber(radius) || radius <= 0) {
     return false;
   }

@@ -1,4 +1,6 @@
-function cubeOdd(arr: any[]): number | undefined {
+import type { Any } from '../../@types/types.ts';
+
+function cubeOdd(arr: Any[]): number | undefined {
   let sum = 0;
 
   for (let i = 0; i < arr.length; i += 1) {

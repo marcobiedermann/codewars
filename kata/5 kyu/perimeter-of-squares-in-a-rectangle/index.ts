@@ -1,5 +1,3 @@
-/* eslint-disable no-param-reassign */
-
 function fibonacci(n: number, cache: number[] = []): number {
   if (cache[n]) {
     return cache[n];

@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import isSantaClausable from './index.ts';

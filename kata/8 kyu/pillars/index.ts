@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-
 function pillars(num_pill: number, dist: number, width: number): number {
   if (num_pill < 2) {
     return 0;

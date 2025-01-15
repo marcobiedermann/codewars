@@ -1,5 +1,3 @@
-/* eslint-disable max-classes-per-file */
-
 class Animal {
   public name: string;
   public age: number;

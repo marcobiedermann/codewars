@@ -1,5 +1,3 @@
-/* eslint-disable max-classes-per-file */
-
 class Human {}
 
 class Man extends Human {}
@@ -14,4 +12,4 @@ class God {
 
 export default God;
 
-export { Man, Woman, Human };
+export { Human, Man, Woman };
