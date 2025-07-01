@@ -10,8 +10,8 @@
     "lint:js": "eslint .",
     "lint": "npm run lint:js",
     "prepare": "husky",
-    "test": "node --experimental-strip-types --no-warnings --test --watch",
-    "test:ci": "mkdir -p coverage && node --experimental-strip-types --experimental-test-coverage --no-warnings --test --test-reporter=lcov --test-reporter-destination=coverage/lcov.info",
+    "test": "node --test --watch",
+    "test:ci": "mkdir -p coverage && node --no-warnings --test --test-reporter=lcov --test-reporter-destination=coverage/lcov.info",
     "update": "npx npm-check-updates --format group --interactive"
   },
   "bin": {
