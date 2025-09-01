@@ -39,15 +39,15 @@
   },
   "homepage": "https://github.com/marcobiedermann/codewars#readme",
   "devDependencies": {
-    "@eslint/js": "^9.30.0",
-    "@types/node": "^24.0.8",
-    "eslint": "^9.30.0",
-    "globals": "^16.2.0",
+    "@eslint/js": "^9.34.0",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.34.0",
+    "globals": "^16.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.2",
+    "lint-staged": "^16.1.5",
     "prettier": "^3.6.2",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.35.1"
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
   },
   "lint-staged": {
     "**/*": "npm run format"
