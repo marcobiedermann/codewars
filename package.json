@@ -40,7 +40,7 @@
   "homepage": "https://github.com/marcobiedermann/codewars#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.2",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.3.3",
     "eslint": "^9.39.2",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
